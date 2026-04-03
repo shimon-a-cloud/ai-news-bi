@@ -2,6 +2,7 @@
     "name": "AI News BI",
     "short_name": "AI News BI",
     "start_url": "/ai-news-bi/",
+    "scope": "/ai-news-bi/",
     "display": "standalone",
     "background_color": "#0a0f1e",
     "theme_color": "#0a0f1e",
