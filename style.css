@@ -402,6 +402,7 @@ body {
 @media (min-width: 768px) {
     .header {
         height: 60px;
+        left: 200px;
         padding: 0 32px;
     }
     .header-title { font-size: 22px; }
@@ -465,6 +466,7 @@ body {
 
 /* ── Wide Desktop (1200px+) ── */
 @media (min-width: 1200px) {
+    .header { left: 240px; }
     .bottom-nav { width: 240px; }
     .main {
         margin-left: 240px;
@@ -473,7 +475,7 @@ body {
     }
 
     /* ホームタブ: 提案・アクションを2カラム */
-    #tab-home {
+    .tab-content.active#tab-home {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
@@ -484,7 +486,7 @@ body {
     }
 
     /* トレンドタブ: チャートを横並び */
-    #tab-trends {
+    .tab-content.active#tab-trends {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
@@ -494,7 +496,7 @@ body {
     }
 
     /* 予測タブ: 3カラム */
-    #tab-predictions {
+    .tab-content.active#tab-predictions {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
