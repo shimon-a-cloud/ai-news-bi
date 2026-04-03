@@ -7,6 +7,7 @@ let linkedinData = null;
 let reportData = null;
 let dailyChart = null;
 let categoryChart = null;
+let sourceChart = null;
 
 // ── Init ──
 document.addEventListener('DOMContentLoaded', async () => {
@@ -218,6 +219,39 @@ function renderTrends() {
                         labels: { color: '#8892a8', font: { size: 11 }, padding: 8 }
                     }
                 }
+            },
+        });
+    }
+
+    // Source chart (horizontal bar)
+    const srcData = trendsData.source_stats_7d || [];
+    if (srcData.length > 0) {
+        const ctx = document.getElementById('sourceChart').getContext('2d');
+        if (sourceChart) sourceChart.destroy();
+        const barColors = srcData.map((_, i) => {
+            const palette = ['#4f8cff', '#34d399', '#fbbf24', '#fb923c', '#f87171', '#a78bfa', '#f472b6', '#38bdf8', '#818cf8', '#fb7185', '#4ade80', '#facc15', '#e879f9', '#22d3ee', '#f97316'];
+            return palette[i % palette.length];
+        });
+        sourceChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: srcData.map(s => s.source),
+                datasets: [{
+                    data: srcData.map(s => s.count),
+                    backgroundColor: barColors,
+                    borderWidth: 0,
+                    borderRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: { ticks: { color: '#8892a8', font: { size: 10 } }, grid: { color: '#1e2a45' }, beginAtZero: true },
+                    y: { ticks: { color: '#e4e8f1', font: { size: 11 } }, grid: { display: false } },
+                },
+                plugins: { legend: { display: false } },
             },
         });
     }

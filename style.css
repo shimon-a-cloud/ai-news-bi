@@ -257,6 +257,9 @@ body {
     height: 220px;
     width: 100%;
 }
+.chart-container-tall {
+    height: 320px;
+}
 
 /* ── Trends List ── */
 .trend-item {
@@ -491,7 +494,8 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
-    #tab-trends .section-card:nth-child(3) {
+    #tab-trends .section-card:nth-child(3),
+    #tab-trends .section-card:nth-child(4) {
         grid-column: 1 / -1;
     }
 
