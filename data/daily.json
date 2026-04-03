@@ -6,56 +6,64 @@
       "title": "Claude Agent SDK 実践ガイド——AIエージェントをPythonで自作する",
       "source": "Zenn",
       "summary": "Claude Agent SDKを使ってPythonでAIエージェントを自作する実践ガイド。Shistoの中核技術であるClaude活用の幅を広げる。",
-      "why_selected": "ShistoはClaude Code中心の事業を展開しており、Agent SDKの習得はサービスの高度化・差別化に直結する。自動化サービスの次のステージとしてエージェント構築を提案できるようになる。"
+      "why_selected": "ShistoはClaude Code中心の事業を展開しており、Agent SDKの習得はサービスの高度化・差別化に直結する。自動化サービスの次のステージとしてエージェント構築を提案できるようになる。",
+      "url": "https://zenn.dev/bluecat/books/ab943d217f1f8f"
     },
     {
       "id": 13,
       "title": "「PC触らない」工場作業員をたった\"2カ月\"で「AI活用キーパーソン」に　ダイハツが進める地道なDX人材育成",
       "source": "ITmedia AI+",
       "summary": "ダイハツが非IT人材をAI活用人材に2カ月で育成した事例。地道なDX推進の成功パターン。",
-      "why_selected": "Shistoの顧客（RAYUP・江田畜産・KFJ）も非IT企業。この育成モデルを参考に「AI活用人材育成支援」をサービスメニューに加えられる可能性。"
+      "why_selected": "Shistoの顧客（RAYUP・江田畜産・KFJ）も非IT企業。この育成モデルを参考に「AI活用人材育成支援」をサービスメニューに加えられる可能性。",
+      "url": "https://www.itmedia.co.jp/business/articles/2604/03/news018.html"
     },
     {
       "id": 27,
       "title": "プログラミング未経験のオンライン秘書が、AIツールで収益化アプリを作った話",
       "source": "Zenn",
       "summary": "非エンジニアがAIツールで収益化アプリを構築した事例。AI民主化の象徴的ストーリー。",
-      "why_selected": "Shistoの顧客ターゲットそのもの。「プログラミング不要でAIツールを活用して業務改善・収益化」という訴求の実証事例として営業トークに使える。"
+      "why_selected": "Shistoの顧客ターゲットそのもの。「プログラミング不要でAIツールを活用して業務改善・収益化」という訴求の実証事例として営業トークに使える。",
+      "url": "https://zenn.dev/aimcreate/articles/64f0d1ace7deed"
     },
     {
       "id": 38,
       "title": "AGENTS.md完全ガイド：Claude Code・Gemini CLI・Cursorを1ファイルで統一管理する",
       "source": "Zenn",
       "summary": "複数のAIコーディングツールを1つのAGENTS.mdで統一管理する手法。マルチツール運用の効率化。",
-      "why_selected": "Shistoが複数プロジェクトを1人で運営する上で、AIツールの統一管理は生産性に直結。即実践可能な知見。"
+      "why_selected": "Shistoが複数プロジェクトを1人で運営する上で、AIツールの統一管理は生産性に直結。即実践可能な知見。",
+      "url": "https://zenn.dev/devken/articles/agents-md-ai-cli-guide"
     },
     {
       "id": 12,
       "title": "Google、エージェント特化の「Gemma 4」をApache 2.0で公開",
       "source": "ITmedia AI+",
       "summary": "Googleがエージェント構築に特化したオープンモデルGemma 4をApache 2.0で公開。ローカル実行可能。",
-      "why_selected": "無料で使えるエージェント特化モデルの登場。原則無料ツールで運営するShistoにとって、APIコスト削減やオフライン処理の選択肢が広がる。"
+      "why_selected": "無料で使えるエージェント特化モデルの登場。原則無料ツールで運営するShistoにとって、APIコスト削減やオフライン処理の選択肢が広がる。",
+      "url": "https://www.itmedia.co.jp/aiplus/articles/2604/03/news062.html"
     },
     {
       "id": 1,
       "title": "New ways to balance cost and reliability in the Gemini API",
       "source": "Google AI",
       "summary": "Gemini APIにFlexとPriorityの2階層が追加。Flexはコスト50%削減、Priorityは高速レスポンス。",
-      "why_selected": "AIサービスのコスト構造に直接影響。バッチ処理にはFlex、リアルタイム応答にはPriorityと使い分けることで、Shistoのサービス原価を最適化できる。"
+      "why_selected": "AIサービスのコスト構造に直接影響。バッチ処理にはFlex、リアルタイム応答にはPriorityと使い分けることで、Shistoのサービス原価を最適化できる。",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/"
     },
     {
       "id": 24,
       "title": "Claude Code Hooksでプロンプトインジェクション対策を実装した話",
       "source": "Zenn",
       "summary": "Claude Code Hooksを活用してプロンプトインジェクション対策を実装。セキュリティの実践事例。",
-      "why_selected": "ShistoがClaude Codeベースのサービスを顧客に提供する際、セキュリティ対策は信頼性の担保に不可欠。即座に自社サービスに組み込める知見。"
+      "why_selected": "ShistoがClaude Codeベースのサービスを顧客に提供する際、セキュリティ対策は信頼性の担保に不可欠。即座に自社サービスに組み込める知見。",
+      "url": "https://zenn.dev/hareki_aoi/articles/claude-code-hooks-security"
     },
     {
       "id": 48,
       "title": "ChatGPTで提案書を作ったら1時間が15分になった話【営業マン実録】",
       "source": "Zenn",
       "summary": "ChatGPTで提案書作成時間を75%短縮した営業マンの実体験レポート。",
-      "why_selected": "「AI導入で業務時間75%削減」という具体的な数字は、Shistoが顧客にAI自動化を提案する際の説得材料になる。営業資料に引用可能。"
+      "why_selected": "「AI導入で業務時間75%削減」という具体的な数字は、Shistoが顧客にAI自動化を提案する際の説得材料になる。営業資料に引用可能。",
+      "url": "https://zenn.dev/kenjiasshu/articles/chatgpt-sales-proposal-15min"
     }
   ],
   "industry_overview": "2026年4月第1週、AI業界は「エージェント基盤の本格整備」と「コスト最適化」の2軸で大きく動いている。Googleがエージェント特化のオープンモデルGemma 4をApache 2.0で公開し、同時にGemini APIにFlex/Priorityの2階層を導入。Microsoft Agent FrameworkもV1をリリースした。エージェント開発の民主化とコスト障壁の低下が同時に進行している。\n\n日本市場ではMicrosoftが1兆6000億円規模のAI投資を発表し、さくらインターネット・ソフトバンクとのAIインフラ共同開発を推進。国立情報学研究所からは新たな国産LLMも公開され、日本のAIエコシステムが着実に厚みを増している。一方で、AI生成の偽本がAmazonに出現するなど、AI悪用への対策も急務となっている。\n\n開発者コミュニティでは、Claude Code関連の記事が顕著に増加。Hooks、Memory、Skill、MCPサーバー、AGENTS.mdなど、Claude Codeのエコシステムを深掘りする記事が多数出ており、コーディングAIの実務活用が急速に進んでいることがわかる。特に非エンジニアによるAI活用事例（弁護士がMCPサーバーを構築、オンライン秘書が収益化アプリを作成）が増えており、AI民主化の波が確実に広がっている。\n\n企業のAI活用面では、ダイハツの工場作業員AI人材育成や東京ガスのAI顧客基盤導入など、大企業の具体的な導入事例が目立つ。「AIを使うべきか」の議論フェーズは完全に終わり、「どう使いこなすか」「どう人材を育てるか」のフェーズに移行している。\n\nRAGの精度問題やAIコード生成の本番バグ問題など、AI活用の「落とし穴」に関する実践的な分析も増えており、業界全体がPoC段階から本番運用段階への移行痛を経験していることが読み取れる。",
