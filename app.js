@@ -102,16 +102,34 @@ function renderHome() {
     if (proposals.length === 0) {
         proposalsEl.innerHTML = '<div class="empty-state">提案なし</div>';
     } else {
-        proposalsEl.innerHTML = proposals.map(p => `
-            <div class="proposal-item">
-                <div class="proposal-name">${esc(p.service || p.title || '')}</div>
+        proposalsEl.innerHTML = proposals.map((p, i) => `
+            <div class="proposal-item" onclick="toggleProposal(${i})" style="cursor:pointer">
+                <div class="proposal-header">
+                    <div class="proposal-name">${esc(p.service || p.title || '')}</div>
+                    <span class="proposal-toggle" id="proposalToggle${i}">▼</span>
+                </div>
                 <div class="proposal-desc">${esc(p.description || '')}</div>
                 <div class="proposal-meta">
                     ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
                     ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
                     ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
                 </div>
-                ${p.reason ? `<div class="news-why" style="margin-top:6px">${esc(p.reason)}</div>` : ''}
+                <div class="proposal-detail" id="proposalDetail${i}" style="display:none">
+                    ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
+                    ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
+                    ${(p.how_to_implement && p.how_to_implement.length) ? `
+                        <div class="proposal-steps-title">実装ステップ</div>
+                        <ol class="proposal-steps">
+                            ${p.how_to_implement.map(s => `<li>${esc(s)}</li>`).join('')}
+                        </ol>
+                    ` : ''}
+                    ${(p.tools && p.tools.length) ? `
+                        <div class="proposal-tools">
+                            ${p.tools.map(t => `<span class="proposal-tool-tag">${esc(t)}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                    ${p.reason ? `<div class="news-why" style="margin-top:8px">${esc(p.reason)}</div>` : ''}
+                </div>
             </div>
         `).join('');
     }
@@ -366,6 +384,19 @@ function renderReport() {
                 </div>
             ` : ''}
         `;
+    }
+}
+
+// ── Toggle Proposal Detail ──
+function toggleProposal(index) {
+    const detail = document.getElementById(`proposalDetail${index}`);
+    const toggle = document.getElementById(`proposalToggle${index}`);
+    if (detail.style.display === 'none') {
+        detail.style.display = 'block';
+        toggle.textContent = '▲';
+    } else {
+        detail.style.display = 'none';
+        toggle.textContent = '▼';
     }
 }
 

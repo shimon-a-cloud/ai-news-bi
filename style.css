@@ -179,9 +179,64 @@ body {
     gap: 8px;
     font-size: 12px;
 }
+.proposal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.proposal-toggle {
+    font-size: 12px;
+    color: var(--text-muted);
+    flex-shrink: 0;
+    margin-left: 8px;
+}
 .proposal-tag {
     background: var(--accent-dim);
     color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.proposal-detail {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+}
+.proposal-pitch {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+.proposal-example {
+    font-size: 13px;
+    color: var(--yellow);
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.proposal-steps-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+.proposal-steps {
+    font-size: 13px;
+    line-height: 1.7;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+.proposal-steps li { margin-bottom: 4px; }
+.proposal-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.proposal-tool-tag {
+    font-size: 11px;
+    background: rgba(52,211,153,0.15);
+    color: var(--green);
     padding: 2px 8px;
     border-radius: 4px;
 }
