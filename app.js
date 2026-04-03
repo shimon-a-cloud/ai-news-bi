@@ -7,6 +7,7 @@ let linkedinData = null;
 let reportData = null;
 let dailyChart = null;
 let categoryChart = null;
+let aiCompanyChart = null;
 let sourceChart = null;
 
 // ── Init ──
@@ -219,6 +220,41 @@ function renderTrends() {
                         labels: { color: '#8892a8', font: { size: 11 }, padding: 8 }
                     }
                 }
+            },
+        });
+    }
+
+    // AI Company chart (horizontal bar)
+    const aiData = trendsData.ai_company_7d || [];
+    if (aiData.length > 0) {
+        const ctx = document.getElementById('aiCompanyChart').getContext('2d');
+        if (aiCompanyChart) aiCompanyChart.destroy();
+        const aiColors = {
+            'OpenAI': '#10a37f', 'Anthropic': '#d4a574', 'Google': '#4285f4',
+            'Meta': '#0668e1', 'Microsoft': '#00a4ef', 'Apple': '#a2aaad',
+            'xAI': '#1d9bf0', 'Amazon': '#ff9900', 'Hugging Face': '#ffcd00',
+            'Mistral': '#f54e42', 'DeepSeek': '#4f46e5', 'Stability AI': '#b45eeb',
+        };
+        aiCompanyChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: aiData.map(a => a.company),
+                datasets: [{
+                    data: aiData.map(a => a.count),
+                    backgroundColor: aiData.map(a => aiColors[a.company] || '#4f8cff'),
+                    borderWidth: 0,
+                    borderRadius: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: { ticks: { color: '#8892a8', font: { size: 10 }, stepSize: 1 }, grid: { color: '#1e2a45' }, beginAtZero: true },
+                    y: { ticks: { color: '#e4e8f1', font: { size: 12, weight: 'bold' } }, grid: { display: false } },
+                },
+                plugins: { legend: { display: false } },
             },
         });
     }

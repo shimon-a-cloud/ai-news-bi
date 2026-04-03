@@ -494,8 +494,7 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
-    #tab-trends .section-card:nth-child(3),
-    #tab-trends .section-card:nth-child(4) {
+    #tab-trends .section-card:nth-child(5) {
         grid-column: 1 / -1;
     }
 
