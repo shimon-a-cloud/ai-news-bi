@@ -342,3 +342,106 @@ body {
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ── Desktop (768px+) ── */
+@media (min-width: 768px) {
+    .header {
+        height: 60px;
+        padding: 0 32px;
+    }
+    .header-title { font-size: 22px; }
+    .header-date { font-size: 14px; }
+
+    .bottom-nav {
+        top: 0;
+        bottom: auto;
+        left: 0;
+        right: auto;
+        width: 200px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 72px;
+        border-top: none;
+        border-right: 1px solid var(--border);
+    }
+    .nav-btn {
+        flex-direction: row;
+        gap: 10px;
+        width: 100%;
+        padding: 14px 24px;
+        justify-content: flex-start;
+    }
+    .nav-btn.active {
+        background: var(--accent-dim);
+        border-right: 3px solid var(--accent);
+    }
+    .nav-icon { font-size: 18px; }
+    .nav-label { font-size: 14px; }
+
+    .main {
+        margin-left: 200px;
+        padding: 72px 32px 32px 32px;
+        max-width: 960px;
+    }
+
+    .section-card {
+        padding: 24px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+    }
+    .section-title { font-size: 16px; }
+
+    .overview-text { font-size: 15px; }
+    .news-title { font-size: 15px; }
+    .news-summary { font-size: 14px; }
+    .action-text { font-size: 15px; }
+    .proposal-desc { font-size: 14px; }
+    .linkedin-body { font-size: 15px; }
+    .report-content { font-size: 15px; }
+
+    .chart-container { height: 300px; }
+
+    .linkedin-copy:hover {
+        background: var(--accent);
+        color: var(--bg);
+    }
+}
+
+/* ── Wide Desktop (1200px+) ── */
+@media (min-width: 1200px) {
+    .bottom-nav { width: 240px; }
+    .main {
+        margin-left: 240px;
+        max-width: 1100px;
+        padding: 72px 48px 48px 48px;
+    }
+
+    /* ホームタブ: 提案・アクションを2カラム */
+    #tab-home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    #tab-home .section-card:nth-child(1),
+    #tab-home .section-card:nth-child(2) {
+        grid-column: 1 / -1;
+    }
+
+    /* トレンドタブ: チャートを横並び */
+    #tab-trends {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    #tab-trends .section-card:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    /* 予測タブ: 3カラム */
+    #tab-predictions {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px;
+    }
+}
