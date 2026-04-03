@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-03T23:39:32.078489+09:00",
+  "updated": "2026-04-03T23:43:37.215826+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -142,27 +142,39 @@
   ],
   "ai_company_7d": [
     {
-      "company": "Anthropic",
+      "company": "Claude",
       "count": 9
     },
     {
-      "company": "Google",
-      "count": 8
+      "company": "Gemini",
+      "count": 7
     },
     {
-      "company": "OpenAI",
+      "company": "ChatGPT / GPT",
       "count": 3
     },
     {
-      "company": "Microsoft",
+      "company": "Copilot",
       "count": 2
     },
     {
-      "company": "Amazon",
+      "company": "Amazon Bedrock",
       "count": 2
     },
     {
-      "company": "Meta",
+      "company": "Cursor",
+      "count": 2
+    },
+    {
+      "company": "Dify",
+      "count": 2
+    },
+    {
+      "company": "LLaMA",
+      "count": 1
+    },
+    {
+      "company": "Qwen",
       "count": 1
     }
   ]

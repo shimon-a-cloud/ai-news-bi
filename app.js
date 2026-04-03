@@ -230,10 +230,11 @@ function renderTrends() {
         const ctx = document.getElementById('aiCompanyChart').getContext('2d');
         if (aiCompanyChart) aiCompanyChart.destroy();
         const aiColors = {
-            'OpenAI': '#10a37f', 'Anthropic': '#d4a574', 'Google': '#4285f4',
-            'Meta': '#0668e1', 'Microsoft': '#00a4ef', 'Apple': '#a2aaad',
-            'xAI': '#1d9bf0', 'Amazon': '#ff9900', 'Hugging Face': '#ffcd00',
-            'Mistral': '#f54e42', 'DeepSeek': '#4f46e5', 'Stability AI': '#b45eeb',
+            'Claude': '#d4a574', 'Gemini': '#4285f4', 'ChatGPT / GPT': '#10a37f',
+            'Copilot': '#00a4ef', 'LLaMA': '#0668e1', 'Grok': '#1d9bf0',
+            'DeepSeek': '#4f46e5', 'Mistral': '#f54e42', 'Qwen': '#6366f1',
+            'Amazon Bedrock': '#ff9900', 'Hugging Face': '#ffcd00',
+            'Stable Diffusion': '#b45eeb', 'Cursor': '#22d3ee', 'Dify': '#4f8cff',
         };
         aiCompanyChart = new Chart(ctx, {
             type: 'bar',
