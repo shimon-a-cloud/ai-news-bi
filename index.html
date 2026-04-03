@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0a0f1e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>AI News BI</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header-title">AI News BI</h1>
+        <span class="header-date" id="headerDate"></span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main" id="mainContent">
+
+        <!-- ホームタブ -->
+        <section class="tab-content active" id="tab-home">
+            <div class="section-card">
+                <h2 class="section-title">今日の業界動向</h2>
+                <div id="industryOverview" class="overview-text"></div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">厳選ニュース</h2>
+                <div id="topNews" class="news-list"></div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">今週のアクション</h2>
+                <div id="weeklyActions" class="action-list"></div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">Shisto活用提案</h2>
+                <div id="businessProposals" class="proposal-list"></div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">学習提案</h2>
+                <div id="learningSuggestions" class="learning-list"></div>
+            </div>
+        </section>
+
+        <!-- トレンドタブ -->
+        <section class="tab-content" id="tab-trends">
+            <div class="section-card">
+                <h2 class="section-title">記事数推移（30日）</h2>
+                <div class="chart-container">
+                    <canvas id="dailyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">カテゴリ別（7日）</h2>
+                <div class="chart-container">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">注目トレンド</h2>
+                <div id="trendsList" class="trends-list"></div>
+            </div>
+        </section>
+
+        <!-- 予測タブ -->
+        <section class="tab-content" id="tab-predictions">
+            <div class="section-card">
+                <h2 class="section-title">短期予測（1〜2週間）</h2>
+                <div id="shortTermPredictions" class="prediction-list"></div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">中期予測（1〜3ヶ月）</h2>
+                <div id="midTermPredictions" class="prediction-list"></div>
+            </div>
+
+            <div class="section-card">
+                <h2 class="section-title">長期予測（半年〜1年）</h2>
+                <div id="longTermPredictions" class="prediction-list"></div>
+            </div>
+        </section>
+
+        <!-- LinkedInタブ -->
+        <section class="tab-content" id="tab-linkedin">
+            <div class="section-card">
+                <h2 class="section-title">今週の投稿案</h2>
+                <div id="linkedinPosts" class="linkedin-list"></div>
+            </div>
+        </section>
+
+        <!-- レポートタブ -->
+        <section class="tab-content" id="tab-report">
+            <div class="section-card">
+                <h2 class="section-title" id="reportTitle">レポート</h2>
+                <div id="reportContent" class="report-content"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-btn active" data-tab="home">
+            <span class="nav-icon">&#9733;</span>
+            <span class="nav-label">ホーム</span>
+        </button>
+        <button class="nav-btn" data-tab="trends">
+            <span class="nav-icon">&#9650;</span>
+            <span class="nav-label">トレンド</span>
+        </button>
+        <button class="nav-btn" data-tab="predictions">
+            <span class="nav-icon">&#9672;</span>
+            <span class="nav-label">予測</span>
+        </button>
+        <button class="nav-btn" data-tab="linkedin">
+            <span class="nav-icon">&#9998;</span>
+            <span class="nav-label">LinkedIn</span>
+        </button>
+        <button class="nav-btn" data-tab="report">
+            <span class="nav-icon">&#9776;</span>
+            <span class="nav-label">レポート</span>
+        </button>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>

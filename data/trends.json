@@ -1,0 +1,143 @@
+{
+  "updated": "2026-04-03T22:51:28.500381+09:00",
+  "daily_counts": [
+    {
+      "date": "2026-03-31",
+      "count": 17
+    },
+    {
+      "date": "2026-04-01",
+      "count": 26
+    },
+    {
+      "date": "2026-04-02",
+      "count": 33
+    },
+    {
+      "date": "2026-04-03",
+      "count": 112
+    }
+  ],
+  "category_7d": [
+    {
+      "category": "AIエージェント・開発",
+      "count": 18
+    },
+    {
+      "category": "AI×ビジネス活用",
+      "count": 9
+    },
+    {
+      "category": "製品・サービス",
+      "count": 7
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 7
+    },
+    {
+      "category": "研究・ブレークスルー",
+      "count": 6
+    },
+    {
+      "category": "新モデル・リリース",
+      "count": 2
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 1
+    }
+  ],
+  "category_30d": [
+    {
+      "category": "AIエージェント・開発",
+      "count": 18
+    },
+    {
+      "category": "AI×ビジネス活用",
+      "count": 9
+    },
+    {
+      "category": "製品・サービス",
+      "count": 7
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 7
+    },
+    {
+      "category": "研究・ブレークスルー",
+      "count": 6
+    },
+    {
+      "category": "新モデル・リリース",
+      "count": 2
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 1
+    }
+  ],
+  "source_stats_7d": [
+    {
+      "source": "Zenn",
+      "count": 64
+    },
+    {
+      "source": "note",
+      "count": 42
+    },
+    {
+      "source": "DeepSeek",
+      "count": 24
+    },
+    {
+      "source": "ITmedia AI+",
+      "count": 20
+    },
+    {
+      "source": "Google AI",
+      "count": 5
+    },
+    {
+      "source": "Hugging Face",
+      "count": 5
+    },
+    {
+      "source": "OpenAI",
+      "count": 4
+    },
+    {
+      "source": "Meta AI",
+      "count": 3
+    },
+    {
+      "source": "JD Supra",
+      "count": 2
+    },
+    {
+      "source": "36Kr",
+      "count": 2
+    },
+    {
+      "source": "The New York Times",
+      "count": 2
+    },
+    {
+      "source": "morganlewis.com",
+      "count": 1
+    },
+    {
+      "source": "Axios",
+      "count": 1
+    },
+    {
+      "source": "CT Mirror",
+      "count": 1
+    },
+    {
+      "source": "Compliance Week",
+      "count": 1
+    }
+  ]
+}

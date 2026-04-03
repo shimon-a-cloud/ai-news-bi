@@ -1,0 +1,383 @@
+// AI News BI — PWA App
+
+const DATA_BASE = 'data/';
+let dailyData = null;
+let trendsData = null;
+let linkedinData = null;
+let reportData = null;
+let dailyChart = null;
+let categoryChart = null;
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', async () => {
+    setupNav();
+    await loadAllData();
+    renderHome();
+    renderTrends();
+    renderPredictions();
+    renderLinkedIn();
+    renderReport();
+    document.getElementById('headerDate').textContent = dailyData?.date || '';
+});
+
+// ── Navigation ──
+function setupNav() {
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById(`tab-${btn.dataset.tab}`).classList.add('active');
+            window.scrollTo(0, 0);
+        });
+    });
+}
+
+// ── Data Loading ──
+async function loadJSON(path) {
+    try {
+        const res = await fetch(DATA_BASE + path + '?t=' + Date.now());
+        if (!res.ok) return null;
+        return await res.json();
+    } catch { return null; }
+}
+
+async function loadAllData() {
+    [dailyData, trendsData, linkedinData, reportData] = await Promise.all([
+        loadJSON('daily.json'),
+        loadJSON('trends.json'),
+        loadJSON('linkedin.json'),
+        loadJSON('report.json'),
+    ]);
+}
+
+// ── Render: Home ──
+function renderHome() {
+    if (!dailyData) {
+        document.getElementById('industryOverview').innerHTML = '<div class="empty-state">データを取得中...</div>';
+        return;
+    }
+
+    // Industry Overview
+    document.getElementById('industryOverview').textContent = dailyData.industry_overview || '';
+
+    // Top 8 News
+    const newsEl = document.getElementById('topNews');
+    const top8 = dailyData.top_8 || [];
+    if (top8.length === 0) {
+        newsEl.innerHTML = '<div class="empty-state">ニュースなし</div>';
+    } else {
+        newsEl.innerHTML = top8.map(n => `
+            <div class="news-item">
+                <div class="news-item-header">
+                    <span class="news-source">${esc(n.source || '')}</span>
+                </div>
+                <div class="news-title"><a href="${esc(n.url || '#')}" target="_blank" rel="noopener">${esc(n.title)}</a></div>
+                <div class="news-summary">${esc(n.summary || '')}</div>
+                ${n.why_selected ? `<div class="news-why">${esc(n.why_selected)}</div>` : ''}
+            </div>
+        `).join('');
+    }
+
+    // Weekly Actions
+    const actionsEl = document.getElementById('weeklyActions');
+    const actions = dailyData.weekly_actions || [];
+    if (actions.length === 0) {
+        actionsEl.innerHTML = '<div class="empty-state">アクションなし</div>';
+    } else {
+        actionsEl.innerHTML = actions.map(a => `
+            <div class="action-item">
+                <span class="action-priority priority-${a.priority || 'medium'}">${(a.priority || 'medium').toUpperCase()}</span>
+                <div>
+                    <div class="action-text">${esc(a.action)}</div>
+                    ${a.reason ? `<div class="action-reason">${esc(a.reason)}</div>` : ''}
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Business Proposals
+    const proposalsEl = document.getElementById('businessProposals');
+    const proposals = dailyData.business_proposals || [];
+    if (proposals.length === 0) {
+        proposalsEl.innerHTML = '<div class="empty-state">提案なし</div>';
+    } else {
+        proposalsEl.innerHTML = proposals.map(p => `
+            <div class="proposal-item">
+                <div class="proposal-name">${esc(p.service || p.title || '')}</div>
+                <div class="proposal-desc">${esc(p.description || '')}</div>
+                <div class="proposal-meta">
+                    ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
+                    ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
+                    ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
+                </div>
+                ${p.reason ? `<div class="news-why" style="margin-top:6px">${esc(p.reason)}</div>` : ''}
+            </div>
+        `).join('');
+    }
+
+    // Learning Suggestions
+    const learningEl = document.getElementById('learningSuggestions');
+    const learning = dailyData.learning_suggestions || [];
+    if (learning.length === 0) {
+        learningEl.innerHTML = '<div class="empty-state">提案なし</div>';
+    } else {
+        learningEl.innerHTML = learning.map(l => `
+            <div class="learning-item">
+                <div class="learning-topic">${esc(l.topic)}</div>
+                <div class="learning-why">${esc(l.why || '')}</div>
+                ${l.time_estimate ? `<div class="learning-time">${esc(l.time_estimate)}</div>` : ''}
+            </div>
+        `).join('');
+    }
+}
+
+// ── Render: Trends ──
+function renderTrends() {
+    // Trends from daily analysis
+    const trendsListEl = document.getElementById('trendsList');
+    const trends = dailyData?.trends || [];
+    if (trends.length === 0) {
+        trendsListEl.innerHTML = '<div class="empty-state">トレンドデータなし</div>';
+    } else {
+        trendsListEl.innerHTML = trends.map(t => `
+            <div class="trend-item">
+                <div class="trend-topic">${esc(t.topic)}</div>
+                <div class="trend-desc">${esc(t.description || '')}</div>
+                ${t.why ? `<div class="trend-why">${esc(t.why)}</div>` : ''}
+                ${t.shisto_impact ? `<div class="trend-impact">${esc(t.shisto_impact)}</div>` : ''}
+            </div>
+        `).join('');
+    }
+
+    if (!trendsData) return;
+
+    // Daily article count chart
+    const dailyCounts = trendsData.daily_counts || [];
+    if (dailyCounts.length > 0) {
+        const ctx = document.getElementById('dailyChart').getContext('2d');
+        if (dailyChart) dailyChart.destroy();
+        dailyChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: dailyCounts.map(d => d.date.slice(5)),
+                datasets: [{
+                    label: '記事数',
+                    data: dailyCounts.map(d => d.count),
+                    borderColor: '#4f8cff',
+                    backgroundColor: 'rgba(79,140,255,0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 2,
+                }]
+            },
+            options: chartOptions('記事数'),
+        });
+    }
+
+    // Category chart
+    const catData = trendsData.category_7d || [];
+    if (catData.length > 0) {
+        const ctx = document.getElementById('categoryChart').getContext('2d');
+        if (categoryChart) categoryChart.destroy();
+        const colors = ['#4f8cff', '#34d399', '#fbbf24', '#fb923c', '#f87171', '#a78bfa', '#f472b6'];
+        categoryChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: catData.map(c => c.category || '未分類'),
+                datasets: [{
+                    data: catData.map(c => c.count),
+                    backgroundColor: colors.slice(0, catData.length),
+                    borderWidth: 0,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: { color: '#8892a8', font: { size: 11 }, padding: 8 }
+                    }
+                }
+            },
+        });
+    }
+}
+
+function chartOptions(yLabel) {
+    return {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+            x: { ticks: { color: '#8892a8', font: { size: 10 } }, grid: { color: '#1e2a45' } },
+            y: { ticks: { color: '#8892a8', font: { size: 10 } }, grid: { color: '#1e2a45' }, beginAtZero: true },
+        },
+        plugins: { legend: { display: false } },
+    };
+}
+
+// ── Render: Predictions ──
+function renderPredictions() {
+    const predictions = dailyData?.predictions || {};
+    renderPredictionList('shortTermPredictions', predictions.short_term || []);
+    renderPredictionList('midTermPredictions', predictions.mid_term || []);
+    renderPredictionList('longTermPredictions', predictions.long_term || []);
+}
+
+function renderPredictionList(elId, items) {
+    const el = document.getElementById(elId);
+    if (items.length === 0) {
+        el.innerHTML = '<div class="empty-state">予測データなし</div>';
+        return;
+    }
+    el.innerHTML = items.map(p => {
+        const confClass = p.confidence === '高' ? 'high' : p.confidence === '中' ? 'mid' : 'low';
+        return `
+            <div class="prediction-item">
+                <span class="prediction-confidence confidence-${confClass}">${esc(p.confidence || '中')}</span>
+                <div class="prediction-text">${esc(p.prediction)}</div>
+                ${p.evidence ? `<div class="prediction-evidence">${esc(p.evidence)}</div>` : ''}
+                ${p.shisto_implication ? `<div class="prediction-implication">${esc(p.shisto_implication)}</div>` : ''}
+            </div>
+        `;
+    }).join('');
+}
+
+// ── Render: LinkedIn ──
+function renderLinkedIn() {
+    const el = document.getElementById('linkedinPosts');
+    const posts = linkedinData?.posts || [];
+    if (posts.length === 0) {
+        el.innerHTML = '<div class="empty-state">投稿案なし</div>';
+        return;
+    }
+    const dayMap = { monday: '月曜', wednesday: '水曜', friday: '金曜' };
+    el.innerHTML = posts.map((p, i) => `
+        <div class="linkedin-post">
+            <div class="linkedin-day">${dayMap[p.post_day] || p.post_day || `投稿${i+1}`}</div>
+            <div class="linkedin-body">${esc(p.body)}</div>
+            <div class="linkedin-hashtags">${(p.hashtags || []).join(' ')}</div>
+            <button class="linkedin-copy" onclick="copyPost(this, ${i})">コピー</button>
+        </div>
+    `).join('');
+}
+
+function copyPost(btn, index) {
+    const post = linkedinData.posts[index];
+    const text = post.body + '\n\n' + (post.hashtags || []).join(' ');
+    navigator.clipboard.writeText(text).then(() => {
+        btn.textContent = 'コピー済み';
+        btn.classList.add('copied');
+        setTimeout(() => {
+            btn.textContent = 'コピー';
+            btn.classList.remove('copied');
+        }, 2000);
+    });
+}
+
+// ── Render: Report ──
+function renderReport() {
+    const el = document.getElementById('reportContent');
+    const titleEl = document.getElementById('reportTitle');
+
+    if (!reportData) {
+        el.innerHTML = '<div class="empty-state">レポートなし</div>';
+        return;
+    }
+
+    const type = reportData.type;
+    const data = reportData.data;
+    titleEl.textContent = type === 'monthly' ? '月次レポート' : '週次レポート';
+
+    if (type === 'weekly') {
+        el.innerHTML = `
+            <div class="report-section">
+                <div class="report-section-title">${esc(data.period || '')}</div>
+                <div style="white-space:pre-wrap">${esc(data.overview || '')}</div>
+            </div>
+            ${data.trend_changes ? `
+                <div class="report-section">
+                    <div class="report-section-title">トレンド変化</div>
+                    ${data.trend_changes.map(t => `
+                        <div class="trend-item">
+                            <div class="trend-topic">${esc(t.topic)} <span style="color:var(--yellow)">[${esc(t.direction)}]</span></div>
+                            <div class="trend-desc">${esc(t.detail)}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+            ${data.top_5_news ? `
+                <div class="report-section">
+                    <div class="report-section-title">注目ニュースTOP5</div>
+                    ${data.top_5_news.map(n => `
+                        <div class="news-item">
+                            <div class="news-title"><a href="${esc(n.url || '#')}" target="_blank">${esc(n.title)}</a></div>
+                            <div class="news-source">${esc(n.source || '')}</div>
+                            <div class="news-why">${esc(n.why || '')}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+            ${data.next_week ? `
+                <div class="report-section">
+                    <div class="report-section-title">来週の予測とアクション</div>
+                    ${(data.next_week.predictions || []).map(p => `<div style="margin-bottom:4px">- ${esc(p)}</div>`).join('')}
+                    ${(data.next_week.actions || []).map(a => `
+                        <div class="action-item">
+                            <span class="action-priority priority-${a.priority || 'medium'}">${(a.priority || '').toUpperCase()}</span>
+                            <div>
+                                <div class="action-text">${esc(a.action)}</div>
+                                <div class="action-reason">${esc(a.reason || '')}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+        `;
+    } else {
+        // Monthly
+        el.innerHTML = `
+            <div class="report-section">
+                <div class="report-section-title">${esc(data.period || '')}</div>
+                <div style="white-space:pre-wrap">${esc(data.summary || '')}</div>
+            </div>
+            ${data.business_impact ? `
+                <div class="report-section">
+                    <div class="report-section-title">事業への影響</div>
+                    <div style="margin-bottom:8px"><strong style="color:var(--green)">チャンス:</strong></div>
+                    ${(data.business_impact.opportunities || []).map(o => `<div style="margin-left:12px;margin-bottom:4px">- ${esc(o)}</div>`).join('')}
+                    <div style="margin-bottom:8px;margin-top:8px"><strong style="color:var(--red)">脅威:</strong></div>
+                    ${(data.business_impact.threats || []).map(t => `<div style="margin-left:12px;margin-bottom:4px">- ${esc(t)}</div>`).join('')}
+                </div>
+            ` : ''}
+            ${data.next_month_strategy ? `
+                <div class="report-section">
+                    <div class="report-section-title">来月の戦略</div>
+                    ${(data.next_month_strategy.actions || []).map(a => `
+                        <div class="action-item">
+                            <span class="action-priority priority-${a.priority || 'medium'}">${(a.priority || '').toUpperCase()}</span>
+                            <div>
+                                <div class="action-text">${esc(a.action)}</div>
+                                <div class="action-reason">${esc(a.reason || '')}</div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            ` : ''}
+        `;
+    }
+}
+
+// ── Util ──
+function esc(str) {
+    if (!str) return '';
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+}
+
+// ── Service Worker ──
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
