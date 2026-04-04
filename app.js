@@ -459,12 +459,58 @@ function renderProposalsArchive() {
                                 </div>
                             ` : ''}
                             ${p.reason ? `<div class="news-why" style="margin-top:8px">${esc(p.reason)}</div>` : ''}
+                            <button class="implement-btn" onclick="event.stopPropagation(); implementArchiveProposal(${di}, ${pi})">Claude Codeで実装</button>
                         </div>
                     </div>`;
                 }).join('')}
             </div>
         </div>
     `).join('');
+}
+
+function implementArchiveProposal(dayIndex, propIndex) {
+    const day = (proposalsData || [])[dayIndex];
+    if (!day) return;
+    const p = day.proposals[propIndex];
+    if (!p) return;
+
+    const steps = (p.how_to_implement || []).map((s, i) => `${i + 1}. ${s}`).join('\n');
+    const tools = (p.tools || []).join(', ');
+
+    const prompt = `以下の活用提案の実装を検討しています。
+
+【サービス名】${p.service || ''}
+【説明】${p.description || ''}
+【ターゲット】${p.target || ''}
+【価格帯】${p.price_range || ''}
+【工数】${p.effort || ''}
+【提案理由】${p.reason || ''}
+【営業ピッチ】${p.sales_pitch || ''}
+【具体例】${p.example || ''}
+【使用ツール】${tools}
+【実装ステップ案】
+${steps}
+
+---
+いきなり実装に入らないでください。
+まず「この提案はこんな感じで実装します」と計画を提示し、
+何か補足や修正はありますか？と確認してから進めてください。`;
+
+    const escaped = prompt.replace(/'/g, "'\\''");
+    const cmd = `claude '${escaped}'`;
+
+    navigator.clipboard.writeText(cmd).then(() => {
+        showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
+    }).catch(() => {
+        const ta = document.createElement('textarea');
+        ta.value = cmd;
+        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
+    });
 }
 
 function toggleArchiveDay(index) {
