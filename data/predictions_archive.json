@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-05",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "OpenClaw制限への対応策・代替手法の記事がZenn・noteで今週中に20件以上出る",
+          "confidence": "高",
+          "evidence": "記事ID460・459・407で大手メディア3社が報道。過去パターンから大手メディア報道→コミュニティ反応は1〜3日のタイムラグ。月曜〜火曜がピーク。",
+          "shisto_implication": "対応策の知見を素早くキャッチアップし、顧客にリスク情報として共有する。Claude API直接利用の設計指針を整理しておく。"
+        },
+        {
+          "prediction": "GEO/AEO関連の実践記事が複数のプラットフォームで出始める",
+          "confidence": "中",
+          "evidence": "記事ID457でGEO/AEOが紹介された。Google検索のAI Overview普及が進む中、SEOの次の概念としてマーケター・Web制作者の関心が高まる。ただし概念がまだ新しいため爆発的増加は来週〜再来週。",
+          "shisto_implication": "先行して実践知見を持っておけば、市場が本格化した際にサービスとして即座に提供できる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "Anthropicがさらなる料金体系変更（Claude Code新プランまたはAPI価格改定）を発表する",
+          "confidence": "高",
+          "evidence": "OpenClaw制限（的中した前回予測）の延長線上。Anthropicは段階的有料化を進めるパターンが確立。バイオテック買収の400億円の資金回収も必要であり、収益化圧力は増す一方。",
+          "shisto_implication": "Claude Code依存のリスクヘッジが急務。Gemma 4やGemini APIなどのオープン・低コスト選択肢を並行して検証しておくべき。"
+        },
+        {
+          "prediction": "AIコーディングツールの統合・連携が進み、「マルチツール構成」が標準になる",
+          "confidence": "中",
+          "evidence": "Claude Code・GitHub Copilot・Cursor・Codexが同時に機能拡張。Zennでは既に複数ツール比較・連携の記事が出ており、1ツール完結ではなく用途別使い分けの流れ。",
+          "shisto_implication": "「マルチAIツール最適構成」の構築サービスが新たな提案機会になる。単一ツール推しではなく、用途別最適化の知見が差別化要因。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "GEO/AEOがSEOと同等の重要性を持つマーケティング必須領域になる",
+          "confidence": "中",
+          "evidence": "AI検索（ChatGPT・Gemini・Perplexity）のシェアが拡大し続けており、Webサイトが「人間」ではなく「AI」に読まれる時代への移行は不可逆。構造化データの重要性は加速度的に増す。",
+          "shisto_implication": "GEO/AEO対応サービスを今から準備し、1年後に月額型の継続サービスとして確立する。Web制作の新たな収益柱になりうる。"
+        },
+        {
+          "prediction": "AI自動化サービスが「構築一括」から「月額運用型」にビジネスモデルが完全移行する",
+          "confidence": "高",
+          "evidence": "過去予測で2回連続同方向を確認（4/3、4/4）。推論コスト低下・非エンジニアの参入増加で構築の参入障壁が下がる一方、運用・チューニング需要は増加の一途。Anthropicの料金変更頻度の高さ自体が「運用対応」需要を生んでいる。",
+          "shisto_implication": "全サービスで月額保守契約の比率を50%以上にする目標を設定。構築は入口、運用が利益の本体という構造を今年中に確立する。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-04",
     "predictions": {
       "short_term": [
