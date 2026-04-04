@@ -388,13 +388,13 @@ body {
     border: none;
     color: var(--text-muted);
     cursor: pointer;
-    padding: 8px 12px;
+    padding: 8px 6px;
     transition: color 0.2s;
     -webkit-tap-highlight-color: transparent;
 }
 .nav-btn.active { color: var(--accent); }
-.nav-icon { font-size: 20px; }
-.nav-label { font-size: 11px; font-weight: 500; }
+.nav-icon { font-size: 18px; }
+.nav-label { font-size: 10px; font-weight: 500; }
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar { width: 4px; }
@@ -504,4 +504,28 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
     }
+}
+
+/* ── Proposals Archive ── */
+.archive-day {
+    margin-bottom: 8px;
+}
+.archive-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: var(--surface-hover);
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 14px;
+}
+.proposal-count {
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+.archive-proposals {
+    padding: 4px 0;
 }

@@ -5,6 +5,7 @@ let dailyData = null;
 let trendsData = null;
 let linkedinData = null;
 let reportData = null;
+let proposalsData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderHome();
     renderTrends();
     renderPredictions();
+    renderProposalsArchive();
     renderLinkedIn();
     renderReport();
     document.getElementById('headerDate').textContent = dailyData?.date || '';
@@ -45,11 +47,12 @@ async function loadJSON(path) {
 }
 
 async function loadAllData() {
-    [dailyData, trendsData, linkedinData, reportData] = await Promise.all([
+    [dailyData, trendsData, linkedinData, reportData, proposalsData] = await Promise.all([
         loadJSON('daily.json'),
         loadJSON('trends.json'),
         loadJSON('linkedin.json'),
         loadJSON('report.json'),
+        loadJSON('proposals.json'),
     ]);
 }
 
@@ -105,10 +108,10 @@ function renderHome() {
         proposalsEl.innerHTML = '<div class="empty-state">提案なし</div>';
     } else {
         proposalsEl.innerHTML = proposals.map((p, i) => `
-            <div class="proposal-item" onclick="toggleProposal(${i})" style="cursor:pointer">
+            <div class="proposal-item" onclick="toggleProposal('h${i}')" style="cursor:pointer">
                 <div class="proposal-header">
                     <div class="proposal-name">${esc(p.service || p.title || '')}</div>
-                    <span class="proposal-toggle" id="proposalToggle${i}">▼</span>
+                    <span class="proposal-toggle" id="proposalToggleh${i}">▼</span>
                 </div>
                 <div class="proposal-desc">${esc(p.description || '')}</div>
                 <div class="proposal-meta">
@@ -116,7 +119,7 @@ function renderHome() {
                     ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
                     ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
                 </div>
-                <div class="proposal-detail" id="proposalDetail${i}" style="display:none">
+                <div class="proposal-detail" id="proposalDetailh${i}" style="display:none">
                     ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
                     ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                     ${(p.how_to_implement && p.how_to_implement.length) ? `
@@ -333,6 +336,71 @@ function renderPredictionList(elId, items) {
     }).join('');
 }
 
+// ── Render: Proposals Archive ──
+function renderProposalsArchive() {
+    const el = document.getElementById('proposalsArchive');
+    const archive = proposalsData || [];
+    if (archive.length === 0) {
+        el.innerHTML = '<div class="empty-state">提案データなし</div>';
+        return;
+    }
+    el.innerHTML = archive.map((day, di) => `
+        <div class="archive-day">
+            <div class="archive-date" onclick="toggleArchiveDay(${di})" style="cursor:pointer">
+                <span>${esc(day.date)}</span>
+                <span class="proposal-count">${day.proposals.length}件</span>
+                <span class="proposal-toggle" id="archiveToggle${di}">${di === 0 ? '▲' : '▼'}</span>
+            </div>
+            <div class="archive-proposals" id="archiveDay${di}" style="display:${di === 0 ? 'block' : 'none'}">
+                ${day.proposals.map((p, pi) => {
+                    const uid = `${di}_${pi}`;
+                    return `
+                    <div class="proposal-item" onclick="toggleProposal('a${uid}')" style="cursor:pointer">
+                        <div class="proposal-header">
+                            <div class="proposal-name">${esc(p.service || p.title || '')}</div>
+                            <span class="proposal-toggle" id="proposalTogglea${uid}">▼</span>
+                        </div>
+                        <div class="proposal-desc">${esc(p.description || '')}</div>
+                        <div class="proposal-meta">
+                            ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
+                            ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
+                            ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
+                        </div>
+                        <div class="proposal-detail" id="proposalDetaila${uid}" style="display:none">
+                            ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
+                            ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
+                            ${(p.how_to_implement && p.how_to_implement.length) ? `
+                                <div class="proposal-steps-title">実装ステップ</div>
+                                <ol class="proposal-steps">
+                                    ${p.how_to_implement.map(s => `<li>${esc(s)}</li>`).join('')}
+                                </ol>
+                            ` : ''}
+                            ${(p.tools && p.tools.length) ? `
+                                <div class="proposal-tools">
+                                    ${p.tools.map(t => `<span class="proposal-tool-tag">${esc(t)}</span>`).join('')}
+                                </div>
+                            ` : ''}
+                            ${p.reason ? `<div class="news-why" style="margin-top:8px">${esc(p.reason)}</div>` : ''}
+                        </div>
+                    </div>`;
+                }).join('')}
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleArchiveDay(index) {
+    const el = document.getElementById(`archiveDay${index}`);
+    const toggle = document.getElementById(`archiveToggle${index}`);
+    if (el.style.display === 'none') {
+        el.style.display = 'block';
+        toggle.textContent = '▲';
+    } else {
+        el.style.display = 'none';
+        toggle.textContent = '▼';
+    }
+}
+
 // ── Render: LinkedIn ──
 function renderLinkedIn() {
     const el = document.getElementById('linkedinPosts');
@@ -459,9 +527,9 @@ function renderReport() {
 }
 
 // ── Toggle Proposal Detail ──
-function toggleProposal(index) {
-    const detail = document.getElementById(`proposalDetail${index}`);
-    const toggle = document.getElementById(`proposalToggle${index}`);
+function toggleProposal(id) {
+    const detail = document.getElementById(`proposalDetail${id}`);
+    const toggle = document.getElementById(`proposalToggle${id}`);
     if (detail.style.display === 'none') {
         detail.style.display = 'block';
         toggle.textContent = '▲';
