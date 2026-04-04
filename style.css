@@ -498,11 +498,16 @@ body {
         grid-column: 1 / -1;
     }
 
-    /* 予測タブ: 3カラム */
+    /* 予測タブ */
     .tab-content.active#tab-predictions {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
+    }
+    /* レビューとアーカイブは全幅 */
+    #tab-predictions .section-card:first-child,
+    #tab-predictions .section-card:last-child {
+        grid-column: 1 / -1;
     }
 }
 
@@ -528,4 +533,39 @@ body {
 }
 .archive-proposals {
     padding: 4px 0;
+}
+
+/* ── Prediction Review ── */
+.review-item {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--border);
+}
+.review-hit { border-left-color: var(--green); background: rgba(52, 211, 153, 0.06); }
+.review-miss { border-left-color: var(--red); background: rgba(248, 113, 113, 0.06); }
+.review-pending { border-left-color: var(--yellow); background: rgba(251, 191, 36, 0.06); }
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+.review-status {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+.status-hit { background: rgba(52, 211, 153, 0.2); color: var(--green); }
+.status-miss { background: rgba(248, 113, 113, 0.2); color: var(--red); }
+.status-pending { background: rgba(251, 191, 36, 0.2); color: var(--yellow); }
+.review-date { font-size: 11px; color: var(--text-muted); }
+.review-prediction { font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.review-comment { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.review-lesson {
+    font-size: 12px;
+    color: var(--accent);
+    padding-top: 4px;
+    border-top: 1px solid var(--border);
 }

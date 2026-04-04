@@ -6,6 +6,7 @@ let trendsData = null;
 let linkedinData = null;
 let reportData = null;
 let proposalsData = null;
+let predictionsArchiveData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -47,12 +48,13 @@ async function loadJSON(path) {
 }
 
 async function loadAllData() {
-    [dailyData, trendsData, linkedinData, reportData, proposalsData] = await Promise.all([
+    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData] = await Promise.all([
         loadJSON('daily.json'),
         loadJSON('trends.json'),
         loadJSON('linkedin.json'),
         loadJSON('report.json'),
         loadJSON('proposals.json'),
+        loadJSON('predictions_archive.json'),
     ]);
 }
 
@@ -311,10 +313,85 @@ function chartOptions(yLabel) {
 
 // ── Render: Predictions ──
 function renderPredictions() {
+    // 過去予測レビュー
+    const reviewEl = document.getElementById('predictionReview');
+    const reviews = dailyData?.prediction_review || [];
+    if (reviews.length === 0) {
+        reviewEl.innerHTML = '<div class="empty-state">レビューデータなし（明日以降に検証結果が表示されます）</div>';
+    } else {
+        reviewEl.innerHTML = reviews.map(r => {
+            const statusClass = r.status === '的中' ? 'hit' : r.status === '外れ' ? 'miss' : 'pending';
+            return `
+                <div class="review-item review-${statusClass}">
+                    <div class="review-header">
+                        <span class="review-status status-${statusClass}">${esc(r.status)}</span>
+                        <span class="review-date">${esc(r.original_date)}</span>
+                    </div>
+                    <div class="review-prediction">${esc(r.prediction)}</div>
+                    <div class="review-comment">${esc(r.review)}</div>
+                    ${r.lesson ? `<div class="review-lesson">${esc(r.lesson)}</div>` : ''}
+                </div>
+            `;
+        }).join('');
+    }
+
+    // 今日の予測
     const predictions = dailyData?.predictions || {};
     renderPredictionList('shortTermPredictions', predictions.short_term || []);
     renderPredictionList('midTermPredictions', predictions.mid_term || []);
     renderPredictionList('longTermPredictions', predictions.long_term || []);
+
+    // 予測アーカイブ
+    const archiveEl = document.getElementById('predictionsArchive');
+    const archive = predictionsArchiveData || [];
+    if (archive.length === 0) {
+        archiveEl.innerHTML = '<div class="empty-state">アーカイブなし</div>';
+    } else {
+        archiveEl.innerHTML = archive.map((day, di) => {
+            const preds = day.predictions || {};
+            const total = (preds.short_term || []).length + (preds.mid_term || []).length + (preds.long_term || []).length;
+            return `
+                <div class="archive-day">
+                    <div class="archive-date" onclick="togglePredArchive(${di})" style="cursor:pointer">
+                        <span>${esc(day.date)}</span>
+                        <span class="proposal-count">${total}件</span>
+                        <span class="proposal-toggle" id="predArchiveToggle${di}">${di === 0 ? '▲' : '▼'}</span>
+                    </div>
+                    <div id="predArchiveDay${di}" style="display:${di === 0 ? 'block' : 'none'}; padding:4px 0">
+                        ${renderArchivePredSection('短期', preds.short_term || [])}
+                        ${renderArchivePredSection('中期', preds.mid_term || [])}
+                        ${renderArchivePredSection('長期', preds.long_term || [])}
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+}
+
+function renderArchivePredSection(label, items) {
+    if (items.length === 0) return '';
+    return `<div style="margin-bottom:8px">
+        <div style="font-size:12px;color:var(--accent);font-weight:600;margin-bottom:4px">${label}</div>
+        ${items.map(p => {
+            const confClass = p.confidence === '高' ? 'high' : p.confidence === '中' ? 'mid' : 'low';
+            return `<div class="prediction-item">
+                <span class="prediction-confidence confidence-${confClass}">${esc(p.confidence || '中')}</span>
+                <div class="prediction-text">${esc(p.prediction)}</div>
+            </div>`;
+        }).join('')}
+    </div>`;
+}
+
+function togglePredArchive(index) {
+    const el = document.getElementById(`predArchiveDay${index}`);
+    const toggle = document.getElementById(`predArchiveToggle${index}`);
+    if (el.style.display === 'none') {
+        el.style.display = 'block';
+        toggle.textContent = '▲';
+    } else {
+        el.style.display = 'none';
+        toggle.textContent = '▼';
+    }
 }
 
 function renderPredictionList(elId, items) {
