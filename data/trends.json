@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T22:04:01.260122+09:00",
+  "updated": "2026-04-04T22:16:15.754741+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -7,45 +7,45 @@
     },
     {
       "date": "2026-04-01",
-      "count": 29
+      "count": 46
     },
     {
       "date": "2026-04-02",
-      "count": 34
+      "count": 41
     },
     {
       "date": "2026-04-03",
-      "count": 117
+      "count": 139
     },
     {
       "date": "2026-04-04",
-      "count": 106
+      "count": 163
     }
   ],
   "category_7d": [
     {
       "category": "AIエージェント・開発",
-      "count": 43
-    },
-    {
-      "category": "製品・サービス",
-      "count": 15
+      "count": 47
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 15
+      "count": 17
     },
     {
-      "category": "AI×ビジネス活用",
-      "count": 14
-    },
-    {
-      "category": "投資・市場動向",
-      "count": 7
+      "category": "製品・サービス",
+      "count": 13
     },
     {
       "category": "新モデル・リリース",
-      "count": 5
+      "count": 12
+    },
+    {
+      "category": "AI×ビジネス活用",
+      "count": 12
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 11
     },
     {
       "category": "規制・法律・倫理",
@@ -55,27 +55,27 @@
   "category_30d": [
     {
       "category": "AIエージェント・開発",
-      "count": 43
-    },
-    {
-      "category": "製品・サービス",
-      "count": 15
+      "count": 47
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 15
+      "count": 17
     },
     {
-      "category": "AI×ビジネス活用",
-      "count": 14
-    },
-    {
-      "category": "投資・市場動向",
-      "count": 7
+      "category": "製品・サービス",
+      "count": 13
     },
     {
       "category": "新モデル・リリース",
-      "count": 5
+      "count": 12
+    },
+    {
+      "category": "AI×ビジネス活用",
+      "count": 12
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 11
     },
     {
       "category": "規制・法律・倫理",
@@ -84,20 +84,28 @@
   ],
   "source_stats_7d": [
     {
+      "source": "note",
+      "count": 131
+    },
+    {
       "source": "Zenn",
       "count": 114
     },
     {
-      "source": "note",
-      "count": 87
-    },
-    {
       "source": "DeepSeek",
-      "count": 40
+      "count": 41
     },
     {
       "source": "ITmedia AI+",
       "count": 20
+    },
+    {
+      "source": "TechCrunch AI",
+      "count": 19
+    },
+    {
+      "source": "The Verge AI",
+      "count": 10
     },
     {
       "source": "Google AI",
@@ -109,7 +117,15 @@
     },
     {
       "source": "OpenAI",
-      "count": 4
+      "count": 5
+    },
+    {
+      "source": "Ars Technica AI",
+      "count": 3
+    },
+    {
+      "source": "blog.google",
+      "count": 3
     },
     {
       "source": "Meta AI",
@@ -120,38 +136,26 @@
       "count": 2
     },
     {
-      "source": "Microsoft AI",
+      "source": "VentureBeat",
       "count": 2
     },
     {
-      "source": "36Kr",
+      "source": "The Guardian",
       "count": 2
-    },
-    {
-      "source": "The New York Times",
-      "count": 2
-    },
-    {
-      "source": "NewsBytes",
-      "count": 1
-    },
-    {
-      "source": "Business Record",
-      "count": 1
-    },
-    {
-      "source": "morganlewis.com",
-      "count": 1
     }
   ],
   "ai_company_7d": [
     {
       "company": "Claude",
-      "count": 24
+      "count": 26
+    },
+    {
+      "company": "DeepSeek",
+      "count": 13
     },
     {
       "company": "Gemini",
-      "count": 9
+      "count": 10
     },
     {
       "company": "Copilot",
@@ -163,7 +167,7 @@
     },
     {
       "company": "ChatGPT / GPT",
-      "count": 3
+      "count": 4
     },
     {
       "company": "Cursor",
