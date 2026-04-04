@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T22:16:15.754741+09:00",
+  "updated": "2026-04-04T22:25:35.643021+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -25,11 +25,11 @@
   "category_7d": [
     {
       "category": "AIエージェント・開発",
-      "count": 47
+      "count": 48
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 17
+      "count": 16
     },
     {
       "category": "製品・サービス",
@@ -55,11 +55,11 @@
   "category_30d": [
     {
       "category": "AIエージェント・開発",
-      "count": 47
+      "count": 48
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 17
+      "count": 16
     },
     {
       "category": "製品・サービス",
