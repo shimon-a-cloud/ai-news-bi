@@ -1,301 +1,286 @@
 {
-  "date": "2026-04-03",
+  "date": "2026-04-04",
   "top_8": [
     {
-      "id": 27,
-      "title": "プログラミング未経験のオンライン秘書が、AIツールで収益化アプリを作った話",
-      "url": "https://zenn.dev/aimcreate/articles/64f0d1ace7deed",
+      "id": 193,
+      "title": "もう書かない。Issue一発、AIがコードを紡ぐ時代へ",
+      "url": "https://zenn.dev/nup/articles/202604041817-8d68f711",
       "source": "Zenn",
-      "summary": "非エンジニアがAIツールで収益化アプリを構築。Shistoの「AI自動化を売る」ビジネスの潜在顧客像そのもの。",
-      "why_selected": "Shistoのターゲット顧客（非エンジニアでAI活用したい層）の実態を知れる。提案の具体的根拠になる。"
+      "summary": "GitHub IssueからAIが自動でコードを生成するワークフローの実践。開発プロセスの根本的変革を示す。",
+      "why_selected": "Shistoの受注業務（HP制作・自動化開発）の生産性を直接向上させるワークフロー。1人運営の生産性を数倍にできる可能性。"
     },
     {
-      "id": 45,
-      "title": "Claude Agent SDK 実践ガイド——AIエージェントをPythonで自作する",
-      "url": "https://zenn.dev/bluecat/books/ab943d217f1f8f",
+      "id": 204,
+      "title": "Claude Codeが同じミスを繰り返すので「自分の説明書を書き換える」仕組みを作った",
+      "url": "https://zenn.dev/playpark/articles/ai-agent-learn-from-failure",
       "source": "Zenn",
-      "summary": "Claude Agent SDKの実践的な使い方をPythonで解説する書籍型コンテンツ。",
-      "why_selected": "Shistoの技術スタック（Claude Code中心）に直結。エージェント開発の新しいサービスメニューに繋がる。"
+      "summary": "Claude Codeのミス再発防止のため、失敗からCLAUDE.mdを自動更新する仕組みを構築。",
+      "why_selected": "Shistoが既にCLAUDE.mdを活用しており、自動改善の仕組みは直接適用可能。サービスとしても他社に提案できる。"
     },
     {
-      "id": 13,
-      "title": "「PC触らない」工場作業員をたった\"2カ月\"で「AI活用キーパーソン」に　ダイハツが進める地道なDX人材育成",
-      "url": "https://www.itmedia.co.jp/business/articles/2604/03/news018.html",
-      "source": "ITmedia AI+",
-      "summary": "ダイハツがPC未経験者を2ヶ月でAI活用人材に育成した事例。研修プログラムの設計が参考になる。",
-      "why_selected": "Shistoが顧客企業向けに「AI研修」を提案する際の成功事例・ベンチマークとして活用可能。"
-    },
-    {
-      "id": 24,
-      "title": "Claude Code Hooksでプロンプトインジェクション対策を実装した話",
-      "url": "https://zenn.dev/hareki_aoi/articles/claude-code-hooks-security",
+      "id": 197,
+      "title": "GitHub Copilot の Agent Skills を連鎖させて「生成→評価→改善」パイプラインを組んだら、業務が変わった",
+      "url": "https://zenn.dev/kosk_t/articles/ai-skill-pipeline-legacy-migration-guide",
       "source": "Zenn",
-      "summary": "Claude Code HooksによるセキュリティTips。実装レベルの具体的な対策手法。",
-      "why_selected": "Shistoが構築するClaude Codeベースのシステムのセキュリティ品質を直接向上できる。"
+      "summary": "Copilot Agent Skillsを連鎖させたパイプライン構築で業務を変革した事例。",
+      "why_selected": "AIエージェントのスキル連鎖は、Shistoの自動化サービスの高度化に直結。クライアント提案の差別化要素になる。"
     },
     {
-      "id": 38,
-      "title": "AGENTS.md完全ガイド：Claude Code・Gemini CLI・Cursorを1ファイルで統一管理する",
-      "url": "https://zenn.dev/devken/articles/agents-md-ai-cli-guide",
+      "id": 194,
+      "title": "長尺動画を1クリックでショート10本に変換——Opus Clipを使えばTikTok・Reels・Shortsが全部自動で揃う",
+      "url": "https://zenn.dev/firstfukugyo/articles/8609c1f8d7d2de",
       "source": "Zenn",
-      "summary": "複数AIコーディングツールをAGENTS.mdで統一管理する方法。マルチツール運用の標準化手法。",
-      "why_selected": "Claude Code中心の開発フローをさらに効率化するための直接的なナレッジ。顧客向けの設定テンプレートにもなる。"
+      "summary": "Opus Clipで長尺動画からショート動画10本を自動生成。SNSマルチプラットフォーム対応。",
+      "why_selected": "Shistoの受注領域であるSNS運用に直結。クライアントの動画コンテンツを効率的にショート化するサービスとして提案可能。"
     },
     {
-      "id": 8,
-      "title": "Microsoft、日本にAI投資1兆6000億円　さくら・ソフトバンクとAIインフラ共同開発、日本の研究者に助成も",
-      "url": "https://www.itmedia.co.jp/aiplus/articles/2604/03/news083.html",
-      "source": "ITmedia AI+",
-      "summary": "Microsoftの日本AI投資が1.6兆円規模に。AIインフラの国内整備が加速。",
-      "why_selected": "日本のAI市場拡大を裏付ける大型ニュース。Shistoの営業トークで「市場の追い風」として引用可能。"
-    },
-    {
-      "id": 28,
-      "title": "【Dify】Outlook返信をAIが自動生成し、承認すれば送信するフローをつくってみた",
-      "url": "https://zenn.dev/fusic/articles/224e2388cd81b9",
+      "id": 208,
+      "title": "日本株を「透視」したくて、J-Quants + EDINET + AIのSaaSを一人で作った記録",
+      "url": "https://zenn.dev/aladdin_1211/articles/f9ff56458e67bf",
       "source": "Zenn",
-      "summary": "DifyでOutlookメール返信を自動化する承認フロー付きシステムの構築事例。",
-      "why_selected": "メール自動化はShistoが即座に横展開できるサービスメニュー。実装パターンが参考になる。"
+      "summary": "1人でAI SaaSを構築した実践記録。J-Quants・EDINET・AIを組み合わせたプロダクト開発。",
+      "why_selected": "1人運営でSaaSを構築した先行事例として、Shistoのビジネスモデルの参考になる。技術スタック選定や収益化のヒントが得られる。"
     },
     {
-      "id": 12,
-      "title": "Google、エージェント特化の「Gemma 4」をApache 2.0で公開",
-      "url": "https://www.itmedia.co.jp/aiplus/articles/2604/03/news062.html",
-      "source": "ITmedia AI+",
-      "summary": "Googleがエージェント用途に最適化したオープンモデルGemma 4をApache 2.0で公開。",
-      "why_selected": "無料で使えるエージェント特化モデル。Shistoの「原則無料ツール」方針に合致し、コスト削減の武器になる。"
+      "id": 229,
+      "title": "Claude Codeの致命的弱点を克服する：「トークン節約」と「コンテキスト記憶」のトレードオフと外部化戦略",
+      "url": "https://zenn.dev/heki1224/articles/4fe703f186c5d7",
+      "source": "Zenn",
+      "summary": "Claude Codeのトークン消費と記憶保持のトレードオフを分析し、外部化戦略を提案。",
+      "why_selected": "ShistoはClaude Codeをコアツールとして使用。コスト最適化は事業の利益率に直結する重要テーマ。"
+    },
+    {
+      "id": 220,
+      "title": "AIエージェントフレームワーク比較【LangChain vs CrewAI vs AutoGen】実務で選ぶための完全ガイド【2026年最新】",
+      "url": "https://zenn.dev/agdexai/articles/df2ed5e8ad1fc3",
+      "source": "Zenn",
+      "summary": "LangChain・CrewAI・AutoGenの実務向け比較ガイド。用途別の選定基準を提示。",
+      "why_selected": "Shistoが提案する自動化サービスのフレームワーク選定に直結。クライアント向け提案の技術的裏付けになる。"
+    },
+    {
+      "id": 206,
+      "title": "\"システム屋さん\"という職業が終わるのを、自分は目撃した――Claude Code 導入後、フリーランスエンジニアが感じた本当の恐怖",
+      "url": "https://zenn.dev/moumu_pure/articles/2026-04-04-claude-code-engineer-fear",
+      "source": "Zenn",
+      "summary": "Claude Code導入後、フリーランスエンジニアが感じた職業の変化への恐怖と考察。",
+      "why_selected": "Shistoの営業戦略に重要。AIで仕事が変わるという危機感を持つ企業・個人がShistoの潜在顧客。市場のマインドを理解するのに有用。"
     }
   ],
-  "industry_overview": "2026年4月第1週、AI業界は「エージェント開発の実用化」と「大型投資の継続」という2つの軸で動いている。Googleがエージェント特化のGemma 4をオープンソースで公開し、MicrosoftがAgent Framework V1をリリースするなど、AIエージェントの開発基盤が急速に整備されつつある。これにより、個人開発者や中小企業でも本格的なAIエージェントを構築できる環境が整いつつある。\n\nインフラ投資面では、Microsoftの日本向け1.6兆円投資が最大のニュースだ。さくらインターネット・ソフトバンクとの共同開発により、日本国内のAIインフラが大幅に強化される。国立情報学研究所の国産LLM公開と合わせ、日本のAIエコシステムが本格的に立ち上がりつつある。\n\nClaude Code関連では、Hooks・Memory・Skill・MCPサーバーなど、拡張機能を使いこなすユーザーが急増している。弁護士がMCPサーバーを自作する、非エンジニアがAIで収益化アプリを作るなど、「専門家×AI」の組み合わせで新しい価値が生まれている。これはShistoのビジネスモデル（AI自動化を非エンジニアに提供）の市場が拡大していることを示す。\n\n一方で、AIコーディングの品質問題（本番で壊れるバグの増加）やAI生成コンテンツの著作権問題（偽本問題）など、実用化に伴うリスクも顕在化している。ガートナーは2030年までにLLM推論コストが90%以上削減されると予測しており、コスト面のハードルは今後さらに下がる見通しだ。\n\nビジネス活用の面では、ダイハツのDX人材育成（2ヶ月で非IT人材をAI活用人材に）、東京ガスのAI顧客基盤（1300万人向けパーソナライゼーション）、ChatGPTによる営業提案書の時短（1時間→15分）など、具体的なROIが見える事例が増えている。「AIを使うべき」から「AIでこれだけ削減できた」へと、議論のフェーズが完全に移行した。",
+  "industry_overview": "2026年4月4日のAI業界は、Claude Codeエコシステムの急速な成熟が最大の特徴である。本日の50記事中、約15件がClaude Code関連であり、ハーネスエンジニアリング（CLAUDE.mdの最適化やスキル設計）、トークン最適化、長期記憶活用、自己学習機構など、単なる利用を超えた「運用・最適化」フェーズに入っている。これはClaude Codeがプロフェッショナルツールとして定着したことを意味する。\n\n海外ニュースではDeepSeek V4がHuaweiチップで稼働するという報道が大量に出ており、中国AI勢の半導体自立の動きが加速している。Google Gemma 4のオープンソース化もDeepSeekへの開発者流出への対抗策として注目される。AIモデルの競争は価格からエコシステムの争いに移行しつつある。\n\nAIエージェントフレームワークの成熟も顕著だ。LangChain・CrewAI・AutoGenの比較記事や272種のフレームワークまとめが出ており、選択肢が爆発的に増加。実務での選定ガイドが求められる段階に入った。同時に「Issue一発でAIがコード生成」「GitHub CopilotのAgent Skills連鎖」など、開発ワークフロー自体がAI前提で再設計される動きが加速。\n\n1人開発者によるSaaS構築事例も増えており、AIを活用した個人・少人数チームの起業が現実的な選択肢として認知されている。「システム屋の終焉」を語る記事が象徴するように、従来型のSI・開発受託は転換期にあり、AI自動化を武器にした新しいビジネスモデルへの移行が業界全体で進行中。",
   "trends": [
     {
-      "topic": "AIエージェント開発基盤の成熟",
-      "description": "Gemma 4（エージェント特化・OSS）、Microsoft Agent Framework V1、Claude Agent SDKなど、エージェント開発のためのフレームワーク・モデルが一気に正式版レベルに到達。AGENTS.mdによるマルチツール統一管理も標準化しつつある。",
-      "why": "各社がエージェントをAIの次のキラーアプリと位置づけ、開発者獲得競争が激化しているため。2025年後半のMCPプロトコル標準化がトリガーとなり、ツール連携の基盤が整ったことで、その上に乗るエージェントの開発競争が本格化。",
-      "shisto_impact": "Claude Agent SDKやGemma 4を使った「業務特化エージェント構築サービス」を新メニューに追加できる。顧客の定型業務を自動化するエージェントを、低コストかつ短期間で開発可能に。"
+      "topic": "Claude Codeハーネスエンジニアリングの台頭",
+      "description": "CLAUDE.mdの最適化、スキル設計、フロントマター管理、トークン節約など、Claude Codeの運用・最適化を体系的に行う「ハーネスエンジニアリング」が新しい専門領域として確立されつつある。本日だけで5社の解釈比較記事やOSSツール比較記事が出ている。",
+      "why": "Claude Codeの利用が本格化し、単に使うだけでなく「いかに効率的に使うか」が生産性の差を生むようになったため。トークンコストの増大も最適化需要を後押し。",
+      "shisto_impact": "Shistoが既に実践しているCLAUDE.md運用ノウハウは、そのまま「Claude Code導入コンサルティング」として有料サービス化できる。先行者優位がある。"
     },
     {
-      "topic": "非エンジニアのAI実装者化",
-      "description": "プログラミング未経験者がAIツールでアプリを作り収益化する、工場作業員が2ヶ月でAI活用者になるなど、「AIを使う側」のハードルが急激に下がっている。",
-      "why": "Claude Code・Cursor・Difyなどのノーコード/ローコードAIツールが成熟し、プロンプトだけで実用的なシステムが構築できるようになったため。",
-      "shisto_impact": "Shistoの最大の商機。非エンジニアが「やりたいことはあるが自分では作れない」状態は、まさにShistoが埋めるべきギャップ。AI研修＋構築代行のセット販売が有効。"
+      "topic": "AIエージェントのスキル連鎖・パイプライン化",
+      "description": "GitHub CopilotのAgent Skills連鎖、Issue駆動のコード自動生成など、AIエージェントを単発ではなく連鎖・パイプラインとして使う手法が普及。",
+      "why": "単一のAIタスクでは業務全体の自動化に限界があり、複数AIスキルを組み合わせた「生成→評価→改善」のループが求められるようになった。",
+      "shisto_impact": "クライアントへの提案を「単発自動化」から「業務パイプライン自動化」にアップグレードできる。単価向上と継続契約につながる。"
     },
     {
-      "topic": "Claude Code エコシステムの急拡大",
-      "description": "Hooks、Memory、Skill、MCPサーバーなどClaude Codeの拡張機能を活用した事例記事が急増。セキュリティ対策、長期記憶、プロンプト圧縮など、実務レベルのノウハウが蓄積されている。",
-      "why": "Claude Codeが「コーディングAI」から「業務自動化プラットフォーム」へと進化し、開発者以外のユースケースが爆発的に増えたため。",
-      "shisto_impact": "Shistoの中核技術であるClaude Codeの市場認知度とエコシステムが拡大。競合も増えるが、早期から実績を積んでいるShistoは先行者優位を活かせる。"
+      "topic": "1人開発者によるAI SaaS構築",
+      "description": "J-Quants+EDINET+AIのSaaS、AIニュースダッシュボード等、1人でAIを活用したプロダクトを構築・運用する事例が増加。",
+      "why": "Claude Code等のコーディングAIの成熟により、1人でもフルスタックなプロダクト開発が現実的になった。開発コストの劇的低下。",
+      "shisto_impact": "Shisto自身の事業モデルそのもの。受託だけでなく、自社プロダクト（AIニュースBIなど）のSaaS化を検討する好機。"
     },
     {
-      "topic": "AI推論コストの劇的低下予測",
-      "description": "ガートナーが2030年までに1兆パラメータLLMの推論コストが90%以上削減と予測。Gemini APIのFlex階層（50%オフ）、オンデバイスAIによるコスト削減事例など、複数のアプローチで低コスト化が進行。",
-      "why": "ハードウェア最適化（専用チップ）、ソフトウェア最適化（量子化・蒸留）、ビジネスモデル最適化（階層化料金）の3方向から同時にコスト削減が進んでいるため。",
-      "shisto_impact": "AIサービスの原価が下がることで利益率が向上する。また「AIは高い」という顧客の心理的障壁が下がり、中小企業への提案がしやすくなる。"
+      "topic": "動画コンテンツのAI自動生成・編集",
+      "description": "Opus Clipによる長尺→ショート動画自動変換が注目。SNSマルチプラットフォーム対応の動画コンテンツ量産が容易に。",
+      "why": "TikTok・Reels・Shortsの影響力拡大に伴い、動画コンテンツの需要が増加。しかし制作コストが障壁であり、AI自動化ツールがその壁を下げた。",
+      "shisto_impact": "SNS運用受注の付加価値として動画コンテンツ自動生成を追加できる。既存クライアントへのアップセル機会。"
     }
   ],
   "business_proposals": [
     {
-      "service": "業務メール自動返信システム構築",
-      "description": "Dify + Claude APIを使い、受信メールに対するAI返信案を自動生成。承認ボタンを押すだけで送信されるフローを構築。",
-      "target": "中小企業の営業部門・カスタマーサポート（RAYUP・KFJから展開）",
-      "price_range": "初期構築15〜25万円 + 月額保守2〜3万円",
-      "effort": "構築20〜30時間",
-      "reason": "記事ID28でDify×Outlook自動返信の具体的な実装パターンが公開された。技術的な実現性が確認済みで、すぐに横展開可能。",
+      "service": "Claude Code導入・最適化コンサルティング",
+      "description": "Claude Codeの導入から、CLAUDE.md設計、ハーネスエンジニアリング、トークン最適化まで一括でセットアップ。クライアントの開発チームがAIコーディングを最大限活用できる環境を構築。",
+      "target": "開発チーム5〜30人規模のIT企業・スタートアップ",
+      "price_range": "初期セットアップ15〜30万円 + 月額サポート5万円",
+      "effort": "初期構築3〜5日、月次サポート2〜3時間",
+      "reason": "本日だけでClaude Code関連記事が15件以上。ハーネスエンジニアリングの需要が爆発的に伸びているが、体系的に提供できるサービスはまだ少ない。",
       "how_to_implement": [
-        "顧客のメール運用フローをヒアリングし、返信テンプレートと判断基準を整理",
-        "DifyでメールトリガーのワークフローとClaude API連携を構築",
-        "承認UIをSlackまたはLINEで実装（ボタン1つで送信）",
-        "1週間のテスト運用で返信品質をチューニング",
-        "運用マニュアルを作成し引き渡し"
+        "自社のCLAUDE.md運用ノウハウをテンプレート化・ドキュメント化する",
+        "トークン最適化・コンテキスト管理のベストプラクティス集を作成する",
+        "Zennに実績記事を3本投稿して認知を獲得する",
+        "初回無料診断（30分）→有料セットアップの導線を作る"
       ],
       "tools": [
-        "Dify",
-        "Claude API",
-        "Slack/LINE API",
-        "Gmail/Outlook API"
+        "Claude Code",
+        "CLAUDE.md",
+        "GitHub"
       ],
-      "sales_pitch": "メール返信にかかる1日30分を、AIが下書き→ボタン1つで送信に変えます。月40時間の削減が可能です。",
-      "example": "例：不動産会社の問い合わせ対応で、返信作成時間を1件5分→30秒に短縮。月100件で約7時間削減。"
+      "sales_pitch": "御社の開発チームのClaude Code活用を最適化し、トークンコスト30%削減と開発速度2倍を実現します",
+      "example": "例：10人開発チームのClaude Code環境を最適化し、月間トークンコスト15万円削減、PR作成速度2倍"
     },
     {
-      "service": "AI活用キーパーソン育成研修（2ヶ月プログラム）",
-      "description": "ダイハツ事例を参考に、非IT人材をAI活用人材に育成する2ヶ月間のオンライン研修プログラム。",
-      "target": "製造業・建設業・畜産業の中小企業（江田畜産から展開）",
-      "price_range": "1人あたり10〜15万円（3〜5名のグループ研修で30〜60万円）",
-      "effort": "プログラム設計20時間 + 運営月8時間",
-      "reason": "記事ID13でダイハツの2ヶ月育成事例が報告され、非IT人材向けAI研修の市場ニーズが実証された。",
+      "service": "SNS動画コンテンツ自動量産パッケージ",
+      "description": "クライアントの既存動画・セミナー映像をOpus Clip等で自動的にショート動画に変換し、TikTok・Reels・Shorts向けに最適化して納品。",
+      "target": "セミナー・イベントを開催する中小企業、飲食・美容・不動産業",
+      "price_range": "月額3〜8万円（月10〜30本のショート動画生成）",
+      "effort": "初期設定2時間、月次運用3〜5時間",
+      "reason": "Opus Clipの記事が注目されており、動画ショート化の需要と供給のギャップが大きい。SNS運用の既存受注と組み合わせやすい。",
       "how_to_implement": [
-        "ChatGPT/Claude基礎→業務プロンプト設計→自動化構築の3段階カリキュラムを設計",
-        "週1回90分のオンラインセッション（Zoom）+ 週次課題を設定",
-        "受講者の実業務から題材を選び、研修中に実際に使えるプロンプトを作成",
-        "最終成果物として「業務AI活用マニュアル」を受講者自身が作成"
+        "Opus Clipの無料プランで検証し、ワークフローを確立する",
+        "既存クライアント（RAYUP等）の素材で実績サンプルを作成する",
+        "自動キャプション付加・サムネイル最適化の手順を標準化する",
+        "月次レポートのテンプレートを作成し、効果測定まで含めて提案する"
       ],
       "tools": [
-        "ChatGPT",
+        "Opus Clip",
+        "Canva",
+        "各SNSプラットフォーム"
+      ],
+      "sales_pitch": "御社のセミナー動画1本から、TikTok・Reels・Shorts用ショート動画を10本自動生成し、SNS露出を10倍にします",
+      "example": "例：不動産会社の物件紹介動画をショート化し、Reelsで月間リーチ5万→50万に拡大"
+    },
+    {
+      "service": "Issue駆動AI開発ワークフロー構築",
+      "description": "GitHub IssueからAIが自動でコードを生成・テスト・PRを作成する開発ワークフローを構築。小規模チームの開発生産性を劇的に向上。",
+      "target": "開発チーム3〜10人の受託開発会社・スタートアップ",
+      "price_range": "構築一式20〜40万円",
+      "effort": "構築5〜7日",
+      "reason": "「Issue一発でAIがコード生成」の記事が話題。開発プロセスのAI化需要は高いが、設定・運用ノウハウが不足している企業が多い。",
+      "how_to_implement": [
+        "GitHub Actions + Claude Code CLIの連携テンプレートを作成する",
+        "Issue→コード生成→テスト→PR作成のパイプラインを自社で実証する",
+        "セキュリティ・コードレビューのガードレールを組み込む",
+        "導入事例としてZennに記事を投稿し、リード獲得する"
+      ],
+      "tools": [
+        "GitHub Actions",
+        "Claude Code",
+        "GitHub Copilot"
+      ],
+      "sales_pitch": "Issueを書くだけでAIがコードを生成・テスト・PR作成まで自動化し、エンジニアの工数を50%削減します",
+      "example": "例：5人の受託開発チームで月40時間の定型コーディング作業を自動化"
+    },
+    {
+      "service": "AIプロフィール・営業資料自動生成サービス",
+      "description": "AIを活用して、転職・副業・SNS向けのプロフィール文や営業資料を高品質に自動生成。テンプレート化して効率的に量産。",
+      "target": "個人事業主、副業希望者、転職活動中の個人、中小企業の営業部門",
+      "price_range": "1件3,000〜10,000円、月額パック15,000円（5件）",
+      "effort": "テンプレート構築3時間、1件あたり30分",
+      "reason": "noteの記事でAI×プロフィール作成代行が月3万円稼げる副業として紹介されており、市場ニーズが確認されている。Shistoの文章生成ノウハウを活用可能。",
+      "how_to_implement": [
+        "業種別プロフィールテンプレートをClaude Codeで作成する",
+        "ヒアリングシート→AI生成→人間レビューの3ステップワークフローを確立する",
+        "ココナラ等のプラットフォームに出品してテスト販売する"
+      ],
+      "tools": [
         "Claude",
-        "Zoom",
-        "Google Slides",
-        "Notion"
+        "Google Docs",
+        "ココナラ"
       ],
-      "sales_pitch": "PC苦手な社員でも2ヶ月でAIを使いこなせるようになります。研修中に作ったプロンプトはそのまま業務で使えます。",
-      "example": "例：畜産業の事務担当者が飼料発注のデータ整理をAIで自動化し、月10時間の削減を達成。"
-    },
-    {
-      "service": "営業提案書AI自動生成システム",
-      "description": "顧客情報と商品情報をインプットすると、Claude APIがカスタマイズされた提案書を自動生成するシステム。",
-      "target": "営業チームを持つ中小企業（RAYUP等の取引先から展開）",
-      "price_range": "初期構築10〜20万円 + 月額保守1〜2万円",
-      "effort": "構築15〜20時間",
-      "reason": "記事ID48で「提案書作成が1時間→15分」の事例が報告。具体的なROIが明確で、営業先に刺さりやすい。",
-      "how_to_implement": [
-        "顧客の既存提案書を10件分析し、構成パターンとトーンを抽出",
-        "Claude APIにカスタムプロンプトを設計（会社情報・商品データベースを参照）",
-        "Google Sheets入力→提案書PDF出力のワークフローをGAS+Claude APIで構築",
-        "出力テンプレートのデザインを整え、1週間テスト運用"
-      ],
-      "tools": [
-        "Claude API",
-        "Google Apps Script",
-        "Google Sheets",
-        "Google Docs"
-      ],
-      "sales_pitch": "営業担当が提案書作成にかける1時間を15分に短縮。月20件で約15時間の削減、その分を商談に使えます。",
-      "example": "例：IT機器販売会社の営業部で、顧客別カスタム提案書を月20件自動生成。営業1人あたり月15時間を商談に振り替え。"
-    },
-    {
-      "service": "Claude Code業務エージェント構築",
-      "description": "Claude Agent SDKを使い、顧客の定型業務を自動実行するカスタムAIエージェントを構築。",
-      "target": "ITリテラシーの高い中小企業・スタートアップ",
-      "price_range": "初期構築20〜40万円 + 月額保守3〜5万円",
-      "effort": "構築30〜50時間",
-      "reason": "記事ID45でClaude Agent SDKの実践ガイドが公開され、エージェント構築の技術的ハードルが大幅に低下。記事ID12のGemma 4で無料のローカルモデルも選択肢に。",
-      "how_to_implement": [
-        "顧客の自動化したい業務フローを詳細にヒアリング・文書化",
-        "Claude Agent SDKでエージェントを設計し、MCPサーバーで外部ツールと接続",
-        "AGENTS.mdで設定を統一管理し、テスト・デバッグを実施",
-        "監視・ログ機能を実装し、異常時のアラート設定",
-        "運用マニュアル作成と2週間の伴走サポート"
-      ],
-      "tools": [
-        "Claude Agent SDK",
-        "MCP",
-        "Python",
-        "AGENTS.md"
-      ],
-      "sales_pitch": "御社の定型業務を24時間自動で回すAIエージェントを構築します。人が判断すべき場面だけ通知が届く仕組みです。",
-      "example": "例：EC事業者の在庫確認・発注提案・レポート生成を自動化し、担当者の日次作業3時間を15分に短縮。"
+      "sales_pitch": "あなたの強みを最大限に引き出すプロフィール文を、AIと人間のレビューで高品質に仕上げます",
+      "example": "例：転職活動中のエンジニアのLinkedInプロフィールを最適化し、スカウト率3倍"
     }
   ],
   "learning_suggestions": [
     {
-      "topic": "Claude Agent SDK",
-      "why": "記事ID45で実践ガイドが公開された。Shistoの新サービスメニュー「業務エージェント構築」の技術基盤となる。今が学び時。",
+      "topic": "Claude Codeハーネスエンジニアリングの体系化",
+      "why": "本日の記事群でハーネスエンジニアリングが新しい専門領域として確立されつつある。Shistoが先行者として体系的知識を持つことで、コンサル事業の差別化が可能。",
       "resources": [
-        "https://zenn.dev/bluecat/books/ab943d217f1f8f",
-        "Anthropic公式ドキュメント（Claude Agent SDK）"
+        "https://zenn.dev/kosk_t/articles/claude-code-harness-audit-skill",
+        "https://zenn.dev/purple_matsu1/articles/20260402-takt-adoption",
+        "https://zenn.dev/heki1224/articles/4fe703f186c5d7"
       ],
-      "time_estimate": "4〜6時間"
+      "time_estimate": "3時間"
     },
     {
-      "topic": "Claude Code Hooksによるセキュリティ強化",
-      "why": "記事ID24で具体的な実装パターンが公開された。顧客にシステムを納品する際のセキュリティ品質を担保するために必須の知識。",
+      "topic": "AIエージェントフレームワーク（CrewAI中心）",
+      "why": "クライアント向け自動化提案の幅を広げるため。Claude Code単体でなく、マルチエージェントによるパイプライン構築が次の差別化ポイント。",
       "resources": [
-        "https://zenn.dev/hareki_aoi/articles/claude-code-hooks-security"
+        "https://zenn.dev/agdexai/articles/df2ed5e8ad1fc3",
+        "CrewAI公式ドキュメント: https://docs.crewai.com/"
       ],
-      "time_estimate": "2〜3時間"
+      "time_estimate": "4時間"
     },
     {
-      "topic": "コンテキスト・エンジニアリング",
-      "why": "記事ID25で体系的ガイドが公開された。エージェントやプロンプトの品質を左右する「AIへの情報設計」を理解することで、全サービスの品質が向上する。",
+      "topic": "Opus Clip等の動画AI自動編集ツール",
+      "why": "SNS運用受注の付加価値として動画コンテンツ自動生成を追加するため。既存クライアントへのアップセルに直結。",
       "resources": [
-        "https://zenn.dev/shunsuke_stack/articles/context-engineering-guide"
+        "https://zenn.dev/firstfukugyo/articles/8609c1f8d7d2de",
+        "Opus Clip公式: https://www.opus.pro/"
       ],
-      "time_estimate": "3〜4時間"
-    },
-    {
-      "topic": "Difyによるワークフロー構築",
-      "why": "記事ID22・28でDifyの実践事例が複数報告された。メール自動化などの顧客向けサービスの実装手段として、Difyは無料で使えるローコードツール。",
-      "resources": [
-        "https://zenn.dev/fusic/articles/224e2388cd81b9",
-        "https://zenn.dev/upgradetech/articles/178a3d87e6beb9",
-        "Dify公式ドキュメント"
-      ],
-      "time_estimate": "4〜5時間"
+      "time_estimate": "2時間"
     }
   ],
   "weekly_actions": [
     {
-      "action": "Claude Agent SDKの実践ガイド（記事ID45）を読み、サンプルエージェントを1つ構築する",
+      "action": "Claude Code導入コンサルの提案資料を作成する（自社ノウハウをテンプレート化）",
       "priority": "high",
-      "reason": "エージェント構築サービスの技術基盤。今週中にプロトタイプを作れば、来週には顧客向けデモが可能。",
-      "deadline_hint": "2026-04-05（土）まで"
+      "reason": "ハーネスエンジニアリング需要が急増中。先行者優位を活かすには今週中に形にすべき。",
+      "deadline_hint": "2026-04-06（日曜まで）"
     },
     {
-      "action": "Claude Code Hooksのセキュリティ記事（ID24）を読み、既存システムに適用する",
+      "action": "Opus Clipを実際に試し、既存クライアントの素材でサンプル動画を3本作成する",
       "priority": "high",
-      "reason": "現在稼働中のLinkedIn投稿自動生成・AIニュースBIなどのセキュリティを強化。顧客システムの品質保証にも直結。",
-      "deadline_hint": "2026-04-04（金）まで"
+      "reason": "SNS運用受注の単価向上に直結。実物サンプルがあれば提案が通りやすい。",
+      "deadline_hint": "2026-04-07（来週月曜まで）"
     },
     {
-      "action": "営業提案書AI自動生成のプロトタイプをGAS+Claude APIで構築する",
+      "action": "Zennに「Claude Code運用最適化の実践」記事を投稿する",
       "priority": "medium",
-      "reason": "記事ID48のROI（1時間→15分）は営業先に刺さる数字。RAYUPへの提案材料になる。",
-      "deadline_hint": "2026-04-06（日）まで"
+      "reason": "本日のClaude Code関連記事の盛り上がりに便乗してShistoの認知を獲得。リード獲得チャネルとして有効。",
+      "deadline_hint": "2026-04-08（来週火曜まで）"
     },
     {
-      "action": "AGENTS.mdの統一管理ガイド（記事ID38）を読み、自社プロジェクトに適用する",
+      "action": "AIエージェントフレームワーク（LangChain/CrewAI/AutoGen）の比較記事を読み、自社ユースケースに最適なものを選定する",
       "priority": "medium",
-      "reason": "Claude Code・Cursorなどマルチツール運用の効率化。顧客納品物のテンプレートにもなる。",
-      "deadline_hint": "2026-04-06（日）まで"
+      "reason": "クライアント提案の技術的幅を広げるため。次の受注案件で活用可能。",
+      "deadline_hint": "2026-04-09（来週水曜まで）"
     },
     {
-      "action": "ダイハツのDX人材育成事例（記事ID13）を読み、AI研修プログラムの骨子を作成する",
-      "priority": "low",
-      "reason": "江田畜産向けのAI研修提案の具体的な材料になる。来週以降に提案書としてまとめる。",
-      "deadline_hint": "2026-04-09（水）まで"
+      "action": "既存クライアント（RAYUP・江田畜産・KFJ）に動画ショート化サービスの提案メールを送る",
+      "priority": "medium",
+      "reason": "既存顧客へのアップセルが最も効率の良い売上拡大策。",
+      "deadline_hint": "2026-04-10（来週木曜まで）"
     }
   ],
   "predictions": {
     "short_term": [
       {
-        "prediction": "Gemma 4を使ったエージェント開発の実践記事・チュートリアルが大量に出る",
+        "prediction": "Claude Codeのハーネスエンジニアリング関連のOSSツール・記事がさらに増加し、ベストプラクティスの標準化が進む",
         "confidence": "高",
-        "evidence": "記事ID12でGemma 4がApache 2.0で公開された直後。オープンソースモデルは公開後1〜2週間で活用記事が爆発的に増えるパターン。",
-        "shisto_implication": "Gemma 4をローカル実行する低コストエージェントの構築パターンを早めに学んでおくと、コスト面での差別化ができる。"
+        "evidence": "本日だけで5件以上のハーネスエンジニアリング関連記事。TAKTなどのOSSツールも登場しており、エコシステムが形成中。",
+        "shisto_implication": "標準化される前に自社ノウハウをコンテンツ化・サービス化すべき。標準化後は差別化が困難になる。"
       },
       {
-        "prediction": "Claude Code Hooksやskillのセキュリティ・品質向上系の記事がさらに増加",
+        "prediction": "DeepSeek V4のHuaweiチップでのリリースが正式発表される",
         "confidence": "高",
-        "evidence": "記事ID24・50でHooks・Skillの実践記事が出始めている。エコシステム成熟期に入り、「作る」から「安全に運用する」フェーズへ。",
-        "shisto_implication": "セキュリティ対応済みのClaude Codeシステムを提供できることが、競合との差別化ポイントになる。"
+        "evidence": "本日だけで10件以上のDeepSeek V4×Huawei関連報道。複数ソースが一致。",
+        "shisto_implication": "直接的影響は少ないが、中国AI勢の台頭によりAIサービス価格競争が激化する可能性を意識しておく。"
       }
     ],
     "mid_term": [
       {
-        "prediction": "「AIエージェント構築代行」が新しいサービスカテゴリとして確立する",
+        "prediction": "AIエージェントの業務パイプライン化が標準的な開発手法として定着し、「AI開発ワークフロー構築」が新しいサービスカテゴリになる",
         "confidence": "中",
-        "evidence": "Microsoft Agent Framework V1、Claude Agent SDK、Gemma 4のリリースにより、エージェント開発の技術基盤が整った。ダイハツ事例のような大企業の成功事例が中小企業にも波及する。",
-        "shisto_implication": "今のうちにエージェント構築の実績を3〜5件積んでおくと、市場が本格化した際に先行者として認知される。"
+        "evidence": "GitHub Copilot Agent Skills連鎖、Issue駆動コード生成など、パイプライン化の事例が急増。フレームワークも成熟期に入っている。",
+        "shisto_implication": "パイプライン構築サービスを早期にメニュー化し、実績を積むことで1〜3ヶ月後の需要増に対応できる。"
       },
       {
-        "prediction": "国産LLMの実用化が進み、日本語特化サービスの選択肢が増える",
+        "prediction": "Claude Code最適化コンサルティングが独立した市場カテゴリとして成立する",
         "confidence": "中",
-        "evidence": "記事ID5の国立情報学研究所の国産LLM、Microsoft日本投資1.6兆円（記事ID8）による国内AIインフラ強化。",
-        "shisto_implication": "国産LLMを使った「データが国外に出ない」AI自動化サービスは、セキュリティ重視の顧客（金融・医療・行政）に刺さる提案になる。"
+        "evidence": "ハーネスエンジニアリングの記事急増、トークン最適化の需要増、OSSツール群の登場。",
+        "shisto_implication": "早期参入の最大のチャンス。2〜3ヶ月以内にこの領域でポジションを確立すべき。"
       }
     ],
     "long_term": [
       {
-        "prediction": "AI自動化サービスの価格競争が激化し、「構築」から「運用・最適化」に収益源がシフトする",
+        "prediction": "従来型のシステム受託開発の市場が縮小し、「AI自動化コンサル + 運用サポート」モデルに移行する",
         "confidence": "中",
-        "evidence": "ガートナーの推論コスト90%削減予測（記事ID11）、非エンジニアのAI実装者化（記事ID27）により、構築の参入障壁が下がる一方、運用・保守・チューニングの需要は増加する。",
-        "shisto_implication": "月額保守・チューニング契約を重視するビジネスモデルに早めにシフトすべき。構築は入り口、継続課金が利益の本体。"
+        "evidence": "「システム屋の終焉」記事、Issue駆動開発の普及、1人開発者のSaaS構築事例増加。",
+        "shisto_implication": "Shistoのビジネスモデル（AI自動化サービス）は市場の方向性と合致。受託開発ではなく自動化コンサルとして差別化を継続すべき。"
       },
       {
-        "prediction": "AIエージェントが「デジタル従業員」として中小企業の標準装備になる",
+        "prediction": "オンデバイスAI（Gemma 4等）の普及により、クラウドAPI依存しないAIサービスの需要が増加する",
         "confidence": "低",
-        "evidence": "エージェント開発基盤の成熟、推論コストの低下、非エンジニアの活用拡大が同時進行。ただし、信頼性・セキュリティの課題解決にはまだ時間がかかる。",
-        "shisto_implication": "「中小企業向けAIエージェント導入パートナー」というポジションを取れれば、長期的な成長が見込める。今の実績作りが将来の基盤になる。"
+        "evidence": "Gemma 4のiOS向けビルド記事、QLoRAファインチューニング事例。まだ初期段階だが方向性は明確。",
+        "shisto_implication": "中長期的にオンデバイスAIの知見も蓄積しておくことで、プライバシー重視の顧客への提案幅が広がる。"
       }
     ]
   }
