@@ -2,267 +2,287 @@
   "date": "2026-04-04",
   "top_8": [
     {
+      "id": 350,
+      "title": "Claude Opens Microsoft 365 Integration to Free Users in Major AI Push",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPandnTldJQ2plckFxUEV0SVBmZENEOUpRYWV4UGhmQ0dOOUFnaDRpSV9PSkgwaXZtSm93UmRDdTZHdjBRSEVQRW8zMUtKLWh3eURPbU9KNjlZSXlGWXlza24tSTZkYTlkeUt5RUtHZ0k1cDFyYmJwNTNhN0FRakJIOVlBcEpuaEYwdlFmUXZIVkloWGlQMEJYR1d0QXRidVlsa0FHV0hIbHJHLU5SWWwwbXhieVpEMjE5dGRMWWxzNUtOUm1HdWc?oc=5",
+      "source": "The Hans India",
+      "summary": "ClaudeがMicrosoft 365統合を無料ユーザーにも開放。AIの業務ツール連携が大幅に拡大。",
+      "why_selected": "Shistoの顧客はMicrosoft 365利用者が多い。Claude×M365の連携が無料化されたことで、既存クライアントへの新規提案に直結する。"
+    },
+    {
       "id": 292,
       "title": "Google Opens Up Gemma 4 After Losing Developers to DeepSeek",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOTR1Z1RsUW1sYjF1enctR1ZUel9FZVZGc0hGd25oOUd5RzJoZTJ1ZXVQNGZzUEx6MEhwTkhETlNEaXYzcnNOVURtZmtiVV9QNEg3eUw3cmxVR3BzS0J1ZWhoNWtxNlNBdUVCX2gzWko0eFhITWlnbUR6QzF3NmQwUTRMZkZQUWRPZVpON1JzNU04SER6cldOTEhCTjV5M2lUYXZn?oc=5",
-      "source": "DeepSeek（Google News経由）",
-      "summary": "GoogleがDeepSeekへの開発者流出を受け、Gemma 4をオープンソース化。Apache 2.0ライセンスで完全公開し、オープンモデル競争が激化。",
-      "why_selected": "Shistoが使えるオープンソースモデルの選択肢が広がる。ローカル実行によるコスト削減やプライバシー対応のサービス設計に直結。"
+      "source": "DeepSeek",
+      "summary": "GoogleがDeepSeekへの開発者流出を受け、オープンソースモデルGemma 4を公開。エージェント特化・Apache 2.0ライセンス。",
+      "why_selected": "Gemma 4はオンデバイス推論が可能で、無料で商用利用できる。Shistoのコスト構造に直結する技術基盤の進化。"
+    },
+    {
+      "id": 354,
+      "title": "Anthropic buys biotech startup Coefficient Bio in $400M deal: Reports",
+      "url": "https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/",
+      "source": "TechCrunch AI",
+      "summary": "Anthropicがバイオテック企業Coefficient Bioを4億ドルで買収。AI×バイオテクノロジー融合が加速。",
+      "why_selected": "Anthropicの事業多角化はClaude APIの進化方向を示唆。バイオ以外の専門ドメインへのAI適用ニーズが高まる証拠。"
+    },
+    {
+      "id": 353,
+      "title": "OpenAI executive shuffle includes new role for COO Brad Lightcap to lead 'special projects'",
+      "url": "https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/",
+      "source": "TechCrunch AI",
+      "summary": "OpenAIが経営陣を刷新。COOが「特別プロジェクト」担当に。経営の不安定さが続く。",
+      "why_selected": "OpenAIの組織不安定はAPI依存リスクを示す。マルチベンダー戦略の重要性を顧客に提案する根拠になる。"
     },
     {
       "id": 282,
       "title": "DeepSeek V4 model will run entirely on Huawei AI chips: Report",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPdVVsX2I2b1pzem1QdUtSQVp2Z3pkZ3RRSVVMajRmVWNSUDJjM0stS2F3YTR2bm01b2JzLXFSZ0w2N1NiM1ZLSm9nZXpkN21TX2g2bjBMdkVRQ00xX0lLUDlYaVZpWmltSi04NVNmWGpiWEh4VWpJY2FSYWY2OGY5MnVaT1ZEZVQyWEFfRENDUkRZMVJ1aWpV?oc=5",
-      "source": "DeepSeek（Google News経由）",
-      "summary": "DeepSeek V4がHuawei製AIチップで完全稼働。米中AI競争の構図が「チップ」軸でも鮮明になった。",
-      "why_selected": "AI業界の地政学的分断が加速。中国AI企業のNvidia依存脱却は、グローバルなAIインフラ戦略に影響し、Shistoが顧客に説明すべき業界背景知識。"
+      "source": "DeepSeek",
+      "summary": "DeepSeekのV4モデルがHuawei製AIチップ上で完全に動作する予定。米中AI技術分断が本格化。",
+      "why_selected": "米中技術デカップリングがAIチップ市場を二分化。グローバルAIインフラの構造変化がサービス選定に影響。"
     },
     {
-      "id": 283,
-      "title": "ChatGPT, DeepSeek continue to lose chatbot mobile market share in US as competition heats up",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNMDhJbHFoSHFlSjBqSGF1MWw5dFZ1ZXY4cHI0SDNHbTNmT01BeGpkS0ZLazR0NGYyZF9WaHFaekVVTkJOSW93ZDJrZmJ1YXBUR1hsWUdKQ2YtV0NBajNFbGdtVHZTX00xWjBqaWhrNWZyTUVJUlFmdHBQbGlEb2RnU2lkUy0xVDd1dzFXTVpXbkZYd0dBM0xXUE5OYkliZEQtV1o5TnRIaUFQNGo5eFJ4TktLMF81Ylh4NElsNWIzR0wxYWd6WDYwQVRQb0dVSC13Wk9faWk5Y19ZRHhNV01fQzY3elVHRUtEOTNBc0kwYTVZb3BLWk5LSTFIdlFxUHNn?oc=5",
-      "source": "DeepSeek（Google News経由）",
-      "summary": "米国モバイル市場でChatGPTとDeepSeekのシェアが低下。チャットボット市場が多極化し、ユーザーが分散している。",
-      "why_selected": "AIチャットボット市場の競争激化は、特定プラットフォームに依存しないマルチモデル戦略の重要性を示す。Shistoのサービス設計に直接影響。"
+      "id": 359,
+      "title": "Anthropic essentially bans OpenClaw from Claude by making subscribers pay extra",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/907074/anthropic-openclaw-claude-subscription-ban",
+      "source": "The Verge AI",
+      "summary": "AnthropicがClaude上でのOpenClaw利用を実質制限し、追加料金化。プラットフォームポリシーの緊張が高まる。",
+      "why_selected": "Claude利用コストに直接影響する料金改定。Shistoのサービス原価に関わるため要注視。"
     },
     {
       "id": 197,
       "title": "GitHub Copilot の Agent Skills を連鎖させて「生成→評価→改善」パイプラインを組んだら、業務が変わった",
       "url": "https://zenn.dev/kosk_t/articles/ai-skill-pipeline-legacy-migration-guide",
       "source": "Zenn",
-      "summary": "GitHub CopilotのAgent Skillsを連鎖させて自動化パイプラインを構築した実践事例。生成・評価・改善の3ステップをAIが回す。",
-      "why_selected": "AIスキル連鎖のパイプライン構築はShistoの自動化サービスに直接応用可能。具体的な実装パターンとして参考になる。"
+      "summary": "GitHub CopilotのAgent Skillsを連鎖させ、レガシー移行業務を効率化した実践事例。",
+      "why_selected": "AIエージェントのスキル連鎖パイプラインは、Shistoが提案する業務自動化の具体的な実装パターンとして参考になる。"
     },
     {
-      "id": 204,
-      "title": "Claude Codeが同じミスを繰り返すので「自分の説明書を書き換える」仕組みを作った",
-      "url": "https://zenn.dev/playpark/articles/ai-agent-learn-from-failure",
-      "source": "Zenn",
-      "summary": "Claude Codeの反復ミスを防ぐため、失敗から学んでCLAUDE.mdを自動更新する仕組みを構築した実践記事。",
-      "why_selected": "Shistoが既に運用しているClaude Codeシステムの品質向上に直結。自社運用に即座に適用可能な技術。"
-    },
-    {
-      "id": 208,
-      "title": "日本株を「透視」したくて、J-Quants + EDINET + AIのSaaSを一人で作った記録",
-      "url": "https://zenn.dev/aladdin_1211/articles/f9ff56458e67bf",
-      "source": "Zenn",
-      "summary": "1人でJ-Quants + EDINET + AIを組み合わせた日本株分析SaaSを開発した記録。個人開発AI SaaSの実例。",
-      "why_selected": "1人運営でAI SaaSを構築した事例は、Shistoのビジネスモデルの参考になる。技術選定・収益化の道筋として直接参考になる。"
-    },
-    {
-      "id": 206,
-      "title": "\"システム屋さん\"という職業が終わるのを、自分は目撃した――Claude Code 導入後、フリーランスエンジニアが感じた本当の恐怖",
-      "url": "https://zenn.dev/moumu_pure/articles/2026-04-04-claude-code-engineer-fear",
-      "source": "Zenn",
-      "summary": "Claude Code導入後、従来型システム開発の受託ビジネスが脅かされるとフリーランスエンジニアが危機感を表明。",
-      "why_selected": "ShistoはClaude Codeを武器にしている側であり、市場の恐怖心＝需要の裏返し。AI導入支援の営業メッセージ設計に活用できる洞察。"
-    },
-    {
-      "id": 212,
-      "title": "Gemma4-31Bを日本語エージェントコーダーに特化させた — QLoRAファインチューニングとベンチマーク結果",
-      "url": "https://zenn.dev/tsunamayo7/articles/gemma4-31b-ja-agent-coder-qlora-benchmark",
-      "source": "Zenn",
-      "summary": "Gemma 4-31Bを日本語のエージェントコーディングに特化させるQLoRAファインチューニングの結果を公開。日本語性能が大幅向上。",
-      "why_selected": "Gemma 4の日本語特化ファインチューニングが成功。ローカル実行可能な日本語AIエージェントの構築コスト低下はShistoのサービス設計に影響。"
+      "id": 283,
+      "title": "ChatGPT, DeepSeek continue to lose chatbot mobile market share in US as competition heats up",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNMDhJbHFoSHFlSjBqSGF1MWw5dFZ1ZXY4cHI0SDNHbTNmT01BeGpkS0ZLazR0NGYyZF9WaHFaekVVTkJOSW93ZDJrZmJ1YXBUR1hsWUdKQ2YtV0NBajNFbGdtVHZTX00xWjBqaWhrNWZyTUVJUlFmdHBQbGlEb2RnU2lkUy0xVDd1dzFXTVpXbkZYd0dBM0xXUE5OYkliZEQtV1o5TnRIaUFQNGo5eFJ4TktLMF81Ylh4NElsNWIzR0wxYWd6WDYwQVRQb0dVSC13Wk9faWk5Y19ZRHhNV01fQzY3elVHRUtEOTNBc0kwYTVZb3BLWk5LSTFIdlFxUHNn?oc=5",
+      "source": "DeepSeek",
+      "summary": "米国モバイルチャットボット市場でChatGPTとDeepSeekがシェアを失い、競争激化。",
+      "why_selected": "AIチャットボット市場の群雄割拠は、特定ベンダーに依存しない構成力がサービス提供者に求められることを意味する。"
     }
   ],
-  "industry_overview": "今週のAI業界で最も大きなニュースは、DeepSeekがV4モデルをHuawei製AIチップ上で完全稼働させる計画だ。これは米国の輸出規制下で中国AI企業がNvidia依存から脱却する大きな一歩であり、AI半導体市場の地政学的分断が一層鮮明になった。中国テック大手が大量先行発注を行っており、需要の強さが伺える。ただし、HuaweiチップがNvidiaの性能・スケールに匹敵できるかは業界内で疑問視する声もある。\n\nGoogleはDeepSeekへの開発者流出を受け、Gemma 4をApache 2.0ライセンスでオープンソース化した。オープンモデル競争の激化は、開発者にとってはコスト削減とプライバシー対応の選択肢が増える好機だ。米国のチャットボット市場ではChatGPTとDeepSeekの両方がモバイルシェアを落としており、AI市場の多極化が進んでいる。特定の1社が独占する時代は終わりつつあり、ユースケース別の最適なモデル選択が重要になっている。\n\n日本の開発者コミュニティでは、Claude Codeに関する実践記事が引き続き大量に生産されている。特に「ハーネスエンジニアリング」の定義をめぐる議論が活発で、5社が異なる解釈を持つことが明らかになった。これはClaude Codeエコシステムが成熟期に入り、「使い方」から「運用設計」のフェーズに移行していることを示す。失敗から学ぶ自動フィードバック機構やフロントマターのトークン影響の実測など、運用品質にフォーカスした記事が目立つ。\n\nGemma 4関連では、iOS向けオンデバイス推論の実装や日本語エージェントコーダーへのQLoRAファインチューニングなど、具体的な活用記事が早くも出始めている。オープンモデルの公開から活用までのスピードが加速しており、先週の予測通り、Gemma 4の実践記事ラッシュが現実化している。",
+  "industry_overview": "今週のAI業界はAnthropicを中心に大きな動きが集中した。Anthropicはバイオテック企業Coefficient Bioを4億ドルで買収し、AI×専門ドメインへの本格進出を開始。同時にClaudeのMicrosoft 365統合を無料ユーザーにも開放し、業務ツールプラットフォームとしての地位を固めている。一方で、OpenClawアクセスの追加課金化やPAC設立による政治活動の本格化など、ビジネス面・政策面でも積極的な動きを見せている。\n\nGoogleはDeepSeekへの開発者流出を受け、エージェント特化のオープンソースモデルGemma 4をApache 2.0で公開した。オンデバイス推論に対応しており、NVIDIA RTX GPUでの最適化も発表されている。これにより、クラウドAPI依存からローカル推論への選択肢が広がった。一方、OpenAIは経営陣の刷新が続き、AGI担当責任者の休職やCOOの「特別プロジェクト」異動など、組織的な不安定さが浮き彫りになっている。1220億ドルの資金調達を完了したばかりだが、方向性の模索が続く。\n\n中国側では、DeepSeekがV4モデルをHuawei製AIチップで完全動作させる計画が報じられた。中国テック大手からの大量事前注文も入っており、米国チップ依存からの脱却が本格化。米中AI技術分断は「チップレベル」での二極化に進んでいる。\n\n日本の開発者コミュニティでは、Claude Codeの実践記事が圧倒的に多い。ハーネスエンジニアリング（AIツールの設定・制御の体系化）が新しいトピックとして急浮上し、TAKT・superpowersなどのOSSツール比較、トークン最適化、長期記憶の外部化など、「使いこなし」のフェーズに入っている。AIエージェントフレームワークの比較記事（LangChain vs CrewAI vs AutoGen）や、272選のツールカタログなども公開されており、エコシステムの成熟が加速中。",
   "trends": [
     {
-      "topic": "AI半導体の地政学的分断",
-      "description": "DeepSeek V4がHuaweiチップで完全稼働する計画が確定し、中国AI企業のNvidia依存脱却が現実化。中国テック大手が大量先行発注を実施。",
-      "why": "米国の対中半導体輸出規制が長期化する中、中国AI企業は自国チップでの開発を余儀なくされている。DeepSeekの成功が他の中国AI企業にも波及する可能性。",
-      "shisto_impact": "短期的な直接影響は小さいが、AI市場が米中で分断されることで、日本企業はどちらのエコシステムを使うかの判断を迫られる。Shistoは顧客に対してモデル選択のアドバイザリーを提供する機会がある。"
+      "topic": "Claude×Microsoft 365 無料統合とプラットフォーム戦争",
+      "description": "AnthropicがClaude-Microsoft 365統合を無料ユーザーに開放。同時にOpenClawアクセスを追加課金化し、プラットフォームの囲い込みと開放を同時に進めている。",
+      "why": "Anthropicは企業ユーザー獲得のためにMicrosoft生態系への統合を強化。一方で、サードパーティツールの無制限利用は収益を圧迫するため選別的に課金化。",
+      "shisto_impact": "Claude×M365連携を活用した業務自動化の提案が、追加コストなしで可能に。既存顧客（RAYUP・江田畜産・KFJ）がM365を使っているなら、即座に提案できる機会。"
     },
     {
-      "topic": "Claude Code運用設計の成熟",
-      "description": "Claude Codeの「使い方」記事から「運用設計」「品質管理」「トークン最適化」へとコミュニティの関心がシフト。ハーネスエンジニアリングの定義議論、失敗学習の自動化、フロントマターの実測など。",
-      "why": "Claude Codeの導入フェーズが終わり、実運用で品質・コスト・再現性の問題に直面するユーザーが増加。「動く」から「安定して動く」への要求レベルが上がっている。",
-      "shisto_impact": "Claude Code運用設計のノウハウは、Shistoの最大の差別化要素。失敗学習機構の導入やトークン最適化の知見を自社システムに即座に適用し、顧客向けサービスにも反映すべき。"
+      "topic": "ハーネスエンジニアリングの急浮上",
+      "description": "AIツール（特にClaude Code）の設定・制御・最適化を体系化する「ハーネスエンジニアリング」が独立した専門領域として認知され始めている。TAKT・superpowers等のOSSも登場。",
+      "why": "AIエージェントの「構築」が容易になった結果、差別化は「いかに安定的・効率的に運用するか」にシフト。設定ファイル管理・トークン最適化・セキュリティ対策が実務上の課題に。",
+      "shisto_impact": "Claude Code設定の最適化・監査サービスとして、既存顧客や新規顧客に提案可能。「作る」だけでなく「整える」サービスは継続課金モデルに適している。"
     },
     {
-      "topic": "オープンモデル競争の激化とローカルAIの実用化",
-      "description": "GoogleがGemma 4をオープン化し、早くもiOSオンデバイス推論や日本語ファインチューニングの成果が報告されている。オープンモデルの「公開→実用化」サイクルが加速。",
-      "why": "DeepSeekの台頭でGoogleが危機感を持ちオープン化を加速。同時に、QLoRAやLiteRT-LMなどのツールが成熟し、非専門家でもファインチューニングやデバイス展開が可能に。",
-      "shisto_impact": "API課金に依存しないサービス設計が可能になる。特に日本語特化Gemma 4は、データを外に出したくない顧客向けの提案に使える。"
+      "topic": "Gemma 4オープン化とローカルAI推論の現実化",
+      "description": "GoogleがGemma 4をApache 2.0で公開。オンデバイス推論・NVIDIA RTX対応により、クラウドAPI不要のAIシステム構築が現実的に。",
+      "why": "DeepSeekへの開発者流出への対抗策。また、AIの推論コストが企業にとって無視できない規模になり、ローカル推論の需要が高まっている。",
+      "shisto_impact": "APIコストを気にせず使えるAIシステムの構築が可能に。月額ランニングコストを下げた提案ができれば、中小企業への導入ハードルが大幅に下がる。"
     },
     {
-      "topic": "AIによる「システム開発」の再定義",
-      "description": "Claude Codeの導入でフリーランスエンジニアが職業の終焉を感じる一方、Issue一発でコードが生まれる時代が到来。コーディングの自動化が「脅威」と「機会」の両面で語られている。",
-      "why": "Claude Code、GitHub Copilot Agent Skillsなどのコーディングエージェントが実用レベルに達し、従来型の受託開発の価値が急速に低下。設計力・要件定義力が差別化要素に。",
-      "shisto_impact": "Shistoは「AIで開発を代行する側」であり、この恐怖心は営業の追い風。『AIを使いこなす側に回りませんか？』という提案が刺さる環境。"
+      "topic": "AIエージェントの「運用・品質保証」フェーズへの移行",
+      "description": "「動いた」だけでリリースするリスク、375件テスト全GREENなのに使えない問題、プロンプトの再現性問題など、AIシステムの品質保証に関する記事が急増。",
+      "why": "AI開発の民主化により、構築は容易になったが品質管理のノウハウが追いついていない。実際に本番環境で壊れる事例が増え、危機感が広がっている。",
+      "shisto_impact": "AI導入後の「品質監査・改善サービス」は、構築代行とは別の価値提案になる。安定運用できることが競合との差別化ポイント。"
     }
   ],
   "business_proposals": [
     {
-      "service": "Gemma 4日本語エージェント構築サービス",
-      "description": "GoogleがオープンソースしたGemma 4を日本語にファインチューニングし、顧客のオンプレミスまたはプライベートクラウドで稼働するAIエージェントを構築。データが外に出ないAI自動化を実現。",
-      "target": "個人情報・機密データを扱う中小企業（士業事務所、クリニック、地方金融機関）",
-      "price_range": "初期構築30〜50万円 + 月額保守5〜8万円",
-      "effort": "初期構築25〜40時間（ファインチューニング含む）",
-      "reason": "GoogleがGemma 4をApache 2.0で公開（ID292）→オンプレAIが現実的に→個人情報を扱う業種でAPI型AIを使えなかった層に需要が生まれる。Gemma 4の日本語QLoRAファインチューニング成功（ID212）で技術的実現性も確認済み。",
+      "service": "Microsoft 365×Claude 業務ワークフロー自動化パッケージ",
+      "description": "Claude-M365無料統合を活用し、メール・Teams・Excel・SharePointの業務フローをAIで自動化する。メール要約→Teams通知→Excel集計→SharePoint保存の一連のフローを構築。",
+      "target": "従業員5〜50名の中小企業（特にMicrosoft 365を既に導入している企業）",
+      "price_range": "初期構築10〜20万円 + 月額保守3〜5万円",
+      "effort": "初期構築20〜30時間、保守は月2〜3時間",
+      "reason": "AnthropicがClaude-M365統合を無料ユーザーにも開放（記事ID350）。追加API費用なしで高度な業務自動化が可能になった。M365は日本の中小企業の導入率が高く、「今使っているツールがそのままAI化する」という訴求力がある。",
       "how_to_implement": [
-        "Gemma 4-31Bの日本語QLoRAファインチューニング環境を構築（ID212の手法を参考）",
-        "顧客業務のFAQ・書類テンプレートをファインチューニング用データセットに変換",
-        "顧客のローカルサーバーまたはプライベートクラウドにデプロイ",
-        "Claude Codeで業務ワークフロー連携（MCP経由）を実装",
-        "2週間のテスト運用で精度チューニング、運用マニュアル納品"
+        "顧客のM365利用状況と業務フローのヒアリング・可視化",
+        "Claude-M365連携のセットアップとMCPサーバー構築",
+        "メール自動分類・Teams通知・Excel集計の3つの基本フローを構築",
+        "1週間のテスト運用とフロー調整",
+        "運用マニュアル作成と月次保守体制の確立"
+      ],
+      "tools": [
+        "Claude API",
+        "Microsoft 365",
+        "MCP",
+        "Power Automate",
+        "Hono/Cloudflare Workers"
+      ],
+      "sales_pitch": "今お使いのMicrosoft 365が、追加費用なしでAI秘書付きオフィスに変わります",
+      "example": "例：不動産管理会社で、問い合わせメール→自動分類→担当者Teams通知→対応状況Excel管理で月15時間削減"
+    },
+    {
+      "service": "Claude Code ハーネス最適化サービス（設定監査・チューニング）",
+      "description": "Claude Codeを導入済みの開発チーム向けに、CLAUDE.md・フロントマター・Hooks・Skills・メモリの設定を監査し、トークン消費の最適化とアウトプット品質の向上を実現する。",
+      "target": "Claude Codeを導入済みのスタートアップ・フリーランスエンジニア",
+      "price_range": "1回5〜10万円（監査レポート+設定ファイル納品）",
+      "effort": "1件あたり8〜15時間",
+      "reason": "ハーネスエンジニアリングが急浮上（記事ID203・230）し、Claude Codeのトークンコスト問題（記事ID207・235）が顕在化。設定の最適化だけでAPIコストが30〜50%削減できるケースがある。",
+      "how_to_implement": [
+        "現行のCLAUDE.md・フロントマター・Hooks設定を監査",
+        "トークン消費の実測と非効率箇所の特定",
+        "最適化済み設定ファイルとSkillの納品",
+        "Before/Afterのトークン消費レポートを作成"
+      ],
+      "tools": [
+        "Claude Code",
+        "TAKT",
+        "トークン計測ツール"
+      ],
+      "sales_pitch": "Claude Codeの設定を見直すだけで、APIコストを30%削減し、出力品質も向上できます",
+      "example": "例：10人エンジニアチームで月額Claude API費用が50万円→35万円に削減、年間180万円のコスト削減"
+    },
+    {
+      "service": "Gemma 4ローカルAIチャットボット導入サービス",
+      "description": "Google Gemma 4を社内サーバーまたは既存PCにデプロイし、API費用ゼロの社内AIチャットボットを構築する。顧客データが社外に出ない点を訴求。",
+      "target": "データの外部送信を嫌う中小製造業・士業・医療関連",
+      "price_range": "初期構築15〜25万円 + 月額保守2〜3万円",
+      "effort": "初期構築25〜35時間",
+      "reason": "GoogleがGemma 4をApache 2.0で公開（記事ID292）。オンデバイス推論が可能になり、NVIDIA RTX GPUで最適化済み。月額API費用ゼロという圧倒的なコストメリットを提案できる。",
+      "how_to_implement": [
+        "顧客の既存PC/サーバーのスペック確認とGemma 4動作検証",
+        "llama.cppまたはLiteRT-LMでモデルをローカルデプロイ",
+        "社内ドキュメントをRAGで取り込み、業務特化チャットボットを構築",
+        "Web UI（Gradio等）を構築し、社内からブラウザでアクセス可能にする",
+        "運用マニュアル納品と月次モデル更新保守"
       ],
       "tools": [
         "Gemma 4",
-        "QLoRA",
+        "llama.cpp",
         "LiteRT-LM",
-        "Claude Code",
-        "MCP"
+        "RAG",
+        "Gradio",
+        "ChromaDB"
       ],
-      "sales_pitch": "お客様のデータが外部に一切出ないAIアシスタントを、御社専用に構築できます",
-      "example": "例：税理士事務所の確定申告相談を、自社サーバー内のAIが自動回答。月50時間の電話対応を削減。"
+      "sales_pitch": "顧客データを社外に出さず、月額API費用ゼロで社内AIアシスタントを導入できます",
+      "example": "例：税理士事務所で、税法Q&Aチャットボットを導入し、スタッフの調査時間を月20時間削減。API費用は0円。"
     },
     {
-      "service": "AI品質保証・テスト自動化パッケージ",
-      "description": "Claude Code × Unity CLI Loop（ID205）やGitHub Copilot Agent Skills（ID197）の手法を応用し、ソフトウェアのE2Eテスト・品質チェックをAIで自動化するサービス。",
-      "target": "自社プロダクトを持つスタートアップ・中小SaaS企業（エンジニア2〜10名規模）",
-      "price_range": "初期構築20〜40万円 + 月額保守3〜5万円",
-      "effort": "初期構築15〜25時間",
-      "reason": "「動いた」でリリースする危険性（ID202）が議論される中、AIによる品質保証の自動化需要が高まっている。GitHub Copilot Agent Skillsの「生成→評価→改善」パイプライン（ID197）が実用レベルで実証された。",
+      "service": "AI導入後の品質監査・安定化サービス",
+      "description": "AI（特にコーディングエージェント）を導入済みの企業・チームに対し、AIが生成したコードやフローの品質監査を行い、本番環境での障害リスクを低減する。",
+      "target": "Cursor・Claude Code・GitHub Copilotを導入済みの開発チーム",
+      "price_range": "1回8〜15万円（監査レポート+改善提案）",
+      "effort": "1件あたり10〜20時間",
+      "reason": "「AIで書いたコードが本番で壊れる」問題が顕在化（記事ID202・234）。375件テスト全GREENなのに動かない事例も報告されている。AI導入のROIを毀損する品質問題の解決ニーズが急速に高まっている。",
       "how_to_implement": [
-        "顧客のCI/CDパイプラインとテスト環境を調査",
-        "Claude CodeでE2Eテストシナリオの自動生成・実行ループを構築",
-        "GitHub ActionsまたはCI/CDツールと連携し、PR作成時に自動テスト実行",
-        "テスト失敗時の自動修正提案機能を実装（Agent Skillsパイプライン型）"
+        "AIが生成したコード・フローの棚卸しとリスク分類",
+        "テストカバレッジと実際の動作の乖離を検証",
+        "品質改善レポートと優先対応リストの納品",
+        "改善実施後の再検証と安定化確認"
       ],
       "tools": [
         "Claude Code",
-        "GitHub Copilot Agent Skills",
-        "GitHub Actions",
-        "Playwright"
+        "GitHub",
+        "テストフレームワーク各種"
       ],
-      "sales_pitch": "PRを出すたびにAIがテストを自動実行し、バグを本番リリース前にキャッチします",
-      "example": "例：SaaS企業のリリースサイクルで、手動テスト工数を月30時間→5時間に削減。リリース頻度を週1→日次に改善。"
-    },
-    {
-      "service": "1人SaaS立ち上げ伴走コンサルティング",
-      "description": "ID208の日本株AI SaaS事例のように、1人でAI SaaSを立ち上げたいエンジニアや起業家に対し、技術選定・アーキテクチャ設計・Claude Codeでの実装を伴走支援。",
-      "target": "AIを活用したSaaSを個人で立ち上げたいエンジニア・起業家",
-      "price_range": "月額10〜20万円（3ヶ月パッケージ：30〜50万円）",
-      "effort": "月8〜15時間（ヒアリング2時間 + 技術支援6〜13時間）",
-      "reason": "ID208のJ-Quants+AIのSaaS事例が示すように、1人でもAI SaaSを構築できる時代だが、適切な技術選定と設計を間違えると工数が膨大になる。Shistoの1人運営ノウハウ自体が価値。",
-      "how_to_implement": [
-        "顧客のSaaSアイデアをヒアリングし、MVP要件と技術スタックを設計",
-        "Claude Codeの環境設定（CLAUDE.md、Hooks、スキル）を顧客プロジェクトに最適化",
-        "週次1時間のペアプログラミングでブロッカーを解消",
-        "MVP完成後のデプロイ・運用設計を支援",
-        "初期ユーザー獲得までのGo-to-Market戦略を共同設計"
-      ],
-      "tools": [
-        "Claude Code",
-        "Vercel",
-        "Supabase",
-        "Stripe",
-        "Google Sheets"
-      ],
-      "sales_pitch": "1人でAI SaaSを作りたい方へ。技術選定からMVP公開まで、同じ1人開発者として伴走します",
-      "example": "例：フリーランスデザイナーがAIポートフォリオ自動生成SaaSを3ヶ月で公開。月額3000円×50ユーザーで月15万円の収益化。"
+      "sales_pitch": "AIが書いたコードの『動くけど壊れる』リスクを、本番障害が起きる前に特定・修正します",
+      "example": "例：SaaSスタートアップで、AI生成コードの品質監査により本番障害を3件/月→0件に削減"
     }
   ],
   "learning_suggestions": [
     {
-      "topic": "Gemma 4のQLoRAファインチューニング",
-      "why": "GoogleがGemma 4をオープン化し、日本語ファインチューニングの成功事例（ID212）が出た直後。ローカルAIサービスの構築に必須の技術。",
+      "topic": "Claude-Microsoft 365 統合のセットアップと活用パターン",
+      "why": "無料ユーザーへの開放が発表された直後。顧客提案に直結するため、早期にハンズオン経験を積むべき。",
       "resources": [
-        "ID212の記事（Gemma4-31B QLoRAファインチューニング）",
-        "Hugging Faceの公式Gemma 4ドキュメント",
-        "Google公式のGemma Cookbookリポジトリ"
+        "Anthropic公式ドキュメント（Claude integrations）",
+        "Claude MCPサーバー構築記事（記事ID228: Hono + Cloudflare Workers）"
       ],
-      "time_estimate": "8〜12時間（環境構築2時間 + チュートリアル実行4時間 + 日本語データでの実験4時間）"
+      "time_estimate": "4〜6時間"
     },
     {
-      "topic": "Claude Code失敗学習の自動フィードバック機構",
-      "why": "ID204で紹介された「失敗からCLAUDE.mdを自動更新する仕組み」は、Shistoの全自動化システム（LinkedIn、エンゲート、AIニュースBI）の品質向上に直結。",
+      "topic": "Gemma 4のローカルデプロイとRAG構築",
+      "why": "Gemma 4はオンデバイス推論対応。APIコストゼロの提案を実現するには、ローカルデプロイの実践経験が必要。",
       "resources": [
-        "ID204の記事（Claude Codeが同じミスを繰り返す問題の解決法）",
-        "Claude Code公式ドキュメントのHooksセクション"
+        "記事ID211: LiteRT-LMでGemma 4をiOS向けにビルド",
+        "Google公式ブログ: Gemma 4リリース記事"
       ],
-      "time_estimate": "3〜5時間（記事精読1時間 + 自社システムへの適用3時間）"
+      "time_estimate": "6〜8時間"
     },
     {
-      "topic": "GitHub Copilot Agent Skillsパイプライン構築",
-      "why": "ID197の「生成→評価→改善」パイプラインは、AIによる品質保証の新しいパターン。テスト自動化サービスの提案に直結する技術。",
+      "topic": "ハーネスエンジニアリングの体系的理解",
+      "why": "Claude Codeの設定最適化サービスを提案するための技術基盤。TAKTやsuperpowersなどのOSSツールの理解も含む。",
       "resources": [
-        "ID197の記事（Agent Skills連鎖パイプライン）",
-        "GitHub Copilot公式ドキュメントのAgent Skills",
-        "ID189のWork IQ CLI連携記事"
+        "記事ID203: Claude Codeハーネスエンジニアリングスキル",
+        "記事ID230: AIハーネスOSS 4選比較",
+        "記事ID229: トークン節約と外部化戦略"
       ],
-      "time_estimate": "4〜6時間（記事精読1時間 + ハンズオン3〜5時間）"
+      "time_estimate": "3〜4時間"
     }
   ],
   "weekly_actions": [
     {
-      "action": "Claude Codeの失敗学習フィードバック機構（ID204）を自社の3つの自動化システム（LinkedIn・エンゲート・AIニュースBI）に導入",
+      "action": "Claude-Microsoft 365統合を自社環境でセットアップし、基本的な業務フロー（メール要約→Teams通知）を構築する",
       "priority": "high",
-      "reason": "運用品質が安定すれば保守工数が下がり、新規顧客獲得に時間を回せる。技術的にも今日の記事で実装パターンが明確になった。",
-      "deadline_hint": "今週金曜（4/10）まで"
+      "reason": "無料化直後のタイミングで実績を作れば、顧客提案時に具体的なデモを見せられる",
+      "deadline_hint": "4月7日（月）まで"
     },
     {
-      "action": "Gemma 4のQLoRA日本語ファインチューニングを手元で一度実行してみる",
+      "action": "RAYUP・江田畜産・KFJのMicrosoft 365利用状況を確認し、M365×Claude自動化の提案余地を調査する",
       "priority": "high",
-      "reason": "「データが外に出ないAI」サービスの技術的実現性を自分の手で確認する。提案時の説得力が全く変わる。",
-      "deadline_hint": "今週末（4/5〜6）"
+      "reason": "既存顧客への追加提案は新規営業より成約率が高い。M365統合は追加コストなしで提案できる。",
+      "deadline_hint": "4月8日（火）まで"
     },
     {
-      "action": "ID208の1人SaaS開発事例を精読し、Shistoの新サービス（1人SaaS伴走コンサル）の提案資料ドラフトを作成",
+      "action": "Gemma 4をMacローカルにデプロイし、基本的な質疑応答ができる状態を確認する",
       "priority": "medium",
-      "reason": "1人開発者の成功事例は増加傾向にあり、伴走コンサルの需要は今後伸びる。早めに提案資料を作っておく。",
-      "deadline_hint": "来週月曜（4/7）まで"
+      "reason": "APIコストゼロの提案を実現するための技術検証。Mac Studioでの動作確認事例あり。",
+      "deadline_hint": "4月10日（木）まで"
     },
     {
-      "action": "既存顧客（RAYUP・江田畜産・KFJ）に「データが外に出ないAI」のニーズがあるか確認",
+      "action": "自社Claude Codeの設定（CLAUDE.md・Hooks・Skills）を棚卸しし、ハーネス最適化サービスのテンプレートを作成する",
       "priority": "medium",
-      "reason": "Gemma 4のオープン化で提案可能になった。既存顧客から展開するのが最も早い。",
-      "deadline_hint": "来週中（4/10まで）"
+      "reason": "自社環境が最初の実績になる。監査レポートのテンプレートも同時に作成できる。",
+      "deadline_hint": "4月11日（金）まで"
     }
   ],
   "predictions": {
     "short_term": [
       {
-        "prediction": "DeepSeek V4のベンチマーク結果が公式リリースされ、Huaweiチップ vs Nvidia GPUの性能比較が大きな話題になる",
+        "prediction": "Claude-Microsoft 365統合の活用事例記事が1〜2週間で大量に出る",
         "confidence": "高",
-        "evidence": "今日だけでDeepSeek V4 × Huaweiチップの記事が10件以上。先行発注も進んでおり、近日中に公式ベンチマーク公開の可能性が高い。先週のリーク情報（100万トークンコンテキスト）もあり、公式発表への期待が高まっている。",
-        "shisto_implication": "V4の性能次第で中国製AIの評価が変わる。ベンチマーク結果をウォッチし、顧客へのモデル選定アドバイスに反映すべき。"
+        "evidence": "記事ID350でClaude-M365統合の無料ユーザー開放が報じられた。無料化は記事爆発のトリガー。過去のGemma 4公開→記事急増パターンと同じ。",
+        "shisto_implication": "先に実装経験を積んでおけば、記事を参考にしつつ顧客提案を最速で行える。"
       },
       {
-        "prediction": "Claude Codeの運用設計・ハーネスエンジニアリングのベストプラクティス記事がまとめ形式で出る",
-        "confidence": "高",
-        "evidence": "ID200で5社の解釈比較、ID203で体系化スキル、ID204で失敗学習と、個別の知見が蓄積されている。統合的なベストプラクティスへの需要が高い。過去予測でも的中パターン。",
-        "shisto_implication": "まとめ記事が出る前に自社のベストプラクティスを整理し、ブログ記事やLinkedIn投稿で発信すると先行者ポジションが取れる。"
+        "prediction": "OpenClawの料金改定を受けた代替ツール・ワークアラウンドの記事が出る",
+        "confidence": "中",
+        "evidence": "記事ID359・349でAnthropicのOpenClaw追加課金化が報じられた。既存ユーザーの反発とコスト削減のための代替手段模索が予想される。",
+        "shisto_implication": "OpenClawを使っている顧客がいれば、コスト増への対応策として代替フローの提案ができる。"
       }
     ],
     "mid_term": [
       {
-        "prediction": "オープンソースモデル（Gemma 4、DeepSeek V4等）を使った「オンプレミスAIサービス」が新市場として立ち上がる",
+        "prediction": "Claude-M365統合を軸とした「AIオフィス自動化」サービスが新規事業者から続々登場する",
         "confidence": "中",
-        "evidence": "Gemma 4のオープン化（ID292）、日本語ファインチューニング成功（ID212）、iOS向けオンデバイス推論の実装（ID211）により、技術的実現性が確認された。データ主権への関心の高まりと相まって需要が生まれる。",
-        "shisto_implication": "「データが外に出ないAI」は明確な差別化ポイント。士業・医療・金融など規制業種向けの提案を準備すべき。"
+        "evidence": "M365の法人導入数は日本で数百万。Claude統合が無料化されたことで、参入障壁が大幅に下がる。3ヶ月以内にこの領域のサービスが乱立する可能性。",
+        "shisto_implication": "競合が増える前に実績を作ることが重要。今週中にデモ環境を構築し、来週中に既存顧客に提案すべき。"
       },
       {
-        "prediction": "AIチャットボット市場の多極化が進み、ユースケース特化型のAIサービスが急増する",
+        "prediction": "ハーネスエンジニアリングが独立した専門職として求人に登場し始める",
         "confidence": "中",
-        "evidence": "ID283でChatGPT・DeepSeekの米国モバイルシェア低下が報告。汎用チャットボットから、特定業務に特化したAIサービスへの移行が進む。",
-        "shisto_implication": "「汎用AI」ではなく「○○業界の△△業務に特化したAI」を提案する方が刺さる。業界特化型のパッケージサービスを設計すべき。"
+        "evidence": "記事ID191・200で5社の解釈比較が行われるなど、概念の標準化が進行中。TAKTなどのOSSツールが充実すれば、専門職としての需要が確立する。",
+        "shisto_implication": "ハーネスエンジニアリングのスキルセットを早期に確立し、サービスメニュー化しておくべき。"
       }
     ],
     "long_term": [
       {
-        "prediction": "米中AI半導体分断が固定化し、企業は「どちらのエコシステムを使うか」の選択を迫られる",
+        "prediction": "ローカルLLM（Gemma 4等）とクラウドAPI（Claude等）のハイブリッド構成がAIシステムの標準アーキテクチャになる",
         "confidence": "中",
-        "evidence": "DeepSeek V4のHuaweiチップ完全稼働（ID282〜291）は、中国AI企業がNvidiaなしでもトップレベルのモデルを開発できることの証明になる。この成功により、他の中国企業も追随する。",
-        "shisto_implication": "日本企業は両方のエコシステムにアクセスできる立場。マルチモデル対応のAIサービス設計は長期的な強みになる。"
+        "evidence": "Gemma 4のオープン化、推論コスト90%削減予測、データ主権への要求増加が同時進行。簡易タスクはローカル、高度なタスクはクラウドという使い分けが合理的。",
+        "shisto_implication": "ハイブリッド構成の設計・実装経験を積んでおけば、コスト最適化とデータ保護の両立を提案できる独自の強みになる。"
       },
       {
-        "prediction": "AI開発の民主化が進み、「AIを使ったサービス構築」自体は差別化にならなくなる。差別化は業界知識×運用品質×顧客関係性に移行する",
+        "prediction": "AI企業のプラットフォーム戦略が、無料開放→囲い込み→課金というサイクルを繰り返す",
         "confidence": "高",
-        "evidence": "ID206のフリーランスエンジニアの恐怖、ID193のIssue一発コード生成、オープンモデルの急速な進化が示すように、AIの構築障壁は急速に下がっている。ID203・204の運用品質記事の増加は、差別化軸の移行を先取りしている。過去予測の「構築→運用シフト」と整合的。",
-        "shisto_implication": "技術力だけでなく、既存顧客との関係性と業界ドメイン知識が長期的な堀になる。RAYUP・江田畜産・KFJとの実績を基に、各業界の深い理解を蓄積すること。"
+        "evidence": "AnthropicのM365無料開放とOpenClaw課金化が同時に起きている。GoogleのGemma 4無料化もユーザー獲得策。このパターンは過去のプラットフォームビジネスと同一。",
+        "shisto_implication": "特定ベンダーに深く依存しない設計を心がけること。マルチベンダー対応の構築スキルが、将来のリスクヘッジと差別化の両方になる。"
       }
     ]
   },
@@ -271,43 +291,43 @@
       "original_date": "2026-04-03",
       "prediction": "Gemma 4を使ったエージェント開発の実践記事・チュートリアルが大量に出る",
       "status": "的中",
-      "review": "予測翌日にID211（iOS向けオンデバイス推論）、ID212（日本語エージェントコーダーQLoRAファインチューニング）が早速登場。さらにGoogleがDeepSeekへの開発者流出を受けてオープン化を加速したことで（ID292）、今後さらに記事が増える見込み。",
-      "lesson": "オープンソースモデルの公開直後1〜2週間の記事爆発パターンは信頼性が高い。今後も新モデルリリース時にこのパターンを予測に使える。"
+      "review": "公開翌日で既にZennで3件以上のGemma 4実践記事が出ている（記事ID211: iOS向けビルド、ID212: 日本語エージェントコーダー特化QLoRA、ID230でもGemma関連触れられている）。予想通り爆発的な記事増加が起きている。",
+      "lesson": "オープンソースモデル公開後の記事増加は確実性が高い。このパターンは引き続き予測に使える。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "Claude Code Hooksやskillのセキュリティ・品質向上系の記事がさらに増加",
       "status": "的中",
-      "review": "ID203（ハーネスエンジニアリング体系化スキル）、ID204（失敗学習自動フィードバック）、ID207（フロントマターのトークン実測）、ID200（ハーネスエンジニアリング解釈比較）と、品質・運用設計系の記事が4本以上出現。予測通りのトレンド。",
-      "lesson": "エコシステムの「使う→運用する」フェーズ移行パターンは予測精度が高い。同様のパターンは他のツール（GitHub Copilot Agent Skills等）でも適用可能。"
+      "review": "記事ID203（ハーネスエンジニアリングスキル）、ID204（失敗から自動学習する仕組み）、ID229（トークン節約外部化戦略）、ID230（AIハーネスOSS比較）など、品質・運用系記事が多数出現。",
+      "lesson": "エコシステム成熟期の「使いこなし」記事増加は精度の高い予測パターン。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "「AIエージェント構築代行」が新しいサービスカテゴリとして確立する",
       "status": "進行中",
-      "review": "ID220（フレームワーク比較）、ID221（272選まとめ）が示すように、選択肢の多さ自体が参入障壁になっている。市場カテゴリとして確立するにはまだ時間がかかるが、需要の兆候は確実にある。",
-      "lesson": "市場カテゴリの「確立」は数ヶ月単位の動き。中期予測としては方向性は正しいが、短期では「記事・ツールが増えている＝市場ができた」とは限らない。"
+      "review": "記事ID343（44名のAI社員テンプレ）、ID252（AIエージェント仮想会社運営）、ID311（ノーコード×AIエージェント副業）など、エージェント構築の民主化が進行。まだ「代行サービス」としての確立は途上。",
+      "lesson": "中期予測は方向性は合っているが、「確立」までの時間軸は長めに見るべき。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "国産LLMの実用化が進み、日本語特化サービスの選択肢が増える",
       "status": "進行中",
-      "review": "今日のニュースでは国産LLMの直接的な続報はないが、Gemma 4の日本語ファインチューニング成功（ID212）は「日本語特化サービスの選択肢増加」の文脈で重要。国産ではないが、オープンモデル＋日本語特化という方向性は予測と一致。",
-      "lesson": "「国産LLM」に限定するよりも「日本語に特化されたオープンモデル」と広く捉えた方が予測精度が上がる。"
+      "review": "直近7日の記事一覧に「新たな国産LLM公開、国立情報学研究所」があり、方向性は合っている。ただし、本日の163件の入力データに国産LLMの具体的な進展記事は少ない。",
+      "lesson": "国産LLMは着実に進行中だが、日次で見ると動きは緩やか。週次・月次で追う方が適切。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "AI自動化サービスの価格競争が激化し、「構築」から「運用・最適化」に収益源がシフトする",
       "status": "進行中",
-      "review": "ID206（フリーランスエンジニアの恐怖）が示すように、構築の価値低下は現実化しつつある。ID203・204の「運用設計」記事の増加は、運用・最適化へのシフトを裏付ける。ただし価格競争の激化自体はまだ顕在化していない。",
-      "lesson": "長期予測の方向性は合っているが、タイミングは慎重に判断すべき。「構築の価値低下→運用需要増」の因果関係は強いが、まだ初期段階。"
+      "review": "ハーネスエンジニアリングの急浮上、トークン最適化記事の増加、品質監査の需要は「運用・最適化」シフトの兆候。ただし価格競争の激化を示す直接的な記事はまだ少ない。",
+      "lesson": "長期予測の方向性は合っているが、「激化」の証拠は徐々に蓄積される性質のもの。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "AIエージェントが「デジタル従業員」として中小企業の標準装備になる",
       "status": "期限前",
-      "review": "長期予測のため判定は時期尚早。ただし、ID193（Issue一発でコードを生成）やID197（Agent Skills連鎖パイプライン）の事例は、エージェントの実用性が着実に向上していることを示す。",
-      "lesson": "長期予測は方向性重視。毎日の記事で小さな進捗を追跡し、確信度を徐々に調整する。"
+      "review": "記事ID322「僕の同僚は、ほとんど人間じゃない」が象徴的だが、まだ先進的な事例段階。標準装備にはまだ遠い。",
+      "lesson": "長期予測は信頼度「低」が適切だった。引き続き観察。"
     }
   ]
 }

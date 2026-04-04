@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-04T22:25:35.643021+09:00",
+  "updated": "2026-04-04T22:53:09.113933+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -25,61 +25,61 @@
   "category_7d": [
     {
       "category": "AIエージェント・開発",
-      "count": 48
+      "count": 57
     },
     {
-      "category": "研究・ブレークスルー",
-      "count": 16
+      "category": "AI×ビジネス活用",
+      "count": 52
     },
     {
       "category": "製品・サービス",
-      "count": 13
+      "count": 42
+    },
+    {
+      "category": "研究・ブレークスルー",
+      "count": 20
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 18
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 12
     },
     {
       "category": "新モデル・リリース",
       "count": 12
-    },
-    {
-      "category": "AI×ビジネス活用",
-      "count": 12
-    },
-    {
-      "category": "投資・市場動向",
-      "count": 11
-    },
-    {
-      "category": "規制・法律・倫理",
-      "count": 1
     }
   ],
   "category_30d": [
     {
       "category": "AIエージェント・開発",
-      "count": 48
+      "count": 57
     },
     {
-      "category": "研究・ブレークスルー",
-      "count": 16
+      "category": "AI×ビジネス活用",
+      "count": 52
     },
     {
       "category": "製品・サービス",
-      "count": 13
+      "count": 42
+    },
+    {
+      "category": "研究・ブレークスルー",
+      "count": 20
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 18
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 12
     },
     {
       "category": "新モデル・リリース",
       "count": 12
-    },
-    {
-      "category": "AI×ビジネス活用",
-      "count": 12
-    },
-    {
-      "category": "投資・市場動向",
-      "count": 11
-    },
-    {
-      "category": "規制・法律・倫理",
-      "count": 1
     }
   ],
   "source_stats_7d": [
@@ -147,27 +147,27 @@
   "ai_company_7d": [
     {
       "company": "Claude",
-      "count": 26
+      "count": 40
+    },
+    {
+      "company": "Gemini",
+      "count": 19
     },
     {
       "company": "DeepSeek",
       "count": 13
     },
     {
-      "company": "Gemini",
-      "count": 10
-    },
-    {
-      "company": "Copilot",
-      "count": 5
+      "company": "ChatGPT / GPT",
+      "count": 12
     },
     {
       "company": "Amazon Bedrock",
-      "count": 5
+      "count": 7
     },
     {
-      "company": "ChatGPT / GPT",
-      "count": 4
+      "company": "Copilot",
+      "count": 6
     },
     {
       "company": "Cursor",
@@ -179,6 +179,10 @@
     },
     {
       "company": "LLaMA",
+      "count": 1
+    },
+    {
+      "company": "Grok",
       "count": 1
     },
     {
