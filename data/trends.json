@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-05T08:48:26.886414+09:00",
+  "updated": "2026-04-05T23:56:27.228006+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -29,7 +29,7 @@
   "category_7d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 70
+      "count": 71
     },
     {
       "category": "AIエージェント・開発",
@@ -37,7 +37,7 @@
     },
     {
       "category": "製品・サービス",
-      "count": 59
+      "count": 57
     },
     {
       "category": "研究・ブレークスルー",
@@ -45,11 +45,11 @@
     },
     {
       "category": "投資・市場動向",
-      "count": 23
+      "count": 22
     },
     {
       "category": "規制・法律・倫理",
-      "count": 17
+      "count": 19
     },
     {
       "category": "新モデル・リリース",
@@ -59,7 +59,7 @@
   "category_30d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 70
+      "count": 71
     },
     {
       "category": "AIエージェント・開発",
@@ -67,7 +67,7 @@
     },
     {
       "category": "製品・サービス",
-      "count": 59
+      "count": 57
     },
     {
       "category": "研究・ブレークスルー",
@@ -75,11 +75,11 @@
     },
     {
       "category": "投資・市場動向",
-      "count": 23
+      "count": 22
     },
     {
       "category": "規制・法律・倫理",
-      "count": 17
+      "count": 19
     },
     {
       "category": "新モデル・リリース",
