@@ -841,36 +841,22 @@ async function executeSearch() {
         statusEl.textContent = `${data.count}件ヒット（${modeLabel}）`;
 
         if (data.results.length === 0) {
-            resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する記事が見つかりませんでした</div></div>';
+            resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する結果が見つかりませんでした</div></div>';
             return;
         }
 
+        // 記事数・提案数を表示
+        const articleCount = data.results.filter(r => r._type !== 'proposal').length;
+        const proposalCount = data.results.filter(r => r._type === 'proposal').length;
+        const countParts = [];
+        if (articleCount) countParts.push(`記事${articleCount}件`);
+        if (proposalCount) countParts.push(`提案${proposalCount}件`);
+        statusEl.textContent = `${countParts.join(' + ')}ヒット（${modeLabel}）`;
+
         resultsEl.innerHTML = data.results.map(r => {
-            let entities = [];
-            if (r.key_entities) {
-                try {
-                    entities = typeof r.key_entities === 'string' ? JSON.parse(r.key_entities) : r.key_entities;
-                } catch {}
-            }
-            return `
-                <div class="search-result-item">
-                    <div class="search-result-meta">
-                        <span class="news-source">${esc(r.source || '')}</span>
-                        <span class="search-result-date">${esc(r.date || '')}</span>
-                        ${r.category ? `<span class="search-result-category">${esc(r.category)}</span>` : ''}
-                        ${r.relevance_score ? `<span class="search-result-relevance">関連度 ${r.relevance_score}/5</span>` : ''}
-                    </div>
-                    <div class="search-result-title">
-                        <a href="${esc(r.url || '#')}" target="_blank" rel="noopener">${esc(r.title)}</a>
-                    </div>
-                    ${r.summary ? `<div class="search-result-summary">${esc(r.summary)}</div>` : ''}
-                    ${entities.length ? `
-                        <div class="search-result-entities">
-                            ${entities.map(e => `<span class="entity-tag">${esc(e)}</span>`).join('')}
-                        </div>
-                    ` : ''}
-                </div>
-            `;
+            if (r._type === 'proposal') return renderSearchProposal(r);
+            return renderSearchArticle(r);
+        }).join('');
         }).join('');
 
     } catch (err) {
@@ -886,6 +872,60 @@ async function executeSearch() {
         btn.disabled = false;
         btn.textContent = '検索';
     }
+}
+
+function renderSearchArticle(r) {
+    let entities = [];
+    if (r.key_entities) {
+        try {
+            entities = typeof r.key_entities === 'string' ? JSON.parse(r.key_entities) : r.key_entities;
+        } catch {}
+    }
+    return `
+        <div class="search-result-item">
+            <div class="search-result-meta">
+                <span class="news-source">${esc(r.source || '')}</span>
+                <span class="search-result-date">${esc(r.date || '')}</span>
+                ${r.category ? `<span class="search-result-category">${esc(r.category)}</span>` : ''}
+                ${r.relevance_score ? `<span class="search-result-relevance">関連度 ${r.relevance_score}/5</span>` : ''}
+            </div>
+            <div class="search-result-title">
+                <a href="${esc(r.url || '#')}" target="_blank" rel="noopener">${esc(r.title)}</a>
+            </div>
+            ${r.summary ? `<div class="search-result-summary">${esc(r.summary)}</div>` : ''}
+            ${entities.length ? `
+                <div class="search-result-entities">
+                    ${entities.map(e => `<span class="entity-tag">${esc(e)}</span>`).join('')}
+                </div>
+            ` : ''}
+        </div>
+    `;
+}
+
+function renderSearchProposal(r) {
+    let tools = [];
+    if (r.tools) {
+        try { tools = typeof r.tools === 'string' ? JSON.parse(r.tools) : r.tools; } catch {}
+    }
+    return `
+        <div class="search-result-item" style="border-left:3px solid var(--green)">
+            <div class="search-result-meta">
+                <span class="news-source" style="background:rgba(52,211,153,0.15);color:var(--green)">活用提案</span>
+                <span class="search-result-date">${esc(r.date || '')}</span>
+                ${r.category ? `<span class="proposal-category-badge ${r.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(r.category)}</span>` : ''}
+            </div>
+            <div class="search-result-title" style="color:var(--green)">${esc(r.service || '')}</div>
+            ${r.description ? `<div class="search-result-summary">${esc(r.description)}</div>` : ''}
+            ${r.target ? `<div style="font-size:12px;margin-top:4px"><span class="proposal-tag">${esc(r.target)}</span></div>` : ''}
+            ${r.price_range ? `<div style="font-size:12px;color:var(--yellow);margin-top:4px">${esc(r.price_range)}</div>` : ''}
+            ${r.sales_pitch ? `<div style="font-size:13px;color:var(--accent);margin-top:6px;font-style:italic">${esc(r.sales_pitch)}</div>` : ''}
+            ${tools.length ? `
+                <div class="search-result-entities" style="margin-top:6px">
+                    ${tools.map(t => `<span class="proposal-tool-tag">${esc(t)}</span>`).join('')}
+                </div>
+            ` : ''}
+        </div>
+    `;
 }
 
 // 初期化に検索セットアップを追加
