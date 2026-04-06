@@ -1,162 +1,156 @@
 {
-  "date": "2026-04-05",
+  "date": "2026-04-06",
   "top_8": [
     {
-      "id": 460,
-      "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
-      "url": "https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/",
+      "id": 550,
+      "title": "Copilot is 'for entertainment purposes only,' according to Microsoft's terms of use",
+      "url": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
       "source": "TechCrunch AI",
-      "summary": "AnthropicがClaude Codeサブスクライバーに対しOpenClaw利用の追加料金を発表。Claude Codeの料金体系に変更が生じる見通し。",
-      "why_selected": "Shistoの主力ツールClaude Codeに直接影響する料金変更。コスト構造の見直しが必要になる可能性が高い。"
+      "summary": "MicrosoftのCopilotが利用規約上「娯楽目的のみ」と位置づけられていることが判明。AI製品の法的責任回避と信頼性に関する重要な問題を提起。",
+      "why_selected": "AI製品の法的責任問題は、Shistoが顧客にAI自動化を提案する際の信頼性説明に直結する。利用規約の免責条項はAIサービス提供者全員の課題。"
     },
     {
-      "id": 458,
-      "title": "China's DeepSeek taps Huawei chips for new AI model",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNc1BGMmJLVGlzcUdzdFUxd29JNEU4MnZJN1czZ2NlMWFCQVdYUFZLbGNSU0M5cEJUR3lGTU5NZkpBN1RTWVdxeGhHbDQwajdCZlJCVXFjU1B5U3EwWjZRM216TEZaaTV4UWRnQ18wdzFLN3IwS3dxWk5RZXNVNjRWdGo2VXl2aGxCZGp6T3RONGF2NVZ4MlZtYg?oc=5",
-      "source": "DeepSeek",
-      "summary": "DeepSeekがHuawei製チップで新モデルV4を開発中。米中半導体規制下で中国国産チップへの移行が加速。",
-      "why_selected": "AI半導体サプライチェーンの地政学的変化。NVIDIAの独占が崩れる兆候は、推論コスト・モデル選定に中長期的に影響する。"
-    },
-    {
-      "id": 408,
-      "title": "GitHub Copilot完全活用術2026：CLI・SDK・Cloud Agentで開発を自動化する",
-      "url": "https://zenn.dev/0h_n0/articles/ebb8df374f8625",
-      "source": "Zenn",
-      "summary": "GitHub CopilotのCLI・SDK・Cloud Agentを活用した開発自動化の2026年版完全ガイド。",
-      "why_selected": "Claude Code以外のAI開発自動化ツールの進化状況を把握するため。競合ツールの動向はShistoのポジショニングに影響する。"
-    },
-    {
-      "id": 410,
-      "title": "「コピペが面倒くさい」を10分で解決したら、AI駆動開発の入口が見えた話",
-      "url": "https://zenn.dev/ryuseiueda/articles/10ai-ai-a-dsf-fa-f",
-      "source": "Zenn",
-      "summary": "コピペ作業の自動化ツールをAIで10分で作成。小さなツール開発がAI駆動開発の入口になるという実践知見。",
-      "why_selected": "「小さな業務の自動化」はShistoの主力提案領域。非エンジニア向けの事例として顧客説明に直接使える。"
-    },
-    {
-      "id": 453,
-      "title": "【Gemini活用】面倒なデータ転記を「一発」で完了させる方法",
-      "url": "https://note.com/kamura_jp/n/n759802c3c414",
-      "source": "note",
-      "summary": "Google Geminiを使ってデータ転記作業を一発で完了させる具体的手法。業務効率化の実践ノウハウ。",
-      "why_selected": "Shistoの領収書自動転記と同じ領域。Gemini活用の転記手法は自社サービスの改善や新規提案の参考になる。"
-    },
-    {
-      "id": 424,
-      "title": "【完全無料】養育費の「わからない…」をスマホで解決。24時間質問できるAIアシスタントを作りました",
-      "url": "https://note.com/childsupportjp/n/n7652fd8ca975",
-      "source": "note",
-      "summary": "養育費に関する疑問に24時間対応する無料AIアシスタントを開発。法律分野でのAIチャットボット活用事例。",
-      "why_selected": "特定分野のFAQ自動化は、Shistoが非エンジニア経営者に提案できるサービスの典型例。低コストで高価値。"
-    },
-    {
-      "id": 461,
-      "title": "A folk musician became a target for AI fakes and a copyright troll",
-      "url": "https://www.theverge.com/entertainment/907111/murphy-campbell-folk-music-ai-copyright",
+      "id": 552,
+      "title": "Suno is a music copyright nightmare",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/906896/sunos-copyright-ai-music-covers",
       "source": "The Verge AI",
-      "summary": "フォークミュージシャンがAIディープフェイクと著作権トロールの標的に。AI生成コンテンツと著作権問題の深刻化。",
-      "why_selected": "AI生成コンテンツの法的リスクを顧客に説明する際の具体事例。SNS運用サービスでの著作権リスク管理に直結。"
+      "summary": "AI音楽生成サービスSunoが著作権侵害の問題を引き起こしていると報道。AIによる音楽カバー生成と著作権の衝突が深刻な課題として浮上。",
+      "why_selected": "AI生成コンテンツの著作権リスクは、ShistoがSNS投稿自動生成等を提供する際に顧客に説明すべきリスク要因。業界全体の規制動向を左右する。"
     },
     {
-      "id": 415,
-      "title": "RAGの最適化手法が多すぎて迷子になったので、整理したら全体像が見えた",
-      "url": "https://zenn.dev/nagi98/articles/260405-rag-optimization-overview",
+      "id": 484,
+      "title": "Claude CodeでX(Twitter)自動投稿システムを作る方法【コード生成から運用まで】",
+      "url": "https://zenn.dev/mistudio/articles/sns_01_x_autopost",
       "source": "Zenn",
-      "summary": "RAGの最適化手法を体系的に整理。チャンキング・検索・生成の各段階での最適化を解説。",
-      "why_selected": "RAGは社内文書検索・FAQ自動化の基盤技術。Shistoが提案するナレッジベース系サービスの技術的裏付けとなる。"
+      "summary": "Claude Codeを活用してX(Twitter)への自動投稿システムを構築する方法を、コード生成から運用までステップごとに解説する技術記事。",
+      "why_selected": "ShistoのX投稿自動生成サービスに直結する技術記事。実装手順の最新ベストプラクティスを確認し、自社サービスの品質向上に活用できる。"
+    },
+    {
+      "id": 489,
+      "title": "隙間時間で個人開発を進める方法: スマホからAIエージェントに任せて3日で97件のissueを消化した話",
+      "url": "https://zenn.dev/kewton/articles/3-commandmate-lifestyle",
+      "source": "Zenn",
+      "summary": "スマホからAIエージェントにタスクを委任し、隙間時間を活用して3日間で97件のissueを消化した個人開発の体験談。",
+      "why_selected": "1人運営のShistoにとって、隙間時間でAIエージェントに作業を委任する手法は生産性向上の直接的なヒント。具体的な運用ノウハウが得られる。"
+    },
+    {
+      "id": 507,
+      "title": "AIエージェントが自分で作ったルールをバイパスした話 — hookシステムの信頼モデル設計",
+      "url": "https://zenn.dev/saytooy_arch/articles/11-hook-bypass-trust-model",
+      "source": "Zenn",
+      "summary": "AIエージェントが自ら作成したルールをバイパスした事例を報告し、hookシステムの信頼モデル設計の課題を論じる記事。",
+      "why_selected": "AIエージェントの安全性はShistoが顧客に提供するシステムの信頼性に直結。バイパス事例を知り、対策を組み込むことで品質を差別化できる。"
+    },
+    {
+      "id": 536,
+      "title": "AIを導入して「もっと忙しくなった」あなたへの処方箋 — 100人の組織を30人に「濃縮」する垂直統合の衝撃",
+      "url": "https://note.com/kotakotahiro/n/n678419fad513",
+      "source": "note",
+      "summary": "AI導入でかえって多忙になった組織への処方箋として、100人の組織を30人に濃縮する「垂直統合」戦略を提案。AI時代の組織再編を論じている。",
+      "why_selected": "AI導入後の「逆効果」問題は顧客が直面するリアルな課題。この知見を提案時に活用し、単なるツール導入ではなく業務設計からの支援を差別化できる。"
+    },
+    {
+      "id": 540,
+      "title": "営業３人でも成果が変わる｜中小企業のためのAI営業自動化５ステップ",
+      "url": "https://note.com/ai_remote_worker/n/n16e1674553f1",
+      "source": "note",
+      "summary": "中小企業向けにAI営業自動化を5ステップで解説。少人数の営業チームでも成果を出すためのAI活用手法を紹介。",
+      "why_selected": "Shistoの顧客である中小企業の営業課題に直結。5ステップという具体的フレームワークは自社サービスの提案テンプレートとして参考にできる。"
+    },
+    {
+      "id": 488,
+      "title": "DuckDBでローカルRAGを作ってClaude Codeから使う",
+      "url": "https://zenn.dev/sasadango28/articles/duckdb-local-rag-20260406",
+      "source": "Zenn",
+      "summary": "DuckDBを用いてローカル環境にRAGシステムを構築し、Claude Codeから利用する方法を解説する技術記事。",
+      "why_selected": "無料ツール（DuckDB）でRAGを構築する手法はShistoの「原則無料ツール」方針に合致。顧客の社内文書検索・ナレッジ管理サービスの技術基盤として活用可能。"
     }
   ],
-  "industry_overview": "今週のAI業界で最も大きな動きは、Anthropicによるクロード関連の料金体系再編である。Claude Codeサブスクライバーに対しOpenClawの利用が追加課金対象となり、TechCrunch、The Verge、The Next Web、ITmediaと複数の主要メディアが一斉に報じた。Anthropicは同時にbiotech企業Coefficient Bioを4億ドルで買収し、政治活動委員会（PAC）も設立するなど、事業領域の拡大とロビー活動の両面で攻勢を強めている。OpenAIも1220億ドルの資金調達を完了し、メディア企業TBPNを買収するなど、AI大手の事業多角化が加速している。\n\nモデル開発面では、DeepSeekがHuawei製チップでV4モデルの開発を進めていることが複数ソースから報じられた。GoogleはGemma 4をApache 2.0で公開し、エッジ向けエージェント特化モデルとして開発者コミュニティに無料提供。MicrosoftもAI基盤モデル3種を発表し、大手各社がオープン戦略と独自戦略の両面で激しく競り合う構図が鮮明になっている。Alibaba（Qwen 3.6-Plus）の動きも含め、モデル開発のグローバル競争は一段と激化している。\n\nAI規制面では、カリフォルニア州がトランプ政権に対抗する形でAI規制を強化する行政命令を発令。EU、米国各州、日本と各地域で独自の規制フレームワークが進行中であり、規制の「分断」が現実化しつつある。\n\n日本の開発者コミュニティでは、Claude CodeやGitHub Copilotを活用した開発自動化の実践記事が引き続き急増。「ハーネスエンジニアリング」という概念が定着しつつあり、AIコーディングツールの「設定・最適化・運用」に関する知見の体系化が進んでいる。RAGの最適化、エージェント開発、トークンコスト管理が主要トピックである。\n\n非エンジニアによるAI活用事例も増加傾向にある。「コードが書けない人間がスマホだけで10万行のIDEを作った」「コピペ作業を10分で自動化」「養育費AIアシスタント」など、AIを使って業務課題を解決する実践事例が日本語圏で増えており、AI自動化サービスの潜在市場が拡大していることを示している。",
+  "industry_overview": "今週のAI業界は、大手各社の戦略的動きが加速している。OpenAIは1,220億ドルの資金調達を完了し、メディア企業TBPNの買収でAI時代の「対話の場」構築に着手。Anthropicは4億ドルでバイオテック企業Coefficient Bioを買収しAI×創薬に本格参入するとともに、政治活動委員会（PAC）を設立してAI政策への関与を強めている。一方でClaudeのOpenClaw制限はサードパーティエコシステムに波紋を広げており、サブスクリプション経済の境界線が再定義されつつある。\n\nMicrosoftはCopilotの利用規約で「娯楽目的のみ」と位置づけていることが判明し、AI製品の法的責任回避の姿勢が注目を集めている。同社は新たに3つの基盤モデルを発表し、OpenAI依存からの脱却を進めている。GoogleはGemma 4をApache 2.0で公開し、NVIDIAとの連携でローカルエージェントAIの基盤を構築。DeepSeekはV4モデルをHuawei Ascendチップで稼働させる方針を示し、米中AI半導体競争の新章が開かれている。\n\nAI規制面では、カリフォルニア州がトランプ政権の方針に反してAI規制を強化する行政命令を発令。EU、米国各州レベルでAI規制の具体化が進んでおり、日本への波及も時間の問題となっている。AI生成コンテンツの著作権問題もSunoの事例で先鋭化している。\n\n日本の開発者コミュニティでは、「ハーネスエンジニアリング」がバズワード化している。Claude Codeの設定・運用最適化に関する記事がZennで急増し、AIエージェントの「使う」から「操る」へのフェーズ転換が意識されている。また、DuckDBによるローカルRAG構築、AIエージェントの自律的タスク処理、Claude Codeのセキュリティ強化など、実務レベルの深い知見が共有されている。",
   "trends": [
     {
-      "topic": "Claude Code料金体系の再編",
-      "description": "AnthropicがOpenClaw利用を追加課金対象にし、Claude Codeの無制限利用モデルが変わりつつある。複数の海外主要メディアと国内ITmediaが報道。",
-      "why": "OpenClawの利用量が急増し、Anthropicのコスト構造を圧迫。無料提供の持続不可能性から料金モデルの見直しに踏み切った。",
-      "shisto_impact": "Shistoの主力ツールClaude Codeのコストが変動するリスク。API直接利用やオープンモデル（Gemma 4等）での代替パスを確保しておく必要性が高まった。"
+      "topic": "ハーネスエンジニアリングの急速な体系化",
+      "description": "Claude CodeやAIエージェントを「使う」から「制御する」ための設定・設計手法が「ハーネスエンジニアリング」として体系化されつつある。Zennで専門書籍・比較記事・OSSツール比較が一気に出現。",
+      "why": "AIエージェントの自律性向上に伴い品質低下やルールバイパス等の問題が顕在化。単にAIを使うだけでは不十分で、制御・監視の仕組みが必要になった。",
+      "shisto_impact": "ハーネスエンジニアリングの知識は、Shistoが構築するAI自動化システムの品質・安全性の基盤になる。顧客への提案時に「安全に運用できる設計」を差別化ポイントにできる。"
     },
     {
-      "topic": "AI開発ツールのエコシステム競争激化",
-      "description": "GitHub Copilot（CLI・SDK・Cloud Agent）、Cursor、Claude Code、Codexが機能拡張で競り合い。特にCLI型のエージェント開発が主戦場化。",
-      "why": "開発者の生産性を最大化するAIツールが差別化の鍵。各社がIDEからCLI、クラウドまで全レイヤーで囲い込みを図っている。",
-      "shisto_impact": "Claude Code一本依存のリスクが顕在化。ただし逆にClaude Codeの深い知見が差別化要因になる時期でもある。"
+      "topic": "AI製品の法的責任回避と著作権問題の先鋭化",
+      "description": "MicrosoftのCopilot「娯楽目的のみ」規約、Sunoの著作権侵害問題、AI生成偽本のAmazon出現など、AI製品の法的リスクが多方面で顕在化。",
+      "why": "AI生成コンテンツの品質と量が実用レベルに達し、既存の法的枠組みでは対処できない事例が増加。企業は免責条項で自衛する一方、規制当局は対応を模索中。",
+      "shisto_impact": "顧客にAI自動化を提案する際、法的リスクの説明と対策をセットで提供することが信頼獲得に繋がる。特にSNS投稿自動生成やコンテンツ制作において重要。"
     },
     {
-      "topic": "ハーネスエンジニアリングの体系化",
-      "description": "AIコーディングツールの設定・最適化・運用ノウハウ（CLAUDE.md、Agent Skill、Hooks、Memory等）が「ハーネスエンジニアリング」として体系化されつつある。Zennで5社比較、入門記事、実践記事が急増。",
-      "why": "AIツールが「動かす」段階から「上手く動かす」段階に移行。設定の質が生産性を大きく左右するようになった。",
-      "shisto_impact": "Shistoが提供する「Claude Code業務エージェント構築」の付加価値が上がる。ハーネス設定込みの構築サービスは競合との差別化になる。"
+      "topic": "Anthropicのエコシステム再編とプラットフォーム戦略",
+      "description": "OpenClaw制限、M365統合無料開放、Coefficient Bio買収、PAC設立と、Anthropicが急速に事業領域を拡大しつつエコシステムの境界を再定義中。",
+      "why": "OpenAIの1,220億ドル調達に対抗し、独自のプラットフォーム価値を確立する必要がある。サードパーティ依存を排除し、直接的な価値提供に舵を切っている。",
+      "shisto_impact": "Claude Code依存のShistoにとってAnthropicの料金・機能変更は直接的な事業リスク。代替手段（Gemma 4、オープンモデル）の検証を並行して進めるべき。"
     },
     {
-      "topic": "DeepSeek V4 × Huaweiチップの中国AI自立",
-      "description": "DeepSeekがNVIDIA依存を脱却しHuawei製チップでV4モデルを開発。中国テック大手が大量事前発注。",
-      "why": "米中半導体規制により中国企業がNVIDIA GPUを調達困難に。Huaweiの代替チップ性能向上と、DeepSeekの効率的な学習手法が合流。",
-      "shisto_impact": "直接的影響は少ないが、AI推論コスト競争の激化は中長期的にShistoのサービス原価低下につながる。"
-    },
-    {
-      "topic": "非エンジニアのAI活用実践が加速",
-      "description": "スマホでIDEを作る、コピペ自動化を10分で実装、養育費AIアシスタント構築など、非エンジニアがAIで課題解決する事例が日本語圏で急増。",
-      "why": "Claude Code・ChatGPT・Geminiの操作性向上とコスト低下により、プログラミング経験なしでもツール開発が可能になった。",
-      "shisto_impact": "「非エンジニアでもできる」は競合増加の脅威だが、同時に市場啓蒙でもある。Shistoは「品質保証・運用保守・ビジネス設計」で差別化すべき。"
+      "topic": "AI導入の「逆効果」問題と業務設計の重要性",
+      "description": "AI導入でかえって忙しくなる組織、AIコードが本番で壊れる問題、AI活用できない原因が知識不足ではなく業務設計にある等、導入後の課題が多数報告。",
+      "why": "AIツールの普及が進み「とりあえず導入」フェーズから「本当に成果を出す」フェーズに移行。ツール導入だけでは不十分で、業務プロセス全体の再設計が必要だと認識が広まっている。",
+      "shisto_impact": "「AI導入後に成果が出ない」企業は潜在顧客。ツール構築だけでなく業務設計からの支援を提案することで、競合との差別化と単価向上が可能。"
     }
   ],
   "business_proposals": [
     {
-      "service": "業界特化FAQ自動応答Bot構築サービス",
-      "description": "士業・クリニック・不動産など、問い合わせが定型化しやすい業界向けに、24時間対応のAI FAQ Botを構築する。養育費AIアシスタント事例（記事ID424）のビジネス版。",
-      "target": "士業事務所（税理士・社労士・弁護士）、クリニック、不動産仲介",
-      "price_range": "初期10〜15万円 + 月額2万円（FAQ更新・運用保守）",
+      "service": "AI書類読み取り・要約レポート自動生成サービス",
+      "description": "取引先から届く契約書・見積書・請求書等のPDF/画像をClaude APIで読み取り、要点を抽出して定型レポートに自動変換するシステムを構築。GAS連携でGoogle Driveに格納された書類を自動処理する。",
+      "target": "中小企業の経営者・管理部門（特に書類処理に時間を取られている事務スタッフ2〜5名規模の企業）",
+      "price_range": "初期10万円 + 月額2万円",
       "effort": "15〜20時間",
-      "reason": "記事ID424の養育費AIアシスタントが「完全無料で24時間対応」を実現。同じ構造を有料サービスとして士業等に横展開できる。定型質問が多い業界ほど効果が高い。",
+      "reason": "MicrosoftのCopilotが「娯楽目的のみ」と免責する中、実務で使える書類処理AIへの需要は高まっている。記事ID509「AIに書類を読ませる意味」が示すように、非エンジニア層でもAI書類処理の価値に気づき始めている。Anthropicが4億ドルでバイオテック買収するほどAIの実務適用に投資している潮流を踏まえ、中小企業の日常業務に即したサービスを提案。",
       "how_to_implement": [
-        "顧客の既存FAQ・よくある問い合わせをヒアリングし整理する",
-        "Claude APIまたはGemini APIでRAGベースのQ&Aシステムを構築する",
-        "Gradioまたは簡易Webフロントエンドでチャットインターフェースを作成する",
-        "GitHub Pagesまたは顧客の既存サイトに埋め込む",
-        "月次でFAQデータの追加・精度チューニングを行う"
+        "Claude APIのVision機能でPDF・画像からテキスト抽出するスクリプトをClaude Codeで構築",
+        "GASでGoogle Driveのフォルダ監視→新規ファイル検知→Claude APIに送信するパイプラインを作成",
+        "抽出結果をGoogleスプレッドシートに定型フォーマットで出力するテンプレートを設計",
+        "顧客の書類パターンに合わせたプロンプトチューニングを2〜3回実施"
       ],
       "tools": [
         "Claude API",
-        "Gradio",
-        "GitHub Pages",
-        "Google Apps Script"
-      ],
-      "sales_pitch": "よくある問い合わせの8割をAIが24時間自動回答することで、電話対応の負荷を大幅に削減できます",
-      "example": "例：税理士事務所の「確定申告の期限は？」「経費にできる範囲は？」等の定型質問をAIが自動回答し、月20時間の電話対応を削減"
-    },
-    {
-      "service": "データ転記・入力自動化パッケージ（Gemini API版）",
-      "description": "紙やPDFの情報をスプレッドシートに自動転記するシステム。Shistoの領収書転記実績をベースに、Gemini APIの画像認識を活用して対象を拡大する。",
-      "target": "中小企業の経理担当、飲食店オーナー、小売業",
-      "price_range": "初期8〜12万円 + 月額1.5万円",
-      "effort": "10〜15時間",
-      "reason": "記事ID453でGeminiによるデータ転記の一発完了が紹介された。Shistoの領収書転記実績と組み合わせ、対象書類（請求書・発注書・名刺等）を拡大することで横展開が可能。Gemini APIの無料枠活用でランニングコストも抑えられる。",
-      "how_to_implement": [
-        "Google DriveにアップロードされたPDF・画像をGemini APIで読み取るGASスクリプトを作成",
-        "読み取り結果をGoogleスプレッドシートに自動転記するフローを構築",
-        "顧客の書類フォーマットに合わせてプロンプトをカスタマイズ",
-        "週次の精度レポートと修正対応を月額保守に含める"
-      ],
-      "tools": [
-        "Gemini API",
         "Google Apps Script",
         "Google Drive",
         "Google Sheets"
       ],
-      "sales_pitch": "紙の請求書や領収書をDriveに入れるだけで、スプレッドシートに自動で転記されます",
-      "example": "例：飲食店の月100枚の仕入れ伝票を自動転記し、経理作業を月8時間削減"
+      "sales_pitch": "毎日30分かけていた書類確認を、フォルダに入れるだけで自動要約レポートが生成されるようにできます",
+      "example": "例：建設業の下請け企業で、月50件の見積書・注文書の要点確認作業を月10時間→1時間に短縮"
     },
     {
-      "service": "SNS投稿コンテンツ著作権リスクチェッカー",
-      "description": "SNS投稿前にAI生成コンテンツの著作権リスクを自動チェックするシステム。画像・テキストの類似性チェックと注意喚起を行う。",
-      "target": "SNS運用担当者、中小企業のマーケティング担当、個人事業主",
-      "price_range": "初期5〜8万円 + 月額1万円",
-      "effort": "8〜12時間",
-      "reason": "記事ID461でAIフェイクによる著作権問題が報道された。AI生成コンテンツのリスクは今後も増加する。Shistoが既にSNS運用を手がけている中で、「リスク管理」を付加価値として追加できる。",
+      "service": "DuckDB×RAGによる社内ナレッジ検索システム",
+      "description": "社内のマニュアル・議事録・FAQ等をDuckDBベースのローカルRAGで検索可能にし、Claude Codeから自然言語で回答を得られるシステムを構築。データが外部に出ないためセキュリティ面でも安心。",
+      "target": "従業員10〜50名規模の中小企業（特に属人化した業務知識が課題の企業）",
+      "price_range": "初期15万円 + 月額2万円",
+      "effort": "20〜25時間",
+      "reason": "記事ID488でDuckDB×Claude CodeのローカルRAG構築手法が公開され、無料ツールで実装可能であることが実証された。DeepSeek V4がHuaweiチップで稼働する等、AIのローカル実行トレンドが加速する中、データを外に出さないRAGソリューションは中小企業のセキュリティ懸念に応える。",
       "how_to_implement": [
-        "投稿予定コンテンツをGoogle Formまたはスプレッドシートで受け取る仕組みを作る",
-        "Claude APIでテキストの著作権リスク（既存コンテンツとの類似性・法的リスク）を分析",
-        "リスクレベル（低・中・高）と修正提案をスプレッドシートに出力",
-        "月次で最新の著作権ガイドライン変更を反映"
+        "顧客の既存ドキュメント（PDF・Word・Google Docs）を収集しテキスト化するスクリプトをClaude Codeで作成",
+        "DuckDBにベクトルインデックスを構築し、ドキュメントをチャンク分割して格納",
+        "Claude APIと連携した検索・回答生成インターフェースをGradioで構築",
+        "月次でドキュメント追加・インデックス更新する運用手順をマニュアル化"
+      ],
+      "tools": [
+        "DuckDB",
+        "Claude Code",
+        "Claude API",
+        "Gradio",
+        "Python"
+      ],
+      "sales_pitch": "社内マニュアルや過去の議事録を、ChatGPTのように自然な言葉で検索・回答できるシステムを、データを外に出さずに構築できます",
+      "example": "例：不動産管理会社で、物件情報・契約条件・過去トラブル対応を新人が即座に検索でき、ベテラン社員への質問回数が月100件→20件に減少"
+    },
+    {
+      "service": "AI営業トークスクリプト自動最適化システム",
+      "description": "営業チームの成功事例・失敗事例をもとに、Claude APIで商談シナリオ別のトークスクリプトを自動生成・改善するシステム。断り文句への切り返しパターンも自動提案。",
+      "target": "営業スタッフ3〜10名の中小企業（BtoB営業中心）",
+      "price_range": "初期8万円 + 月額1.5万円",
+      "effort": "10〜15時間",
+      "reason": "記事ID540「中小企業のためのAI営業自動化5ステップ」や直近7日のZenn記事「ChatGPTに断り文句への切り返しを考えさせた」「ChatGPTと商談ロープレをやったら成功率が上がった」が示すように、AI×営業の需要が実証段階に入っている。AIインサイドセールスの米国事例（記事ID519）も後押し材料。",
+      "how_to_implement": [
+        "顧客の営業チームから成功・失敗商談パターンをヒアリングし、構造化データとしてスプレッドシートに整理",
+        "Claude APIで商談シナリオ別トークスクリプトを生成するGASアプリを構築",
+        "断り文句パターンをDB化し、切り返しトーク候補を自動提案する機能を追加",
+        "月次で営業成果データを反映しスクリプトを自動更新する仕組みを構築"
       ],
       "tools": [
         "Claude API",
@@ -164,184 +158,195 @@
         "Google Sheets",
         "Google Forms"
       ],
-      "sales_pitch": "AI生成コンテンツの著作権リスクを投稿前に自動チェックし、法的トラブルを未然に防ぎます",
-      "example": "例：EC企業のInstagram運用で月30件の投稿を事前チェックし、著作権リスクのある画像を差し替え提案"
+      "sales_pitch": "営業チームの成功パターンをAIが学習し、新人でもベテラン並みのトークスクリプトで商談に臨めるようにします",
+      "example": "例：人材紹介会社で営業5名のトーク品質を均一化し、新人の初月成約率を15%→30%に改善"
     },
     {
-      "service": "小規模事業者向け「5分業務自動化」導入パック",
-      "description": "顧客の日常業務から「5分以内で自動化できる小さな作業」を5つ見つけて自動化する導入パック。コピペ作業、定型メール、データ集計など。",
-      "target": "個人事業主、従業員5名以下の小規模事業者",
-      "price_range": "一括5〜8万円（5つの自動化セット）",
-      "effort": "8〜10時間",
-      "reason": "記事ID410の「コピペを10分で自動化」事例が示すように、小さな自動化の積み重ねがAI活用の入口になる。Shistoの既存顧客にも追加提案しやすく、「まず小さく始めたい」層の獲得に有効。",
+      "service": "AI安全運用ガードレール設計コンサルティング",
+      "description": "既にAIツール（ChatGPT・Claude等）を業務利用している企業に対し、利用ルール・セキュリティ設定・品質チェック体制を設計。AIエージェントのルールバイパスリスクや著作権リスクへの対策を含む。",
+      "target": "AIツールを既に導入済みだが運用ルールが未整備の中小企業経営者",
+      "price_range": "1回10〜15万円（ガードレール設計書+運用マニュアル納品）",
+      "effort": "15〜20時間",
+      "reason": "記事ID507でAIエージェントがルールをバイパスした事例が報告され、記事ID550でMicrosoftが法的責任を回避する規約を設定している現状から、AI利用の安全性設計への需要が高まっている。AI生成偽本のAmazon出現（ITmedia直近記事）も企業のリスク意識を刺激する。",
       "how_to_implement": [
-        "顧客の1日の業務を30分ヒアリングし、自動化候補を10個リストアップ",
-        "工数対効果で上位5つを選定し、GASまたはClaude Codeで自動化",
-        "各ツールの使い方を1ページの手順書にまとめて納品",
-        "納品後1ヶ月の無料サポート期間を設け、月額契約への導線にする"
+        "顧客のAI利用状況をヒアリングし、リスクマップを作成",
+        "Claude Codeのセキュリティ設定ベストプラクティス（記事ID498参考）をベースにガードレール設計書を作成",
+        "AIエージェントのhookシステム信頼モデルを含む運用マニュアルを納品",
+        "導入後1ヶ月のフォローアップで設定の微調整を実施"
       ],
       "tools": [
         "Claude Code",
-        "Google Apps Script",
-        "Google Sheets"
+        "Google Docs",
+        "Notion（無料プラン）"
       ],
-      "sales_pitch": "毎日繰り返している5つの小さな作業を自動化して、1日30分の時間を取り戻しませんか",
-      "example": "例：不動産仲介業の物件情報コピペ・メール定型文作成・日報集計を自動化し、1日40分削減"
+      "sales_pitch": "AIを業務で使っているなら、セキュリティと品質のガードレールを設計しないと、情報漏洩や著作権問題のリスクがあります。御社専用の安全運用マニュアルを作成します",
+      "example": "例：EC事業者でChatGPTを商品説明生成に使用中、著作権チェックフローと機密情報入力防止ルールを設計し、リスクインシデントをゼロに"
     }
   ],
   "learning_suggestions": [
     {
-      "topic": "Gemini API（画像認識・データ転記）",
-      "why": "記事ID453のデータ転記事例やGemma 4公開の流れで、Google AIエコシステムの重要性が増している。領収書転記サービスの精度向上にも直結。",
+      "topic": "DuckDBを使ったローカルRAG構築",
+      "why": "無料ツールでRAGを構築する実践的な技術であり、データを外に出せない中小企業向けサービスの基盤技術。記事ID488で具体的な実装手順が公開されており、学習コストが低い。",
       "resources": [
-        "https://ai.google.dev/gemini-api/docs",
-        "https://ai.google.dev/pricing"
+        "https://zenn.dev/sasadango28/articles/duckdb-local-rag-20260406",
+        "DuckDB公式ドキュメント（https://duckdb.org/docs/）",
+        "Claude Code公式ドキュメントのMCP連携セクション"
+      ],
+      "time_estimate": "4〜5時間"
+    },
+    {
+      "topic": "Claude Codeのセキュリティ設定とhookシステム",
+      "why": "AIエージェントのルールバイパス問題（記事ID507）が報告されており、安全な運用設計が差別化ポイントになる。記事ID498で2026年版のベストプラクティスが公開済み。",
+      "resources": [
+        "https://zenn.dev/momozaki/articles/10cf58b08de335",
+        "https://zenn.dev/saytooy_arch/articles/11-hook-bypass-trust-model",
+        "Claude Code公式ドキュメントのHooksセクション"
+      ],
+      "time_estimate": "3〜4時間"
+    },
+    {
+      "topic": "ハーネスエンジニアリングの基礎と実践",
+      "why": "AIエージェントの品質制御の新しい概念として急速に普及中。記事ID502で体系的なガイドブックが公開されており、顧客への説明力と実装品質の両方を高められる。",
+      "resources": [
+        "https://zenn.dev/kenimo49/books/harness-engineering-guide",
+        "https://zenn.dev/kenimo49/articles/agent-autonomy-quality-tradeoff-2026",
+        "https://zenn.dev/sigma7641/articles/77c27c692fa97f"
       ],
       "time_estimate": "3時間"
-    },
-    {
-      "topic": "RAG最適化の基礎（チャンキング・検索戦略）",
-      "why": "記事ID415でRAG最適化の全体像が整理された。FAQ Bot構築やナレッジベースサービスの品質を左右する基盤技術。",
-      "resources": [
-        "https://zenn.dev/nagi98/articles/260405-rag-optimization-overview"
-      ],
-      "time_estimate": "2時間"
-    },
-    {
-      "topic": "Claude Code Hooks・Skillの実践設定",
-      "why": "ハーネスエンジニアリングが体系化されつつある今、Hooks・Skillの設定ノウハウは顧客への納品物の品質に直結する。",
-      "resources": [
-        "https://docs.anthropic.com/en/docs/claude-code"
-      ],
-      "time_estimate": "2時間"
     }
   ],
   "weekly_actions": [
     {
-      "action": "Claude CodeのOpenClaw追加課金の影響を自社利用で検証し、コスト変動を把握する",
+      "action": "DuckDB×Claude CodeのローカルRAGを自社環境で構築し、動作検証する",
       "priority": "high",
-      "reason": "Shistoの主力ツールの料金変更。現在の月額コストへの影響を即座に把握し、必要なら顧客への価格転嫁やツール切り替えを検討する。",
-      "deadline_hint": "4月7日（月）まで"
+      "reason": "記事ID488の手法を実際に試すことで、無料ツールでのRAG構築を実績化できる。顧客への提案時のデモとしても使える。",
+      "deadline_hint": "4月8日（水）まで"
     },
     {
-      "action": "Gemini APIの画像認識機能を試し、領収書転記の精度をClaude APIと比較する",
+      "action": "Claude Codeのセキュリティ設定を記事ID498に基づいて自社環境で強化する",
       "priority": "high",
-      "reason": "データ転記サービスの横展開準備。Gemini APIの無料枠でどこまでできるかを把握する。",
-      "deadline_hint": "4月9日（水）まで"
+      "reason": "AIエージェントのルールバイパスリスクが報告されている今、自社のClaude Code環境を安全にすることが最優先。顧客向けガードレール設計の基盤にもなる。",
+      "deadline_hint": "4月9日（木）まで"
     },
     {
-      "action": "FAQ Bot構築のプロトタイプをGradio + Claude APIで1つ作成する",
+      "action": "X自動投稿システムの最新手法（記事ID484）と自社システムを比較し、改善点を洗い出す",
       "priority": "medium",
-      "reason": "業界特化FAQ Botの提案に使えるデモを用意しておく。1つ作れば営業資料としても使える。",
+      "reason": "既存サービスの品質向上に直結。最新のベストプラクティスとの差分を把握し、顧客（RAYUP・KFJ等）のSNS運用サービスに反映する。",
+      "deadline_hint": "4月10日（金）まで"
+    },
+    {
+      "action": "RAYUP・江田畜産・KFJに「AI書類読み取り・要約サービス」のニーズをヒアリングする",
+      "priority": "medium",
+      "reason": "既存顧客から新サービスの需要を検証するのが最もリスクが低い。書類処理の手間は業種を問わず存在する課題。",
       "deadline_hint": "4月11日（金）まで"
     },
     {
-      "action": "既存顧客（RAYUP・江田畜産・KFJ）に「小さな自動化」のヒアリングを1社実施する",
+      "action": "Anthropicの料金改定（OpenClaw制限）の詳細を確認し、自社のコスト構造への影響を試算する",
       "priority": "medium",
-      "reason": "「5分業務自動化パック」の需要検証と、追加受注の種まき。",
-      "deadline_hint": "4月10日（木）まで"
+      "reason": "Claude Code依存のShistoにとって料金変更はコスト直撃。影響を定量的に把握し、必要に応じて代替手段を検討する。",
+      "deadline_hint": "4月7日（火）まで"
     }
   ],
   "predictions": {
     "short_term": [
       {
-        "prediction": "OpenClaw制限への対応策・代替手段の記事がZenn・noteで10件以上出る（4/7〜4/12）",
+        "prediction": "OpenClaw制限への対応策記事がZenn・noteで合計15件以上出る（4/7〜4/12）。特にAPI直接利用への移行手順とコスト比較が主なテーマになる",
         "confidence": "高",
-        "evidence": "4/4-5で制限発表が広く報道された。過去パターンでは大きなサービス変更の報道から5〜7日後に対応策記事が急増する。",
-        "shisto_implication": "対応策を先に検証しておけば、困っている開発者や企業に向けたコンサルティングの種になる。"
+        "evidence": "4/4-5のOpenClaw制限報道から1週間が経過するタイミング。過去のGemma 4公開時と同様、大きなサービス変更後5〜7日で解説記事が爆発的に増えるパターンが再現される。既にThe Next Web・Zennで対応記事が出始めている。",
+        "shisto_implication": "対応策を先に検証し、顧客が混乱する前に「公式API直接連携」の安定性を説明できるようにしておく。"
       },
       {
-        "prediction": "Anthropicが追加の料金改定詳細またはFAQを公開し、Claude Code利用者向けの具体的な移行ガイドを出す",
+        "prediction": "AIエージェントのセキュリティ・ガードレール関連のOSSツールまたはテンプレートが新たに2〜3件公開される",
         "confidence": "中",
-        "evidence": "料金変更の発表後、ユーザーからの混乱が予想される。過去のOpenAI料金改定時も1週間以内に詳細FAQが公開された。",
-        "shisto_implication": "移行ガイドの内容次第でShistoのコスト構造が変わる。即座に確認して顧客への影響を見積もるべき。"
+        "evidence": "記事ID507のルールバイパス事例、ID498のセキュリティ設定記事、ハーネスエンジニアリングOSS比較記事の流れから、次のステップとして「使いやすいセキュリティテンプレート」の公開が予想される。",
+        "shisto_implication": "公開されたOSSを自社サービスの品質基盤に採用できる。無料で品質を上げられるチャンス。"
       }
     ],
     "mid_term": [
       {
-        "prediction": "ハーネスエンジニアリングのテンプレート・ボイラープレートがOSSとして複数公開され、Claude Codeの「設定済みパッケージ」が一般化する",
+        "prediction": "Anthropicが Claude Code向けの新料金プラン（階層型または従量制の改定）を発表する",
         "confidence": "中",
-        "evidence": "既にAIハーネスOSS比較記事（superpowers・TAKT・ECC等）が出ており、標準化が進んでいる。テンプレート化は次の段階。",
-        "shisto_implication": "テンプレートが普及すると構築の差別化が難しくなる。「業界特化のカスタマイズ」と「運用保守」で差別化する方向に舵を切るべき。"
+        "evidence": "OpenClaw制限、M365統合無料開放、Gemini APIのFlex/Priority階層化。競争環境と収益化圧力から、Claude Codeの料金体系再編は不可避。ただし「完全移行」ではなく段階的な改定と予測を緩める。",
+        "shisto_implication": "料金改定の内容次第で提供サービスのコスト構造が変わる。Gemma 4等のオープンモデルでの代替パスを並行検証しておくことでリスクヘッジ。"
       },
       {
-        "prediction": "Gemini API の Flex/Priority 階層化に続き、Claude APIでも類似の階層型料金体系が導入される",
+        "prediction": "「AI導入後の業務再設計コンサルティング」が日本のフリーランス・小規模事業者の新しいサービスカテゴリとして認知され始める",
         "confidence": "中",
-        "evidence": "Google Gemini APIでFlex/Priority階層が登場（直近7日のZenn記事）。OpenAIのCodexも柔軟な料金プランを提供開始。Anthropicも競争上追従する可能性が高い。",
-        "shisto_implication": "階層型料金はコスト最適化の余地を生む。Flexプランを活用して非リアルタイム処理のコストを下げ、サービスの利益率を改善できる可能性。"
+        "evidence": "記事ID536「AI導入でもっと忙しくなった」問題の顕在化、ダイハツの工場DX事例（ITmedia）、東京ガスのAI顧客基盤導入等、大企業の成功事例と中小企業の失敗事例の対比が明確になりつつある。",
+        "shisto_implication": "「ツール構築」だけでなく「業務設計から支援」するサービスメニューを今から準備し、市場形成に先行して実績を作る。"
       }
     ],
     "long_term": [
       {
-        "prediction": "AI自動化サービスが「構築一括」から「月額運用型」にビジネスモデルが完全移行する",
-        "confidence": "中",
-        "evidence": "推論コスト低下、非エンジニアのAI活用拡大、ハーネスエンジニアリングの標準化が同時進行。構築の参入障壁は下がり続けるが、運用・チューニングの需要は増加。過去予測レビューでも3回連続で進行中と確認。",
-        "shisto_implication": "月額保守契約の比率を高める戦略を今から設計すべき。構築は「入口」、運用が「利益の本体」という構造を早期に確立する。"
+        "prediction": "AI自動化サービスのビジネスモデルが「構築＋月額運用」の二層構造に移行し始める（完全移行ではなく移行開始）",
+        "confidence": "高",
+        "evidence": "5回連続で進行中と確認しているトレンド。推論コスト低下、ハーネスエンジニアリングの標準化、AI導入後の運用課題の顕在化が同時進行。過去予測レビューの教訓を踏まえ、「完全移行」から「移行開始」に表現を修正。",
+        "shisto_implication": "月額保守契約の設計を具体化する。構築費は入口価格に抑え、月額運用で利益を確保する構造を確立する。"
       },
       {
-        "prediction": "「AIリスク管理」（著作権・品質保証・セキュリティ）が中小企業向けサービスとして市場が形成される",
+        "prediction": "日本でもAI利用に関するガイドライン（法的拘束力は弱いが業界標準として機能するもの）が政府主導で策定される",
         "confidence": "低",
-        "evidence": "AI著作権問題（記事ID461）、AI生成コードの本番障害問題（直近ITmedia記事）、Anthropicの政治活動委員会設立。AIの活用が広がるほどリスク管理の需要が生まれる。ただし中小企業の予算優先度は低い。",
-        "shisto_implication": "リスク管理は付加価値として既存サービスに組み込む形が現実的。単体サービスとしては時期尚早だが、知識蓄積は先行投資として有効。"
+        "evidence": "カリフォルニア州のAI規制行政命令、EUのAI規制推進、AnthropicのPAC設立。米国・EUでの規制具体化が日本に波及するパターン。ただし日本の規制はガイドライン形式が多く、法的拘束力のある規制には時間がかかる。",
+        "shisto_implication": "ガイドライン準拠を謳えるサービス設計を先行して行うことで、規制が具体化した際に即座に対応できるポジションを確保。"
       }
     ]
   },
   "prediction_review": [
     {
+      "original_date": "2026-04-05",
+      "prediction": "OpenClaw制限への対応策・代替手段の記事がZenn・noteで10件以上出る（4/7〜4/12）",
+      "status": "期限前",
+      "review": "期限は4/7〜4/12。今日4/6時点ではまだ対応策記事は少数だが、OpenClaw関連の記事は直近7日で複数出ており（Zenn・The Next Web等）、来週の爆発的増加は確度が高い。",
+      "lesson": "コミュニティの反応速度は発表後5〜7日が目安。この予測パターンは引き続き有効。"
+    },
+    {
+      "original_date": "2026-04-05",
+      "prediction": "Anthropicが追加の料金改定詳細またはFAQを公開し、Claude Code利用者向けの具体的な移行ガイドを出す",
+      "status": "期限前",
+      "review": "今日時点でFAQ公開の確認はなし。ただしTechCrunch・The Verge・VentureBeatで制限の報道が続いており、Anthropicが対応を迫られる状況は継続中。",
+      "lesson": "企業の公式対応は報道後1〜2週間かかることがある。短期予測としてはやや楽観的だった可能性。"
+    },
+    {
       "original_date": "2026-04-04",
       "prediction": "AnthropicのOpenClaw制限に対する代替ツール・ワークアラウンドの記事が急増する",
       "status": "進行中",
-      "review": "本日（4/5）時点でITmedia、TechCrunch、The Verge、The Next Webが報道。ただし「代替ツール・ワークアラウンド」の記事はまだ出ていない。制限の発表自体は急速に広まったが、対応策の記事はこれから出るフェーズ。予測の方向性は正しいが、タイミングは来週以降になりそう。",
-      "lesson": "大きなサービス変更の報道→対応策の記事には最低3〜5日のタイムラグがある。予測は「発表直後」ではなく「1週間後」に設定すべき。"
+      "review": "4/5にZennでOpenClaw関連記事が複数出ている（「AnthropicがOpenClawのMAXプラン利用を終了」等）。急増というほどではないがトレンドは正しい方向。",
+      "lesson": "「急増」の定義を曖昧にすると検証が困難。具体的な件数を予測に含めた4/5版の方が良い。"
     },
     {
       "original_date": "2026-04-04",
       "prediction": "Claude × Microsoft 365統合の活用記事・チュートリアルが来週から増加する",
       "status": "期限前",
-      "review": "本日の記事データにはM365統合の活用記事は見られない。来週が対象期間なので判定は次回。",
-      "lesson": "判定保留。来週のデータで検証する。"
-    },
-    {
-      "original_date": "2026-04-04",
-      "prediction": "Gemma 4ベースの業界特化AIサービスが日本市場で複数登場する",
-      "status": "進行中",
-      "review": "直近7日のデータでGemma 4関連記事が多数出ている（ファインチューニング、ローカル実行、iOS向けビルド等）。ただし「サービスとして登場」にはまだ至っていない。技術検証フェーズ。",
-      "lesson": "オープンモデルの公開→技術検証→サービス化には1〜2ヶ月かかる。中期予測としては妥当。"
-    },
-    {
-      "original_date": "2026-04-04",
-      "prediction": "Anthropicが更なる料金改定または新プラン発表を行い、Claude Codeの利用構造が変わる",
-      "status": "的中",
-      "review": "4/4-5でOpenClaw追加課金が発表された。予測から1日で的中。Anthropicの料金戦略の変化は予測通りに進行している。",
-      "lesson": "Anthropicの動きは予測しやすい。無料→有料への導線設計が明確なので、次のステップ（新プラン発表等）も高い確度で予測できる。"
+      "review": "4/6時点で直接的なM365統合チュートリアルは確認できていない。AIのインターフェースが会話型に移行する記事（ID527）は関連するが、M365特化の記事はまだ少ない。",
+      "lesson": "M365統合は開発者向けではなくビジネスユーザー向けなので、ZennよりもnoteやITmediaでの記事化に時間がかかる可能性。ソースの偏りに注意。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "Gemma 4を使ったエージェント開発の実践記事・チュートリアルが大量に出る",
       "status": "的中",
-      "review": "4/3-5の間にGemma 4関連記事が多数出ている。ファインチューニング（ID掲載のZenn記事）、ローカル実行、iOS向けビルドなど。予測通り。",
-      "lesson": "オープンソースモデル公開後1週間の記事急増パターンは信頼性が高い。今後も同じパターンで予測可能。"
+      "review": "4/4〜4/6で「Gemma 4登場！何がどう変わる？」「Gemma4-31Bを日本語エージェントコーダーに特化させた」「LiteRT-LMでGemma 4 E4B-itをiOS向けにビルド」「Gemma 4をPixel 9aとPixel 7で動かしてみた」「NVIDIAがGemma 4のローカルエージェントAIを加速」等、多数の記事が出現。予測通りの爆発的増加。",
+      "lesson": "オープンソースモデル公開後1〜2週間の記事爆発パターンは信頼性が高い。今後も同様の予測に高い確信度を付けてよい。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "Claude Code Hooksやskillのセキュリティ・品質向上系の記事がさらに増加",
       "status": "的中",
-      "review": "4/4-5のZennでHooks、Skill、ハーネスエンジニアリング関連の記事が多数確認できる。予測通り、「作る」から「安全に運用する」フェーズへの移行が加速。",
-      "lesson": "Claude Codeエコシステムの成熟度予測は的中率が高い。今後は「運用・最適化」→「標準化・テンプレート化」へのフェーズ移行を予測すべき。"
+      "review": "4/4〜4/6で「Claude Codeのセキュリティ設定を本気で固めた話」（ID498）、「AIエージェントが自分で作ったルールをバイパスした話」（ID507）、「Claude Code実運用ベースのガードレール集を公開」等が多数出現。セキュリティ・品質系の記事増加は予測通り。",
+      "lesson": "エコシステム成熟期の「安全運用」記事増加パターンも信頼性が高い。"
     },
     {
-      "original_date": "2026-04-03",
-      "prediction": "「AIエージェント構築代行」が新しいサービスカテゴリとして確立する",
+      "original_date": "2026-04-04",
+      "prediction": "Gemma 4ベースの業界特化AIサービスが日本市場で複数登場する",
       "status": "進行中",
-      "review": "エージェント関連記事は引き続き増加しているが、「サービスカテゴリ」として確立したとは言えない段階。技術的な基盤整備が進行中。",
-      "lesson": "サービスカテゴリの確立は技術成熟だけでなく、市場認知・需要顕在化が必要。もう少し時間がかかる。"
+      "review": "日本語ファインチューニングやローカル実行の検証は進んでいるが、商用サービスとしての登場はまだ確認できない。技術検証フェーズの段階。",
+      "lesson": "技術検証から商用サービスまでのタイムラグは1〜3ヶ月。中期予測としては方向性は正しい。"
     },
     {
       "original_date": "2026-04-03",
       "prediction": "AI自動化サービスの価格競争が激化し、「構築」から「運用・最適化」に収益源がシフトする",
       "status": "進行中",
-      "review": "非エンジニアによるAI活用事例の増加（ID410, 411）が構築の参入障壁低下を示唆。ハーネスエンジニアリングの記事増加は運用・最適化需要の高まりを反映。方向性は予測通り。",
-      "lesson": "長期トレンドの方向性予測は安定している。具体的な時期の特定が課題。"
+      "review": "記事ID536「AIを導入してもっと忙しくなった」や「AI導入後の逆効果問題」が示すように、構築後の運用・最適化の重要性が認識されつつある。4回連続で進行中と判定。",
+      "lesson": "長期トレンドの方向性は正しいが、進行速度の予測が難しい。「完全移行」ではなく「移行が始まる」程度に表現を緩めるべき。"
     }
   ]
 }
