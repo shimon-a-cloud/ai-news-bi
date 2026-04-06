@@ -2,111 +2,122 @@
   "type": "weekly",
   "data": {
     "period": "2026-03-30 〜 2026-04-06",
-    "overview": "今週のAI業界は**ハーネスエンジニアリングの爆発的な体系化**と**AI大手の料金・責任モデル再編**が二大テーマとなった。Claude Code・GitHub Copilot等のAIコーディングツールを「安全に・効率的に運用する」ための設定・制御手法が日本の開発者コミュニティで一気に体系化され、Zennだけで1日5件以上の関連記事が投稿される異常な盛り上がりを見せた。セキュリティ設定、トークン最適化、Hooks、Memory、サブエージェント管理など、Claude Codeの運用ノウハウが急速に蓄積されている。\n\n一方、AI大手の動きとしては**MicrosoftがCopilotを利用規約上「娯楽目的のみ」と明記**し、**AnthropicがOpenClawの追加課金を発表**するなど、法的責任の回避と収益モデルの再構築を同時に進める動きが顕在化した。これにより「AIツールの出力に誰が責任を持つのか」という問いが業界全体に突きつけられた。\n\n技術面では**DeepSeekがV4モデルをHuawei製チップで開発**する決定が複数の海外メディアで同時報道され、米中AI半導体サプライチェーンの二極化が決定的となった。また**Google Gemma 4やAlibaba Qwen 3.6-Plus**などエージェント開発に特化したオープンモデルが相次ぎリリースされ、商用API依存からの脱却オプションが広がった。\n\nビジネス活用面では、非エンジニアがAIツールで実用的なシステムを構築する事例が急増。スマホからAIエージェントに3日で97件のissueを処理させた個人開発者や、365日分のnote記事を自動生成するツールの検証など、AIの「民主化」が加速している。同時にSuno音楽著作権問題やAI生成偽本のAmazon出現など、**AI生成コンテンツの著作権問題**が複数領域で深刻化しており、法整備の遅れが鮮明になった。",
+    "overview": "今週のAI業界は「制御と責任」が最大のテーマだった。MicrosoftがCopilotの利用規約で「娯楽目的のみ」と免責を明記し、AnthropicはOpenClawの追加課金化を発表。AI大手が出力品質の責任を回避する方向に動く中、開発者コミュニティでは逆に「AIをいかに安全に運用するか」を体系化する**ハーネスエンジニアリング**が爆発的に普及した。Zenn・noteで1日5件以上の関連記事が投稿され、CLAUDE.md設計、Hooks、セキュリティ設定、トークン最適化など実践的なノウハウが急速に蓄積されている。\n\n地政学的には、DeepSeekがHuawei製チップでV4モデルを開発する決定が複数メディアで同時報道され、AI半導体サプライチェーンの二極化が決定的になった。中国大手企業が大量事前注文を行い、NVIDIA依存からの脱却が本格化している。\n\nオープンソース陣営ではGoogle Gemma 4やAlibaba Qwen 3.6-Plusなどエージェント特化モデルが相次いでリリースされ、商用API依存からの脱却オプションが増えた。AI推論コストの低下予測（ガートナー：2030年までに90%以上削減）と合わせ、中小企業へのAI導入障壁が着実に下がっている。\n\n日本語圏では、非エンジニアがClaude CodeやChatGPTでアプリを構築する事例が急増。スマホからAIエージェントに97件のissueを処理させた事例や、365日分のnote記事を自動生成する実験など、「AIを使う側」のハードルが劇的に下がった週だった。著作権面ではSunoの音楽著作権問題やAI生成偽本問題が深刻化し、法整備が技術進化に追いつかない現状が浮き彫りになった。",
     "trend_changes": [
       {
         "topic": "ハーネスエンジニアリング",
         "direction": "新出・急増",
-        "detail": "AIコーディングツールの制御・最適化手法が「ハーネスエンジニアリング」として体系化。Zennで語源整理・5社比較・入門・実践記事が1週間で10件以上投稿。先週まではほぼ見られなかった用語が一気にバズワード化した。"
+        "detail": "Claude Codeの制御・設定手法を体系化する「ハーネスエンジニアリング」がZennで1日5件以上投稿される爆発的普及。先週までは個別Tips記事が中心だったが、今週は書籍形式の体系的ガイドや5社比較記事が登場し、知識体系として確立しつつある。"
       },
       {
-        "topic": "Claude Code関連記事",
-        "direction": "増加",
-        "detail": "セキュリティ設定、トークン最適化、VOICEVOX連携、GA4 MCP連携、ガードレール集公開、X自動投稿システム構築など、Claude Codeの「運用・拡張」に焦点を当てた記事が先週比で約2倍に増加。「作る」から「運用する」フェーズへの移行が明確。"
-      },
-      {
-        "topic": "AI大手の責任回避・料金改定",
+        "topic": "AI大手の法的責任回避",
         "direction": "新出",
-        "detail": "MicrosoftのCopilot「娯楽目的のみ」規約、AnthropicのOpenClaw追加課金、GitHub Copilotの広告枠化など、大手が同時期に責任範囲の限定と収益モデル再編に動いた。先週までは個別の動きだったものが、今週は業界トレンドとして合流。"
+        "detail": "MicrosoftのCopilot「娯楽目的のみ」規約、AnthropicのOpenClaw制限など、AI大手がサービスの責任範囲と収益モデルを同時に再定義する動きが今週初めて複数社で同時発生。"
       },
       {
         "topic": "DeepSeek × Huaweiチップ",
-        "direction": "新出",
-        "detail": "DeepSeek V4モデルがHuawei Ascendチップで動作する決定が複数メディアで同時報道。中国大手企業が大量事前注文を実施。NVIDIA依存脱却が「計画」から「実行」フェーズに移行した。"
-      },
-      {
-        "topic": "オープンソースエージェントモデル",
         "direction": "増加",
-        "detail": "Gemma 4（Google）、Qwen 3.6-Plus（Alibaba）、国産LLM（国立情報学研究所）など、エージェント開発特化のオープンモデルが今週だけで3件以上リリース。商用API依存への対抗軸が明確になった。"
-      },
-      {
-        "topic": "AI生成コンテンツ著作権問題",
-        "direction": "増加",
-        "detail": "Suno音楽著作権問題（The Verge報道）、AI生成偽本のAmazon出現、顔認識AIの監視社会懸念など、法・倫理カテゴリの記事が27件と全体の4.5%を占め、先週比で増加傾向。"
+        "detail": "DeepSeek V4のHuaweiチップ採用が6件以上の海外メディアで同時報道。先週の噂レベルから、今週は中国大手の大量事前注文という具体的事実に発展。"
       },
       {
         "topic": "ローカルRAG・軽量AI基盤",
         "direction": "増加",
-        "detail": "DuckDB+Claude CodeによるローカルRAG構築、Vertex AI RAG Engineのサーバーレスモード、ローカルTTSなど、外部API非依存・低コストのAI基盤構築事例が増加。データ主権意識の高まりが背景。"
+        "detail": "DuckDB+Claude CodeのローカルRAG構築記事、Vertex AI RAG Engineサーバーレスモード登場など、RAG構築コストが大幅低下。先週比で関連記事が倍増。"
+      },
+      {
+        "topic": "非エンジニアのAI実装",
+        "direction": "増加",
+        "detail": "スマホからAIエージェントに97件のissueを処理させた事例など、非エンジニアによるAI活用事例が先週比で3倍以上に増加。市場の裾野拡大が加速。"
+      },
+      {
+        "topic": "AI著作権問題",
+        "direction": "増加",
+        "detail": "Suno音楽著作権問題、AI生成偽本のAmazon出現など、AI生成コンテンツの著作権侵害が音楽・出版の複数領域で同時に顕在化。"
+      },
+      {
+        "topic": "Claude Code関連記事",
+        "direction": "増加",
+        "detail": "セキュリティ設定、トークン消費半減術、VOICEVOX音声通知、GA4連携など、Claude Codeの実運用ノウハウ記事が今週だけで20件以上。先週の約1.5倍。"
       }
     ],
     "top_5_news": [
       {
         "title": "DeepSeek V4 Signals Imminent Launch as Huawei Ascend Chips Drive China's AI Push",
-        "source": "複数海外メディア（TechCrunch, Times of India等）",
+        "source": "複数海外メディア（6件以上が同時報道）",
         "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XX1llZENkR2pWbnFhZmE5MXBKbjd3QU9xczJ5cWN5T1ExRjVKRjBMYmt3SjZ4Z3dqd2UxZE5EN0l4MEdlQkdjQ2ZYYXo2MkljTTUwRjdwRGhzbGg5U3VvaGtIWWlkRXdNdHZR?oc=5",
-        "why": "NVIDIA独占だったAI半導体市場に初めて本格的な代替軸が成立。中国AI企業の自立化と、グローバルAIサプライチェーンの二極化を象徴する出来事。中長期的にAI推論コスト競争の激化につながる。"
+        "why": "AI半導体サプライチェーンの二極化を決定づけるニュース。米中規制下でDeepSeekがNVIDIA依存を脱却しHuawei製チップに移行したことは、AI業界の地政学的構造を根本的に変える。中長期的にAI推論コスト競争の激化とモデルの多極化につながる。"
       },
       {
         "title": "Copilot is 'for entertainment purposes only,' according to Microsoft's terms of use",
         "source": "TechCrunch AI",
         "url": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
-        "why": "世界最大のAIツールベンダーが自社製品の出力に責任を持たないと明文化した衝撃。業務でAIを使う全企業に「誰が品質を保証するのか」という根本的な問いを突きつけた。AI自動化サービスを提供する事業者にとっては、運用保証の付加価値が明確に上がった転換点。"
+        "why": "AI大手が出力品質の責任を法的に回避する姿勢を明確にした象徴的な出来事。業務利用するユーザーとの信頼関係に亀裂を生じさせ、「責任を持って運用する」中間支援者（Shistoのような存在）の市場価値を押し上げる。"
       },
       {
         "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
         "source": "TechCrunch",
         "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQakxlX1lJUklzd3JYNkp4Q2NGZlFPZ3NhcmVKYUJYcGprR3dxWWtYMUFrV0VXc1Yta1BNSUR5ZVEtZjdWY2hGeFRQZVNWeVhCX2RHeGtIY2k0ZVVRM1VmMlh2bFZjOWgwTTY2OXlSNTRGOHVNMGhiUkhoUnVHdGx3SHRlQ0Z1aWoyOUNDLXl2VXdMTXdldTVrZzFKSFhnMXJHTXZGXzItU1NnMnZ0aVl3UWp4eWxWRmdL?oc=5",
-        "why": "Claude Codeユーザーに直接影響する料金改定。Shistoの主力ツールのコスト構造が変わるリスクがあり、代替パス（Gemma 4等オープンモデル、API直接利用）の確保が急務となった。"
+        "why": "Claude Code中心のビジネスを展開するShistoに直接影響。Anthropicのプラットフォーム戦略転換（囲い込み強化＋料金再編）は、API直接利用やオープンモデルでの代替パス確保の必要性を示す。"
       },
       {
         "title": "Suno is a music copyright nightmare",
         "source": "The Verge AI",
         "url": "https://www.theverge.com/ai-artificial-intelligence/906896/sunos-copyright-ai-music-covers",
-        "why": "AI生成コンテンツの著作権問題が音楽領域で爆発。テキスト・画像に続き音楽でも著作権訴訟リスクが顕在化し、AI生成コンテンツを扱う全事業者に影響。SNS投稿自動生成を手がけるShistoにも「著作権チェック」の必要性を再確認させる事例。"
+        "why": "AI生成コンテンツの著作権問題が音楽分野で深刻化した象徴的事例。SNS投稿自動生成を提供するShistoにとって、著作権リスク管理が差別化要因になることを示唆。法整備が追いつかない現状が鮮明に。"
       },
       {
-        "title": "In Japan, the robot isn't coming for your job; it's filling the one nobody wants",
-        "source": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/04/05/japan-is-proving-experimental-physical-ai-is-ready-for-the-real-world/",
-        "why": "日本のフィジカルAI実用化事例が海外主要メディアで取り上げられた。人手不足が深刻な日本において、AIロボットが「仕事を奪う」ではなく「誰もやりたがらない仕事を埋める」形で導入が進んでいる。AI＝脅威ではなくAI＝補完というナラティブが日本市場で有効であることを示す。"
+        "title": "ハーネスエンジニアリング — AIを\"使う\"から\"操る\"へ（Zenn書籍形式）ほか関連記事多数",
+        "source": "Zenn（複数著者による同時多発的な体系化）",
+        "url": "https://zenn.dev/kenimo49/books/harness-engineering-guide",
+        "why": "AIツールの「動かす」から「安全に運用する」への移行を象徴するムーブメント。1日5件以上の関連記事が投稿される異例の盛り上がりで、Claude Code運用ノウハウが知識体系として確立。Shistoのサービスに「ハーネスエンジニアリング済み」を標準装備する根拠になる。"
       }
     ],
-    "next_week": {
-      "predictions": [
-        "DeepSeek V4の正式リリースが数週間以内と報道されており、来週中にベンチマーク情報やデモが出る可能性が高い。Huaweiチップでの性能数値が注目される",
-        "AnthropicのOpenClaw追加課金の詳細（料金体系・適用時期）が来週中に発表される可能性。Claude Codeユーザーの反応と代替ツールへの移行動向に注目",
-        "ハーネスエンジニアリング関連の記事・ツール公開が続き、OSSのハーネス設定テンプレートや比較記事がさらに増える。「ハーネスエンジニアリング」が開発者の標準語彙に定着する週になる",
-        "Google Gemma 4のローカル実行事例・ベンチマーク比較記事が増加。Claude Code vs Gemma 4ローカルのコスト・性能比較が話題に",
-        "AI著作権問題が音楽から映像・テキスト領域に波及し、日本でも関連訴訟や規制議論が加速する可能性"
-      ],
-      "actions": [
-        {
-          "action": "Claude CodeのOpenClaw追加課金の自社影響を即座に検証し、月額コスト変動を試算する。必要ならAPI直接利用への切り替え計画を策定",
-          "priority": "high",
-          "reason": "主力ツールの料金変更。影響額の把握が全ての意思決定の前提。4月7日（月）中に完了すべき"
-        },
-        {
-          "action": "Gemma 4をOllamaでMac Studioにローカルデプロイし、日本語応答品質を検証する",
-          "priority": "high",
-          "reason": "OpenClaw課金リスクへの代替パス確保。コストゼロで動作するローカルLLMの実力を「使える/使えない」で判断する"
-        },
-        {
-          "action": "既存稼働システム（LinkedIn投稿自動生成・エンゲートX・AIニュースBI）にハーネスエンジニアリング（セキュリティ設定・Hooks・ガードレール）を適用",
-          "priority": "high",
-          "reason": "AIエージェントの自己バイパス問題が今週報告されており、自社システムの品質保証を先行して固める。顧客への提案時の差別化材料にもなる"
-        },
-        {
-          "action": "DuckDBローカルRAGのプロトタイプを構築し、AIニュースBIの記事検索機能として組み込む",
-          "priority": "medium",
-          "reason": "今週のトレンド（ローカルRAG実用化）を自社サービスに即適用。無料で構築でき、「データが外に出ない」を顧客への売りにできる"
-        },
-        {
-          "action": "MicrosoftのCopilot「娯楽目的のみ」規約を受けて、Shistoの提案資料に「運用保証・品質責任」を明記するセクションを追加",
-          "priority": "medium",
-          "reason": "大手が責任を取らない姿勢を明確にした今、「責任を持って運用する中間支援者」としてのShistoの価値を提案書に反映すべきタイミング"
-        }
-      ]
-    }
+    "top_5_proposals": [
+      {
+        "rank": 1,
+        "service": "不動産・士業向け「書類読取→データ整理」自動化パッケージ",
+        "category": "横展開",
+        "target": "税理士事務所・行政書士事務所・不動産管理会社（従業員5〜30名）",
+        "price_range": "初期構築10〜15万円＋月額2万円",
+        "how_to_sell": "RAYUP等の顧問税理士に「領収書転記を自動化した実績がある。先生の事務所でも同じことができる」と直接紹介してもらう。地元の税理士会・行政書士会の勉強会で15分デモも有効。",
+        "weekly_comment": "MicrosoftがCopilotを『娯楽目的のみ』と免責した今週、業務で信頼できる書類処理AIへの需要は確実に高まった。Shistoの領収書転記は実稼働中の実績があり、この信頼格差を即座に営業トークに使える。"
+      },
+      {
+        "rank": 2,
+        "service": "飲食・小売チェーン向けSNS投稿AI一括生成",
+        "category": "横展開",
+        "target": "3〜20店舗を持つ飲食チェーン・小売チェーン",
+        "price_range": "初期構築8万円＋月額1.5万円",
+        "how_to_sell": "兄の会社経由で取引先の飲食・小売事業者を紹介。商工会議所の交流会で「実際にLinkedIn投稿を自動生成して月額運用している実績」をデモ。",
+        "weekly_comment": "今週noteで『AI導入で逆に忙しくなった』記事が反響を得ており、複数店舗のSNS運用はまさにこの問題の典型。AI著作権問題の深刻化を受け、『著作権チェック済みのAI投稿』を付加価値にできるのも今週ならでは。"
+      },
+      {
+        "rank": 3,
+        "service": "中小企業向け「AI業務仕分け」診断＋自動化パイロット",
+        "category": "新規",
+        "target": "従業員10〜50名の中小企業（業界不問）",
+        "price_range": "診断5万円＋パイロット自動化10万円（合計15万円パッケージ）",
+        "how_to_sell": "兄の3社での実績を「診断レポート事例」としてまとめ、商工会議所やビジネス交流会で紹介。バスケ時代の人脈（チームメイト・関係者の勤務先企業）にもアプローチ。",
+        "weekly_comment": "今週の非エンジニアAI活用事例の急増は市場啓蒙を意味する。『AIで何かできそう』と思い始めた経営者が『何から始めればいいかわからない』段階にいる今が、診断サービスの最適なタイミング。"
+      },
+      {
+        "rank": 4,
+        "service": "小規模事業者向け「5分業務自動化」導入パック",
+        "category": "新規",
+        "target": "個人事業主、従業員5名以下の小規模事業者",
+        "price_range": "一括5〜8万円（5つの自動化セット）",
+        "how_to_sell": "既存顧客（兄の3社）への追加提案から開始。「まず小さく始めたい」層をSNSやnoteでの発信で集客。",
+        "weekly_comment": "今週Zennで『コピペ自動化を10分で実装』『スマホからissue97件処理』等の事例が急増し、小さな自動化の価値が広く認知された。5万円の低単価は創業直後のShistoにとって実績数を積むのに最適で、ランク3の診断サービスへのアップセル導線にもなる。"
+      },
+      {
+        "rank": 5,
+        "service": "DuckDB×Claude ローカルRAG社内ナレッジ検索システム",
+        "category": "新規",
+        "target": "従業員20〜100名の中小企業（特に製造業・建設業）",
+        "price_range": "初期構築15〜20万円＋月額3万円",
+        "how_to_sell": "兄の会社（RAYUP・江田畜産・KFJ）で「社内マニュアル検索Bot」としてパイロット導入。実績を作った後、同業他社に「データは社外に一切出ません」で展開。",
+        "weekly_comment": "今週DuckDB+Claude CodeのローカルRAG構築記事とVertex AIサーバーレスモード登場で、技術的な実現性とコスト効率が一気に向上した。AI大手の法的責任回避が進む中、『データが外に出ない＋責任を持つ運用者がいる』は中小企業に刺さるセールスポイント。"
+      }
+    ]
   }
 }

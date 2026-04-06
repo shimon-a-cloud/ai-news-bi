@@ -610,17 +610,24 @@ function renderReport() {
                     `).join('')}
                 </div>
             ` : ''}
-            ${data.next_week ? `
+            ${(data.top_5_proposals && data.top_5_proposals.length) ? `
                 <div class="report-section">
-                    <div class="report-section-title">来週の予測とアクション</div>
-                    ${(data.next_week.predictions || []).map(p => `<div style="margin-bottom:4px">- ${esc(p)}</div>`).join('')}
-                    ${(data.next_week.actions || []).map(a => `
-                        <div class="action-item">
-                            <span class="action-priority priority-${a.priority || 'medium'}">${(a.priority || '').toUpperCase()}</span>
-                            <div>
-                                <div class="action-text">${esc(a.action)}</div>
-                                <div class="action-reason">${esc(a.reason || '')}</div>
+                    <div class="report-section-title">今週の提案ベスト5</div>
+                    ${data.top_5_proposals.map(p => `
+                        <div class="proposal-item" style="cursor:default">
+                            <div class="proposal-header">
+                                <div class="proposal-name">
+                                    <span style="color:var(--accent);font-weight:700;margin-right:6px">#${p.rank}</span>
+                                    ${p.category ? `<span class="proposal-category-badge ${p.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(p.category)}</span>` : ''}
+                                    ${esc(p.service || '')}
+                                </div>
                             </div>
+                            <div class="proposal-meta">
+                                ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
+                                ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
+                            </div>
+                            ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                            ${p.weekly_comment ? `<div class="news-why" style="margin-top:6px">${esc(p.weekly_comment)}</div>` : ''}
                         </div>
                     `).join('')}
                 </div>
