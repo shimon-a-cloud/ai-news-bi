@@ -112,7 +112,10 @@ function renderHome() {
         proposalsEl.innerHTML = proposals.map((p, i) => `
             <div class="proposal-item" onclick="toggleProposal('h${i}')" style="cursor:pointer">
                 <div class="proposal-header">
-                    <div class="proposal-name">${esc(p.service || p.title || '')}</div>
+                    <div class="proposal-name">
+                        ${p.category ? `<span class="proposal-category-badge ${p.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(p.category)}</span>` : ''}
+                        ${esc(p.service || p.title || '')}
+                    </div>
                     <span class="proposal-toggle" id="proposalToggleh${i}">▼</span>
                 </div>
                 <div class="proposal-desc">${esc(p.description || '')}</div>
@@ -123,6 +126,7 @@ function renderHome() {
                 </div>
                 <div class="proposal-detail" id="proposalDetailh${i}" style="display:none">
                     ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
+                    ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
                     ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                     ${(p.how_to_implement && p.how_to_implement.length) ? `
                         <div class="proposal-steps-title">実装ステップ</div>
@@ -435,7 +439,10 @@ function renderProposalsArchive() {
                     return `
                     <div class="proposal-item" onclick="toggleProposal('a${uid}')" style="cursor:pointer">
                         <div class="proposal-header">
-                            <div class="proposal-name">${esc(p.service || p.title || '')}</div>
+                            <div class="proposal-name">
+                                ${p.category ? `<span class="proposal-category-badge ${p.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(p.category)}</span>` : ''}
+                                ${esc(p.service || p.title || '')}
+                            </div>
                             <span class="proposal-toggle" id="proposalTogglea${uid}">▼</span>
                         </div>
                         <div class="proposal-desc">${esc(p.description || '')}</div>
@@ -446,6 +453,7 @@ function renderProposalsArchive() {
                         </div>
                         <div class="proposal-detail" id="proposalDetaila${uid}" style="display:none">
                             ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
+                            ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
                             ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                             ${(p.how_to_implement && p.how_to_implement.length) ? `
                                 <div class="proposal-steps-title">実装ステップ</div>
@@ -479,12 +487,14 @@ function implementArchiveProposal(dayIndex, propIndex) {
 
     const prompt = `以下の活用提案の実装を検討しています。
 
+${p.category ? `【カテゴリ】${p.category}` : ''}
 【サービス名】${p.service || ''}
 【説明】${p.description || ''}
 【ターゲット】${p.target || ''}
 【価格帯】${p.price_range || ''}
 【工数】${p.effort || ''}
 【提案理由】${p.reason || ''}
+${p.how_to_sell ? `【営業経路】${p.how_to_sell}` : ''}
 【営業ピッチ】${p.sales_pitch || ''}
 【具体例】${p.example || ''}
 【使用ツール】${tools}
@@ -673,12 +683,14 @@ function implementProposal(index) {
 
     const prompt = `以下の活用提案の実装を検討しています。
 
+${p.category ? `【カテゴリ】${p.category}` : ''}
 【サービス名】${p.service || ''}
 【説明】${p.description || ''}
 【ターゲット】${p.target || ''}
 【価格帯】${p.price_range || ''}
 【工数】${p.effort || ''}
 【提案理由】${p.reason || ''}
+${p.how_to_sell ? `【営業経路】${p.how_to_sell}` : ''}
 【営業ピッチ】${p.sales_pitch || ''}
 【具体例】${p.example || ''}
 【使用ツール】${tools}
