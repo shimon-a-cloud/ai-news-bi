@@ -857,7 +857,6 @@ async function executeSearch() {
             if (r._type === 'proposal') return renderSearchProposal(r);
             return renderSearchArticle(r);
         }).join('');
-        }).join('');
 
     } catch (err) {
         resultsEl.innerHTML = `
