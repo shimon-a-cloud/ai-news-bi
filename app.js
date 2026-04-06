@@ -92,12 +92,14 @@ function renderHome() {
     if (actions.length === 0) {
         actionsEl.innerHTML = '<div class="empty-state">アクションなし</div>';
     } else {
-        actionsEl.innerHTML = actions.map(a => `
+        actionsEl.innerHTML = actions.map((a, i) => `
             <div class="action-item">
                 <span class="action-priority priority-${a.priority || 'medium'}">${(a.priority || 'medium').toUpperCase()}</span>
-                <div>
+                <div style="flex:1">
                     <div class="action-text">${esc(a.action)}</div>
                     ${a.reason ? `<div class="action-reason">${esc(a.reason)}</div>` : ''}
+                    ${a.deadline_hint ? `<div class="action-reason">期限: ${esc(a.deadline_hint)}</div>` : ''}
+                    <button class="action-consult-btn" onclick="consultAction(${i})">Claude Codeで相談</button>
                 </div>
             </div>
         `).join('');
@@ -717,6 +719,38 @@ ${steps}
         showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
     }).catch(() => {
         // フォールバック: テキストエリアで手動コピー
+        const ta = document.createElement('textarea');
+        ta.value = cmd;
+        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
+    });
+}
+
+function consultAction(index) {
+    const a = dailyData.weekly_actions[index];
+    if (!a) return;
+
+    const prompt = `以下のアクションを実行したいです。具体的な進め方を相談させてください。
+
+【アクション】${a.action || ''}
+【優先度】${a.priority || ''}
+【理由】${a.reason || ''}
+${a.deadline_hint ? `【期限の目安】${a.deadline_hint}` : ''}
+
+---
+まずこのアクションの具体的な実行手順を提示してください。
+不明点があれば質問してから進めてください。`;
+
+    const escaped = prompt.replace(/'/g, "'\\''");
+    const cmd = `claude '${escaped}'`;
+
+    navigator.clipboard.writeText(cmd).then(() => {
+        showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
+    }).catch(() => {
         const ta = document.createElement('textarea');
         ta.value = cmd;
         ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
