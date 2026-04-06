@@ -135,7 +135,7 @@
             <div class="section-card">
                 <h2 class="section-title">RAG検索</h2>
                 <div class="search-box">
-                    <input type="text" id="searchInput" class="search-input" placeholder="記事を検索（キーワード or 自然言語）">
+                    <input type="text" id="searchInput" class="search-input" placeholder="記事・提案を検索（キーワード or 自然言語）">
                     <button id="searchBtn" class="search-btn">検索</button>
                 </div>
                 <div class="search-filters">
@@ -146,6 +146,13 @@
                     </select>
                     <select id="searchCategory" class="search-select">
                         <option value="">全カテゴリ</option>
+                    </select>
+                    <select id="searchTarget" class="search-select">
+                        <option value="">すべて</option>
+                        <option value="article">記事のみ</option>
+                        <option value="proposal">提案のみ</option>
+                        <option value="横展開">提案：横展開</option>
+                        <option value="新規">提案：新規</option>
                     </select>
                     <input type="number" id="searchLimit" class="search-limit" value="20" min="1" max="100" placeholder="件数">
                 </div>

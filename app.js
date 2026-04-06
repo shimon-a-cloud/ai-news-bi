@@ -820,6 +820,7 @@ async function executeSearch() {
 
     const mode = document.getElementById('searchMode').value;
     const category = document.getElementById('searchCategory').value;
+    const target = document.getElementById('searchTarget').value;
     const limit = parseInt(document.getElementById('searchLimit').value) || 20;
     const btn = document.getElementById('searchBtn');
     const resultsEl = document.getElementById('searchResults');
@@ -831,6 +832,7 @@ async function executeSearch() {
 
     const params = new URLSearchParams({ q: query, mode, limit });
     if (category) params.set('category', category);
+    if (target) params.set('target', target);
 
     try {
         const res = await fetch(`${RAG_API}/api/search?${params}`);
