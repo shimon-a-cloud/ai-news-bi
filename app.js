@@ -837,7 +837,8 @@ async function executeSearch() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
 
-        statusEl.textContent = `${data.count}件ヒット (${mode}モード)`;
+        const modeLabel = {hybrid: 'おまかせ', fts: '単語で探す', semantic: '意味で探す'}[mode] || mode;
+        statusEl.textContent = `${data.count}件ヒット（${modeLabel}）`;
 
         if (data.results.length === 0) {
             resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する記事が見つかりませんでした</div></div>';
