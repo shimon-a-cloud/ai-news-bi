@@ -738,7 +738,6 @@ function consultAction(index) {
 【アクション】${a.action || ''}
 【優先度】${a.priority || ''}
 【理由】${a.reason || ''}
-${a.deadline_hint ? `【期限の目安】${a.deadline_hint}` : ''}
 
 ---
 まずこのアクションの具体的な実行手順を提示してください。
