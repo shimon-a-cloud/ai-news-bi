@@ -7,6 +7,7 @@ let linkedinData = null;
 let reportData = null;
 let proposalsData = null;
 let predictionsArchiveData = null;
+let articlesSearchData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -49,13 +50,14 @@ async function loadJSON(path) {
 }
 
 async function loadAllData() {
-    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData] = await Promise.all([
+    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData, articlesSearchData] = await Promise.all([
         loadJSON('daily.json'),
         loadJSON('trends.json'),
         loadJSON('linkedin.json'),
         loadJSON('report.json'),
         loadJSON('proposals.json'),
         loadJSON('predictions_archive.json'),
+        loadJSON('articles_search.json'),
     ]);
 }
 
@@ -867,19 +869,21 @@ function esc(str) {
     return d.innerHTML;
 }
 
-// ── Search (RAG) ──
+// ── Search ──
 const RAG_API = 'http://127.0.0.1:8901';
+let ragAvailable = false;
 
 function initSearch() {
     const input = document.getElementById('searchInput');
     const btn = document.getElementById('searchBtn');
-    const modeSelect = document.getElementById('searchMode');
     const categorySelect = document.getElementById('searchCategory');
+    const statusEl = document.getElementById('searchStatus');
 
-    // カテゴリ選択肢をAPIから取得
-    fetch(`${RAG_API}/api/meta`)
+    // RAGサーバー接続を試行
+    fetch(`${RAG_API}/api/meta`, { signal: AbortSignal.timeout(2000) })
         .then(r => r.json())
         .then(meta => {
+            ragAvailable = true;
             (meta.categories || []).forEach(c => {
                 const opt = document.createElement('option');
                 opt.value = c;
@@ -887,18 +891,65 @@ function initSearch() {
                 categorySelect.appendChild(opt);
             });
             const info = meta.date_range || {};
-            document.getElementById('searchStatus').textContent =
-                `DB: ${info.total || 0}件 (${info.min_date || '?'} 〜 ${info.max_date || '?'})`;
+            statusEl.textContent = `RAG: ${info.total || 0}件 (${info.min_date || '?'} 〜 ${info.max_date || '?'})`;
+            // RAG時は検索モード選択を表示
+            document.getElementById('searchMode').style.display = '';
         })
         .catch(() => {
-            document.getElementById('searchStatus').innerHTML =
-                '<span style="color:var(--red)">RAGサーバー未起動</span>';
+            ragAvailable = false;
+            // クライアントサイド用にカテゴリをデータから取得
+            const cats = new Set();
+            (articlesSearchData || []).forEach(a => { if (a.category) cats.add(a.category); });
+            [...cats].sort().forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                categorySelect.appendChild(opt);
+            });
+            const total = (articlesSearchData || []).length;
+            statusEl.textContent = total ? `記事${total}件 + 提案${(proposalsData || []).reduce((s,d) => s + d.proposals.length, 0)}件` : '';
+            // クライアントサイドでは検索モードは不要
+            document.getElementById('searchMode').style.display = 'none';
         });
 
     btn.addEventListener('click', () => executeSearch());
     input.addEventListener('keydown', e => {
         if (e.key === 'Enter') executeSearch();
     });
+}
+
+function clientSideSearch(query, category, target, limit) {
+    const q = query.toLowerCase();
+    let results = [];
+
+    // 記事検索
+    if (target !== 'proposal' && target !== '横展開' && target !== '新規') {
+        for (const a of (articlesSearchData || [])) {
+            if (category && a.category !== category) continue;
+            const text = [a.title, a.summary, a.source, a.category].filter(Boolean).join(' ').toLowerCase();
+            if (!text.includes(q)) continue;
+            results.push({ ...a, _type: 'article' });
+        }
+    }
+
+    // 提案検索
+    if (target !== 'article') {
+        for (const day of (proposalsData || [])) {
+            for (const p of day.proposals) {
+                if (target === '横展開' && p.category !== '横展開') continue;
+                if (target === '新規' && p.category !== '新規') continue;
+                const text = [
+                    p.service, p.description, p.target, p.price_range,
+                    p.reason, p.how_to_sell, p.sales_pitch, p.example,
+                    p.category, ...(p.tools || []),
+                ].filter(Boolean).join(' ').toLowerCase();
+                if (!text.includes(q)) continue;
+                results.push({ ...p, date: day.date, _type: 'proposal' });
+            }
+        }
+    }
+
+    return results.slice(0, limit);
 }
 
 async function executeSearch() {
@@ -917,49 +968,49 @@ async function executeSearch() {
     btn.textContent = '検索中...';
     resultsEl.innerHTML = '';
 
-    const params = new URLSearchParams({ q: query, mode, limit });
-    if (category) params.set('category', category);
-    if (target) params.set('target', target);
+    let allResults = [];
 
-    try {
-        const res = await fetch(`${RAG_API}/api/search?${params}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-
-        const modeLabel = {hybrid: 'おまかせ', fts: '単語で探す', semantic: '意味で探す'}[mode] || mode;
-        statusEl.textContent = `${data.count}件ヒット（${modeLabel}）`;
-
-        if (data.results.length === 0) {
-            resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する結果が見つかりませんでした</div></div>';
-            return;
+    if (ragAvailable) {
+        // RAGサーバー経由
+        try {
+            const params = new URLSearchParams({ q: query, mode, limit });
+            if (category) params.set('category', category);
+            if (target) params.set('target', target);
+            const res = await fetch(`${RAG_API}/api/search?${params}`);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            allResults = data.results;
+        } catch {
+            // RAG失敗時はクライアントサイドにフォールバック
+            allResults = clientSideSearch(query, category, target, limit);
         }
+    } else {
+        // クライアントサイド検索
+        allResults = clientSideSearch(query, category, target, limit);
+    }
 
-        // 記事数・提案数を表示
-        const articleCount = data.results.filter(r => r._type !== 'proposal').length;
-        const proposalCount = data.results.filter(r => r._type === 'proposal').length;
-        const countParts = [];
-        if (articleCount) countParts.push(`記事${articleCount}件`);
-        if (proposalCount) countParts.push(`提案${proposalCount}件`);
-        statusEl.textContent = `${countParts.join(' + ')}ヒット（${modeLabel}）`;
-
-        resultsEl.innerHTML = data.results.map(r => {
-            if (r._type === 'proposal') return renderSearchProposal(r);
-            return renderSearchArticle(r);
-        }).join('');
-
-    } catch (err) {
-        resultsEl.innerHTML = `
-            <div class="section-card search-server-error">
-                RAGサーバーに接続できません。<br>
-                ローカルサーバーを起動してください：
-                <code>cd ai-news-bi && python3 rag/server.py</code>
-            </div>
-        `;
-        statusEl.innerHTML = '<span style="color:var(--red)">接続エラー</span>';
-    } finally {
+    if (allResults.length === 0) {
+        resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する結果が見つかりませんでした</div></div>';
+        statusEl.textContent = '0件';
         btn.disabled = false;
         btn.textContent = '検索';
+        return;
     }
+
+    const articleCount = allResults.filter(r => r._type !== 'proposal').length;
+    const proposalCount = allResults.filter(r => r._type === 'proposal').length;
+    const countParts = [];
+    if (articleCount) countParts.push(`記事${articleCount}件`);
+    if (proposalCount) countParts.push(`提案${proposalCount}件`);
+    statusEl.textContent = countParts.join(' + ');
+
+    resultsEl.innerHTML = allResults.map(r => {
+        if (r._type === 'proposal') return renderSearchProposal(r);
+        return renderSearchArticle(r);
+    }).join('');
+
+    btn.disabled = false;
+    btn.textContent = '検索';
 }
 
 function renderSearchArticle(r) {
