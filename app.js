@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderTrends();
     renderPredictions();
     renderProposalsArchive();
+    initProposalSearch();
     renderLinkedIn();
     renderReport();
     document.getElementById('headerDate').textContent = dailyData?.date || '';
@@ -420,6 +421,92 @@ function renderPredictionList(elId, items) {
 }
 
 // ── Render: Proposals Archive ──
+function initProposalSearch() {
+    const input = document.getElementById('proposalSearchInput');
+    const categoryFilter = document.getElementById('proposalCategoryFilter');
+    const run = () => filterProposals();
+    input.addEventListener('input', run);
+    categoryFilter.addEventListener('change', run);
+}
+
+function filterProposals() {
+    const query = (document.getElementById('proposalSearchInput').value || '').trim().toLowerCase();
+    const category = document.getElementById('proposalCategoryFilter').value;
+    const statusEl = document.getElementById('proposalSearchStatus');
+    const archive = proposalsData || [];
+
+    if (!query && !category) {
+        statusEl.textContent = '';
+        renderProposalsArchive();
+        return;
+    }
+
+    // 全提案をフラット化して検索
+    const matches = [];
+    for (const day of archive) {
+        for (const p of day.proposals) {
+            if (category && p.category !== category) continue;
+            if (query) {
+                const text = [
+                    p.service, p.description, p.target, p.price_range,
+                    p.reason, p.how_to_sell, p.sales_pitch, p.example,
+                    p.category, ...(p.tools || []),
+                ].filter(Boolean).join(' ').toLowerCase();
+                if (!text.includes(query)) continue;
+            }
+            matches.push({ date: day.date, proposal: p });
+        }
+    }
+
+    statusEl.textContent = `${matches.length}件`;
+    renderProposalSearchResults(matches);
+}
+
+function renderProposalSearchResults(matches) {
+    const el = document.getElementById('proposalsArchive');
+    if (matches.length === 0) {
+        el.innerHTML = '<div class="empty-state">該当する提案が見つかりませんでした</div>';
+        return;
+    }
+    el.innerHTML = matches.map((m, i) => {
+        const p = m.proposal;
+        const uid = `ps_${i}`;
+        return `
+        <div class="proposal-item" onclick="toggleProposal('${uid}')" style="cursor:pointer">
+            <div class="proposal-header">
+                <div class="proposal-name">
+                    ${p.category ? `<span class="proposal-category-badge ${p.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(p.category)}</span>` : ''}
+                    ${esc(p.service || '')}
+                </div>
+                <span style="font-size:11px;color:var(--text-muted)">${esc(m.date)}</span>
+            </div>
+            <div class="proposal-desc">${esc(p.description || '')}</div>
+            <div class="proposal-meta">
+                ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
+                ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
+                ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
+            </div>
+            <div class="proposal-detail" id="proposalDetail${uid}" style="display:none">
+                ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
+                ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
+                ${(p.how_to_implement && p.how_to_implement.length) ? `
+                    <div class="proposal-steps-title">実装ステップ</div>
+                    <ol class="proposal-steps">
+                        ${p.how_to_implement.map(s => `<li>${esc(s)}</li>`).join('')}
+                    </ol>
+                ` : ''}
+                ${(p.tools && p.tools.length) ? `
+                    <div class="proposal-tools">
+                        ${p.tools.map(t => `<span class="proposal-tool-tag">${esc(t)}</span>`).join('')}
+                    </div>
+                ` : ''}
+                ${p.reason ? `<div class="news-why" style="margin-top:8px">${esc(p.reason)}</div>` : ''}
+            </div>
+        </div>`;
+    }).join('');
+}
+
 function renderProposalsArchive() {
     const el = document.getElementById('proposalsArchive');
     const archive = proposalsData || [];

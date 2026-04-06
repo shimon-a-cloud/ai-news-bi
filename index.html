@@ -118,6 +118,17 @@
         <section class="tab-content" id="tab-proposals">
             <div class="section-card">
                 <h2 class="section-title">活用提案アーカイブ</h2>
+                <div class="search-box" style="margin-bottom:12px">
+                    <input type="text" id="proposalSearchInput" class="search-input" placeholder="提案を検索（サービス名・ターゲット等）">
+                </div>
+                <div class="search-filters" style="margin-bottom:12px">
+                    <select id="proposalCategoryFilter" class="search-select">
+                        <option value="">全カテゴリ</option>
+                        <option value="横展開">横展開</option>
+                        <option value="新規">新規</option>
+                    </select>
+                    <span id="proposalSearchStatus" class="search-status" style="font-size:12px"></span>
+                </div>
                 <div id="proposalsArchive" class="proposal-archive-list"></div>
             </div>
         </section>
