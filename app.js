@@ -780,6 +780,118 @@ function esc(str) {
     return d.innerHTML;
 }
 
+// ── Search (RAG) ──
+const RAG_API = 'http://127.0.0.1:8901';
+
+function initSearch() {
+    const input = document.getElementById('searchInput');
+    const btn = document.getElementById('searchBtn');
+    const modeSelect = document.getElementById('searchMode');
+    const categorySelect = document.getElementById('searchCategory');
+
+    // カテゴリ選択肢をAPIから取得
+    fetch(`${RAG_API}/api/meta`)
+        .then(r => r.json())
+        .then(meta => {
+            (meta.categories || []).forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                categorySelect.appendChild(opt);
+            });
+            const info = meta.date_range || {};
+            document.getElementById('searchStatus').textContent =
+                `DB: ${info.total || 0}件 (${info.min_date || '?'} 〜 ${info.max_date || '?'})`;
+        })
+        .catch(() => {
+            document.getElementById('searchStatus').innerHTML =
+                '<span style="color:var(--red)">RAGサーバー未起動</span>';
+        });
+
+    btn.addEventListener('click', () => executeSearch());
+    input.addEventListener('keydown', e => {
+        if (e.key === 'Enter') executeSearch();
+    });
+}
+
+async function executeSearch() {
+    const query = document.getElementById('searchInput').value.trim();
+    if (!query) return;
+
+    const mode = document.getElementById('searchMode').value;
+    const category = document.getElementById('searchCategory').value;
+    const limit = parseInt(document.getElementById('searchLimit').value) || 20;
+    const btn = document.getElementById('searchBtn');
+    const resultsEl = document.getElementById('searchResults');
+    const statusEl = document.getElementById('searchStatus');
+
+    btn.disabled = true;
+    btn.textContent = '検索中...';
+    resultsEl.innerHTML = '';
+
+    const params = new URLSearchParams({ q: query, mode, limit });
+    if (category) params.set('category', category);
+
+    try {
+        const res = await fetch(`${RAG_API}/api/search?${params}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+
+        statusEl.textContent = `${data.count}件ヒット (${mode}モード)`;
+
+        if (data.results.length === 0) {
+            resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する記事が見つかりませんでした</div></div>';
+            return;
+        }
+
+        resultsEl.innerHTML = data.results.map(r => {
+            let entities = [];
+            if (r.key_entities) {
+                try {
+                    entities = typeof r.key_entities === 'string' ? JSON.parse(r.key_entities) : r.key_entities;
+                } catch {}
+            }
+            return `
+                <div class="search-result-item">
+                    <div class="search-result-meta">
+                        <span class="news-source">${esc(r.source || '')}</span>
+                        <span class="search-result-date">${esc(r.date || '')}</span>
+                        ${r.category ? `<span class="search-result-category">${esc(r.category)}</span>` : ''}
+                        ${r.relevance_score ? `<span class="search-result-relevance">関連度 ${r.relevance_score}/5</span>` : ''}
+                    </div>
+                    <div class="search-result-title">
+                        <a href="${esc(r.url || '#')}" target="_blank" rel="noopener">${esc(r.title)}</a>
+                    </div>
+                    ${r.summary ? `<div class="search-result-summary">${esc(r.summary)}</div>` : ''}
+                    ${entities.length ? `
+                        <div class="search-result-entities">
+                            ${entities.map(e => `<span class="entity-tag">${esc(e)}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            `;
+        }).join('');
+
+    } catch (err) {
+        resultsEl.innerHTML = `
+            <div class="section-card search-server-error">
+                RAGサーバーに接続できません。<br>
+                ローカルサーバーを起動してください：
+                <code>cd ai-news-bi && python3 rag/server.py</code>
+            </div>
+        `;
+        statusEl.innerHTML = '<span style="color:var(--red)">接続エラー</span>';
+    } finally {
+        btn.disabled = false;
+        btn.textContent = '検索';
+    }
+}
+
+// 初期化に検索セットアップを追加
+document.addEventListener('DOMContentLoaded', () => {
+    initSearch();
+});
+
 // ── Service Worker ──
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');

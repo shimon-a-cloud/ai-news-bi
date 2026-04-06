@@ -130,6 +130,30 @@
             </div>
         </section>
 
+        <!-- 検索タブ -->
+        <section class="tab-content" id="tab-search">
+            <div class="section-card">
+                <h2 class="section-title">RAG検索</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="search-input" placeholder="記事を検索（キーワード or 自然言語）">
+                    <button id="searchBtn" class="search-btn">検索</button>
+                </div>
+                <div class="search-filters">
+                    <select id="searchMode" class="search-select">
+                        <option value="hybrid">ハイブリッド</option>
+                        <option value="fts">キーワード</option>
+                        <option value="semantic">セマンティック</option>
+                    </select>
+                    <select id="searchCategory" class="search-select">
+                        <option value="">全カテゴリ</option>
+                    </select>
+                    <input type="number" id="searchLimit" class="search-limit" value="20" min="1" max="100" placeholder="件数">
+                </div>
+                <div id="searchStatus" class="search-status"></div>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </section>
+
         <!-- レポートタブ -->
         <section class="tab-content" id="tab-report">
             <div class="section-card">
@@ -156,6 +180,10 @@
         <button class="nav-btn" data-tab="proposals">
             <span class="nav-icon">&#9733;</span>
             <span class="nav-label">提案</span>
+        </button>
+        <button class="nav-btn" data-tab="search">
+            <span class="nav-icon">&#128269;</span>
+            <span class="nav-label">検索</span>
         </button>
         <button class="nav-btn" data-tab="linkedin">
             <span class="nav-icon">&#9998;</span>
