@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ai-news-bi-v23';
+const CACHE_NAME = 'ai-news-bi-v24';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', e => {

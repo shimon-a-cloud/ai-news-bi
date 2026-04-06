@@ -98,7 +98,6 @@ function renderHome() {
                 <div style="flex:1">
                     <div class="action-text">${esc(a.action)}</div>
                     ${a.reason ? `<div class="action-reason">${esc(a.reason)}</div>` : ''}
-                    ${a.deadline_hint ? `<div class="action-reason">期限: ${esc(a.deadline_hint)}</div>` : ''}
                     <button class="action-consult-btn" onclick="consultAction(${i})">Claude Codeで相談</button>
                 </div>
             </div>
