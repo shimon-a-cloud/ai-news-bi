@@ -169,9 +169,6 @@ function renderHome() {
 
 // ── Render: Trends ──
 function renderTrends() {
-    // Category Acceleration
-    renderCategoryAcceleration();
-
     // Trends from daily analysis
     const trendsListEl = document.getElementById('trendsList');
     const trends = dailyData?.trends || [];
@@ -322,40 +319,6 @@ function chartOptions(yLabel) {
         },
         plugins: { legend: { display: false } },
     };
-}
-
-// ── Render: Category Acceleration ──
-function renderCategoryAcceleration() {
-    const el = document.getElementById('categoryAcceleration');
-    const accel = trendsData?.category_acceleration || [];
-    if (accel.length === 0) {
-        el.innerHTML = '<div class="empty-state">加速度データなし</div>';
-        return;
-    }
-    el.innerHTML = accel.map(a => {
-        const pct = a.change_pct;
-        let badgeClass, badgeText;
-        if (a.previous === 0 && a.current > 0) {
-            badgeClass = 'accel-new';
-            badgeText = 'NEW';
-        } else if (pct > 10) {
-            badgeClass = 'accel-up';
-            badgeText = `+${pct}%`;
-        } else if (pct < -10) {
-            badgeClass = 'accel-down';
-            badgeText = `${pct}%`;
-        } else {
-            badgeClass = 'accel-flat';
-            badgeText = `${pct > 0 ? '+' : ''}${pct}%`;
-        }
-        return `
-            <div class="acceleration-item">
-                <div class="acceleration-name">${esc(a.category || '未分類')}</div>
-                <div class="acceleration-counts">${a.previous} → ${a.current}</div>
-                <span class="acceleration-badge ${badgeClass}">${badgeText}</span>
-            </div>
-        `;
-    }).join('');
 }
 
 // ── Render: Prediction Accuracy ──
