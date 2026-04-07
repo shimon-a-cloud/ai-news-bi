@@ -907,7 +907,7 @@ function initSearch() {
                 categorySelect.appendChild(opt);
             });
             const total = (articlesSearchData || []).length;
-            statusEl.textContent = total ? `記事${total}件 + 提案${(proposalsData || []).reduce((s,d) => s + d.proposals.length, 0)}件` : '';
+            statusEl.textContent = total ? `記事${total}件` : '';
             // クライアントサイドでは検索モードは不要
             document.getElementById('searchMode').style.display = 'none';
         });
@@ -918,35 +918,15 @@ function initSearch() {
     });
 }
 
-function clientSideSearch(query, category, target, limit) {
+function clientSideSearch(query, category, limit) {
     const q = query.toLowerCase();
     let results = [];
 
-    // 記事検索
-    if (target !== 'proposal' && target !== '横展開' && target !== '新規') {
-        for (const a of (articlesSearchData || [])) {
-            if (category && a.category !== category) continue;
-            const text = [a.title, a.summary, a.source, a.category].filter(Boolean).join(' ').toLowerCase();
-            if (!text.includes(q)) continue;
-            results.push({ ...a, _type: 'article' });
-        }
-    }
-
-    // 提案検索
-    if (target !== 'article') {
-        for (const day of (proposalsData || [])) {
-            for (const p of day.proposals) {
-                if (target === '横展開' && p.category !== '横展開') continue;
-                if (target === '新規' && p.category !== '新規') continue;
-                const text = [
-                    p.service, p.description, p.target, p.price_range,
-                    p.reason, p.how_to_sell, p.sales_pitch, p.example,
-                    p.category, ...(p.tools || []),
-                ].filter(Boolean).join(' ').toLowerCase();
-                if (!text.includes(q)) continue;
-                results.push({ ...p, date: day.date, _type: 'proposal' });
-            }
-        }
+    for (const a of (articlesSearchData || [])) {
+        if (category && a.category !== category) continue;
+        const text = [a.title, a.summary, a.source, a.category].filter(Boolean).join(' ').toLowerCase();
+        if (!text.includes(q)) continue;
+        results.push(a);
     }
 
     return results.slice(0, limit);
@@ -958,7 +938,6 @@ async function executeSearch() {
 
     const mode = document.getElementById('searchMode').value;
     const category = document.getElementById('searchCategory').value;
-    const target = document.getElementById('searchTarget').value;
     const limit = parseInt(document.getElementById('searchLimit').value) || 20;
     const btn = document.getElementById('searchBtn');
     const resultsEl = document.getElementById('searchResults');
@@ -975,18 +954,17 @@ async function executeSearch() {
         try {
             const params = new URLSearchParams({ q: query, mode, limit });
             if (category) params.set('category', category);
-            if (target) params.set('target', target);
             const res = await fetch(`${RAG_API}/api/search?${params}`);
             if (!res.ok) throw new Error(`HTTP ${res.status}`);
             const data = await res.json();
             allResults = data.results;
         } catch {
             // RAG失敗時はクライアントサイドにフォールバック
-            allResults = clientSideSearch(query, category, target, limit);
+            allResults = clientSideSearch(query, category, limit);
         }
     } else {
         // クライアントサイド検索
-        allResults = clientSideSearch(query, category, target, limit);
+        allResults = clientSideSearch(query, category, limit);
     }
 
     if (allResults.length === 0) {
@@ -997,17 +975,9 @@ async function executeSearch() {
         return;
     }
 
-    const articleCount = allResults.filter(r => r._type !== 'proposal').length;
-    const proposalCount = allResults.filter(r => r._type === 'proposal').length;
-    const countParts = [];
-    if (articleCount) countParts.push(`記事${articleCount}件`);
-    if (proposalCount) countParts.push(`提案${proposalCount}件`);
-    statusEl.textContent = countParts.join(' + ');
+    statusEl.textContent = `${allResults.length}件`;
 
-    resultsEl.innerHTML = allResults.map(r => {
-        if (r._type === 'proposal') return renderSearchProposal(r);
-        return renderSearchArticle(r);
-    }).join('');
+    resultsEl.innerHTML = allResults.map(r => renderSearchArticle(r)).join('');
 
     btn.disabled = false;
     btn.textContent = '検索';
@@ -1041,31 +1011,6 @@ function renderSearchArticle(r) {
     `;
 }
 
-function renderSearchProposal(r) {
-    let tools = [];
-    if (r.tools) {
-        try { tools = typeof r.tools === 'string' ? JSON.parse(r.tools) : r.tools; } catch {}
-    }
-    return `
-        <div class="search-result-item" style="border-left:3px solid var(--green)">
-            <div class="search-result-meta">
-                <span class="news-source" style="background:rgba(52,211,153,0.15);color:var(--green)">活用提案</span>
-                <span class="search-result-date">${esc(r.date || '')}</span>
-                ${r.category ? `<span class="proposal-category-badge ${r.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(r.category)}</span>` : ''}
-            </div>
-            <div class="search-result-title" style="color:var(--green)">${esc(r.service || '')}</div>
-            ${r.description ? `<div class="search-result-summary">${esc(r.description)}</div>` : ''}
-            ${r.target ? `<div style="font-size:12px;margin-top:4px"><span class="proposal-tag">${esc(r.target)}</span></div>` : ''}
-            ${r.price_range ? `<div style="font-size:12px;color:var(--yellow);margin-top:4px">${esc(r.price_range)}</div>` : ''}
-            ${r.sales_pitch ? `<div style="font-size:13px;color:var(--accent);margin-top:6px;font-style:italic">${esc(r.sales_pitch)}</div>` : ''}
-            ${tools.length ? `
-                <div class="search-result-entities" style="margin-top:6px">
-                    ${tools.map(t => `<span class="proposal-tool-tag">${esc(t)}</span>`).join('')}
-                </div>
-            ` : ''}
-        </div>
-    `;
-}
 
 // 初期化に検索セットアップを追加
 document.addEventListener('DOMContentLoaded', () => {
