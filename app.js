@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderPredictions();
     renderProposalsArchive();
     initProposalSearch();
+    initSearch();
     renderLinkedIn();
     renderReport();
     document.getElementById('headerDate').textContent = dailyData?.date || '';
@@ -1012,10 +1013,6 @@ function renderSearchArticle(r) {
 }
 
 
-// 初期化に検索セットアップを追加
-document.addEventListener('DOMContentLoaded', () => {
-    initSearch();
-});
 
 // ── Service Worker ──
 if ('serviceWorker' in navigator) {
