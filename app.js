@@ -576,7 +576,8 @@ function implementArchiveProposal(dayIndex, propIndex) {
     const steps = (p.how_to_implement || []).map((s, i) => `${i + 1}. ${s}`).join('\n');
     const tools = (p.tools || []).join(', ');
 
-    const prompt = `以下の活用提案の実装を検討しています。
+    const prompt = `【AIニュースBIの活用提案より】
+以下の活用提案の実装を検討しています。
 
 ${p.category ? `【カテゴリ】${p.category}` : ''}
 【サービス名】${p.service || ''}
@@ -779,7 +780,8 @@ function implementProposal(index) {
     const steps = (p.how_to_implement || []).map((s, i) => `${i + 1}. ${s}`).join('\n');
     const tools = (p.tools || []).join(', ');
 
-    const prompt = `以下の活用提案の実装を検討しています。
+    const prompt = `【AIニュースBIの活用提案より】
+以下の活用提案の実装を検討しています。
 
 ${p.category ? `【カテゴリ】${p.category}` : ''}
 【サービス名】${p.service || ''}
@@ -823,7 +825,8 @@ function consultAction(index) {
     const a = dailyData.weekly_actions[index];
     if (!a) return;
 
-    const prompt = `以下のアクションを実行したいです。具体的な進め方を相談させてください。
+    const prompt = `【AIニュースBIの今週のアクションより】
+以下のアクションを実行したいです。具体的な進め方を相談させてください。
 
 【アクション】${a.action || ''}
 【優先度】${a.priority || ''}
