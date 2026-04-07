@@ -533,7 +533,9 @@ body {
         grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
-    #tab-trends .section-card:nth-child(5) {
+    /* 加速度（1番目）と注目トレンド（最後）は全幅 */
+    #tab-trends .section-card:first-child,
+    #tab-trends .section-card:last-child {
         grid-column: 1 / -1;
     }
 
@@ -543,8 +545,9 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
         gap: 16px;
     }
-    /* レビューとアーカイブは全幅 */
+    /* 精度・レビュー・アーカイブは全幅 */
     #tab-predictions .section-card:first-child,
+    #tab-predictions .section-card:nth-child(2),
     #tab-predictions .section-card:last-child {
         grid-column: 1 / -1;
     }
@@ -775,6 +778,109 @@ body {
     font-size: 12px;
     color: var(--accent);
     word-break: break-all;
+}
+
+/* ── Category Acceleration ── */
+.acceleration-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+}
+.acceleration-item:last-child { border-bottom: none; }
+.acceleration-name {
+    font-size: 13px;
+    font-weight: 600;
+    flex: 1;
+}
+.acceleration-counts {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin: 0 12px;
+    white-space: nowrap;
+}
+.acceleration-badge {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+    min-width: 64px;
+    text-align: center;
+}
+.accel-up {
+    background: rgba(52, 211, 153, 0.15);
+    color: var(--green);
+}
+.accel-down {
+    background: rgba(248, 113, 113, 0.15);
+    color: var(--red);
+}
+.accel-flat {
+    background: rgba(136, 146, 168, 0.15);
+    color: var(--text-muted);
+}
+.accel-new {
+    background: rgba(79, 140, 255, 0.15);
+    color: var(--accent);
+}
+
+/* ── Prediction Accuracy Dashboard ── */
+.accuracy-dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.accuracy-summary {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.accuracy-stat {
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+    padding: 12px 8px;
+    background: var(--bg);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+.accuracy-stat-value {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.accuracy-stat-label {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+.accuracy-pct { color: var(--green); }
+.accuracy-hit { color: var(--green); }
+.accuracy-miss { color: var(--red); }
+.accuracy-pending { color: var(--yellow); }
+.accuracy-bar-container {
+    height: 8px;
+    background: var(--bg);
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+.accuracy-bar-hit {
+    background: var(--green);
+    height: 100%;
+    transition: width 0.5s;
+}
+.accuracy-bar-miss {
+    background: var(--red);
+    height: 100%;
+    transition: width 0.5s;
+}
+.accuracy-bar-pending {
+    background: var(--yellow);
+    height: 100%;
+    transition: width 0.5s;
 }
 
 /* ── Toast ── */
