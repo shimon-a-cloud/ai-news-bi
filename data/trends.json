@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-06T10:28:56.803635+09:00",
+  "updated": "2026-04-07T09:09:50.021150+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -19,7 +19,7 @@
     },
     {
       "date": "2026-04-04",
-      "count": 185
+      "count": 189
     },
     {
       "date": "2026-04-05",
@@ -27,93 +27,101 @@
     },
     {
       "date": "2026-04-06",
-      "count": 69
+      "count": 149
+    },
+    {
+      "date": "2026-04-07",
+      "count": 129
     }
   ],
   "category_7d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 91
+      "count": 127
     },
     {
       "category": "AIエージェント・開発",
-      "count": 79
+      "count": 103
     },
     {
       "category": "製品・サービス",
-      "count": 73
-    },
-    {
-      "category": "研究・ブレークスルー",
-      "count": 28
+      "count": 101
     },
     {
       "category": "規制・法律・倫理",
-      "count": 27
+      "count": 50
     },
     {
       "category": "投資・市場動向",
-      "count": 27
+      "count": 38
+    },
+    {
+      "category": "研究・ブレークスルー",
+      "count": 34
     },
     {
       "category": "新モデル・リリース",
-      "count": 12
+      "count": 13
     }
   ],
   "category_30d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 91
+      "count": 127
     },
     {
       "category": "AIエージェント・開発",
-      "count": 79
+      "count": 103
     },
     {
       "category": "製品・サービス",
-      "count": 73
-    },
-    {
-      "category": "研究・ブレークスルー",
-      "count": 28
+      "count": 101
     },
     {
       "category": "規制・法律・倫理",
-      "count": 27
+      "count": 50
     },
     {
       "category": "投資・市場動向",
-      "count": 27
+      "count": 38
+    },
+    {
+      "category": "研究・ブレークスルー",
+      "count": 34
     },
     {
       "category": "新モデル・リリース",
-      "count": 12
+      "count": 13
     }
   ],
   "source_stats_7d": [
     {
       "source": "note",
-      "count": 215
+      "count": 305
     },
     {
       "source": "Zenn",
-      "count": 190
+      "count": 262
     },
     {
       "source": "DeepSeek",
-      "count": 52
-    },
-    {
-      "source": "TechCrunch AI",
-      "count": 23
+      "count": 59
     },
     {
       "source": "ITmedia AI+",
-      "count": 22
+      "count": 36
+    },
+    {
+      "source": "TechCrunch AI",
+      "count": 31
     },
     {
       "source": "The Verge AI",
-      "count": 14
+      "count": 16
+    },
+    {
+      "source": "OpenAI",
+      "count": 7
     },
     {
       "source": "Google AI",
@@ -124,11 +132,19 @@
       "count": 5
     },
     {
-      "source": "OpenAI",
-      "count": 5
+      "source": "Ars Technica AI",
+      "count": 4
+    },
+    {
+      "source": "Meta AI",
+      "count": 4
     },
     {
       "source": "TechCrunch",
+      "count": 3
+    },
+    {
+      "source": "JD Supra",
       "count": 3
     },
     {
@@ -136,49 +152,41 @@
       "count": 3
     },
     {
-      "source": "Ars Technica AI",
-      "count": 3
-    },
-    {
       "source": "blog.google",
       "count": 3
-    },
-    {
-      "source": "Meta AI",
-      "count": 3
-    },
-    {
-      "source": "The Hans India",
-      "count": 2
     }
   ],
   "ai_company_7d": [
     {
       "company": "Claude",
-      "count": 51
-    },
-    {
-      "company": "Gemini",
-      "count": 24
+      "count": 63
     },
     {
       "company": "ChatGPT / GPT",
-      "count": 19
+      "count": 34
+    },
+    {
+      "company": "Gemini",
+      "count": 29
+    },
+    {
+      "company": "Copilot",
+      "count": 14
     },
     {
       "company": "DeepSeek",
       "count": 14
     },
     {
-      "company": "Copilot",
-      "count": 13
-    },
-    {
       "company": "Amazon Bedrock",
-      "count": 8
+      "count": 10
     },
     {
       "company": "LLaMA",
+      "count": 6
+    },
+    {
+      "company": "Grok",
       "count": 3
     },
     {
@@ -186,16 +194,12 @@
       "count": 3
     },
     {
-      "company": "Grok",
+      "company": "Qwen",
       "count": 2
     },
     {
       "company": "Cursor",
       "count": 2
-    },
-    {
-      "company": "Qwen",
-      "count": 1
     }
   ]
 }
