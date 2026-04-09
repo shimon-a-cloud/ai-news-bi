@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-09T10:29:15.132641+09:00",
+  "updated": "2026-04-09T11:15:46.841242+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -39,67 +39,67 @@
     },
     {
       "date": "2026-04-09",
-      "count": 39
+      "count": 42
     }
   ],
   "category_7d": [
     {
-      "category": "投資・市場動向",
-      "count": 33
-    },
-    {
       "category": "規制・法律・倫理",
       "count": 32
     },
     {
+      "category": "投資・市場動向",
+      "count": 32
+    },
+    {
       "category": "新モデル・リリース",
-      "count": 27
+      "count": 29
     },
     {
       "category": "製品・サービス",
-      "count": 21
+      "count": 23
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 17
+      "count": 19
     },
     {
       "category": "AIエージェント・開発",
-      "count": 13
+      "count": 12
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 6
+      "count": 5
     }
   ],
   "category_30d": [
     {
-      "category": "投資・市場動向",
-      "count": 33
-    },
-    {
       "category": "規制・法律・倫理",
       "count": 32
     },
     {
+      "category": "投資・市場動向",
+      "count": 32
+    },
+    {
       "category": "新モデル・リリース",
-      "count": 27
+      "count": 29
     },
     {
       "category": "製品・サービス",
-      "count": 21
+      "count": 23
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 17
+      "count": 19
     },
     {
       "category": "AIエージェント・開発",
-      "count": 13
+      "count": 12
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 6
+      "count": 5
     }
   ],
   "source_stats_7d": [
@@ -117,7 +117,7 @@
     },
     {
       "source": "GIGAZINE",
-      "count": 29
+      "count": 30
     },
     {
       "source": "The Verge AI",
@@ -125,7 +125,7 @@
     },
     {
       "source": "Impress Watch",
-      "count": 13
+      "count": 14
     },
     {
       "source": "Wired JP",
@@ -179,15 +179,15 @@
     },
     {
       "company": "LLaMA",
-      "count": 10
+      "count": 11
+    },
+    {
+      "company": "Gemini",
+      "count": 9
     },
     {
       "company": "Copilot",
       "count": 9
-    },
-    {
-      "company": "Gemini",
-      "count": 8
     },
     {
       "company": "Amazon Bedrock",
@@ -203,15 +203,22 @@
     }
   ],
   "prediction_accuracy": {
-    "total_reviewed": 7,
-    "hit": 2,
-    "miss": 1,
-    "in_progress": 3,
+    "total_reviewed": 4,
+    "hit": 1,
+    "miss": 0,
+    "in_progress": 2,
     "before_deadline": 1,
-    "resolved": 3,
-    "accuracy_pct": 66.7
+    "resolved": 1,
+    "accuracy_pct": 100.0
   },
   "prediction_daily_counts": [
+    {
+      "date": "2026-04-09",
+      "short_term": 3,
+      "mid_term": 3,
+      "long_term": 2,
+      "total": 8
+    },
     {
       "date": "2026-04-08",
       "short_term": 2,
