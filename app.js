@@ -132,6 +132,7 @@ function renderHome() {
                 <div class="proposal-detail" id="proposalDetailh${i}" style="display:none">
                     ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
                     ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                    ${p.competitive_advantage ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">競合優位性</span>${esc(p.competitive_advantage)}</div>` : ''}
                     ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                     ${(p.how_to_implement && p.how_to_implement.length) ? `
                         <div class="proposal-steps-title">実装ステップ</div>
@@ -538,6 +539,7 @@ function renderProposalSearchResults(matches) {
             <div class="proposal-detail" id="proposalDetail${uid}" style="display:none">
                 ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
                 ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                ${p.competitive_advantage ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">競合優位性</span>${esc(p.competitive_advantage)}</div>` : ''}
                 ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                 ${(p.how_to_implement && p.how_to_implement.length) ? `
                     <div class="proposal-steps-title">実装ステップ</div>
@@ -591,6 +593,7 @@ function renderProposalsArchive() {
                         <div class="proposal-detail" id="proposalDetaila${uid}" style="display:none">
                             ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
                             ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                            ${p.competitive_advantage ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">競合優位性</span>${esc(p.competitive_advantage)}</div>` : ''}
                             ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                             ${(p.how_to_implement && p.how_to_implement.length) ? `
                                 <div class="proposal-steps-title">実装ステップ</div>
@@ -635,6 +638,7 @@ ${p.category ? `【カテゴリ】${p.category}` : ''}
 【工数】${p.effort || ''}
 【提案理由】${p.reason || ''}
 ${p.how_to_sell ? `【営業経路】${p.how_to_sell}` : ''}
+${p.competitive_advantage ? `【競合優位性】${p.competitive_advantage}` : ''}
 【営業ピッチ】${p.sales_pitch || ''}
 【具体例】${p.example || ''}
 【使用ツール】${tools}
@@ -842,6 +846,7 @@ ${p.category ? `【カテゴリ】${p.category}` : ''}
 【工数】${p.effort || ''}
 【提案理由】${p.reason || ''}
 ${p.how_to_sell ? `【営業経路】${p.how_to_sell}` : ''}
+${p.competitive_advantage ? `【競合優位性】${p.competitive_advantage}` : ''}
 【営業ピッチ】${p.sales_pitch || ''}
 【具体例】${p.example || ''}
 【使用ツール】${tools}
