@@ -322,76 +322,8 @@ function chartOptions(yLabel) {
     };
 }
 
-// ── Render: Prediction Accuracy ──
-function renderPredictionAccuracy() {
-    const el = document.getElementById('predictionAccuracy');
-    const acc = trendsData?.prediction_accuracy;
-    if (!acc) {
-        el.innerHTML = '<div class="empty-state">精度データなし（レビューが蓄積されると表示されます）</div>';
-        return;
-    }
-
-    const total = acc.total_reviewed;
-    const hitPct = acc.accuracy_pct !== null ? acc.accuracy_pct : '—';
-    const barTotal = total || 1;
-    const hitW = (acc.hit / barTotal * 100).toFixed(1);
-    const missW = (acc.miss / barTotal * 100).toFixed(1);
-    const pendingW = ((acc.in_progress + acc.before_deadline) / barTotal * 100).toFixed(1);
-
-    el.innerHTML = `
-        <div class="accuracy-summary">
-            <div class="accuracy-stat">
-                <div class="accuracy-stat-value accuracy-pct">${hitPct === '—' ? '—' : hitPct + '%'}</div>
-                <div class="accuracy-stat-label">的中率</div>
-            </div>
-            <div class="accuracy-stat">
-                <div class="accuracy-stat-value accuracy-hit">${acc.hit}</div>
-                <div class="accuracy-stat-label">的中</div>
-            </div>
-            <div class="accuracy-stat">
-                <div class="accuracy-stat-value accuracy-miss">${acc.miss}</div>
-                <div class="accuracy-stat-label">外れ</div>
-            </div>
-            <div class="accuracy-stat">
-                <div class="accuracy-stat-value accuracy-pending">${acc.in_progress + acc.before_deadline}</div>
-                <div class="accuracy-stat-label">判定中</div>
-            </div>
-        </div>
-        <div class="accuracy-bar-container">
-            <div class="accuracy-bar-hit" style="width:${hitW}%"></div>
-            <div class="accuracy-bar-miss" style="width:${missW}%"></div>
-            <div class="accuracy-bar-pending" style="width:${pendingW}%"></div>
-        </div>
-    `;
-}
-
 // ── Render: Predictions ──
 function renderPredictions() {
-    // 予測精度ダッシュボード
-    renderPredictionAccuracy();
-
-    // 過去予測レビュー
-    const reviewEl = document.getElementById('predictionReview');
-    const reviews = dailyData?.prediction_review || [];
-    if (reviews.length === 0) {
-        reviewEl.innerHTML = '<div class="empty-state">レビューデータなし（明日以降に検証結果が表示されます）</div>';
-    } else {
-        reviewEl.innerHTML = reviews.map(r => {
-            const statusClass = r.status === '的中' ? 'hit' : r.status === '外れ' ? 'miss' : 'pending';
-            return `
-                <div class="review-item review-${statusClass}">
-                    <div class="review-header">
-                        <span class="review-status status-${statusClass}">${esc(r.status)}</span>
-                        <span class="review-date">${esc(r.original_date)}</span>
-                    </div>
-                    <div class="review-prediction">${esc(r.prediction)}</div>
-                    <div class="review-comment">${esc(r.review)}</div>
-                    ${r.lesson ? `<div class="review-lesson">${esc(r.lesson)}</div>` : ''}
-                </div>
-            `;
-        }).join('');
-    }
-
     // 今日の予測
     const predictions = dailyData?.predictions || {};
     renderPredictionList('shortTermPredictions', predictions.short_term || []);
