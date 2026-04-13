@@ -7,7 +7,6 @@ let linkedinData = null;
 let reportData = null;
 let proposalsData = null;
 let predictionsArchiveData = null;
-let articlesSearchData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -22,7 +21,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderPredictions();
     renderProposalsArchive();
     initProposalSearch();
-    initSearch();
     renderLinkedIn();
     renderReport();
     document.getElementById('headerDate').textContent = dailyData?.date || '';
@@ -51,14 +49,13 @@ async function loadJSON(path) {
 }
 
 async function loadAllData() {
-    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData, articlesSearchData] = await Promise.all([
+    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData] = await Promise.all([
         loadJSON('daily.json'),
         loadJSON('trends.json'),
         loadJSON('linkedin.json'),
         loadJSON('report.json'),
         loadJSON('proposals.json'),
         loadJSON('predictions_archive.json'),
-        loadJSON('articles_search.json'),
     ]);
 }
 
@@ -862,148 +859,6 @@ function esc(str) {
     const d = document.createElement('div');
     d.textContent = str;
     return d.innerHTML;
-}
-
-// ── Search ──
-const RAG_API = 'http://127.0.0.1:8901';
-let ragAvailable = false;
-
-function initSearch() {
-    const input = document.getElementById('searchInput');
-    const btn = document.getElementById('searchBtn');
-    const categorySelect = document.getElementById('searchCategory');
-    const statusEl = document.getElementById('searchStatus');
-
-    // RAGサーバー接続を試行
-    fetch(`${RAG_API}/api/meta`, { signal: AbortSignal.timeout(2000) })
-        .then(r => r.json())
-        .then(meta => {
-            ragAvailable = true;
-            (meta.categories || []).forEach(c => {
-                const opt = document.createElement('option');
-                opt.value = c;
-                opt.textContent = c;
-                categorySelect.appendChild(opt);
-            });
-            const info = meta.date_range || {};
-            statusEl.textContent = `RAG: ${info.total || 0}件 (${info.min_date || '?'} 〜 ${info.max_date || '?'})`;
-            // RAG時は検索モード選択を表示
-            document.getElementById('searchMode').style.display = '';
-        })
-        .catch(() => {
-            ragAvailable = false;
-            // クライアントサイド用にカテゴリをデータから取得
-            const cats = new Set();
-            (articlesSearchData || []).forEach(a => { if (a.category) cats.add(a.category); });
-            [...cats].sort().forEach(c => {
-                const opt = document.createElement('option');
-                opt.value = c;
-                opt.textContent = c;
-                categorySelect.appendChild(opt);
-            });
-            const total = (articlesSearchData || []).length;
-            statusEl.textContent = total ? `記事${total}件` : '';
-            // クライアントサイドでは検索モードは不要
-            document.getElementById('searchMode').style.display = 'none';
-        });
-
-    btn.addEventListener('click', () => executeSearch());
-    input.addEventListener('keydown', e => {
-        if (e.key === 'Enter') executeSearch();
-    });
-}
-
-function clientSideSearch(query, category, limit) {
-    const q = query.toLowerCase();
-    let results = [];
-
-    for (const a of (articlesSearchData || [])) {
-        if (category && a.category !== category) continue;
-        const text = [a.title, a.summary, a.source, a.category].filter(Boolean).join(' ').toLowerCase();
-        if (!text.includes(q)) continue;
-        results.push(a);
-    }
-
-    return results.slice(0, limit);
-}
-
-async function executeSearch() {
-    const query = document.getElementById('searchInput').value.trim();
-    if (!query) return;
-
-    const mode = document.getElementById('searchMode').value;
-    const category = document.getElementById('searchCategory').value;
-    const limit = parseInt(document.getElementById('searchLimit').value) || 20;
-    const btn = document.getElementById('searchBtn');
-    const resultsEl = document.getElementById('searchResults');
-    const statusEl = document.getElementById('searchStatus');
-
-    btn.disabled = true;
-    btn.textContent = '検索中...';
-    resultsEl.innerHTML = '';
-
-    let allResults = [];
-
-    if (ragAvailable) {
-        // RAGサーバー経由
-        try {
-            const params = new URLSearchParams({ q: query, mode, limit });
-            if (category) params.set('category', category);
-            const res = await fetch(`${RAG_API}/api/search?${params}`);
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            const data = await res.json();
-            allResults = data.results;
-        } catch {
-            // RAG失敗時はクライアントサイドにフォールバック
-            allResults = clientSideSearch(query, category, limit);
-        }
-    } else {
-        // クライアントサイド検索
-        allResults = clientSideSearch(query, category, limit);
-    }
-
-    if (allResults.length === 0) {
-        resultsEl.innerHTML = '<div class="section-card"><div class="empty-state">該当する結果が見つかりませんでした</div></div>';
-        statusEl.textContent = '0件';
-        btn.disabled = false;
-        btn.textContent = '検索';
-        return;
-    }
-
-    statusEl.textContent = `${allResults.length}件`;
-
-    resultsEl.innerHTML = allResults.map(r => renderSearchArticle(r)).join('');
-
-    btn.disabled = false;
-    btn.textContent = '検索';
-}
-
-function renderSearchArticle(r) {
-    let entities = [];
-    if (r.key_entities) {
-        try {
-            entities = typeof r.key_entities === 'string' ? JSON.parse(r.key_entities) : r.key_entities;
-        } catch {}
-    }
-    return `
-        <div class="search-result-item">
-            <div class="search-result-meta">
-                <span class="news-source">${esc(r.source || '')}</span>
-                <span class="search-result-date">${esc(r.date || '')}</span>
-                ${r.category ? `<span class="search-result-category">${esc(r.category)}</span>` : ''}
-                ${r.relevance_score ? `<span class="search-result-relevance">関連度 ${r.relevance_score}/5</span>` : ''}
-            </div>
-            <div class="search-result-title">
-                <a href="${esc(r.url || '#')}" target="_blank" rel="noopener">${esc(r.title)}</a>
-            </div>
-            ${r.summary ? `<div class="search-result-summary">${esc(r.summary)}</div>` : ''}
-            ${entities.length ? `
-                <div class="search-result-entities">
-                    ${entities.map(e => `<span class="entity-tag">${esc(e)}</span>`).join('')}
-                </div>
-            ` : ''}
-        </div>
-    `;
 }
 
 
