@@ -1,122 +1,122 @@
 {
   "type": "weekly",
   "data": {
-    "period": "2026-03-30 〜 2026-04-06",
-    "overview": "今週のAI業界は「制御と責任」が最大のテーマだった。MicrosoftがCopilotの利用規約で「娯楽目的のみ」と免責を明記し、AnthropicはOpenClawの追加課金化を発表。AI大手が出力品質の責任を回避する方向に動く中、開発者コミュニティでは逆に「AIをいかに安全に運用するか」を体系化する**ハーネスエンジニアリング**が爆発的に普及した。Zenn・noteで1日5件以上の関連記事が投稿され、CLAUDE.md設計、Hooks、セキュリティ設定、トークン最適化など実践的なノウハウが急速に蓄積されている。\n\n地政学的には、DeepSeekがHuawei製チップでV4モデルを開発する決定が複数メディアで同時報道され、AI半導体サプライチェーンの二極化が決定的になった。中国大手企業が大量事前注文を行い、NVIDIA依存からの脱却が本格化している。\n\nオープンソース陣営ではGoogle Gemma 4やAlibaba Qwen 3.6-Plusなどエージェント特化モデルが相次いでリリースされ、商用API依存からの脱却オプションが増えた。AI推論コストの低下予測（ガートナー：2030年までに90%以上削減）と合わせ、中小企業へのAI導入障壁が着実に下がっている。\n\n日本語圏では、非エンジニアがClaude CodeやChatGPTでアプリを構築する事例が急増。スマホからAIエージェントに97件のissueを処理させた事例や、365日分のnote記事を自動生成する実験など、「AIを使う側」のハードルが劇的に下がった週だった。著作権面ではSunoの音楽著作権問題やAI生成偽本問題が深刻化し、法整備が技術進化に追いつかない現状が浮き彫りになった。",
+    "period": "2026-04-06 〜 2026-04-13",
+    "overview": "今週のAI業界を一言で表すなら「インフラ争奪・能力限界・社会的反発の同時進行」だった。CoreWeaveがAnthropicと68億ドル規模の複数年契約を締結し、株価が2日で12〜13%急騰。Intel×Google、Broadcom×Anthropic/Googleと複数の大型インフラ投資が連続発表され、AI処理基盤をめぐる「GPUランドグラブ」が過熱した。大手AI企業が2027〜2028年の需要急増を見越した先行投資フェーズに突入したことを示しており、推論コストの継続的低下が今後1〜2年で見込まれる局面となった。\n\nモデル性能の面では、AnthropicのClaude Mythosが「サイバーセキュリティを根本から変えうる能力」として専門家に衝撃を与え、同社が意図的に一般公開を制限するという前例のない判断を下した。一方でDeepSeek V4が4月末リリースに向けて採用強化・内モンゴルデータセンター拡張を加速しており、中国のAI開発が米国の輸出規制下でも最前線を維持しようとする姿勢が鮮明になった。MetaはMuse Spark AIモデルを投入しApp Storeランキング5位に浮上するなど、群雄割拠のモデル競争が続いている。\n\nAI規制と社会的反発は今週最も記事数が多かったカテゴリ（53件）として突出した。Sam Altman氏の自宅への火炎瓶事件は、AI経営者への反発が言論から物理行動へ移行したことを象徴する事件として国際的に報じられた。xAIがコロラド州のAI規制法に提訴、米国内でも民主・共和両党のAI規制スタンスの対立が深まっており、AI企業側は政策立案への関与（Googleの14法案支持、OpenAIのブループリント発表）を強化している。\n\n日本市場では、AIによる新卒採用枠の削減が中途採用にも波及し始めたことが報告された。同時に中小企業庁のAI導入補助金申請が開始され、「採用を減らしつつ生産性を維持・向上する」手段としての自動化投資に追い風が吹いている。マイクロソフトのFoundry Local正式リリースやLemonadeのようなローカルAI実行環境の整備も進み、クラウドに頼らないAI活用の選択肢が拡充した。\n\nAnthropicにとっては特に重要な1週間だった。Managed Agentsの「ブレイン・ハンド分離」アーキテクチャを公式公開し、エンタープライズAI設計の標準を打ち出した。CoreWeave、Broadcom、TCSとのパートナーシップを相次いで発表しながら、「責任あるAI」ブランドを強化する垂直統合戦略を加速。HumanX会議でも「みんながClaudeの話をしていた」と報道されるほど、業界内のプレゼンス向上が顕著な週となった。",
     "trend_changes": [
       {
-        "topic": "ハーネスエンジニアリング",
-        "direction": "新出・急増",
-        "detail": "Claude Codeの制御・設定手法を体系化する「ハーネスエンジニアリング」がZennで1日5件以上投稿される爆発的普及。先週までは個別Tips記事が中心だったが、今週は書籍形式の体系的ガイドや5社比較記事が登場し、知識体系として確立しつつある。"
+        "topic": "AIインフラへの大型投資契約",
+        "direction": "増加",
+        "detail": "CoreWeave×Anthropic（$6.8B）、Broadcom×Anthropic/Google（複数年）、Intel×Google（複数年）の3件が1週間に集中発表。1案件あたりの規模が数十億ドル単位へ拡大しており、GPUクラスタの囲い込みが業界全体で加速している。"
       },
       {
-        "topic": "AI大手の法的責任回避",
+        "topic": "AI規制・法律関連記事",
+        "direction": "増加",
+        "detail": "今週最多カテゴリの53件。xAI対コロラド州提訴・Google14法案支持・AI companion chatbot規制・金融業界のAIコンプライアンス問題など、地域・業種を横断した規制動向が噴出。先週比で規制の「多層化・衝突」を示す記事が増えた。"
+      },
+      {
+        "topic": "AI企業・経営者への物理的反発",
         "direction": "新出",
-        "detail": "MicrosoftのCopilot「娯楽目的のみ」規約、AnthropicのOpenClaw制限など、AI大手がサービスの責任範囲と収益モデルを同時に再定義する動きが今週初めて複数社で同時発生。"
+        "detail": "Sam Altman自宅への火炎瓶投擲事件（20歳男逮捕）は今週初めて登場したカテゴリ。言論による批判（New Yorker誌の批判的プロフィール、The VergeのAIアート批判）と同時進行しており、AI経営者個人への反発が新局面に入ったことを示す。"
       },
       {
-        "topic": "DeepSeek × Huaweiチップ",
-        "direction": "増加",
-        "detail": "DeepSeek V4のHuaweiチップ採用が6件以上の海外メディアで同時報道。先週の噂レベルから、今週は中国大手の大量事前注文という具体的事実に発展。"
+        "topic": "「危険すぎて公開できない」モデルの登場",
+        "direction": "新出",
+        "detail": "AnthropicがClaude Mythosを「一般公開しない」と判断したことで、技術的に可能でも意図的に制限するという意思決定が初めてトップニュースとなった。AI企業の自主規制が安全性ブランドの競争優位になるという新しい構造が確立しつつある。"
       },
       {
-        "topic": "ローカルRAG・軽量AI基盤",
+        "topic": "DeepSeek関連報道",
         "direction": "増加",
-        "detail": "DuckDB+Claude CodeのローカルRAG構築記事、Vertex AI RAG Engineサーバーレスモード登場など、RAG構築コストが大幅低下。先週比で関連記事が倍増。"
+        "detail": "V4の4月末リリース観測・採用強化・内モンゴルデータセンター拡張・Blackwellチップ密輸疑惑など、1週間で8件以上の報道が集中。中国AIの地政学的リスクと技術進展の両面が同時進行しており、報道量・注目度ともに先週より明確に増加。"
       },
       {
-        "topic": "非エンジニアのAI実装",
-        "direction": "増加",
-        "detail": "スマホからAIエージェントに97件のissueを処理させた事例など、非エンジニアによるAI活用事例が先週比で3倍以上に増加。市場の裾野拡大が加速。"
+        "topic": "Managed Agentsアーキテクチャ",
+        "direction": "新出",
+        "detail": "Anthropicが「ブレイン（推論）とハンド（実行）の分離」を公式に発表。エンタープライズAI設計の標準モデルとして位置づけられ始めており、単一モデル設計からマルチエージェント設計への業界シフトが具体的な設計論として議論されるようになった。"
       },
       {
-        "topic": "AI著作権問題",
+        "topic": "AIによる雇用代替の現実化報道",
         "direction": "増加",
-        "detail": "Suno音楽著作権問題、AI生成偽本のAmazon出現など、AI生成コンテンツの著作権侵害が音楽・出版の複数領域で同時に顕在化。"
-      },
-      {
-        "topic": "Claude Code関連記事",
-        "direction": "増加",
-        "detail": "セキュリティ設定、トークン消費半減術、VOICEVOX音声通知、GA4連携など、Claude Codeの実運用ノウハウ記事が今週だけで20件以上。先週の約1.5倍。"
+        "detail": "日本で新卒採用枠の削減と中途採用への影響が具体的数字で報告（約半数が影響）。先週まで「懸念」の文脈が多かったが、今週は「実際に採用が減っている」という事実報告に変化しており、抽象的議論から現実問題への転換が起きている。"
       }
     ],
     "top_5_news": [
       {
-        "title": "DeepSeek V4 Signals Imminent Launch as Huawei Ascend Chips Drive China's AI Push",
-        "source": "複数海外メディア（6件以上が同時報道）",
-        "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9XX1llZENkR2pWbnFhZmE5MXBKbjd3QU9xczJ5cWN5T1ExRjVKRjBMYmt3SjZ4Z3dqd2UxZE5EN0l4MEdlQkdjQ2ZYYXo2MkljTTUwRjdwRGhzbGg5U3VvaGtIWWlkRXdNdHZR?oc=5",
-        "why": "AI半導体サプライチェーンの二極化を決定づけるニュース。米中規制下でDeepSeekがNVIDIA依存を脱却しHuawei製チップに移行したことは、AI業界の地政学的構造を根本的に変える。中長期的にAI推論コスト競争の激化とモデルの多極化につながる。"
+        "title": "The Great GPU Landgrab: CoreWeave Secures $6.8 Billion Agreement with Anthropic as the AI Infrastructure Arms Race Hits Fever Pitch",
+        "source": "FinancialContent / CNBC",
+        "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxQd015SVFRenI2MklvVnNiSUEzZTFUNGxpSDY2ZXhvbDVQTE1KcVpLazU0UmNIR2ZRakRzZFB6aXFkdUpXQzE2WC16bzBhT0hKYjl4aDFIVllTajY0TmNvUnFSd2hVOGxhakpZSTIwMlQyS05hd3oyeFFTejZ3ZkRIdjlwOEplcFRtb2VXOV9BZWM0aEd5WjFneDdpRzFTZjZNZjNVenRPamtURWdKNmYwMUZUNnk1aEExbGdna1ZqczJhenBka2o5dHNIWS1MdmVOaExlb29jQktEQjRmTEJXRklxMGVTc2ZYc3o5WU1CZ3lHczIwUHdRVnUtZGlfV1E5dWRHUjlFcWxsM1RNcjUyR2JqX2dnUzNIZ3VLQVBGTTNGN01KUlM0c2lfaw",
+        "why": "AI業界のインフラ投資規模の象徴的な案件。68億ドルという金額はAIクラウド単一契約として過去最大級であり、CoreWeaveの株価が12〜13%急騰。GPU争奪戦が「投資家の関心」から「産業インフラの現実」に転化したことを示す。Shistoが利用するClaude APIの安定供給と推論コスト低下に直結するため、事業判断にも影響する重要ニュース。"
       },
       {
-        "title": "Copilot is 'for entertainment purposes only,' according to Microsoft's terms of use",
-        "source": "TechCrunch AI",
-        "url": "https://techcrunch.com/2026/04/05/copilot-is-for-entertainment-purposes-only-according-to-microsofts-terms-of-service/",
-        "why": "AI大手が出力品質の責任を法的に回避する姿勢を明確にした象徴的な出来事。業務利用するユーザーとの信頼関係に亀裂を生じさせ、「責任を持って運用する」中間支援者（Shistoのような存在）の市場価値を押し上げる。"
+        "title": "Why developers are saying Anthropic's new AI model is too dangerous to release to public / What smart people are saying about Mythos",
+        "source": "BNN Bloomberg / Business Insider",
+        "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPc0FJdHNVNnh4am9mbmFIZ1JwU3FZRUYzb2V4RHJrc3VzRkNMTnNKTEJJTE1aM05abURLUkhjamE2bk00M3p2NHFvNXpobFdJR3BNb0FZS3RQRUUwZ2J4TEdmSzFuaFdXWUxBVTRkXy13eXJ1emppRk1aT2NmWTFfSVdJc08wR1QzaVhfcGZHZ0E2WHB1cWhUdjZNNjV5MDN5RVVWQlk4UHBybGc2N1R0Q2M1S29RalpMUWw5ZFpycWZabFNIaGc",
+        "why": "技術的に可能でも意図的に公開しないという「AI企業の自主規制」が初めて主要ニュースとなった案件。サイバー攻撃能力への懸念が引き金だが、「安全性ブランドが競争優位になる」という新しい業界構造を示す。OpenAIが対抗モデルを準備中という報道も合わさり、安全性競争が本格化する号砲となった週。"
       },
       {
-        "title": "Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage",
-        "source": "TechCrunch",
-        "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQakxlX1lJUklzd3JYNkp4Q2NGZlFPZ3NhcmVKYUJYcGprR3dxWWtYMUFrV0VXc1Yta1BNSUR5ZVEtZjdWY2hGeFRQZVNWeVhCX2RHeGtIY2k0ZVVRM1VmMlh2bFZjOWgwTTY2OXlSNTRGOHVNMGhiUkhoUnVHdGx3SHRlQ0Z1aWoyOUNDLXl2VXdMTXdldTVrZzFKSFhnMXJHTXZGXzItU1NnMnZ0aVl3UWp4eWxWRmdL?oc=5",
-        "why": "Claude Code中心のビジネスを展開するShistoに直接影響。Anthropicのプラットフォーム戦略転換（囲い込み強化＋料金再編）は、API直接利用やオープンモデルでの代替パス確保の必要性を示す。"
+        "title": "20-year-old man arrested for allegedly throwing a Molotov cocktail at Sam Altman's house / Sam Altman responds to 'incendiary' New Yorker article",
+        "source": "The Verge AI / TechCrunch AI",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/910393/openai-sam-altman-house-molotov-cocktail",
+        "why": "AI経営者への反発が物理行動に転化した初の大型事件として国際報道。New Yorker誌の批判記事・The VergeのAIアート批判と同週に重なったことで「AIへの社会的反発の先鋭化」という文脈が確立した。Shistoが提案書のトーンを「AI自動化」から「業務効率化支援」に切り替える判断の根拠となる重要なシグナル。"
       },
       {
-        "title": "Suno is a music copyright nightmare",
-        "source": "The Verge AI",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/906896/sunos-copyright-ai-music-covers",
-        "why": "AI生成コンテンツの著作権問題が音楽分野で深刻化した象徴的事例。SNS投稿自動生成を提供するShistoにとって、著作権リスク管理が差別化要因になることを示唆。法整備が追いつかない現状が鮮明に。"
+        "title": "DeepSeek V4 Expected to Launch in Late April with Massive Parameter Scale / DeepSeek ramps up hiring ahead of V4 launch as chip strategy questions swirl",
+        "source": "DeepSeek / 各メディア",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQU29WWWE4U29HRlhTNUtSTzRBa2hqcXVMNVUxTDVJUUg3N2sxNnVELTdWdVRtT1BfMUJXaGVmM3hrQldDNzVoUTdKcEVLWGpZOWtMUHRNVUlRY2VOR01kUWx3My1yOVBFZGh3ZmJNaEVVNl9NNnkxd1ZIWHhJbWxkTE0yOFBGRUZNMlNpdTE2U1k2ZnhJU1FyMXdPYWdxNjR0OENN",
+        "why": "週内に8件以上の関連報道が集中した最多報道トピック。V4リリースが実現すれば推論コスト削減の選択肢が増え、Shistoのサービス設計に影響する。一方でBlackwellチップ密輸疑惑という地政学リスクも浮上しており、中核APIをClaudeで維持しながら補助的用途に限定するという方針判断に必要な情報。"
       },
       {
-        "title": "ハーネスエンジニアリング — AIを\"使う\"から\"操る\"へ（Zenn書籍形式）ほか関連記事多数",
-        "source": "Zenn（複数著者による同時多発的な体系化）",
-        "url": "https://zenn.dev/kenimo49/books/harness-engineering-guide",
-        "why": "AIツールの「動かす」から「安全に運用する」への移行を象徴するムーブメント。1日5件以上の関連記事が投稿される異例の盛り上がりで、Claude Code運用ノウハウが知識体系として確立。Shistoのサービスに「ハーネスエンジニアリング済み」を標準装備する根拠になる。"
+        "title": "Scaling Managed Agents: Decoupling the brain from the hands",
+        "source": "Anthropic",
+        "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5LY3VWakFxdE02bVBBdDNrSEJaY2NqV1ZkZ3hfNUxBeWFXZDdrU21vTTdnSFdNUGNPRVpSMWVyVGp6MWlQWTFYU2JIcVZDdDcwMXcwRlpYNExMeWZBMGxXOWJ3",
+        "why": "Anthropicが「推論担当エージェントと実行担当エージェントの分離」をエンタープライズAI設計の公式標準として発表。ShistoのRSS収集→Claude分析→Sheets出力パイプラインが「Anthropicの推奨設計に準拠している」と説明できる根拠になり、提案書の技術的説得力が高まる。今後の受注拡大に直結する重要な公式見解。"
       }
     ],
     "top_5_proposals": [
       {
         "rank": 1,
-        "service": "不動産・士業向け「書類読取→データ整理」自動化パッケージ",
+        "service": "補助金対応型「AI業務自動化」導入パック",
         "category": "横展開",
-        "target": "税理士事務所・行政書士事務所・不動産管理会社（従業員5〜30名）",
-        "price_range": "初期構築10〜15万円＋月額2万円",
-        "how_to_sell": "RAYUP等の顧問税理士に「領収書転記を自動化した実績がある。先生の事務所でも同じことができる」と直接紹介してもらう。地元の税理士会・行政書士会の勉強会で15分デモも有効。",
-        "weekly_comment": "MicrosoftがCopilotを『娯楽目的のみ』と免責した今週、業務で信頼できる書類処理AIへの需要は確実に高まった。Shistoの領収書転記は実稼働中の実績があり、この信頼格差を即座に営業トークに使える。"
+        "target": "従業員5〜30名の中小企業経営者（飲食・小売・サービス業）",
+        "price_range": "初期構築15〜30万円（補助金で50〜75%カバー→実質5〜15万円）＋月額2〜5万円",
+        "how_to_sell": "兄の3社（RAYUP・江田畜産・KFJ）に補助金申請を支援し「補助金で導入した実績」を作る。次に商工会議所経由で中小企業経営者に「補助金でAI導入できます」と展開。",
+        "weekly_comment": "今週、中小企業庁の「デジタル化・AI導入補助金」申請受付が開始された。「補助金で初期費用が半額以下になる」は今この瞬間だけ使える最強の営業トーク。CoreWeaveへの68億ドル投資に象徴されるAIインフラ整備が進み、AIへの社会的関心が最高潮にある今週だからこそ、「今が補助金を使って始めるタイミング」という文脈で刺さる。実績ゼロでも「制度の情報提供」から入れるため、創業直後でも動けるアクション。"
       },
       {
         "rank": 2,
-        "service": "飲食・小売チェーン向けSNS投稿AI一括生成",
+        "service": "士業事務所向け「業界規制ニュース自動モニタリング＋顧客説明文付き週次レポート」",
         "category": "横展開",
-        "target": "3〜20店舗を持つ飲食チェーン・小売チェーン",
-        "price_range": "初期構築8万円＋月額1.5万円",
-        "how_to_sell": "兄の会社経由で取引先の飲食・小売事業者を紹介。商工会議所の交流会で「実際にLinkedIn投稿を自動生成して月額運用している実績」をデモ。",
-        "weekly_comment": "今週noteで『AI導入で逆に忙しくなった』記事が反響を得ており、複数店舗のSNS運用はまさにこの問題の典型。AI著作権問題の深刻化を受け、『著作権チェック済みのAI投稿』を付加価値にできるのも今週ならでは。"
+        "target": "税理士・社労士事務所（従業員2〜10名）の所長",
+        "price_range": "初期構築費5万円＋月額2万円",
+        "how_to_sell": "兄のRAYUP・江田畜産・KFJの顧問税理士・社労士に兄から紹介してもらう形でアプローチ。サンプルレポートを持参して価値を実演した上で導入提案。",
+        "weekly_comment": "今週の記事カテゴリ分析で「規制・法律・倫理」が53件と全7カテゴリ中ダントツ最多。xAIのコロラド州提訴・AI companion chatbot規制・金融業界コンプライアンス問題など規制が多層化・衝突する週に、「最新規制を毎週自動でキャッチして顧客説明文まで作る」サービスの訴求力は最高潮。しかも既存AIニュースBIのRSSソースを変えるだけの横展開で工数2〜3日、構造変化なし。"
       },
       {
         "rank": 3,
-        "service": "中小企業向け「AI業務仕分け」診断＋自動化パイロット",
+        "service": "スポーツアカデミー・ジュニアチーム向け「練習日誌→保護者向け成長レポート自動生成」",
         "category": "新規",
-        "target": "従業員10〜50名の中小企業（業界不問）",
-        "price_range": "診断5万円＋パイロット自動化10万円（合計15万円パッケージ）",
-        "how_to_sell": "兄の3社での実績を「診断レポート事例」としてまとめ、商工会議所やビジネス交流会で紹介。バスケ時代の人脈（チームメイト・関係者の勤務先企業）にもアプローチ。",
-        "weekly_comment": "今週の非エンジニアAI活用事例の急増は市場啓蒙を意味する。『AIで何かできそう』と思い始めた経営者が『何から始めればいいかわからない』段階にいる今が、診断サービスの最適なタイミング。"
+        "target": "スポーツアカデミー・ジュニアチームの指導者（コーチ1〜3名）、選手10〜50名規模",
+        "price_range": "初期構築費5万円＋月額2万円（選手30名まで）",
+        "how_to_sell": "さいたまブロンコスアカデミーに自分のコーチ業の立場から「テスト導入させてほしい」と直接提案。1ヶ月無料試用→有料化→Bリーグ下部組織へ横展開。",
+        "weekly_comment": "AIによる雇用代替報道が今週急増する中、「AIがコーチの仕事を奪う」のではなく「コーチが利用者との時間に集中できるよう事務作業を代わりにやる」という設計がそのまま今週の反AI感情への答えになる。Sam Altman事件を受けて「人間中心の説明」の重要性が高まった週だからこそ、元プロバスケ選手が自分の現場課題を解決するという人間起点の文脈が最も刺さるタイミング。田中さん自身が当事者で、営業コスト実質ゼロ。"
       },
       {
         "rank": 4,
-        "service": "小規模事業者向け「5分業務自動化」導入パック",
-        "category": "新規",
-        "target": "個人事業主、従業員5名以下の小規模事業者",
-        "price_range": "一括5〜8万円（5つの自動化セット）",
-        "how_to_sell": "既存顧客（兄の3社）への追加提案から開始。「まず小さく始めたい」層をSNSやnoteでの発信で集客。",
-        "weekly_comment": "今週Zennで『コピペ自動化を10分で実装』『スマホからissue97件処理』等の事例が急増し、小さな自動化の価値が広く認知された。5万円の低単価は創業直後のShistoにとって実績数を積むのに最適で、ランク3の診断サービスへのアップセル導線にもなる。"
+        "service": "運送・配送会社向け「ドライバー経費領収書→月次集計自動化パッケージ」",
+        "category": "横展開",
+        "target": "ドライバー5〜30名の中小運送・配送会社の経理担当または社長",
+        "price_range": "初期費3万円＋月額1.5万円",
+        "how_to_sell": "江田畜産が委託している配送業者に兄経由で「江田畜産でも使っています」と紹介してもらう。まず1社半額トライアル→同業者紹介を狙う。",
+        "weekly_comment": "今週、経産省が「DX銘柄2026」を発表しSMBCの500億円DX投資が報じられた。大企業DXが加速するほど、その取引先である中小運送・配送会社への「うちもDXしろ」という暗黙プレッシャーが強まる構造が可視化された週。江田畜産という稼働中の実績があり、領収書転記システムの横展開で構築工数5〜8時間。最も早く「2件目の実績」を作れる案件。"
       },
       {
         "rank": 5,
-        "service": "DuckDB×Claude ローカルRAG社内ナレッジ検索システム",
+        "service": "食品・農産物卸業者向け「LINE注文受付→受発注自動管理」Bot",
         "category": "新規",
-        "target": "従業員20〜100名の中小企業（特に製造業・建設業）",
-        "price_range": "初期構築15〜20万円＋月額3万円",
-        "how_to_sell": "兄の会社（RAYUP・江田畜産・KFJ）で「社内マニュアル検索Bot」としてパイロット導入。実績を作った後、同業他社に「データは社外に一切出ません」で展開。",
-        "weekly_comment": "今週DuckDB+Claude CodeのローカルRAG構築記事とVertex AIサーバーレスモード登場で、技術的な実現性とコスト効率が一気に向上した。AI大手の法的責任回避が進む中、『データが外に出ない＋責任を持つ運用者がいる』は中小企業に刺さるセールスポイント。"
+        "target": "食品卸・農産物販売業者（従業員5〜20名）、取引先30〜100社からFAX・電話で注文受け付けている事業者",
+        "price_range": "初期費用12万円＋月額2.5万円",
+        "how_to_sell": "江田畜産の兄に「注文管理に手間がかかっている取引先を1社紹介してほしい」と依頼。「江田畜産でも使っているシステムの応用版」として初回アポを取る。",
+        "weekly_comment": "今週、リチェルカの「Agentic ERP」が17億円を調達し受発注業務のAI化ニーズが日本市場で公式認証された。しかしRECERQAは大企業向けで中小食品卸には届かない。Anthropicの「ブレイン・ハンド分離」Managed Agentsアーキテクチャが公式発表された今週、「LINEメッセージを解析して自動で注文管理する」はそのアーキテクチャの最もシンプルな実装例として説明できる。江田畜産という食品業務の実績が信頼の根拠になる。"
       }
     ]
   }
