@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-16",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "DeepSeek V4が4月末（2026-04-25〜2026-04-30）にリリースされる",
+          "confidence": "高",
+          "evidence": "直近7日間でDeepSeekに関する記事が10件以上。採用強化・内モンゴルデータセンター建設・4月末ローンチの複数媒体報道・Huaweichip初対応という具体情報が揃っており、リリース準備が最終段階にある。",
+          "shisto_implication": "DeepSeek V4リリース後、「中国AIが米国AIに匹敵するコスト」という話題が再燃し、日本でもAIコストに敏感な中小企業経営者の関心が高まる。Shistoの「Claude APIベース・コスト効率重視」という訴求がリリース後1週間で差別化ポイントになる可能性。"
+        },
+        {
+          "prediction": "OpenAI Agents SDKの新機能を活用したサードパーティ統合（Cloudflare・Zapier・Notion等）が複数発表される",
+          "confidence": "中",
+          "evidence": "Cloudflare+OpenAIのエンタープライズAIエージェントワークフロー連携（直近7日記事）が既に始まっており、SDK更新が公表されたことでパートナー企業が対応発表を続ける流れにある。",
+          "shisto_implication": "NoCode/LowCodeツールとAIエージェントの統合が加速する。Shistoが顧客に提案する際に「Zapier等の既存ツールとの連携」をオプションとして追加できる可能性が出てくる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "MCPプロトコルが主要クラウドプラットフォーム（AWS・GCP・Azure）全てで公式サポートされ、AIとDBの連携が「インフラレベル」で標準化される",
+          "confidence": "中",
+          "evidence": "MicrosoftのSQL MCP Serverオープンソース公開・AWS Bedrock AgentCoreの本番運用事例・AnthropicのManaged Agents記事と、主要プラットフォームが独立してMCPへの対応を進めている。",
+          "shisto_implication": "MCPが標準化されると「ShistoのGASベースのシステム」も将来的にMCPエンドポイントを持つことが競争力維持に必要になる。今のうちにMCPの基礎を学んでおく価値がある。"
+        },
+        {
+          "prediction": "日本国内でも「中小製造業向け技能継承AIサービス」が複数登場し、競合が形成され始める",
+          "confidence": "中",
+          "evidence": "日立フィジカルAIの発表が国内でも注目を集めた。日立クラスの大企業が課題として可視化したということは、中小向けSaaS参入の機運が高まっていることを意味する。",
+          "shisto_implication": "競合が参入する前に中小製造業向けの実績を1〜2件作っておくことが重要。競合SaaSが出てきた後は「価格と実績」での勝負になるため、今が先行者優位を取れる時期。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "エージェント型AIによる「業務の完全自動化」が中小企業にも実感レベルで普及し、「AIに任せた業務」を持つ中小企業が日本でも1万社を超える",
+          "confidence": "高",
+          "evidence": "OpenAI Agents SDK強化・MCP標準化・ノーコードエージェント台頭という3つのトレンドが同時進行。AWS Bedrock AgentCoreの医療機関（Rede Mater Dei）での本番稼働事例は「AIエージェントが実業務を担う」時代が既に来ていることを示す。",
+          "shisto_implication": "2〜3年後には「AIエージェント導入支援」という文脈でShistoのサービスが語られるようになる。今のうちに「稼働実績のある複数システム」を積み上げておくことが、長期的な差別化の基盤になる。"
+        },
+        {
+          "prediction": "AI採用・雇用への影響が統計的に可視化され、「AIに代替される職種」と「AIと協業する職種」の二極化が採用市場に明確に現れる",
+          "confidence": "中",
+          "evidence": "LinkedInデータでは「まだ」採用への影響は限定的だが、Agents SDKの本番化・ノーコード化の加速を考慮すると1年以内に影響が統計に出始める可能性が高い。",
+          "shisto_implication": "「AIで代替されない業務の担い手」として元プロバスケ選手→AI起業家という経歴が持つ「人間としての文脈理解・信頼関係構築」が、Shistoのブランド訴求として重要になってくる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-15",
     "predictions": {
       "short_term": [
