@@ -5,7 +5,7 @@
     --surface-hover: #131929;
     --border: #1a2438;
     --text: #d0daf0;
-    --text-muted: #48587a;
+    --text-muted: #6b7b9e;
     --accent: #e8a020;
     --accent-dim: rgba(232, 160, 32, 0.08);
     --accent-glow: rgba(232, 160, 32, 0.3);
@@ -26,7 +26,7 @@
 body {
     font-family: var(--font-body);
     background: var(--bg);
-    background-image: radial-gradient(rgba(26, 36, 56, 0.65) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(26, 36, 56, 0.4) 1px, transparent 1px);
     background-size: 24px 24px;
     color: var(--text);
     min-height: 100dvh;
@@ -106,9 +106,9 @@ body {
 
 .section-title {
     font-family: var(--font-ui);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--accent);
     margin-bottom: 14px;
@@ -141,8 +141,8 @@ body {
 
 .news-source {
     font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.08em;
+    font-size: 11px;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--accent);
     background: var(--accent-dim);
@@ -186,9 +186,9 @@ body {
 
 .action-priority {
     font-family: var(--font-mono);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 3px 7px;
     border-radius: 2px;
@@ -243,8 +243,8 @@ body {
 
 .proposal-tag {
     font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.06em;
+    font-size: 11px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     background: var(--accent-dim);
     color: var(--accent);
@@ -262,9 +262,9 @@ body {
 .proposal-category-badge {
     font-family: var(--font-mono);
     display: inline-block;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     padding: 2px 7px;
     border-radius: 2px;
@@ -297,9 +297,9 @@ body {
 .how-to-sell-label {
     font-family: var(--font-mono);
     display: inline-block;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--accent);
     margin-right: 8px;
@@ -325,9 +325,9 @@ body {
 
 .proposal-steps-title {
     font-family: var(--font-mono);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--text-muted);
     margin-bottom: 6px;
@@ -399,9 +399,9 @@ body {
 .prediction-confidence {
     font-family: var(--font-mono);
     display: inline-block;
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 2px 7px;
     border-radius: 2px;
@@ -423,8 +423,8 @@ body {
 
 .linkedin-day {
     font-family: var(--font-mono);
-    font-size: 10px;
-    letter-spacing: 0.12em;
+    font-size: 12px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent);
     font-weight: 600;
@@ -448,9 +448,9 @@ body {
 
 .linkedin-copy {
     font-family: var(--font-ui);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     padding: 7px 16px;
     border: 1px solid var(--accent);
@@ -474,9 +474,9 @@ body {
 .report-section { margin-bottom: 16px; }
 .report-section-title {
     font-family: var(--font-ui);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--accent);
     margin-bottom: 8px;
@@ -541,9 +541,9 @@ body {
 
 .nav-label {
     font-family: var(--font-ui);
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
@@ -594,7 +594,7 @@ body {
     }
 
     .nav-icon  { font-size: 15px; }
-    .nav-label { font-size: 11px; letter-spacing: 0.1em; }
+    .nav-label { font-size: 13px; letter-spacing: 0.05em; }
 
     .main {
         margin-left: 200px;
@@ -704,9 +704,9 @@ body {
 
 .review-status {
     font-family: var(--font-mono);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     padding: 2px 7px;
     border-radius: 2px;
@@ -736,9 +736,9 @@ body {
     border: none;
     border-radius: 2px;
     font-family: var(--font-ui);
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     cursor: pointer;
     transition: opacity 0.15s;
@@ -755,9 +755,9 @@ body {
     border: none;
     border-radius: 2px;
     font-family: var(--font-ui);
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -791,9 +791,9 @@ body {
     border: none;
     border-radius: 3px;
     font-family: var(--font-ui);
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 700;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap;
@@ -855,8 +855,8 @@ body {
 
 .search-result-category {
     font-family: var(--font-mono);
-    font-size: 9px;
-    letter-spacing: 0.06em;
+    font-size: 11px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     background: var(--accent-dim);
     color: var(--accent);
@@ -889,7 +889,7 @@ body {
 
 .entity-tag {
     font-family: var(--font-mono);
-    font-size: 9px;
+    font-size: 11px;
     background: rgba(30,201,160,0.08);
     color: var(--green);
     padding: 1px 6px;
@@ -945,9 +945,9 @@ body {
 
 .accuracy-stat-label {
     font-family: var(--font-ui);
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--text-muted);
     margin-top: 5px;
