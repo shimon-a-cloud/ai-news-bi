@@ -1,5 +1,64 @@
 [
   {
+    "date": "2026-04-18",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "DeepSeek V4が4月末に発表され、Claude Opus 4.7・Gemini 2.5との性能比較が各所で行われ「中国AIが再び追いついた」という報道が増える",
+          "confidence": "高",
+          "evidence": "DeepSeekが採用を急増させInner Mongoliaデータセンターの準備を進めており、4月末ローンチが複数ソースで報告されている（直近7日の記事より）",
+          "shisto_implication": "DeepSeek V4がAPIとして公開される場合、Claude APIのコスト比較が激化する可能性がある。ただし日本語精度・利用規約・データ所在地の観点でClaudeが依然優位なため、現時点でAPI移行の必要はない"
+        },
+        {
+          "prediction": "Anthropic Claude Designが一般公開に向けてWaitlistの招待を広げ始め、有料プランの価格帯が明らかになる",
+          "confidence": "中",
+          "evidence": "プレビュー公開のタイミングとAnthropicの過去リリースパターンから、2〜4週間で段階的な招待拡大が見込まれる",
+          "shisto_implication": "API提供が確認できた時点で、既存SNS投稿生成サービスへのビジュアル生成追加をクライアントに提案できるか評価する"
+        },
+        {
+          "prediction": "OpenAIがCPO退任後の組織再編を発表し、エンタープライズ向け製品戦略の変更が明らかになる",
+          "confidence": "中",
+          "evidence": "Kevin WeilとBill Peeblesの退任が同時期に起きており、OpenAIが「副業整理」と位置づけていることから組織的な再編が続く可能性が高い",
+          "shisto_implication": "OpenAI APIの利用方針変更があれば注視が必要。ただしShistoは現在Claude API中心のため直接的影響は少ない"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIコーディングツールの利用が中小企業にも広がり始め、「AIで社内ツールを作る」という概念が非エンジニア経営者にも届くようになる",
+          "confidence": "中",
+          "evidence": "Cursorの500億ドル評価と企業向け急成長、Claude Codeの普及が示す通りAIコーディング市場は拡大中。エンタープライズから中小企業への波及には3〜6ヶ月かかると予想",
+          "shisto_implication": "「AIで社内ツールを作る」概念が広まる前にShistoが実績を積んでおくことが重要。兄の会社での受注管理ツール構築を今週着手することが先行投資になる"
+        },
+        {
+          "prediction": "建設業・不動産業界でのAI活用事例が国内メディアで増加し、「建設DX」というキーワードでの問い合わせニーズが高まる",
+          "confidence": "中",
+          "evidence": "建設業は2024年問題（時間外労働規制）の影響で業務効率化への需要が高い。AIニュース量の増加が中小建設業者の意識変化を促す",
+          "shisto_implication": "建設業向けBIモニタリングサービスの提案タイミングとして今が適切。2〜3ヶ月以内に最初の1社を取れると、その後の横展開がしやすくなる"
+        },
+        {
+          "prediction": "Anthropic Claude Designが正式版をリリースし、コーディング+デザイン統合ワークフローの事例がSNSで増加する",
+          "confidence": "低",
+          "evidence": "現在プレビュー段階。Anthropicの過去リリースサイクルから正式版は2〜4ヶ月後と推測するが、プレビューのまま延長される可能性もある",
+          "shisto_implication": "要検証：Claude DesignのAPIが公開されれば、Webサイト制作サービスへのビジュアル生成統合が可能になる。リリース次第で提案内容を更新する"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIエージェントが「特定業務を自律的にこなす」から「複数業務を横断的に管理する」フェーズに移行し、1人運営の小規模企業でもエンタープライズ相当の業務自動化が実現できるようになる",
+          "confidence": "高",
+          "evidence": "MetaのUnified AI Agents、OpenAIのAgents SDK進化、Anthropicのエージェント研究（Managed Agentsスケーリング論文）が全て同方向を向いている",
+          "shisto_implication": "Shistoが今構築しているパイプライン群は将来のエージェント統合のベースになる。今から「単発パイプライン→統合エージェント」への設計思想でシステムを作っておくことが中長期の競争力になる"
+        },
+        {
+          "prediction": "日本でAI利用に関する事業者向けガイドラインが経産省・デジタル庁から具体的な指針として公表され、中小企業でも「AI利用規程」の整備が求められるようになる",
+          "confidence": "中",
+          "evidence": "EU AI Act施行・トランプ政権のAIセキュリティ強化方針（Anthropic Mythosの政府向け展開）など国際的なAI規制の流れを受け、日本でも2026年内に具体的な指針が出ると予想",
+          "shisto_implication": "「社内AI利用ルール整備支援サービス」の需要が顕在化する可能性がある（2026-04-14に提案済み）。規制の具体化が確認できたタイミングで再提案を検討する"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-17",
     "predictions": {
       "short_term": [
