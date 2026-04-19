@@ -1,5 +1,64 @@
 [
   {
+    "date": "2026-04-19",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "DeepSeekの4月リリース（7日間タイトル一覧で複数報じられた）が来週実行され、Claude Opus 4.7・GPT-4シリーズとのベンチマーク比較記事が大量に出る",
+          "confidence": "高",
+          "evidence": "直近7日間の一覧にDeepSeek関連記事が4本（「DeepSeek's Gamble on Chips」「high-stakes April launch」「New DeepSeek model」等）集中しており、4月リリースが迫っていることを示している",
+          "shisto_implication": "Claude vs DeepSeek比較が話題になる際、「ShistoがなぜAnthropicを選んでいるか」の説明を準備しておく必要がある。クライアントへの説明では「DeepSeekは無料だが日本語精度・プライバシー・サポートの観点でAnthropicを選んでいる」という軸で話せるようにしておく。"
+        },
+        {
+          "prediction": "Anthropic-Trump政権の関係改善（7日間タイトルに「thawing」の記事あり）を受け、AnthropicのUS政府向けサービス・セキュリティモデルの発表がある",
+          "confidence": "中",
+          "evidence": "「Anthropic's relationship with the Trump administration seems to be thawing」「Anthropic's new cybersecurity model could get it back in the government's good graces」という記事が2本出ており、政府向け展開の布石が読み取れる",
+          "shisto_implication": "AnthropicのAPI利用規約・利用可能地域の変化が起きる可能性がある。現在のパイプラインに影響がないか定期確認を怠らない。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "RAM不足の長期化を受け、Anthropic・OpenAI等の主要LLM APIが推論コストを5〜20%値上げする",
+          "confidence": "中",
+          "evidence": "The Verge「The RAM shortage could last years」が示すインフラコスト上昇。Cerebras IPOはAIインフラが希少資源化している証左。",
+          "shisto_implication": "Shistoのサービス単価に影響するため、Claude API実費をクライアントに実費精算する契約条項を今のうちに整備しておく。API値上げをきっかけに「安い軽量自動化」の訴求をリフレッシュできる機会にもなる。"
+        },
+        {
+          "prediction": "AIコーディングツール（Cursor・GitHub Copilot等）の法人導入が中小IT企業にも広がり、「どう業務に組み込むか」というハンズオン研修需要が日本でも顕在化する",
+          "confidence": "中",
+          "evidence": "Cursor $50B評価交渉のニュースが日本でも報じられると、地方の中小Web制作会社・IT企業が「自社でも使わないといけない」と感じ始める。",
+          "shisto_implication": "Claude Code研修サービスを今月中にLinkedInで打ち出しておくと、この需要拡大期に最初の1〜3件を取れる可能性が高い。タイミングが肝なので今週のLinkedIn投稿を最優先にする。"
+        },
+        {
+          "prediction": "物理世界AI（F&Bチャットbot・ロボタクシー）が日本の中小事業者向けに翻訳・展開され始め、LINE上のAI自動応答サービスを提供するスタートアップが複数登場する",
+          "confidence": "中",
+          "evidence": "Dairy Queen AI chatbot導入のニュースが国内でも報道され始めると、日本の飲食・小売業者へのLINE Bot提案が競合参入前に動くチャンスが1〜3ヶ月しかない可能性がある",
+          "shisto_implication": "LINE FAQ Bot提案は競合が増える前に最初の1件を取ることが重要。来週中にデモを動かし、今月中に1クライアントへの提案を完了させる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIインフラコスト上昇（RAM・チップ不足）によりSaaS型AIツールの値上げが続き、SMEが「自社で所有する軽量カスタムAI」へシフトし始める",
+          "confidence": "中",
+          "evidence": "RAM shortage記事・Cerebras IPOが示すインフラ希少化。SaaSベンダーがコストを転嫁しない限り事業継続が困難になる構造的な圧力。",
+          "shisto_implication": "Shistoの「GAS+Claude API＋Google Sheets」という構成は、高額SaaSを使わないアーキテクチャとして半年〜1年後に差別化ポイントが強くなる。今から「SaaS不要の自動化」という打ち出し方を一貫させておく。"
+        },
+        {
+          "prediction": "AIエージェントの実運用が中小企業にも広がり、「複数のエージェントを組み合わせて業務を丸ごと自動化する」という設計の需要が出てくる",
+          "confidence": "中",
+          "evidence": "OpenAI Agents SDK進化・Meta Unified AI Agents・Anthropic Managed Agents Scalingが同週に出ており、エージェントが実運用フェーズに入っていることが一次ソースで確認できる",
+          "shisto_implication": "現在のパイプライン型（RSS→Claude→Sheets）をエージェント型（条件分岐・複数ツール連携）に拡張できるよう、今からMCP・GASトリガー設計の習熟を進めておく。半年後には「マルチエージェント自動化パッケージ」として単価を上げた提案ができる。"
+        },
+        {
+          "prediction": "物理世界AI（ロボタクシー・ドライブスルーBot等）の日本への浸透に伴い、飲食・小売・交通分野のAI化が義務的な競争ライン（「やっていないと遅れている」）になる",
+          "confidence": "高",
+          "evidence": "Tesla robotaxi複数都市展開・Dairy Queen chatbot導入という物理AI浸透の実例が同週に複数出た。日本のF&B大手（マクドナルド・ドミノピザ等）が追随するのは時間の問題。",
+          "shisto_implication": "個人飲食店・サロン向けLINE FAQ Botは、この波が来る前の「早期採用層向けサービス」として位置づけられる。1年後には競合が増えてコモディティ化するため、今の1〜2年で実績・推薦文を積むことが長期的な差別化に直結する。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-18",
     "predictions": {
       "short_term": [
