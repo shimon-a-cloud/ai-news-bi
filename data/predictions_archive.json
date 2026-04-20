@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-20",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "NECの93%削減事例が国内メディアで広く引用され、大手コンサル・SIerが「書類処理AI自動化サービス」の中堅企業向け営業を開始する",
+          "confidence": "高",
+          "evidence": "NECの事例（ITmedia AI+, 2026-04-20）。大手SIerは実証事例が出ると即座に類似サービスを横展開する傾向がある。",
+          "shisto_implication": "大手SIerが動き出す前の2〜4週間が、Shistoが「安価・スポット型」として中小企業にアプローチする最適な窓口。今週RAYUPの兄への紹介依頼が特に重要。"
+        },
+        {
+          "prediction": "Cloudflare Email Serviceのベータ公開を受け、他のクラウドプロバイダー（AWS SES強化等）がAIエージェント向けメール処理機能を発表する",
+          "confidence": "中",
+          "evidence": "Cloudflare Artifacts + Email Serviceの連続発表（2026-04-20）。業界標準化が始まると他社追随が速い傾向（MCPがその典型例）。",
+          "shisto_implication": "ShistoはクラウドプロバイダーのネイティブAPIではなく「業種特化のプロンプト設計＋サポート」で差別化する必要がある。今のうちに士業・医療等の業種特化実績を積む。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "MCPが主要SaaS（kintone・Freee・MoneyForward等の国内SaaS含む）のAPIアクセス標準として採用され、「MCPを使ったSaaSデータ分析」が中小企業AI案件の主流になる",
+          "confidence": "中",
+          "evidence": "Salesforce Headless 360のMCP採用（2026-04-20）、Cloudflare AgentsのOpenAI連携発表（2026-04-13）など、エンタープライズSaaSのMCP対応が連続発表されている。",
+          "shisto_implication": "今週MCP基礎を習得することで、3〜6ヶ月後に来るMCP案件に先行者として対応できる。特にkintone・Freeeを使っている中小企業向けの「SaaSデータAI分析」が有望な新市場になる可能性。"
+        },
+        {
+          "prediction": "AIセキュリティ投資競争の激化を背景に、中小企業向けの「AI攻撃対策情報サービス」市場が立ち上がり、月額1〜3万円帯の新サービスが複数登場する",
+          "confidence": "中",
+          "evidence": "GIGAZINEのAIセキュリティ投資競争記事（2026-04-20）、Vercelのハッキング被害（2026-04-20）。Anthropicのサイバーセキュリティ特化モデル発表（2026-04-18）も追い風。",
+          "shisto_implication": "今のうちにIPAベースのセキュリティ情報配信プロトタイプを動かし、月額5000〜8000円帯で実績を作っておく。市場が立ち上がる前に顧客ロイヤルティを確立できる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIエージェントがメール・ファイル・CRMを自律管理するインフラが整備され、「人間がAIエージェントの監視者として機能する」ハイブリッドモデルが中小企業にも普及する",
+          "confidence": "高",
+          "evidence": "Cloudflare Artifacts + Email Service + Salesforce Headless 360の3件の発表（2026-04-20）はエージェントインフラが商用レベルで整備されていく方向性を強く示している。Wired JPの懐疑論も「人間の監視付き半自動化」が現実的フェーズであることを示唆。",
+          "shisto_implication": "Shistoが現在構築しているパイプライン（RSS収集→Claude分析→出力）は「人間が最終確認する半自動化」モデルの先行実装。このモデルが市場標準になる前に実績と信頼を積むことで、「エージェント時代の中小企業パートナー」としてポジションを確立できる。"
+        },
+        {
+          "prediction": "OpenAIの組織的混乱が続く中、AnthropicがエンタープライズAIサービスのリーダーとして安定的に地位を確立する",
+          "confidence": "中",
+          "evidence": "OpenAIの幹部離脱・組織再編（2026-04-18〜19）とAnthropicのClaude Opus 4.7・Claude Design・サイバーセキュリティモデルの相次ぐリリース（2026-04-16〜18）のコントラスト。",
+          "shisto_implication": "Claude Code・Claude APIを中心とした現在のShistoのツール選択戦略は中長期的に有効。OpenAIが組織的混乱を克服した場合は再評価が必要だが、当面はClaude中心で進める判断を維持。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-19",
     "predictions": {
       "short_term": [
