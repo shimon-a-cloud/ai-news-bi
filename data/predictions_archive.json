@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-21",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "AnthropicがClaude Opus 4.7に続き、Sonnet系の新バージョン（Claude Sonnet 4.7）をリリースする",
+          "confidence": "高",
+          "evidence": "Claude Opus 4.7リリース（4/16）後、過去のパターンではOpusの後にSonnetの更新が続くことが多い。Anthropicは製品ラインナップをOpus/Sonnet/Haikuで整備している。",
+          "shisto_implication": "ShistoのシステムはSonnetベースで動いているため、新Sonnetリリース時に性能・コストのトレードオフを確認してアップグレード判断が必要。既存クライアントへの「モデル更新によるサービス品質向上」提案タイミングにもなる。"
+        },
+        {
+          "prediction": "Cursor $50B調達の正式発表と同時に、エンタープライズプランの価格引き上げが発表される",
+          "confidence": "中",
+          "evidence": "TechCrunchの4/18記事でエンタープライズ成長を背景に$50B評価での調達交渉中と報道。VCからの資金調達後は価格設定見直しが一般的パターン。",
+          "shisto_implication": "Cursor価格が上がれば「Claude Code + VSCode無料組み合わせ」への移行検討が増え、Shistoの研修・導入支援ニーズが高まる可能性。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "日本の飲食業（仕出し・給食・デリバリー）でAI受注管理ツールの導入事例が増え、大手SaaSが「中小飲食業向けAI受注管理」機能を追加する",
+          "confidence": "中",
+          "evidence": "Dairy QueueドライブスルーAI・AWSオムニチャネル受注事例が示すように、飲食業のAI受注自動化が実用フェーズへ。Airレジ・Square等の既存POS大手がAI機能追加するのは時間の問題。",
+          "shisto_implication": "大手SaaSが参入する前の3〜6ヶ月が、Shistoが軽量版をローコストで展開できる最大のウィンドウ。今月中にプロトを完成させて最初の1件を取ることが重要。"
+        },
+        {
+          "prediction": "AnthropicまたはOpenAIがAPIコスト削減のためのプロンプト圧縮・自動最適化機能を標準提供する",
+          "confidence": "中",
+          "evidence": "TechCrunchのトークンマクシング記事への反響、AnthropicがPrompt Cachingで既に一部対応済みであることから、次のステップとして自動最適化機能の強化が予測される。",
+          "shisto_implication": "ツールが自動化される前にコンサルサービスを展開することが重要。自動化ツールが出れば「そのツールの使い方を教える研修」に転換できる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIエージェントが「単一業務の自動化」から「複数業務のオーケストレーション」に移行し、中小企業向けの「業務全体AI自動化パッケージ」市場が形成される",
+          "confidence": "高",
+          "evidence": "OpenAI Agents SDK進化・AWSのAgentCore・MCP普及など、複数エージェントの連携標準化が急速に進んでいる。今は「受注自動化」「SNS投稿自動生成」が個別に売れているが、1〜2年後には統合サービスへのニーズが生まれる。",
+          "shisto_implication": "Shistoが現在個別に提供しているシステム（領収書転記・SNS投稿・受注管理）を1つのダッシュボードで管理できる「中小企業向けAI自動化パッケージ」として統合する方向性を視野に入れる。今は個別受注で実績を積む段階。"
+        },
+        {
+          "prediction": "日本でもAI関連のスモールビジネス支援制度（補助金・税制優遇）が整備され、AI導入コンサル・実装支援への需要が中小企業に本格普及する",
+          "confidence": "中",
+          "evidence": "経済産業省のDX推進政策・IT補助金の継続。AI活用が国家戦略として位置付けられており、中小企業向け支援制度の充実は政治的にも推進されやすい方向性。",
+          "shisto_implication": "補助金対象になればShistoのサービスに対して中小企業が「補助金でまかなえる」と判断しやすくなり、受注単価・受注数ともに増加する可能性がある。IT導入補助金の申請要件を事前に把握しておく。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-20",
     "predictions": {
       "short_term": [
