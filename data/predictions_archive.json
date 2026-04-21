@@ -1,5 +1,70 @@
 [
   {
+    "date": "2026-04-22",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Meta・TikTokがYouTubeに続いてAI生成コンテンツ検出機能の強化または類似ポリシーの拡張を発表する",
+          "confidence": "高",
+          "evidence": "YouTubeのAI likeness detection拡大（2026-04-22）。YouTubeがプラットフォームの先頭を切って規制実装したことで、競合プラットフォームが同様の対応を迫られる業界慣例。",
+          "shisto_implication": "SNS運用サービスを提供するShistoは、顧客企業のAI生成コンテンツ使用リスクを先回りして説明できる立場を維持する必要がある。B1提案（AIコンテンツガイドライン）の営業タイミングは今週〜来週が最もホット。"
+        },
+        {
+          "prediction": "Claude Opus 4.7のAPI提供開始と同時に、既存Claude 3系モデルの価格引き下げが発表される",
+          "confidence": "中",
+          "evidence": "Anthropic新モデル発表のたびに旧モデルの価格改定が行われてきたパターン。Anthropic-Amazon大型提携によるインフラコスト効率化も後押し。",
+          "shisto_implication": "Claude APIコストが下がれば、Shistoの月額定額サービスの原価が改善する。新プランへの切り替えタイミングを見計らう必要がある。"
+        },
+        {
+          "prediction": "OpenAI Codexのエンタープライズ展開を受けて、日本のSIer・IT企業がClaude Code vs Codex の比較記事・導入検討を活発に発信する",
+          "confidence": "中",
+          "evidence": "Codexエンタープライズ全世界展開（2026-04-21）。日本市場では大手SIerがAIコーディングツール選定を迫られており、比較情報の需要が高まっている。",
+          "shisto_implication": "「Claude Codeを実務で使っているShisto」という立ち位置が差別化要素になる時期。XやLinkedInで実務活用レポートを発信し始めるタイミングとして好適。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "Anthropic-Amazon統合が深化し、AWSコンソールからClaude APIを直接利用できる「Claude for AWS Business」的なパッケージが発表される",
+          "confidence": "高",
+          "evidence": "Anthropic $5B Amazon提携（2026-04-21）の規模感。AWS Bedrockは既にAnthropicモデルを提供しているが、今回の$100B cloud spending約束はより深い統合を示唆する。",
+          "shisto_implication": "AWSを利用している中小企業がClaude APIにアクセスしやすくなる。Shistoの潜在顧客がAWSユーザー全体に広がる可能性があり、「AWS + Claude 自動化サポート」という新しいサービス軸が生まれる。"
+        },
+        {
+          "prediction": "AIコーディングエージェントの普及により「プロンプトエンジニアリング」より「どんな業務にAIを当てるかの設計力」が市場で評価される時代になる",
+          "confidence": "中",
+          "evidence": "OpenAI Codex/Claude Codeのエンタープライズ展開、Agents SDK進化。AIが「コードを書く」部分を代替することで、「何を作るかの設計」に人間の価値が集中する。",
+          "shisto_implication": "Shistoが「AIツールを使える人」より「中小企業の業務課題をAI自動化で解決できる人」として自らを定義・訴求することが、競合との差別化に直結する。"
+        },
+        {
+          "prediction": "App Store AI boomを受けて、地域スポーツ・教育系アプリ市場にAIネイティブな新規参入が増加し、アカデミー向けデジタルツールの競争が激化する",
+          "confidence": "中",
+          "evidence": "App Store AI boom記事（2026-04-18）、Fortniteのゲーム内AIキャラ解禁（2026-04-21）。スポーツ・教育領域へのAIアプリ浸透が確認できる。",
+          "shisto_implication": "B2提案（スポーツアカデミー向けレポート生成）は競合参入前の今こそ動くべき。さいたまブロンコスで実績を作り、半年以内に外部販売を開始することが重要。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AI生成コンテンツのプラットフォーム規制が国際的に標準化され、SNSマーケティングに「AI使用開示義務」が実質的に課せられる",
+          "confidence": "高",
+          "evidence": "YouTubeのAI likeness detection拡大（2026-04-22）、各国AI規制法の整備進展（EU AI Act等）。プラットフォームが自主規制から進んで、政府規制が後追いで標準化される流れが見えている。",
+          "shisto_implication": "SNS運用サービスを提供するShistoは「AI使用開示に対応した投稿自動生成」を標準機能として組み込む必要が生じる。コンプライアンス対応を差別化要素にできる可能性がある。"
+        },
+        {
+          "prediction": "マルチエージェントAIが中小企業の日常業務（受発注・問い合わせ対応・経費処理）を端から端まで自律実行するSaaSが低価格で普及し、Shistoのような個別受託型自動化の市場が圧迫される",
+          "confidence": "中",
+          "evidence": "OpenAI Agents SDK進化（2026-04-15）、Codexエンタープライズ展開（2026-04-21）。自律エージェントの成熟速度は予想を超えており、1〜2年で「インストールするだけで業務を自動化するSaaS」が出てくる可能性がある。",
+          "shisto_implication": "汎用SaaSが解決できない「業種特有の業務フロー・既存システムとの連携・人間的な文脈理解」に特化した案件に集中することが長期戦略上の生存戦略。「どこでも使えるAI自動化」ではなく「Shistoでしかできない特定業種特化」に今から軸を置くべき。"
+        },
+        {
+          "prediction": "AIを使ったサービス提供者（ShistoのようなAI自動化事業者）に対して「AIシステムの透明性説明義務」が中小企業向けにも及ぶ規制が整備される",
+          "confidence": "低",
+          "evidence": "EU AI Act・各国AI規制の中小企業への適用議論。ただし日本では当面は大企業対象になる可能性が高く、中小AI事業者への直接規制適用は遅れると予想される。",
+          "shisto_implication": "将来の規制に備えて「どのようなAIを使って何をしているか」をクライアントに説明できるドキュメントをサービスに含める習慣を今から作っておくことが、長期的なリスクヘッジになる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-21",
     "predictions": {
       "short_term": [
