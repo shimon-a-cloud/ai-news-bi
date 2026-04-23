@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-23",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Google Cloud Next 2026の大量発表を受け、来週にかけて国内メディア（ITmedia・日経・Impress）が「Google Workspace AI活用事例」「中小企業のAI導入判断」記事を急増させる",
+          "confidence": "高",
+          "evidence": "3742・3737・3729等のGoogle Cloud Next発表。大型カンファレンス後に国内メディアが1〜2週間かけて解説記事を量産するパターンは過去一貫している。",
+          "shisto_implication": "「Workspace AI活用支援」の認知機会が増える。記事への反応コメントを観察して潜在クライアントのリサーチとDM営業のタイミングを判断する。"
+        },
+        {
+          "prediction": "OpenAI Workspace Agentsの発表に対してMicrosoftがCopilot 365の強化またはポジショニングコメントを来週中に出す",
+          "confidence": "中",
+          "evidence": "OpenAI（3745）の発表がChatGPT TeamsによるWorkspaceへの侵食であるため、Microsoft（Teams + Copilot）が何らかの反応を示すのが過去パターン。",
+          "shisto_implication": "MicrosoftがCopilotを強化した場合、Office365系の中小企業向け活用支援という横展開提案の根拠が増える。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "2〜3ヶ月以内に「AIエージェントの自律実行ミス・情報漏洩事故」の報道が国内で出始め、中小企業のAIエージェント導入に慎重論が高まる",
+          "confidence": "中",
+          "evidence": "エリザベス・ウォーレンのAI金融リスク警告（3744）、AnthropicのCISA情報共有漏れ（3747）。AIエージェントが自律実行する範囲が広がるほどミスの影響も大きくなる構造的問題がある。",
+          "shisto_implication": "「エージェントが自律実行する部分と人間が確認する部分を明確に分けた設計」をサービスの訴求点にすることで、慎重派の中小企業にも売れる安全なポジションを取れる。"
+        },
+        {
+          "prediction": "Google WorkspaceのAI機能大量追加を受け、2〜3ヶ月後に「Geminiアドオンへのアップグレードをすべきかどうかの判断相談」需要が中小企業で顕在化する",
+          "confidence": "中",
+          "evidence": "GoogleがWorkspace Business/Enterpriseプランの構成を変更した場合、既存ユーザーが対応を迫られる。過去のG Suite→Workspace移行時も同様の支援需要が発生した実績がある。",
+          "shisto_implication": "「Google Workspaceプラン移行判断・AI活用設定代行」をスポット提案として準備しておく価値がある。今から情報収集しておけば2〜3ヶ月後に即提案できる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "半年〜1年以内に「AIエージェントが社内業務ワークフローを部分的に担う」実装が中堅企業（50〜300名規模）に広がり、「AIエージェントの構築・保守・調整」を担うフリーランスポジションが事実上発生する",
+          "confidence": "高",
+          "evidence": "GoogleのAgent Space・OpenAIのWorkspace Agentsの同日発表（3742、3745）はエンタープライズAIエージェント市場が普及フェーズに入ったことを示す。これらを使いこなすためのサポート需要は必然的に発生する。",
+          "shisto_implication": "Shistoは今から「AIエージェント保守・運用最適化」ポジションを確立できれば、1年後に複数社との月額保守契約を締結できる可能性がある。田中伶・RAYUPでの実績をケーススタディとして今から文書化しておくことが重要。"
+        },
+        {
+          "prediction": "半年以内に日本でもAI利用に関する中小企業向けガイドライン（経産省・総務省）が整備され、「AIを使っている会社はこれを守れ」という実務基準が出る",
+          "confidence": "中",
+          "evidence": "エリザベス・ウォーレンの警告（3744）、EU AI Act施行の流れ、国内でも内閣府がAIガイドライン改訂を継続している。中小企業向けの具体的な規制は遅れているが方向性は明確。",
+          "shisto_implication": "Shistoが先回りして「AI自動化サービス＋コンプライアンス対応チェックリスト」をセットで提供できれば競合との差別化になる。規制動向は毎月1回確認する習慣をつける。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-22",
     "predictions": {
       "short_term": [
