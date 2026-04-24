@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-25",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "OpenAI Codexの企業導入事例が複数発表され、AIコーディングによる開発コスト削減額が具体的な数字で示される",
+          "confidence": "高",
+          "evidence": "OpenAIが今週Codexの企業向け展開を本格化し、Hyatt等の大手企業事例の公開が続いている流れ。",
+          "shisto_implication": "「AIコーディングの導入効果」を具体的数字で説明できるようになり、Shistoの営業資料の説得力が上がる。事例をキャッチして積極的に引用すべき。"
+        },
+        {
+          "prediction": "DeepSeek V4のAPI公開アナウンスがあり、Claude/GPT-4oとのコスト比較記事が多数出る",
+          "confidence": "中",
+          "evidence": "DeepSeekがV4のプレビューを発表（2026-04-24）。過去のパターンではプレビューから2〜4週間でAPI公開されている。",
+          "shisto_implication": "Claude APIとDeepSeek APIのコスト比較が求められる場面が増える。どちらのモデルを使うか、クライアントへの説明方針を今から整理しておく。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "日本の中堅〜大企業でAIコーディングツールの全社展開事例が出始め、AIツールを使えない開発者を採用しない企業が増える",
+          "confidence": "高",
+          "evidence": "Anthropic+NEC提携による日本のAIエンジニア育成（2026-04-24）、OpenAI Codex企業展開（2026-04-23）。日本での採用要件変化は3〜6ヶ月遅れで顕在化する傾向がある。",
+          "shisto_implication": "AIツールを導入したい中小企業向けの伴走支援需要が高まる。1人でも対応できるパッケージ化した研修・導入支援サービスの需要が増す。"
+        },
+        {
+          "prediction": "ChatGPT・ClaudeのWorkspace Agent機能がG Suite・Microsoft 365連携で業務自動化の標準機能化し、GAS+Claude APIで構築したShisto製サービスとの機能重複を指摘するクライアントが増える",
+          "confidence": "中",
+          "evidence": "ChatGPT Workspace AgentsとClaude個人アプリ連携の発表（2026-04-22, 2026-04-24）。標準機能として提供されると「なぜShistoに頼む必要があるか」という問いが生じる。",
+          "shisto_implication": "Shistoのサービスの差別化軸を「標準機能にはない業種特化カスタマイズ・ローカライズ（農業相場・日本の法令等）」に明確にしておく必要がある。今から差別化軸を磨いておくべき。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIエージェントが外部サービス操作を自律的に行う機能の普及により、GAS+Claude APIのようなつなぎ役の需要が一部置き換えられる一方、業種特化のデータ設計と運用サポートの価値は上昇する",
+          "confidence": "中",
+          "evidence": "Claude個人アプリ接続（2026-04-24）、Google TPU新製品（2026-04-22）、ChatGPT Workspace Agents（2026-04-22）がエージェント自律化の加速を示している。",
+          "shisto_implication": "技術的なつなぎ役としてのポジションは守りにくくなる。Shistoの長期的な差別化は「業種の業務フローを知っていること・信頼関係・継続サポート」に移行すべき。クライアントを増やすよりも深耕する方向が安全。"
+        },
+        {
+          "prediction": "日本のAI活用格差が可視化されることで、地方・農業・食品・畜産業界でのAI導入支援に特化したコンサル・代行サービスの需要が出てくる",
+          "confidence": "中",
+          "evidence": "Anthropic+NEC提携で大企業のAI活用が加速（2026-04-24）。格差の拡大はデジタル化が遅れた業種での駆け込み需要を生む。",
+          "shisto_implication": "江田畜産への実績を核に、食品・農業・畜産業向けのAI自動化支援に専門化するポジションを取れる可能性がある。今の江田畜産案件を丁寧に育てることが1〜2年後の差別化につながる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-24",
     "predictions": {
       "short_term": [
