@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-04-28",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "GitHub Copilot従量課金への反発・コスト試算記事がQiita・Zenn・LinkedIn等で急増し、「AIツールコスト管理」が開発者コミュニティのホットトピックになる",
+          "confidence": "高",
+          "evidence": "GitHub Copilotの従量課金発表（本日ITmedia記事）。定額制から変動費への変更はユーザーに直接影響するため反応が速い。",
+          "shisto_implication": "「AIツールコスト可視化サービス」を提案するタイミングとして今後1〜2週間が最適。LinkedInで「GitHub Copilot 従量課金」に反応しているCTO・エンジニアを探し、接点を作る好機。"
+        },
+        {
+          "prediction": "OpenAI-Microsoft提携再改定を受けて、AzureでOpenAIを使っている国内企業のベンダーロックイン懸念記事・セミナーが増加する",
+          "confidence": "中",
+          "evidence": "OpenAI-Microsoft AGI契約消滅ニュース（The Verge・TechCrunch）。国内SIer・ITベンダーはAzureOpenAIを前提に提案しているケースが多く、方向性の変化に敏感。",
+          "shisto_implication": "「Claude（Anthropic）はAWSで安定稼働・OpenAIの方針変化に左右されない」という差別化メッセージが刺さる可能性がある。Claude採用の根拠として営業で活用できる文脈。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "エージェントオーケストレーションフレームワーク（AWS Strands・OpenAI Symphony等）の普及で、「複数ツール連携の自動化」を得意とする小規模ベンダーへの需要が国内で高まる",
+          "confidence": "高",
+          "evidence": "AWS Strands Agents公開・OpenAI Symphony発表・MIT Tech Review特集が同時期に重なり、オーケストレーション実装の需要が顕在化している。",
+          "shisto_implication": "ShistoはLinkedIn・X・領収書・AIニュースBIと複数パイプラインの実稼働経験があり、「複数パイプラインの設計・実装実績がある」として有利なポジションを取れる。今のうちにケーススタディとして整理しておく。"
+        },
+        {
+          "prediction": "生成AI導入失敗企業が増加する中、「導入後の活用定着支援」を専門とするサービスの需要が中小企業向けに生まれる",
+          "confidence": "高",
+          "evidence": "AINOW「生成AI社内導入の問題点7選」「推進責任者の不在が失敗の主因」が示す通り、導入失敗の可視化が進んでいる。失敗事例が増えるほど「次こそ定着させたい」という需要が生まれる。",
+          "shisto_implication": "「外部AI推進担当」サービスを3ヶ月以内に最初の1件受注し、実績データを取ることが最優先。市場が整う前に実績を作れれば価格決定権を持てる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "David Silverらの「人間データなしで学習するAI」研究が成果を出し始め、小規模事業者でも自社データだけでカスタムAIを構築できるコストが現在の1/10以下になる",
+          "confidence": "低",
+          "evidence": "DeepMind David Silver $1.1B調達（TechCrunch）。合成データ・自己強化学習への巨額投資が継続しており、技術的方向性は明確だが商用化まで時間がかかる。",
+          "shisto_implication": "長期的には「業種特化カスタムAIを数万円で構築」する市場が来る可能性がある。今は布石として「顧客データを整備する支援」サービスを先に売り、将来のカスタムAI構築に繋げる流れを設計できる。"
+        },
+        {
+          "prediction": "OpenAI・Anthropic・GoogleのAPI価格競争が加速し、年率30〜50%の価格下落が続くことでAI自動化サービスの原価が下がりShistoの収益率が改善する",
+          "confidence": "中",
+          "evidence": "OpenAI-Microsoft脱独占でクラウドAI競争が多極化。競争が激しくなるほどAPI価格は下落する歴史的パターンがある。",
+          "shisto_implication": "API価格下落は既存サービスのコスト削減につながり利益率を改善する。ただし競合も参入しやすくなるため、「実装速度・実績・顧客関係」の優位性を今のうちに積み上げておく必要がある。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-27",
     "predictions": {
       "short_term": [
