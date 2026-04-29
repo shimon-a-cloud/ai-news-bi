@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-04-29",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "AnthropicがClaude Creative Connectorsの追加対応ソフトウェア（Figma・DaVinci Resolve等）を1〜2週間以内に発表し、クリエイティブ業界のAI採用が加速する",
+          "confidence": "中",
+          "evidence": "本日発表の8件は先行リリース的な位置付けで、Adobe・Blenderに続くチェーン発表のパターンが大手AIプロバイダーに多い。Anthropicの「Claude for Creative Work」という戦略的注力が背景",
+          "shisto_implication": "デザイン事務所向けSNS投稿案サービスの提案タイミングとして最適。コネクタ拡充ニュースを「今がAI活用を発信し始めるべきタイミング」という営業トークに使える"
+        },
+        {
+          "prediction": "OpenAI-AWS統合の正式事例が続々と発表され、AWSパートナーSIerが「OpenAI on AWS」を活用した提案を始める",
+          "confidence": "高",
+          "evidence": "Codex・Managed Agentsを含む統合がすでに稼働中。AWSパートナーは顧客提案に素早く取り込む文化がある",
+          "shisto_implication": "「どのAIを使えばいい？」という混乱が中小企業に生じるタイミング。AIツール選定コンサルへのニーズが短期的に高まる"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "日本国内で中小企業向けのAIガバナンス・ガイドライン策定の機運が高まり、2026年7〜8月頃に業界団体または経産省が実務向け自主ガイドラインを公表する",
+          "confidence": "中",
+          "evidence": "EU AI Actの施行・本日の野良AI使用研究・経産省のAIガイドライン整備の流れ。国内企業の多くでAIガバナンスが未整備という実態調査が今後出てくると予想される",
+          "shisto_implication": "社内AIガイドライン草案スポットサービスの市場ニーズが義務化議論とともに急拡大する。今から実績を積んでおく価値が高い"
+        },
+        {
+          "prediction": "SWE-bench後継となる実務適合型のAIコーディング評価指標が複数のチームから提案され、「タスク種別×コスト効率×実務再現性」を組み合わせた評価フレームワークの標準化議論が始まる",
+          "confidence": "中",
+          "evidence": "OpenAI自身がSWE-benchの無意味さを指摘した本日の動き。業界として代替指標を求める動きが必ず生まれる",
+          "shisto_implication": "「実務適合度評価レポート」サービスが先行者利益を得られるウィンドウ。業界標準指標が確立する前に独自フレームワークとして実績を積む好機"
+        },
+        {
+          "prediction": "クリエイティブツールへのAI統合が普及し、デザイン事務所・映像制作会社の「AI活用PR」需要が3ヶ月以内に顕在化し始める",
+          "confidence": "中",
+          "evidence": "Claude Creative Connectors公開＋Adobe FireflyのAI統合加速の流れ。デザイン業界SNS・業界誌で「AIを使わないクリエイターは生き残れない」という文脈の記事が急増すると予想",
+          "shisto_implication": "デザイン事務所向けSNS投稿案自動生成サービスの需要が3ヶ月後に急拡大する可能性。今から試験導入を始めておくことで需要拡大時に即対応できる"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "マルチモーダルAI（文書・音声・動画を同時処理）が標準化し、書類処理・議事録・映像分析の自動化が中小企業でも当たり前になる",
+          "confidence": "高",
+          "evidence": "NVIDIA Nemotron 3 Nano Omni（本日公開）・GPT-4o・Claude 3.5など複数のマルチモーダルモデルがAWSやSageMaker経由で使いやすくなっており、コストも急速に低下中",
+          "shisto_implication": "Shistoの領収書自動転記・書類処理系サービスの技術基盤がより強力になる。1年以内に「音声議事録→Sheets転記」「動画分析→レポート生成」という新サービスが無料ツールで実現可能になる"
+        },
+        {
+          "prediction": "AIエージェントのコスト管理が企業のCFO・財務部門の主要課題となり、「AI運用コストのROI可視化」が専門サービスとして確立し始める",
+          "confidence": "中",
+          "evidence": "本日のarXiv論文（id: 4744）が示すトークンコスト予測の難しさ。AIエージェント採用企業が増えるほどコスト管理ニーズが組織的課題になる",
+          "shisto_implication": "今からAIコスト管理の知識を蓄積することで、半年後に「AIコスト最適化コンサル」として展開できる可能性がある。ただし現段階では技術的専門性の確立が先決。要検証"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-04-28",
     "predictions": {
       "short_term": [
