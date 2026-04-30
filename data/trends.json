@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-29T15:01:02.125311+09:00",
+  "updated": "2026-04-30T09:14:24.332392+09:00",
   "daily_counts": [
     {
       "date": "2026-03-31",
@@ -119,13 +119,17 @@
     },
     {
       "date": "2026-04-29",
-      "count": 528
+      "count": 543
+    },
+    {
+      "date": "2026-04-30",
+      "count": 26
     }
   ],
   "category_7d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 321
+      "count": 323
     },
     {
       "category": "AIエージェント・開発",
@@ -133,33 +137,33 @@
     },
     {
       "category": "規制・法律・倫理",
-      "count": 85
+      "count": 90
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 42
+      "count": 45
     },
     {
       "category": "製品・サービス",
-      "count": 31
+      "count": 35
     },
     {
       "category": "投資・市場動向",
-      "count": 16
+      "count": 23
     },
     {
       "category": "新モデル・リリース",
-      "count": 9
+      "count": 12
     }
   ],
   "category_30d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 345
+      "count": 347
     },
     {
       "category": "規制・法律・倫理",
-      "count": 164
+      "count": 169
     },
     {
       "category": "AIエージェント・開発",
@@ -167,111 +171,115 @@
     },
     {
       "category": "製品・サービス",
-      "count": 111
-    },
-    {
-      "category": "AI×ビジネス活用",
-      "count": 100
+      "count": 117
     },
     {
       "category": "投資・市場動向",
-      "count": 96
+      "count": 103
+    },
+    {
+      "category": "AI×ビジネス活用",
+      "count": 103
     },
     {
       "category": "新モデル・リリース",
-      "count": 69
+      "count": 72
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1436
+      "count": 1147
     },
     {
       "source": "ITmedia AI+",
-      "count": 85
-    },
-    {
-      "source": "GIGAZINE",
-      "count": 69
+      "count": 76
     },
     {
       "source": "TechCrunch AI",
-      "count": 65
+      "count": 62
+    },
+    {
+      "source": "GIGAZINE",
+      "count": 58
     },
     {
       "source": "The Verge AI",
-      "count": 40
+      "count": 41
     },
     {
       "source": "Impress Watch",
-      "count": 34
+      "count": 27
     },
     {
       "source": "OpenAI",
-      "count": 22
+      "count": 20
     },
     {
       "source": "BRIDGE",
-      "count": 16
+      "count": 13
     },
     {
       "source": "Wired JP",
-      "count": 12
+      "count": 11
     },
     {
       "source": "AWS AI Blog",
-      "count": 10
+      "count": 11
     },
     {
-      "source": "MIT Technology Review JP",
+      "source": "AINOW",
       "count": 8
     },
     {
-      "source": "Google AI",
-      "count": 6
+      "source": "Hugging Face",
+      "count": 8
+    },
+    {
+      "source": "MIT Technology Review JP",
+      "count": 7
     },
     {
       "source": "Apple ML",
       "count": 6
     },
     {
-      "source": "AINOW",
-      "count": 6
-    },
-    {
-      "source": "Hugging Face",
+      "source": "Google AI",
       "count": 5
     }
   ],
   "ai_company_7d": [
     {
       "company": "ChatGPT / GPT",
-      "count": 27
-    },
-    {
-      "company": "Amazon Bedrock",
-      "count": 15
-    },
-    {
-      "company": "Claude",
-      "count": 14
+      "count": 33
     },
     {
       "company": "Gemini",
-      "count": 14
+      "count": 16
+    },
+    {
+      "company": "Amazon Bedrock",
+      "count": 16
+    },
+    {
+      "company": "Claude",
+      "count": 15
     },
     {
       "company": "Copilot",
-      "count": 9
+      "count": 11
     },
     {
       "company": "LLaMA",
-      "count": 9
+      "count": 10
     },
     {
       "company": "Grok",
       "count": 8
+    },
+    {
+      "company": "Hugging Face",
+      "count": 4
     },
     {
       "company": "Qwen",
@@ -279,10 +287,6 @@
     },
     {
       "company": "DeepSeek",
-      "count": 2
-    },
-    {
-      "company": "Hugging Face",
       "count": 2
     },
     {
@@ -296,6 +300,13 @@
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-04-29",
+      "short_term": 2,
+      "mid_term": 3,
+      "long_term": 2,
+      "total": 7
+    },
     {
       "date": "2026-04-28",
       "short_term": 2,
