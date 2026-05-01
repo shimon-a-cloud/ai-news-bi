@@ -1,10 +1,6 @@
 {
-  "updated": "2026-04-30T09:14:24.332392+09:00",
+  "updated": "2026-05-01T09:16:14.927881+09:00",
   "daily_counts": [
-    {
-      "date": "2026-03-31",
-      "count": 14
-    },
     {
       "date": "2026-04-01",
       "count": 44
@@ -119,11 +115,15 @@
     },
     {
       "date": "2026-04-29",
-      "count": 543
+      "count": 544
     },
     {
       "date": "2026-04-30",
-      "count": 26
+      "count": 249
+    },
+    {
+      "date": "2026-05-01",
+      "count": 30
     }
   ],
   "category_7d": [
@@ -133,15 +133,15 @@
     },
     {
       "category": "AIエージェント・開発",
-      "count": 98
+      "count": 99
     },
     {
       "category": "規制・法律・倫理",
-      "count": 90
+      "count": 93
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 45
+      "count": 47
     },
     {
       "category": "製品・サービス",
@@ -149,37 +149,37 @@
     },
     {
       "category": "投資・市場動向",
-      "count": 23
+      "count": 25
     },
     {
       "category": "新モデル・リリース",
-      "count": 12
+      "count": 8
     }
   ],
   "category_30d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 347
+      "count": 349
     },
     {
       "category": "規制・法律・倫理",
-      "count": 169
+      "count": 174
     },
     {
       "category": "AIエージェント・開発",
-      "count": 151
+      "count": 156
     },
     {
       "category": "製品・サービス",
-      "count": 117
-    },
-    {
-      "category": "投資・市場動向",
-      "count": 103
+      "count": 125
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 103
+      "count": 109
+    },
+    {
+      "category": "投資・市場動向",
+      "count": 107
     },
     {
       "category": "新モデル・リリース",
@@ -189,19 +189,19 @@
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1147
+      "count": 1072
     },
     {
       "source": "ITmedia AI+",
-      "count": 76
+      "count": 66
     },
     {
       "source": "TechCrunch AI",
-      "count": 62
+      "count": 64
     },
     {
       "source": "GIGAZINE",
-      "count": 58
+      "count": 55
     },
     {
       "source": "The Verge AI",
@@ -209,80 +209,80 @@
     },
     {
       "source": "Impress Watch",
-      "count": 27
+      "count": 26
     },
     {
-      "source": "OpenAI",
-      "count": 20
-    },
-    {
-      "source": "BRIDGE",
+      "source": "AWS AI Blog",
       "count": 13
     },
     {
       "source": "Wired JP",
+      "count": 12
+    },
+    {
+      "source": "BRIDGE",
+      "count": 12
+    },
+    {
+      "source": "OpenAI",
       "count": 11
-    },
-    {
-      "source": "AWS AI Blog",
-      "count": 11
-    },
-    {
-      "source": "AINOW",
-      "count": 8
-    },
-    {
-      "source": "Hugging Face",
-      "count": 8
-    },
-    {
-      "source": "MIT Technology Review JP",
-      "count": 7
     },
     {
       "source": "Apple ML",
+      "count": 9
+    },
+    {
+      "source": "MIT Technology Review JP",
+      "count": 8
+    },
+    {
+      "source": "AINOW",
       "count": 6
     },
     {
-      "source": "Google AI",
-      "count": 5
+      "source": "Hugging Face",
+      "count": 6
+    },
+    {
+      "source": "Ars Technica AI",
+      "count": 4
     }
   ],
   "ai_company_7d": [
     {
       "company": "ChatGPT / GPT",
-      "count": 33
-    },
-    {
-      "company": "Gemini",
-      "count": 16
+      "count": 37
     },
     {
       "company": "Amazon Bedrock",
-      "count": 16
+      "count": 18
     },
     {
       "company": "Claude",
-      "count": 15
+      "count": 17
+    },
+    {
+      "company": "Gemini",
+      "count": 13
+    },
+    {
+      "company": "LLaMA",
+      "count": 12
     },
     {
       "company": "Copilot",
       "count": 11
     },
     {
-      "company": "LLaMA",
+      "company": "Grok",
       "count": 10
     },
     {
-      "company": "Grok",
-      "count": 8
+      "company": "Qwen",
+      "count": 3
     },
     {
       "company": "Hugging Face",
-      "count": 4
-    },
-    {
-      "company": "Qwen",
       "count": 3
     },
     {
@@ -292,14 +292,17 @@
     {
       "company": "Mistral",
       "count": 1
-    },
-    {
-      "company": "Cursor",
-      "count": 1
     }
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-04-30",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 2,
+      "total": 6
+    },
     {
       "date": "2026-04-29",
       "short_term": 2,
