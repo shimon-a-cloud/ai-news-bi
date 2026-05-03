@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-03T11:00:05.823491+09:00",
+  "updated": "2026-05-03T11:37:02.603140+09:00",
   "daily_counts": [
     {
       "date": "2026-04-03",
@@ -129,27 +129,27 @@
   "category_7d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 324
+      "count": 325
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 100
     },
     {
       "category": "AIエージェント・開発",
       "count": 99
     },
     {
-      "category": "規制・法律・倫理",
-      "count": 95
-    },
-    {
       "category": "AI×ビジネス活用",
-      "count": 48
+      "count": 55
     },
     {
       "category": "製品・サービス",
-      "count": 36
+      "count": 38
     },
     {
       "category": "投資・市場動向",
-      "count": 25
+      "count": 28
     },
     {
       "category": "新モデル・リリース",
@@ -159,11 +159,11 @@
   "category_30d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 350
+      "count": 351
     },
     {
       "category": "規制・法律・倫理",
-      "count": 176
+      "count": 181
     },
     {
       "category": "AIエージェント・開発",
@@ -171,15 +171,15 @@
     },
     {
       "category": "製品・サービス",
-      "count": 126
+      "count": 128
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 110
+      "count": 117
     },
     {
       "category": "投資・市場動向",
-      "count": 107
+      "count": 110
     },
     {
       "category": "新モデル・リリース",
@@ -251,27 +251,27 @@
   "ai_company_7d": [
     {
       "company": "ChatGPT / GPT",
-      "count": 37
+      "count": 40
     },
     {
       "company": "Amazon Bedrock",
-      "count": 18
+      "count": 19
     },
     {
       "company": "Claude",
-      "count": 17
+      "count": 18
+    },
+    {
+      "company": "LLaMA",
+      "count": 16
     },
     {
       "company": "Gemini",
       "count": 13
     },
     {
-      "company": "LLaMA",
-      "count": 12
-    },
-    {
       "company": "Copilot",
-      "count": 11
+      "count": 12
     },
     {
       "company": "Grok",
@@ -292,6 +292,10 @@
     {
       "company": "Mistral",
       "count": 1
+    },
+    {
+      "company": "Cursor",
+      "count": 1
     }
   ],
   "prediction_accuracy": {
@@ -304,6 +308,13 @@
     "accuracy_pct": null
   },
   "prediction_daily_counts": [
+    {
+      "date": "2026-05-03",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 2,
+      "total": 6
+    },
     {
       "date": "2026-05-01",
       "short_term": 2,
