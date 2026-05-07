@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-05-07",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "AnthropicがClaude利用制限の緩和を1〜2週間以内に正式発表する。具体的にはAPIレートリミットの引き上げまたはClaude Pro/Teamプランの利用量上限の拡大。",
+          "confidence": "高",
+          "evidence": "SpaceXとのGPU22万基超の契約が報道済み。契約後にインフラ拡張→サービス改善の発表は通常2〜4週間で行われる。",
+          "shisto_implication": "Claude Code依存のShistoにとって利用制限緩和は直接的な恩恵。より多くの顧客に安定したサービスを提供できるようになるため、営業加速のタイミング。"
+        },
+        {
+          "prediction": "AI×スプレッドシートのセキュリティリスクに関する報道が増加し、Google WorkspaceまたはMicrosoft 365のセキュリティアップデートが発表される。",
+          "confidence": "中",
+          "evidence": "本日のGIGAZINE報道で脆弱性が公開された。過去のパターンでは、セキュリティ脆弱性の公開報道後1〜2週間で関連プラットフォームがパッチや対策を発表している。",
+          "shisto_implication": "セキュリティ意識の高まりは、Shistoの「安全運用ガイドライン」サービスの需要を後押しする。報道が増える前にチェックリストを配布しておくことでタイミングを掴める。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "中小企業のAI導入が「何でもAI化」フェーズから「ROI重視の選択的AI化」フェーズに移行する。AI導入の失敗事例の報道が増加し、コスト対効果を事前に検証するサービスの需要が高まる。",
+          "confidence": "高",
+          "evidence": "ガートナーのCEO危機感調査（3割）、Match GroupのAI導入→採用減速（コスト増の影響）、GoogleのProject Mariner終了（大手でも失敗する現実）が同日に揃っている。",
+          "shisto_implication": "「AI導入コスト対効果シミュレーション」サービスの需要が高まる方向。早期にプロトタイプを完成させ、事例を蓄積しておくべき。"
+        },
+        {
+          "prediction": "DeepSeekの資金調達完了後、日本語対応の強化やアジア市場向けサービスの展開が始まる。Claude・GPT・Gemini以外の選択肢として実用レベルになる。",
+          "confidence": "中",
+          "evidence": "450億ドル評価の資金調達見込み。この規模の資金があれば多言語対応・グローバル展開に十分なリソースを確保できる。",
+          "shisto_implication": "Claude一本依存のリスクヘッジとして、DeepSeekの日本語性能を定期的にモニタリングしておく。コスト面で有利な場合、一部サービスへの採用を検討。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIインフラの垂直統合（SpaceX×xAI型）と水平分業（API提供型）の二極化が進み、中小AI事業者はAPI利用型で生き残る。API利用コストは半年〜1年で現在の50〜70%程度に低下する。",
+          "confidence": "中",
+          "evidence": "SpaceXの1190億ドルTerafab計画、xAIのSpaceX統合、AnthropicのGPU大量調達。大手がインフラを自前で持つ流れと、それ以外がAPIで利用する流れが明確に分離し始めている。競争激化によるAPI価格低下圧力も強まる。",
+          "shisto_implication": "ShistoはAPI利用型の位置づけ。APIコストの低下はサービスの利益率向上に直結。一方で参入障壁も下がるため、「技術」ではなく「業務理解＋パイプライン設計力＋顧客関係」が差別化要因になる。実績と顧客基盤の早期構築が長期的な競争力の源泉。"
+        },
+        {
+          "prediction": "AIエージェント（汎用型）の実用化は想定より遅れ、特定業務に特化したAI自動化パイプラインの方が先に市場価値を証明する。",
+          "confidence": "高",
+          "evidence": "GoogleのProject Mariner終了が示すように、汎用Webエージェントの実用化は技術的課題が多い。一方でMicrosoftのCopilot（業務特化型）やShistoのパイプライン型（RSS→AI→Sheets）は着実に成果を出している。",
+          "shisto_implication": "Shistoの「特定業務パイプライン自動化」アプローチは正しい方向。汎用エージェントに惑わされず、業務特化の自動化を深掘りし続けることが中長期の競争力になる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-03",
     "predictions": {
       "short_term": [
