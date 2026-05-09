@@ -1,10 +1,6 @@
 {
-  "updated": "2026-05-08T09:09:07.148056+09:00",
+  "updated": "2026-05-09T10:55:39.014090+09:00",
   "daily_counts": [
-    {
-      "date": "2026-04-08",
-      "count": 110
-    },
     {
       "date": "2026-04-09",
       "count": 123
@@ -115,7 +111,7 @@
     },
     {
       "date": "2026-05-06",
-      "count": 557
+      "count": 558
     },
     {
       "date": "2026-05-07",
@@ -123,113 +119,121 @@
     },
     {
       "date": "2026-05-08",
-      "count": 24
+      "count": 495
+    },
+    {
+      "date": "2026-05-09",
+      "count": 13
     }
   ],
   "category_7d": [
     {
       "category": "規制・法律・倫理",
-      "count": 23
-    },
-    {
-      "category": "製品・サービス",
-      "count": 23
+      "count": 20
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 23
+      "count": 20
     },
     {
       "category": "投資・市場動向",
-      "count": 18
+      "count": 19
+    },
+    {
+      "category": "製品・サービス",
+      "count": 16
     },
     {
       "category": "研究・ブレークスルー",
       "count": 6
     },
     {
-      "category": "AIエージェント・開発",
-      "count": 6
+      "category": "新モデル・リリース",
+      "count": 1
     },
     {
-      "category": "新モデル・リリース",
+      "category": "AIエージェント・開発",
       "count": 1
     }
   ],
   "category_30d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 351
+      "count": 352
     },
     {
       "category": "規制・法律・倫理",
-      "count": 173
+      "count": 170
     },
     {
       "category": "AIエージェント・開発",
-      "count": 153
+      "count": 151
     },
     {
       "category": "製品・サービス",
-      "count": 128
+      "count": 125
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 120
+      "count": 117
     },
     {
       "category": "投資・市場動向",
-      "count": 99
+      "count": 96
     },
     {
       "category": "新モデル・リリース",
-      "count": 62
+      "count": 54
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 740
+      "count": 1164
     },
     {
       "source": "TechCrunch AI",
-      "count": 54
+      "count": 47
     },
     {
       "source": "GIGAZINE",
-      "count": 44
+      "count": 47
     },
     {
       "source": "ITmedia AI+",
-      "count": 37
+      "count": 33
     },
     {
       "source": "The Verge AI",
-      "count": 25
+      "count": 20
     },
     {
       "source": "Impress Watch",
+      "count": 20
+    },
+    {
+      "source": "OpenAI",
       "count": 18
     },
     {
       "source": "AWS AI Blog",
-      "count": 18
+      "count": 14
     },
     {
-      "source": "OpenAI",
-      "count": 16
+      "source": "Apple ML",
+      "count": 11
     },
     {
       "source": "Wired JP",
-      "count": 12
+      "count": 10
     },
     {
       "source": "MIT Technology Review JP",
       "count": 8
     },
     {
-      "source": "Apple ML",
-      "count": 8
+      "source": "BRIDGE",
+      "count": 6
     },
     {
       "source": "AINOW",
@@ -237,52 +241,52 @@
     },
     {
       "source": "Google AI",
+      "count": 5
+    },
+    {
+      "source": "Hugging Face",
       "count": 4
-    },
-    {
-      "source": "Anthropic",
-      "count": 3
-    },
-    {
-      "source": "Ars Technica AI",
-      "count": 3
     }
   ],
   "ai_company_7d": [
     {
       "company": "ChatGPT / GPT",
-      "count": 20
+      "count": 17
     },
     {
       "company": "Claude",
-      "count": 10
+      "count": 7
     },
     {
       "company": "Amazon Bedrock",
-      "count": 10
-    },
-    {
-      "company": "LLaMA",
       "count": 6
-    },
-    {
-      "company": "Grok",
-      "count": 5
-    },
-    {
-      "company": "Gemini",
-      "count": 4
     },
     {
       "company": "Copilot",
       "count": 4
     },
     {
+      "company": "LLaMA",
+      "count": 4
+    },
+    {
+      "company": "Hugging Face",
+      "count": 3
+    },
+    {
+      "company": "Grok",
+      "count": 2
+    },
+    {
+      "company": "Gemini",
+      "count": 1
+    },
+    {
       "company": "DeepSeek",
       "count": 1
     },
     {
-      "company": "Hugging Face",
+      "company": "Qwen",
       "count": 1
     },
     {
@@ -290,16 +294,15 @@
       "count": 1
     }
   ],
-  "prediction_accuracy": {
-    "total_reviewed": 5,
-    "hit": 0,
-    "miss": 0,
-    "in_progress": 4,
-    "before_deadline": 1,
-    "resolved": 0,
-    "accuracy_pct": null
-  },
+  "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-05-08",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 2,
+      "total": 6
+    },
     {
       "date": "2026-05-07",
       "short_term": 2,

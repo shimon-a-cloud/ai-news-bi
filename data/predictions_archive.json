@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-05-09",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Cloudflareの1,100人AI代替ニュースを受けて、来週以降「自社でもAI化すべきか」という相談がSNS・商工会議所等で増加する",
+          "confidence": "高",
+          "evidence": "Cloudflare記事の反響が大きく、日本メディアでも翻訳・紹介記事が出る可能性が高い。過去のレイオフニュース（Match Group等）でも同様の反応パターンがあった。",
+          "shisto_implication": "AI化診断レポートの営業は来週がゴールデンタイム。ニュースの鮮度があるうちにアプローチすべき。"
+        },
+        {
+          "prediction": "ChatGPTの広告導入に関する日本語の解説記事・議論が来週大量に出る",
+          "confidence": "高",
+          "evidence": "Impress Watchが既に報道。OpenAI公式でも「Testing ads in ChatGPT」を5/7に公開済み。日本のテック系メディア・SNSで議論が広がるタイミング。",
+          "shisto_implication": "「AIツールの無料化が進む→利用者増→使い方がわからない層も増える」という文脈でShistoの存在意義を発信する好機。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "大手企業のAI活用による人員削減発表が月2〜3件のペースで続き、中小企業の「AI化への焦り」が2026年後半に加速する",
+          "confidence": "中",
+          "evidence": "Cloudflare、Oracle、Match Groupと大手の事例が積み上がっている。決算期ごとに「AI効率化による人件費削減」を投資家にアピールする流れが定着しつつある。",
+          "shisto_implication": "「AI化しないとまずい」という危機感が中小企業に浸透するほど、Shistoのような低価格AI導入支援の需要が増える。今のうちに事例を作っておくことが重要。"
+        },
+        {
+          "prediction": "Google・OpenAI・Anthropicが中小企業向けのAIツール・テンプレートを拡充し、「ツールは無料で手に入るが組み合わせ・設定がわからない」層が急増する",
+          "confidence": "高",
+          "evidence": "GoogleのThe Small Brief、ChatGPTの広告モデルによる無料維持、AnthropicのClaude利用制限緩和（5/6発表）と、3社とも裾野拡大に動いている。",
+          "shisto_implication": "Shistoの価値は「ツール提供」ではなく「ツールを業務に組み込む設計・実装・運用」にシフトすべき。ツール自体の競争力ではなく、インテグレーション能力で勝負する。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "2026年末〜2027年にかけて「AI活用支援」市場が細分化し、業界特化型の小規模AIコンサルが大量に出現する。先行して事例を持つプレイヤーが有利になる",
+          "confidence": "中",
+          "evidence": "エンタープライズAIゴールドラッシュの波及効果として、大手が取りこぼす中小企業向け市場に小規模事業者が参入する流れは、過去のWeb制作・SNSマーケティング市場と同じパターン。",
+          "shisto_implication": "2026年後半までに5〜10社の有料クライアントと具体的な成果事例を作ることが、競合が増えた時の参入障壁になる。スピードが最大の競争優位。"
+        },
+        {
+          "prediction": "AIによる広告・マーケティング自動化が中小企業にも普及し、「AI広告運用代行」は2027年にはコモディティ化する",
+          "confidence": "中",
+          "evidence": "GoogleのThe Small Brief、ChatGPT広告導入、Meta AIの広告最適化強化など、大手プラットフォームが自ら中小企業向けAI広告機能を提供する方向に進んでいる。",
+          "shisto_implication": "AI広告サービスは「今売れるうちに売る」フロントエンド商材として位置づけ、中期的にはより参入障壁の高いサービス（業務プロセス全体の自動化等）に軸足を移すべき。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-08",
     "predictions": {
       "short_term": [
