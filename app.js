@@ -7,6 +7,8 @@ let linkedinData = null;
 let reportData = null;
 let proposalsData = null;
 let predictionsArchiveData = null;
+let opportunitiesData = null;
+let weeklyCaseData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -19,6 +21,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderHome();
     renderTrends();
     renderPredictions();
+    renderWeeklyCase();
+    renderOpportunitiesBacklog();
     renderProposalsArchive();
     initProposalSearch();
     renderLinkedIn();
@@ -49,13 +53,15 @@ async function loadJSON(path) {
 }
 
 async function loadAllData() {
-    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData] = await Promise.all([
+    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData, opportunitiesData, weeklyCaseData] = await Promise.all([
         loadJSON('daily.json'),
         loadJSON('trends.json'),
         loadJSON('linkedin.json'),
         loadJSON('report.json'),
         loadJSON('proposals.json'),
         loadJSON('predictions_archive.json'),
+        loadJSON('opportunities.json'),
+        loadJSON('weekly_case.json'),
     ]);
 }
 
@@ -441,6 +447,177 @@ function filterProposals() {
     renderProposalSearchResults(matches);
 }
 
+// ── マネタイズ系の追加フィールド描画（アーカイブ・検索の両方で共用） ──
+function readinessBadge(p) {
+    const r = p && p.monetization_readiness;
+    if (!r) return '';
+    const cls = r >= 4 ? 'readiness-high' : (r >= 3 ? 'readiness-mid' : 'readiness-low');
+    return `<span class="proposal-tag ${cls}" title="マネタイズ準備度（自己採点1-5）">準備度 ${esc(String(r))}/5</span>`;
+}
+
+function proposalDetailExtraHtml(p) {
+    if (!p) return '';
+    let h = '';
+    if (Array.isArray(p.offer_package) && p.offer_package.length) {
+        h += `<div class="proposal-steps-title">オファー（松竹梅）</div><ul class="proposal-steps">` +
+            p.offer_package.map(t => `<li><b>${esc(t.tier || '')}</b> ${esc(t.price || '')} — ${esc(t.scope || '')}</li>`).join('') + `</ul>`;
+    }
+    if (Array.isArray(p.deliverables) && p.deliverables.length) {
+        h += `<div class="proposal-steps-title">納品物</div><ul class="proposal-steps">` +
+            p.deliverables.map(d => `<li>${esc(d)}</li>`).join('') + `</ul>`;
+    }
+    if (p.outreach_message) {
+        h += `<div class="proposal-how-to-sell"><span class="how-to-sell-label">送れる文面</span>${esc(p.outreach_message)}` +
+            ` <button class="implement-btn" style="margin-top:6px" onclick="event.stopPropagation(); copyPlainText(${jsArg(p.outreach_message)})">この文面をコピー</button></div>`;
+    }
+    if (Array.isArray(p.objection_handling) && p.objection_handling.length) {
+        h += `<div class="proposal-steps-title">想定の断り → 切り返し</div><ul class="proposal-steps">` +
+            p.objection_handling.map(o => `<li><b>「${esc(o.objection || '')}」</b> → ${esc(o.response || '')}</li>`).join('') + `</ul>`;
+    }
+    if (Array.isArray(p.proof_assets) && p.proof_assets.length) {
+        h += `<div class="proposal-tools">` + p.proof_assets.map(a => `<span class="proposal-tool-tag">${esc(a)}</span>`).join('') + `</div>`;
+    }
+    if (p.first_week_action) {
+        h += `<div class="proposal-how-to-sell"><span class="how-to-sell-label">今週の一手</span>${esc(p.first_week_action)}</div>`;
+    }
+    return h;
+}
+
+// インラインonclick（属性は二重引用符）に文字列を安全に埋め込むためのJSリテラル化
+function jsArg(s) {
+    return "'" + String(s == null ? '' : s)
+        .replace(/\\/g, '\\\\')
+        .replace(/'/g, "\\'")
+        .replace(/\r/g, '')
+        .replace(/\n/g, '\\n')
+        .replace(/</g, '\\x3C')
+        .replace(/"/g, '&quot;') + "'";
+}
+
+function copyPlainText(text) {
+    const t = String(text == null ? '' : text);
+    const done = () => showToast('コピーしました');
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(t).then(done).catch(() => fallbackCopy(t, done));
+    } else { fallbackCopy(t, done); }
+}
+function fallbackCopy(t, done) {
+    const ta = document.createElement('textarea');
+    ta.value = t;
+    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    if (done) done();
+}
+
+// ── Render: 今週の案件化パッケージ ──
+function renderWeeklyCase() {
+    const el = document.getElementById('weeklyCase');
+    if (!el) return;
+    const c = weeklyCaseData;
+    if (!c || typeof c !== 'object') {
+        el.innerHTML = '<div class="empty-state">まだ案件化パッケージがありません（週次で生成されます）</div>';
+        return;
+    }
+    const seq = Array.isArray(c.outreach_sequence) ? c.outreach_sequence : [];
+    const obj = Array.isArray(c.objection_responses) ? c.objection_responses : [];
+    const outline = Array.isArray(c.one_pager_outline) ? c.one_pager_outline : [];
+    const actions = Array.isArray(c.first_week_actions) ? c.first_week_actions : [];
+    const src = c.source_opportunity || {};
+    el.innerHTML = `
+        <div class="proposal-item">
+            <div class="proposal-header">
+                <div class="proposal-name">${esc(c.headline || (src.service || '案件化パッケージ'))}</div>
+                <span style="font-size:11px;color:var(--text-muted)">${esc(c.generated_date || '')}</span>
+            </div>
+            ${src.service ? `<div class="proposal-desc">出典提案: ${esc(src.service)} ${src.from_date ? `(${esc(src.from_date)})` : ''} ${src.monetization_readiness ? `／準備度 ${esc(String(src.monetization_readiness))}/5` : ''}</div>` : ''}
+            ${c.offer_doc ? `<div class="proposal-example" style="white-space:pre-wrap">${esc(c.offer_doc)}</div>` : ''}
+            ${c.pricing_rationale ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">価格の根拠</span>${esc(c.pricing_rationale)}</div>` : ''}
+            ${seq.length ? `<div class="proposal-steps-title">アウトリーチ手順</div>` + seq.map(s => `
+                <div class="proposal-how-to-sell">
+                    <span class="how-to-sell-label">${esc(s.step || '')}${s.channel ? ` / ${esc(s.channel)}` : ''}</span>${esc(s.message || '')}
+                    <button class="implement-btn" style="margin-top:6px" onclick="copyPlainText(${jsArg(s.message || '')})">この文面をコピー</button>
+                </div>`).join('') : ''}
+            ${obj.length ? `<div class="proposal-steps-title">想定の断り → 切り返し</div><ul class="proposal-steps">` + obj.map(o => `<li><b>「${esc(o.objection || '')}」</b> → ${esc(o.response || '')}</li>`).join('') + `</ul>` : ''}
+            ${c.demo_script ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">デモ台本</span><span style="white-space:pre-wrap">${esc(c.demo_script)}</span></div>` : ''}
+            ${outline.length ? `<div class="proposal-steps-title">1枚提案の骨子 <button class="implement-btn" onclick="copyPlainText(${jsArg(outline.join('\n'))})">骨子をコピー</button></div><ol class="proposal-steps">` + outline.map(o => `<li>${esc(o)}</li>`).join('') + `</ol>` : ''}
+            ${actions.length ? `<div class="proposal-steps-title">今週のアクション</div><ul class="proposal-steps">` + actions.map(a => `<li>${esc(a.action || '')}${a.deadline ? ` <span style="color:var(--text-muted)">（${esc(a.deadline)}）</span>` : ''}</li>`).join('') + `</ul>` : ''}
+        </div>`;
+}
+
+// ── Render: 案件バックログ（リード台帳） ──
+const OPP_STATUSES = ['新規', '検討中', '提案済', '商談中', '受注', '見送り'];
+const OPP_STATUS_ORDER = ['商談中', '提案済', '検討中', '新規', '受注', '見送り'];
+
+function getOppStatusOverrides() {
+    try { return JSON.parse(localStorage.getItem('opp_status') || '{}') || {}; }
+    catch { return {}; }
+}
+function setOppStatus(id, status) {
+    const m = getOppStatusOverrides();
+    m[id] = status;
+    localStorage.setItem('opp_status', JSON.stringify(m));
+    renderOpportunitiesBacklog();
+}
+function exportOppStatus() {
+    const m = getOppStatusOverrides();
+    const txt = JSON.stringify(m, null, 2);
+    copyPlainText(txt);
+    showToast('ステータスをコピー — pwa/data/opportunity_status.json に貼って commit してください');
+}
+
+function renderOpportunitiesBacklog() {
+    const el = document.getElementById('opportunitiesBacklog');
+    if (!el) return;
+    const rows = Array.isArray(opportunitiesData) ? opportunitiesData.slice() : [];
+    if (rows.length === 0) {
+        el.innerHTML = '<div class="empty-state">まだ案件バックログがありません（提案生成とともに蓄積されます）</div>';
+        return;
+    }
+    const overrides = getOppStatusOverrides();
+    rows.forEach(r => { if (overrides[r.id]) r._status = overrides[r.id]; else r._status = r.status || '新規'; });
+    rows.sort((a, b) => {
+        const sa = OPP_STATUS_ORDER.indexOf(a._status); const sb = OPP_STATUS_ORDER.indexOf(b._status);
+        if (sa !== sb) return (sa < 0 ? 99 : sa) - (sb < 0 ? 99 : sb);
+        if ((b.score || 0) !== (a.score || 0)) return (b.score || 0) - (a.score || 0);
+        return (b.last_seen || '').localeCompare(a.last_seen || '');
+    });
+    el.innerHTML = `
+        <div style="margin-bottom:10px"><button class="implement-btn" onclick="exportOppStatus()">ステータスをエクスポート(JSON)</button>
+        <span class="search-status" style="font-size:11px;margin-left:8px">ステータスはこの端末に保存されます。永続化はエクスポートして opportunity_status.json に貼ってください</span></div>
+        ` + rows.map((r, i) => {
+        const uid = `opp_${i}`;
+        const p = r.payload || {};
+        return `
+        <div class="proposal-item">
+            <div class="proposal-header">
+                <div class="proposal-name" onclick="toggleProposal('${uid}')" style="cursor:pointer">
+                    ${r.category ? `<span class="proposal-category-badge ${r.category === '横展開' ? 'category-reuse' : 'category-new'}">${esc(r.category)}</span>` : ''}
+                    ${esc(r.service || '')} <span class="proposal-toggle" id="proposalToggle${uid}">▼</span>
+                </div>
+                <select onchange="setOppStatus(${jsArg(r.id)}, this.value)" onclick="event.stopPropagation()" style="font-size:12px">
+                    ${OPP_STATUSES.map(s => `<option value="${s}" ${s === r._status ? 'selected' : ''}>${s}</option>`).join('')}
+                </select>
+            </div>
+            <div class="proposal-meta">
+                ${r.target ? `<span class="proposal-tag">${esc(r.target)}</span>` : ''}
+                ${r.score ? `<span class="proposal-tag">準備度 ${esc(String(r.score))}/5</span>` : ''}
+                <span class="proposal-tag">${esc(String(r.times_seen || 1))}回登場</span>
+                <span class="proposal-tag">最終 ${esc(r.last_seen || '')}</span>
+            </div>
+            <div class="proposal-detail" id="proposalDetail${uid}" style="display:none">
+                ${p.description ? `<div class="proposal-desc">${esc(p.description)}</div>` : ''}
+                ${p.price_range ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">価格</span>${esc(p.price_range)}</div>` : ''}
+                ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                ${proposalDetailExtraHtml(p)}
+                ${p.competitive_advantage ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">競合優位性</span>${esc(p.competitive_advantage)}</div>` : ''}
+            </div>
+        </div>`;
+    }).join('');
+}
+
 function renderProposalSearchResults(matches) {
     const el = document.getElementById('proposalsArchive');
     if (matches.length === 0) {
@@ -464,10 +641,12 @@ function renderProposalSearchResults(matches) {
                 ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
                 ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
                 ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
+                ${readinessBadge(p)}
             </div>
             <div class="proposal-detail" id="proposalDetail${uid}" style="display:none">
                 ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
                 ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                ${proposalDetailExtraHtml(p)}
                 ${p.competitive_advantage ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">競合優位性</span>${esc(p.competitive_advantage)}</div>` : ''}
                 ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                 ${(p.how_to_implement && p.how_to_implement.length) ? `
@@ -518,10 +697,12 @@ function renderProposalsArchive() {
                             ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
                             ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
                             ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
+                            ${readinessBadge(p)}
                         </div>
                         <div class="proposal-detail" id="proposalDetaila${uid}" style="display:none">
                             ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
                             ${p.how_to_sell ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">営業経路</span>${esc(p.how_to_sell)}</div>` : ''}
+                            ${proposalDetailExtraHtml(p)}
                             ${p.competitive_advantage ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">競合優位性</span>${esc(p.competitive_advantage)}</div>` : ''}
                             ${p.example ? `<div class="proposal-example">${esc(p.example)}</div>` : ''}
                             ${(p.how_to_implement && p.how_to_implement.length) ? `
@@ -744,12 +925,13 @@ function renderReport() {
 function toggleProposal(id) {
     const detail = document.getElementById(`proposalDetail${id}`);
     const toggle = document.getElementById(`proposalToggle${id}`);
+    if (!detail) return;
     if (detail.style.display === 'none') {
         detail.style.display = 'block';
-        toggle.textContent = '▲';
+        if (toggle) toggle.textContent = '▲';
     } else {
         detail.style.display = 'none';
-        toggle.textContent = '▼';
+        if (toggle) toggle.textContent = '▼';
     }
 }
 

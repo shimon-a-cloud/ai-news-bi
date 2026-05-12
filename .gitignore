@@ -1,0 +1,3 @@
+# 防御的: 個人情報を含む leads.md が誤って pwa/ 配下に置かれても push しない
+leads.md
+leads.local.md
