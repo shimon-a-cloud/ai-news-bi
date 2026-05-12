@@ -454,6 +454,12 @@ function readinessBadge(p) {
     const cls = r >= 4 ? 'readiness-high' : (r >= 3 ? 'readiness-mid' : 'readiness-low');
     return `<span class="proposal-tag ${cls}" title="マネタイズ準備度（自己採点1-5）">準備度 ${esc(String(r))}/5</span>`;
 }
+function reachabilityBadge(p) {
+    const v = p && p.reachability;
+    if (v === 'now') return `<span class="proposal-tag" title="leads.md/兄3社の実在の相手が宛先">今週動ける</span>`;
+    if (v === 'new_market') return `<span class="proposal-tag" title="現ネットワーク外・要チャネル構築">新市場開拓</span>`;
+    return '';
+}
 
 function proposalDetailExtraHtml(p) {
     if (!p) return '';
@@ -603,6 +609,7 @@ function renderOpportunitiesBacklog() {
             </div>
             <div class="proposal-meta">
                 ${r.target ? `<span class="proposal-tag">${esc(r.target)}</span>` : ''}
+                ${reachabilityBadge(p)}
                 ${r.score ? `<span class="proposal-tag">準備度 ${esc(String(r.score))}/5</span>` : ''}
                 <span class="proposal-tag">${esc(String(r.times_seen || 1))}回登場</span>
                 <span class="proposal-tag">最終 ${esc(r.last_seen || '')}</span>
@@ -641,7 +648,7 @@ function renderProposalSearchResults(matches) {
                 ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
                 ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
                 ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
-                ${readinessBadge(p)}
+                ${reachabilityBadge(p)}${readinessBadge(p)}
             </div>
             <div class="proposal-detail" id="proposalDetail${uid}" style="display:none">
                 ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
@@ -697,7 +704,7 @@ function renderProposalsArchive() {
                             ${p.target ? `<span class="proposal-tag">${esc(p.target)}</span>` : ''}
                             ${p.price_range ? `<span class="proposal-tag">${esc(p.price_range)}</span>` : ''}
                             ${p.effort ? `<span class="proposal-tag">${esc(p.effort)}</span>` : ''}
-                            ${readinessBadge(p)}
+                            ${reachabilityBadge(p)}${readinessBadge(p)}
                         </div>
                         <div class="proposal-detail" id="proposalDetaila${uid}" style="display:none">
                             ${p.sales_pitch ? `<div class="proposal-pitch">${esc(p.sales_pitch)}</div>` : ''}
