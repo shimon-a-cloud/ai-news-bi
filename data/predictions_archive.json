@@ -4,44 +4,44 @@
     "predictions": {
       "short_term": [
         {
-          "prediction": "Google I/O 2026（今週〜来週）でGemini 3.0またはGemini Ultra 2の発表がある。Gemini IntelligenceのAndroid統合に続き、開発者向けAPI・エンタープライズ向け機能の大幅強化が発表される。",
+          "prediction": "Google I/O 2026の追加発表でGemini 2.5系の新モデルまたはAndroid向けオンデバイスAI機能が発表される。vibe coding機能の拡張も含まれる可能性が高い。",
           "confidence": "高",
-          "evidence": "Android Showで先行してGemini Intelligenceを発表しており、I/O本体ではさらに上位の発表が控えている可能性が高い。Googlebook発表もI/Oに合わせたタイミングと推測される。",
-          "shisto_implication": "Gemini APIの新機能が出た場合、Claude APIとの比較検証を行い、コスト効率が良い方を案件ごとに使い分ける判断材料にする。"
+          "evidence": "本日のAndroid Show発表（Gemini Intelligence・Create My Widget）はGoogle I/O前哨戦であり、より大きな発表が控えている可能性が高い。Googleは競合（OpenAI GPT-5.5、Claude Opus 4.6）に対抗してモデル発表を加速している。",
+          "shisto_implication": "Geminiの進化はクライアントから「ChatGPTやClaudeではなくGeminiではダメか？」と聞かれる場面が増える。主要モデルの比較知識を最新に保つ必要。"
         },
         {
-          "prediction": "Anthropicの法律AI参入報道を受け、国内のリーガルテック企業がClaudeとの提携・API利用を発表する動きが1〜2週間以内に出る。",
+          "prediction": "OpenAI対Musk裁判が1〜2週間以内に和解 or 判決に至る。結果に関わらず、OpenAIの企業構造改革（非営利→営利）が加速する。",
           "confidence": "中",
-          "evidence": "アクセンチュアとの日本協業、Claude Platform on AWSの正式リリースと、日本市場向けのインフラが整った。法律分野への参入ニュースが国内メディアで報じられれば、リーガルテック企業が反応するのは自然な流れ。",
-          "shisto_implication": "リーガルテック企業がClaude採用を発表すると、士業のAI化意識がさらに高まる。Shistoの士業向けサービス提案のタイミングとして追い風になる。"
+          "evidence": "Altmanの証言台登壇が報道されており、裁判が最終局面に入っている。Anthropicの投資者保護策（二次流通プラットフォーム警告）も同時期で、AI企業の企業統治に注目が集まっている。",
+          "shisto_implication": "直接的な影響は少ないが、AI業界の信頼性議論に敏感な潜在クライアントが「AIは大丈夫なのか」と聞いてくる可能性。業界動向を把握しておく。"
         }
       ],
       "mid_term": [
         {
-          "prediction": "2026年7〜8月にかけて、日本の中小企業向け「AI導入支援」市場が本格的に立ち上がる。アクセンチュアのような大手コンサルがClaude導入支援を始めたことで、地方銀行・商工会議所がAI導入支援を中小企業向けメニューに追加する動きが出る。",
-          "confidence": "中",
-          "evidence": "AINOWの3記事（経営層説得・成果報告・稟議書）が全て「中小企業のAI導入の壁」をテーマにしている。市場ニーズが記事テーマとして成立するレベルに達しており、供給側（支援者）の参入が増える段階。",
-          "shisto_implication": "競合が増える前に実績を積むことが重要。兄3社での実績を早期に外部提案可能な状態にまとめておく。商工会議所のAI導入支援セミナーへの講師参画も検討すべき。"
+          "prediction": "Claude法人利用が日本の中堅企業（従業員100〜500名）に急速に浸透し、「Claude導入支援」市場が2026年夏〜秋に立ち上がる。アクセンチュアは大企業を取り、中小向けは空白地帯になる。",
+          "confidence": "高",
+          "evidence": "Claude Platform on AWSリリース＋アクセンチュア国内協業の2点セットは、Anthropicが日本の法人市場を本気で取りに来ていることを示す。AWSの既存法人顧客基盤を通じた浸透は速い。一方、アクセンチュアの最低ロット（数百万〜）は中小企業には手が出ない。",
+          "shisto_implication": "Shistoが「中小企業向けClaude活用支援」のポジションを確立する絶好のタイミングが2〜3ヶ月以内に来る。兄3社での実績を営業材料として整備しておくことが重要。"
         },
         {
-          "prediction": "経理・法務領域のAI自動化SaaSが低価格帯（月額5,000〜2万円）に大量参入し、中小企業向け市場が急拡大する。freeeやマネーフォワードがAI帳票処理機能を標準搭載する可能性がある。",
+          "prediction": "業務SaaS（kintone・freee・Salesforce等）のAI連携機能が標準搭載化し、「SaaS×AI」が差別化要因ではなく最低条件になる。その結果、AI連携の「設定・カスタマイズ」需要が爆発する。",
           "confidence": "中",
-          "evidence": "OpenAI Codex for finance、Amazon Finance AI、Anthropic法律AI参入と、大手AI企業が経理・法務を重点領域にしている。SaaS企業がこれらのAPIを組み込むのは時間の問題。",
-          "shisto_implication": "SaaS型の汎用ツールが出る前に、「カスタム対応」「既存業務フローへの個別最適化」というShistoの強みで差別化ポジションを確立する必要がある。汎用SaaSが出たら、その導入・カスタマイズ支援にピボットすることも視野に入れる。"
+          "evidence": "kintoneのAIカスタマイズサービス登場に加え、先週のGoogle Finance AI拡大、Uber×OpenAI連携など、業務ツールへのAI統合が急速に進んでいる。機能は増えるが、各社の業務に合わせた設定は自動化されない。",
+          "shisto_implication": "「SaaS×AI連携のカスタマイズ代行」は中期的に安定した需要が見込める。kintone連携の技術検証を早めに完了し、実績を作っておく。"
         }
       ],
       "long_term": [
         {
-          "prediction": "2026年末〜2027年初頭にかけて、AIエージェントが業務システム（kintone、Salesforce等）を横断的に操作する「業務エージェント」が中小企業にも手の届く価格で登場する。現在のRPA市場がAIエージェントに置き換わる大転換が始まる。",
+          "prediction": "AIエージェントが企業の定常業務（経理・総務・カスタマーサポート・データ分析）の50%以上を担うようになり、「人間の仕事」は判断・承認・例外処理に集中。AI業務自動化サービスの市場規模が日本国内で1兆円規模に達する。",
           "confidence": "中",
-          "evidence": "GoogleがGemini IntelligenceでOS層のエージェント統合を実現し、kintoneもAIカスタマイズサービスを開始。業務システム×AIエージェントの流れは不可逆。Anthropicの「Computer Use」機能もこの方向性。",
-          "shisto_implication": "「AIエージェントの導入・設定・業務適用」がShistoの次の主力サービスになる可能性がある。現在のパイプライン型自動化（RSS→AI→Sheets）の経験は、エージェント型への移行時に活きる。Claude Codeのエージェント機能の動向を継続ウォッチすべき。"
+          "evidence": "GoogleのGemini Intelligence（意図理解型エージェント）、OpenAIのCodex活用事例の拡大、Anthropicのエンタープライズ参入が同時進行。AIエージェントの能力が「タスク単位」から「業務フロー単位」に拡大しつつある。",
+          "shisto_implication": "市場が大きくなる一方で、大手の参入も加速する。Shistoは「中小企業の業務を理解した上でのカスタマイズ」「1人運営ならではの低コスト・高速対応」で差別化し続ける必要がある。早期に10社以上の実績を積み、リファラル（紹介）による受注体制を確立することが長期的な生存戦略。"
         },
         {
-          "prediction": "AI安全性訴訟（ChatGPT死亡事故等）を契機に、日本でも「AIサービス提供者の責任範囲」に関するガイドラインが策定される。中小企業がAIサービスを導入する際に「安全性の担保」を求めるケースが増える。",
+          "prediction": "日本語のAI利用コスト問題が解消に向かう。日本語に最適化されたモデル（日本語トークナイザー改善版）がAnthropic・OpenAI・Googleから順次リリースされ、英語との価格差が1.2倍以内に縮小する。",
           "confidence": "低",
-          "evidence": "ChatGPT死亡事故の訴訟、EU AI Act、Human Consent Standardなど、AI規制の動きが世界的に加速。日本は遅れる傾向があるが、死亡事故レベルの事件が報じられれば対応が早まる可能性がある。",
-          "shisto_implication": "ShistoのAIサービスは「AIの出力を人間が最終確認する」フローを標準で組み込んでいる。これは安全性の観点で競合優位になる。「当社のサービスはAIの出力を必ず人間がレビューするフローです」というメッセージを営業材料に加えるべき。"
+          "evidence": "日本語トークン効率1.5倍の調査が出たことで問題が可視化された。日本市場はAI各社にとって重要な収益源であり、日本語最適化のインセンティブがある。ただし、トークナイザーの根本的な改善には時間がかかる。",
+          "shisto_implication": "短中期的には日本語のコスト高を前提にした見積もりを行い、プロンプトキャッシュ等のコスト最適化ノウハウをShistoの付加価値にする。長期的にコスト差が縮小すれば、クライアントへの提案ハードルが下がる。"
         }
       ]
     }
