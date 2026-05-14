@@ -155,6 +155,50 @@ function renderHome() {
         `).join('');
     }
 
+    // Big Market Play（大型市場提案・ブルーオーシャン1件・該当日のみ）
+    const bmpEl = document.getElementById('bigMarketPlay');
+    if (bmpEl) {
+        const bmp = dailyData.big_market_play;
+        if (!bmp) {
+            bmpEl.innerHTML = '<div class="empty-state">本日該当なし（ブルーオーシャン基準を満たす案件なし）</div>';
+        } else {
+            const tp = bmp.target_persona || '';
+            const comp = bmp.competition || {};
+            bmpEl.innerHTML = `
+                <div class="proposal-item" style="border-left:3px solid #ff9f0a">
+                    <div class="proposal-header">
+                        <div class="proposal-name">
+                            ${tp ? `<span class="proposal-category-badge category-new">${esc(tp)}</span>` : ''}
+                            ${esc(bmp.service || '')}
+                        </div>
+                    </div>
+                    <div class="proposal-desc">${esc(bmp.target_description || '')}</div>
+                    <div class="proposal-meta">
+                        ${bmp.business_model ? `<span class="proposal-tag">${esc(bmp.business_model)}</span>` : ''}
+                        ${bmp.market_size_estimate ? `<span class="proposal-tag">${esc(bmp.market_size_estimate)}</span>` : ''}
+                        ${bmp.monetization_path ? `<span class="proposal-tag">${esc(bmp.monetization_path)}</span>` : ''}
+                    </div>
+                    ${bmp.market_signal ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">需要シグナル</span>${esc(bmp.market_signal)}</div>` : ''}
+                    ${(comp.direct || comp.indirect || comp.why_big_player_absent) ? `
+                        <div class="proposal-how-to-sell">
+                            <span class="how-to-sell-label">競合状況</span>
+                            ${comp.direct ? `<div>直接競合: ${esc(comp.direct)}</div>` : ''}
+                            ${comp.indirect ? `<div>間接競合: ${esc(comp.indirect)}</div>` : ''}
+                            ${comp.why_big_player_absent ? `<div>大手未参入の理由: ${esc(comp.why_big_player_absent)}</div>` : ''}
+                        </div>
+                    ` : ''}
+                    ${bmp.mvp_scope ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">MVP範囲</span>${esc(bmp.mvp_scope)}</div>` : ''}
+                    ${bmp.go_to_market ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">獲得戦略</span>${esc(bmp.go_to_market)}</div>` : ''}
+                    ${bmp.first_milestone ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">最初のマイルストーン</span>${esc(bmp.first_milestone)}</div>` : ''}
+                    ${(bmp.risks && bmp.risks.length) ? `
+                        <div class="proposal-steps-title">想定リスク</div>
+                        <ul class="proposal-steps">${bmp.risks.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
+                    ` : ''}
+                </div>
+            `;
+        }
+    }
+
     // Learning Suggestions
     const learningEl = document.getElementById('learningSuggestions');
     const learning = dailyData.learning_suggestions || [];
