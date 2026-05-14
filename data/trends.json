@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-14T09:12:38.335593+09:00",
+  "updated": "2026-05-14T12:05:51.479036+09:00",
   "daily_counts": [
     {
       "date": "2026-04-14",
@@ -123,7 +123,7 @@
     },
     {
       "date": "2026-05-14",
-      "count": 20
+      "count": 28
     }
   ],
   "category_7d": [
@@ -133,7 +133,7 @@
     },
     {
       "category": "AIエージェント・開発",
-      "count": 146
+      "count": 147
     },
     {
       "category": "規制・法律・倫理",
@@ -145,11 +145,11 @@
     },
     {
       "category": "製品・サービス",
-      "count": 57
+      "count": 55
     },
     {
       "category": "投資・市場動向",
-      "count": 36
+      "count": 37
     },
     {
       "category": "新モデル・リリース",
@@ -163,7 +163,7 @@
     },
     {
       "category": "AIエージェント・開発",
-      "count": 271
+      "count": 272
     },
     {
       "category": "規制・法律・倫理",
@@ -175,11 +175,11 @@
     },
     {
       "category": "製品・サービス",
-      "count": 132
+      "count": 130
     },
     {
       "category": "投資・市場動向",
-      "count": 88
+      "count": 89
     },
     {
       "category": "新モデル・リリース",
@@ -193,15 +193,15 @@
     },
     {
       "source": "GIGAZINE",
-      "count": 78
+      "count": 81
+    },
+    {
+      "source": "ITmedia AI+",
+      "count": 69
     },
     {
       "source": "TechCrunch AI",
       "count": 67
-    },
-    {
-      "source": "ITmedia AI+",
-      "count": 65
     },
     {
       "source": "The Verge AI",
@@ -229,7 +229,7 @@
     },
     {
       "source": "Wired JP",
-      "count": 8
+      "count": 9
     },
     {
       "source": "AINOW",
