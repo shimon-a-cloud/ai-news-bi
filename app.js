@@ -155,22 +155,47 @@ function renderHome() {
         `).join('');
     }
 
-    // Big Market Play（大型市場提案・ブルーオーシャン1件・該当日のみ）
+    // Big Market Play（大型市場提案・毎日1件・3軸バッジ付き）
     const bmpEl = document.getElementById('bigMarketPlay');
     if (bmpEl) {
         const bmp = dailyData.big_market_play;
         if (!bmp) {
-            bmpEl.innerHTML = '<div class="empty-state">本日該当なし（ブルーオーシャン基準を満たす案件なし）</div>';
+            bmpEl.innerHTML = '<div class="empty-state">大型市場提案は次回バッチで生成されます</div>';
         } else {
             const tp = bmp.target_persona || '';
             const comp = bmp.competition || {};
+            const stage = bmp.stage || '';
+            // stage色分け（border-left）
+            const stageColor = stage.includes('実行候補') ? '#34c759'
+                             : stage.includes('要検証') ? '#ff9f0a'
+                             : stage.includes('観察') ? '#8e8e93'
+                             : '#ff9f0a';
+            const scoreDot = (n) => {
+                const filled = '●'.repeat(Math.max(0, Math.min(5, n)));
+                const empty = '○'.repeat(5 - Math.max(0, Math.min(5, n)));
+                return filled + empty;
+            };
+            const bmpBadge = (label, n, reason) => n == null ? '' : `
+                <div style="display:inline-block;margin-right:14px;margin-bottom:6px">
+                    <span style="font-size:11px;color:var(--muted)">${esc(label)}</span>
+                    <span style="font-size:13px;margin-left:6px;letter-spacing:2px">${scoreDot(n)}</span>
+                    <span style="font-size:11px;color:var(--muted);margin-left:4px">${n}/5</span>
+                    ${reason ? `<div style="font-size:11px;color:var(--muted);margin-top:2px;max-width:280px">${esc(reason)}</div>` : ''}
+                </div>
+            `;
             bmpEl.innerHTML = `
-                <div class="proposal-item" style="border-left:3px solid #ff9f0a">
+                <div class="proposal-item" style="border-left:3px solid ${stageColor}">
                     <div class="proposal-header">
                         <div class="proposal-name">
+                            ${stage ? `<span class="proposal-category-badge" style="background:${stageColor};color:#000">${esc(stage)}</span>` : ''}
                             ${tp ? `<span class="proposal-category-badge category-new">${esc(tp)}</span>` : ''}
                             ${esc(bmp.service || '')}
                         </div>
+                    </div>
+                    <div style="margin:10px 0 12px 0;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px">
+                        ${bmpBadge('ブルーオーシャン度', bmp.blue_ocean_score, bmp.blue_ocean_reason)}
+                        ${bmpBadge('実現性', bmp.feasibility_score, bmp.feasibility_reason)}
+                        ${bmpBadge('期待月収', bmp.expected_revenue_score, bmp.expected_revenue_reason)}
                     </div>
                     <div class="proposal-desc">${esc(bmp.target_description || '')}</div>
                     <div class="proposal-meta">
