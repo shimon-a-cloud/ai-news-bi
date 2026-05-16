@@ -1,5 +1,58 @@
 [
   {
+    "date": "2026-05-15",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Google I/O 2026でGeminiの新モデル（Gemini Spark仮称）が発表され、Claude 4.6・GPT-5.5との三つ巴の性能比較が話題を席巻する",
+          "confidence": "高",
+          "evidence": "GIGAZINE記事（ID 8761）でGoogle I/OでのGemini新モデル発表が報じられており、GPT-5.5レベルとの情報。AI業界の注目が集中する。",
+          "shisto_implication": "モデル性能向上は直接的にShistoのサービス品質を上げる。ただしモデル切り替えのコストも発生するため、プロンプトの汎用性を維持する設計が重要。"
+        },
+        {
+          "prediction": "MicrosoftのClaude Code停止を受け、Claude Code直接ライセンスの申込が急増し、Anthropicが中小企業向けの低価格プランを拡充する",
+          "confidence": "中",
+          "evidence": "Microsoft Claude Code停止（ID 8384）＋Claude for Small Business発表（ID 8750）の流れ。Microsoftからの流出ユーザーをAnthropicが直接囲い込む戦略的タイミング。",
+          "shisto_implication": "Claude Codeの直接ライセンスが安くなれば、Shistoの運用コストが下がる。同時にClaude for Small Businessの普及が進めば「セットアップ支援」の需要が増加。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIコーディングエージェント市場が3〜4社に収斂し、VS Code内での「マルチエージェント併用」が標準ワークフローになる",
+          "confidence": "高",
+          "evidence": "VS Code Agent window（ID 8371）がマルチエージェント対応を公式に進めている。Claude Code・Codex・Copilot・Grok Buildの四つ巴から、VS Codeが統合レイヤーとなる構造が見えている。",
+          "shisto_implication": "特定ツールへの依存リスクが下がり、顧客に『状況に応じてベストなAIを使い分ける』提案ができるようになる。Shistoのマルチツール知見が差別化要因に。"
+        },
+        {
+          "prediction": "「AIを導入したが活用できていない」中小企業向けの二次支援市場が顕在化し、アクセンチュア以外のプレイヤーが参入する",
+          "confidence": "中",
+          "evidence": "アクセンチュア×Google AI全社展開支援（ID 8362）が「つまづく企業」をターゲットにしたことで、AI導入後の定着・活用が業界課題として公式に認知された。Claude for Small Businessの登場で導入自体は容易になるが、活用は別問題。",
+          "shisto_implication": "Shistoが狙うべきは「導入支援」ではなく「活用支援」。Claude for Small Businessを入れたがうまく使えていない企業に対し、業務パイプラインの構築と定着を支援するポジショニングが有効。"
+        },
+        {
+          "prediction": "オープンソース大規模モデル（Ring-2.6-1T等）の日本語対応が進み、APIコストゼロでの顧客サービス提供が技術的に可能になる",
+          "confidence": "低",
+          "evidence": "Ring-2.6-1Tがベンチマークでトップ級性能を示した（ID 8768）が、日本語性能・ツール連携・推論速度はまだ不明。3ヶ月で実用レベルに達するかは不確か。",
+          "shisto_implication": "実現すればShistoの原価構造が劇的に改善し、低価格サービスの利益率が上がる。ウォッチし続け、日本語ベンチマークが公開されたら即検証する価値がある。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AI活用サービス業が「ITコンサル」「Web制作」に並ぶ独立した業種カテゴリとして確立し、中小企業のAI支出が月額5〜20万円が標準になる",
+          "confidence": "中",
+          "evidence": "Cerebras IPO（ID 8379）に象徴されるAIインフラ投資の継続、アクセンチュアの中小企業支援参入（ID 8362）、Claude for Small Businessの登場（ID 8750）など、AIが中小企業の経常費目に組み込まれる流れが複数の角度から進行。",
+          "shisto_implication": "Shistoが先行者として実績を積んでいれば、この市場が立ち上がった時に有利なポジションを取れる。今の段階で「AI自動化サービス業」というカテゴリ名で認知を取りに行くことが重要。"
+        },
+        {
+          "prediction": "AIの知的財産・著作権をめぐる法整備が日米で進み、AIサービス提供者にも一定の責任・コンプライアンス義務が課される",
+          "confidence": "中",
+          "evidence": "OpenAI vs Apple法的措置検討（ID 8377, 8769）、朝日・日経のAI記事無断使用訴訟（ID 8756）、arXivのAI論文禁止（ID 8772）など、AI×著作権の法的整理が加速している。",
+          "shisto_implication": "Shistoが提供するAI自動化サービス（RSS収集→AI分析→コンテンツ生成）において、入力データの著作権処理が将来的に求められる可能性がある。利用規約と免責事項を早期に整備すべき。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-14",
     "predictions": {
       "short_term": [
