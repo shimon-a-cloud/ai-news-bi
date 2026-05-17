@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-05-16",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "ChatGPTの資産管理機能を受けて、国内FP・保険業界メディアで「AIに仕事を奪われるか」論争が来週中に複数記事出る",
+          "confidence": "高",
+          "evidence": "ITmedia・Impress Watchが即日報道。金融データ連携は日本のFP業界にとって直接的な脅威であり、業界メディアが反応しないはずがない",
+          "shisto_implication": "FP向けツール提案のタイミングとして最適。記事が出たらそれを引用して営業メッセージに使える"
+        },
+        {
+          "prediction": "GoogleのAI検索スパムポリシー変更を受けて、SEO業者・Web制作会社から「AI検索対応」を謳うサービスが1〜2週間以内に出始める",
+          "confidence": "高",
+          "evidence": "SEO業界は検索エンジンのアルゴリズム変更に即座に反応する業界。GoogleのポリシーUIpdateは最も注目度が高い",
+          "shisto_implication": "先行者利益は短い。今週中に自社サイトでデモ事例を作り、来週には提案を始められる状態にしておく必要がある"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AI検索（Google AI Overview・Perplexity等）の普及により、従来型SEOの効果が明確に低下し、「AI検索最適化（AIO）」が中小企業のWeb集客の主要テーマになる（2〜3ヶ月以内）",
+          "confidence": "中",
+          "evidence": "Googleが明示的にAI操作をスパム認定した＝AIの検索結果が正式なトラフィックチャネルとして認知された証拠。中小企業にとっての重要性はSEOと同等になるのは時間の問題",
+          "shisto_implication": "「AIO対応」を正式なサービスメニューに加える準備をしておく。構造化データ＋FAQ＋E-E-A-T対応のパッケージ化"
+        },
+        {
+          "prediction": "OpenAIのエージェント戦略本格化（Codex各部門展開＋経営陣再編）を受けて、「AIエージェントを自社業務に組み込む」需要が中小企業にも波及する（3ヶ月以内）",
+          "confidence": "中",
+          "evidence": "Codexが営業・データサイエンス・経理・業務オペレーション向けに展開中。大企業事例が出れば中小企業も追随するパターン",
+          "shisto_implication": "「AIエージェント構築」をメニューに追加する準備。Claudeベースの業務エージェント設計の知見を事前に蓄積しておく"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AI生成コンテンツと人間作成コンテンツの区別が制度化され、「真正性証明」がWebサイト・EC・SNSの標準装備になる（6ヶ月〜1年）",
+          "confidence": "低",
+          "evidence": "ArXiv BAN＋YouTube検出拡大＋Google AI検索スパム規制の3つが同時進行。制度化の流れは明確だが、中小企業への波及速度は不確か",
+          "shisto_implication": "big_market_playの「AI真正性証明SaaS」は市場が立ち上がるタイミング次第。今は技術検証フェーズで、本格参入は市場シグナルを見てから"
+        },
+        {
+          "prediction": "AIが金融データに直接アクセスする前例（ChatGPT資産管理）が、他の個人データ領域（健康・教育・不動産）にも拡大し、「AIパーソナルアシスタント」が汎用インフラ化する",
+          "confidence": "中",
+          "evidence": "OpenAIがPlaid連携で金融データに踏み込んだことは、他領域への展開の布石。マルタ政府との全国民提供も「AIを社会インフラにする」方針の表れ",
+          "shisto_implication": "AIが汎用インフラ化するほど、「特定業界×特定業務」に特化したカスタマイズの価値が上がる。Shistoの業界特化型自動化サービスは長期的に有利なポジション"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-15",
     "predictions": {
       "short_term": [
