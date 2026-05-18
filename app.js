@@ -1091,7 +1091,7 @@ function renderBigMarketArchive() {
                 <span class="archive-toggle" id="bmpArchiveToggle${di}">${di === 0 ? '▲' : '▼'}</span>
             </div>
             <div class="archive-proposals" id="bmpArchiveDay${di}" style="display:${di === 0 ? 'block' : 'none'}">
-                ${renderBmpCard(day.big_market_play)}
+                ${renderBmpCard(day.big_market_play, { implementOnclick: `implementBigMarketArchive(${di})` })}
             </div>
         </div>
     `).join('');
@@ -1106,11 +1106,7 @@ function toggleBmpArchiveDay(di) {
     if (toggle) toggle.textContent = isOpen ? '▼' : '▲';
 }
 
-function implementBigMarketPlay() {
-    const bmp = dailyData.big_market_play;
-    if (!bmp) return;
-
-    const date = dailyData.date || '';
+function buildBmpClaudeCommand(bmp, date) {
     const comp = bmp.competition || {};
     const risks = (bmp.risks || []).map((r, i) => `${i + 1}. ${r}`).join('\n');
 
@@ -1149,8 +1145,10 @@ ${risks ? `【想定リスク】\n${risks}` : ''}
 何か補足や修正はありますか？と確認してから進めてください。`;
 
     const escaped = prompt.replace(/'/g, "'\\''");
-    const cmd = `claude '${escaped}'`;
+    return `claude '${escaped}'`;
+}
 
+function copyBmpCommand(cmd) {
     navigator.clipboard.writeText(cmd).then(() => {
         showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
     }).catch(() => {
@@ -1163,6 +1161,18 @@ ${risks ? `【想定リスク】\n${risks}` : ''}
         document.body.removeChild(ta);
         showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
     });
+}
+
+function implementBigMarketPlay() {
+    const bmp = dailyData.big_market_play;
+    if (!bmp) return;
+    copyBmpCommand(buildBmpClaudeCommand(bmp, dailyData.date || ''));
+}
+
+function implementBigMarketArchive(dayIndex) {
+    const day = (bigMarketArchiveData || [])[dayIndex];
+    if (!day || !day.big_market_play) return;
+    copyBmpCommand(buildBmpClaudeCommand(day.big_market_play, day.date || ''));
 }
 
 function consultAction(index) {
