@@ -219,6 +219,7 @@ function renderHome() {
                         <div class="proposal-steps-title">想定リスク</div>
                         <ul class="proposal-steps">${bmp.risks.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
                     ` : ''}
+                    <button class="implement-btn" onclick="implementBigMarketPlay()">Claude Codeで実装</button>
                 </div>
             `;
         }
@@ -1053,6 +1054,65 @@ ${steps}
         showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
     }).catch(() => {
         // フォールバック: テキストエリアで手動コピー
+        const ta = document.createElement('textarea');
+        ta.value = cmd;
+        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
+    });
+}
+
+function implementBigMarketPlay() {
+    const bmp = dailyData.big_market_play;
+    if (!bmp) return;
+
+    const date = dailyData.date || '';
+    const comp = bmp.competition || {};
+    const risks = (bmp.risks || []).map((r, i) => `${i + 1}. ${r}`).join('\n');
+
+    const prompt = `【AIニュースBIの大型市場提案より（${date}）】
+以下はAI業界ニュースの自動分析から生成された大型市場提案（market_size／feasibility／blue_ocean を最優先に毎日1件生成される枠）です。
+背景の分析は ai-news-bi/pwa/data/daily.json の big_market_play を参照してください。
+この提案の実装を検討しています。
+
+【ステージ】${bmp.stage || ''}
+【サービス名】${bmp.service || ''}
+【ターゲットペルソナ】${bmp.target_persona || ''}
+【ターゲット詳細】${bmp.target_description || ''}
+【ビジネスモデル】${bmp.business_model || ''}
+【市場規模】${bmp.market_size_estimate || ''}
+【マネタイズ経路】${bmp.monetization_path || ''}
+
+【3軸自己評価】
+- ブルーオーシャン度 ${bmp.blue_ocean_score ?? '-'}/5 — ${bmp.blue_ocean_reason || ''}
+- 実現性 ${bmp.feasibility_score ?? '-'}/5 — ${bmp.feasibility_reason || ''}
+- 期待月収 ${bmp.expected_revenue_score ?? '-'}/5 — ${bmp.expected_revenue_reason || ''}
+
+【需要シグナル】${bmp.market_signal || ''}
+【競合状況】
+- 直接競合: ${comp.direct || ''}
+- 間接競合: ${comp.indirect || ''}
+- 大手未参入の理由: ${comp.why_big_player_absent || ''}
+
+【MVP範囲】${bmp.mvp_scope || ''}
+【獲得戦略】${bmp.go_to_market || ''}
+【最初のマイルストーン】${bmp.first_milestone || ''}
+${risks ? `【想定リスク】\n${risks}` : ''}
+
+---
+いきなり実装に入らないでください。
+まず「この提案はこんな感じで実装します」と計画を提示し、
+何か補足や修正はありますか？と確認してから進めてください。`;
+
+    const escaped = prompt.replace(/'/g, "'\\''");
+    const cmd = `claude '${escaped}'`;
+
+    navigator.clipboard.writeText(cmd).then(() => {
+        showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
+    }).catch(() => {
         const ta = document.createElement('textarea');
         ta.value = cmd;
         ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
