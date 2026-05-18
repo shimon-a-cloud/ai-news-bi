@@ -9,6 +9,7 @@ let proposalsData = null;
 let predictionsArchiveData = null;
 let opportunitiesData = null;
 let weeklyCaseData = null;
+let bigMarketArchiveData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     renderWeeklyCase();
     renderOpportunitiesBacklog();
     renderProposalsArchive();
+    renderBigMarketArchive();
     initProposalSearch();
     renderLinkedIn();
     renderReport();
@@ -53,7 +55,7 @@ async function loadJSON(path) {
 }
 
 async function loadAllData() {
-    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData, opportunitiesData, weeklyCaseData] = await Promise.all([
+    [dailyData, trendsData, linkedinData, reportData, proposalsData, predictionsArchiveData, opportunitiesData, weeklyCaseData, bigMarketArchiveData] = await Promise.all([
         loadJSON('daily.json'),
         loadJSON('trends.json'),
         loadJSON('linkedin.json'),
@@ -62,6 +64,7 @@ async function loadAllData() {
         loadJSON('predictions_archive.json'),
         loadJSON('opportunities.json'),
         loadJSON('weekly_case.json'),
+        loadJSON('big_market_archive.json'),
     ]);
 }
 
@@ -162,66 +165,7 @@ function renderHome() {
         if (!bmp) {
             bmpEl.innerHTML = '<div class="empty-state">大型市場提案は次回バッチで生成されます</div>';
         } else {
-            const tp = bmp.target_persona || '';
-            const comp = bmp.competition || {};
-            const stage = bmp.stage || '';
-            // stage色分け（border-left）
-            const stageColor = stage.includes('実行候補') ? '#34c759'
-                             : stage.includes('要検証') ? '#ff9f0a'
-                             : stage.includes('観察') ? '#8e8e93'
-                             : '#ff9f0a';
-            const scoreDot = (n) => {
-                const filled = '●'.repeat(Math.max(0, Math.min(5, n)));
-                const empty = '○'.repeat(5 - Math.max(0, Math.min(5, n)));
-                return filled + empty;
-            };
-            const bmpBadge = (label, n, reason) => n == null ? '' : `
-                <div style="display:inline-block;margin-right:14px;margin-bottom:6px">
-                    <span style="font-size:11px;color:var(--muted)">${esc(label)}</span>
-                    <span style="font-size:13px;margin-left:6px;letter-spacing:2px">${scoreDot(n)}</span>
-                    <span style="font-size:11px;color:var(--muted);margin-left:4px">${n}/5</span>
-                    ${reason ? `<div style="font-size:11px;color:var(--muted);margin-top:2px;max-width:280px">${esc(reason)}</div>` : ''}
-                </div>
-            `;
-            bmpEl.innerHTML = `
-                <div class="proposal-item" style="border-left:3px solid ${stageColor}">
-                    <div class="proposal-header">
-                        <div class="proposal-name">
-                            ${stage ? `<span class="proposal-category-badge" style="background:${stageColor};color:#000">${esc(stage)}</span>` : ''}
-                            ${tp ? `<span class="proposal-category-badge category-new">${esc(tp)}</span>` : ''}
-                            ${esc(bmp.service || '')}
-                        </div>
-                    </div>
-                    <div style="margin:10px 0 12px 0;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px">
-                        ${bmpBadge('ブルーオーシャン度', bmp.blue_ocean_score, bmp.blue_ocean_reason)}
-                        ${bmpBadge('実現性', bmp.feasibility_score, bmp.feasibility_reason)}
-                        ${bmpBadge('期待月収', bmp.expected_revenue_score, bmp.expected_revenue_reason)}
-                    </div>
-                    <div class="proposal-desc">${esc(bmp.target_description || '')}</div>
-                    <div class="proposal-meta">
-                        ${bmp.business_model ? `<span class="proposal-tag">${esc(bmp.business_model)}</span>` : ''}
-                        ${bmp.market_size_estimate ? `<span class="proposal-tag">${esc(bmp.market_size_estimate)}</span>` : ''}
-                        ${bmp.monetization_path ? `<span class="proposal-tag">${esc(bmp.monetization_path)}</span>` : ''}
-                    </div>
-                    ${bmp.market_signal ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">需要シグナル</span>${esc(bmp.market_signal)}</div>` : ''}
-                    ${(comp.direct || comp.indirect || comp.why_big_player_absent) ? `
-                        <div class="proposal-how-to-sell">
-                            <span class="how-to-sell-label">競合状況</span>
-                            ${comp.direct ? `<div>直接競合: ${esc(comp.direct)}</div>` : ''}
-                            ${comp.indirect ? `<div>間接競合: ${esc(comp.indirect)}</div>` : ''}
-                            ${comp.why_big_player_absent ? `<div>大手未参入の理由: ${esc(comp.why_big_player_absent)}</div>` : ''}
-                        </div>
-                    ` : ''}
-                    ${bmp.mvp_scope ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">MVP範囲</span>${esc(bmp.mvp_scope)}</div>` : ''}
-                    ${bmp.go_to_market ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">獲得戦略</span>${esc(bmp.go_to_market)}</div>` : ''}
-                    ${bmp.first_milestone ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">最初のマイルストーン</span>${esc(bmp.first_milestone)}</div>` : ''}
-                    ${(bmp.risks && bmp.risks.length) ? `
-                        <div class="proposal-steps-title">想定リスク</div>
-                        <ul class="proposal-steps">${bmp.risks.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
-                    ` : ''}
-                    <button class="implement-btn" onclick="implementBigMarketPlay()">Claude Codeで実装</button>
-                </div>
-            `;
+            bmpEl.innerHTML = renderBmpCard(bmp, { implementOnclick: 'implementBigMarketPlay()' });
         }
     }
 
@@ -1063,6 +1007,103 @@ ${steps}
         document.body.removeChild(ta);
         showToast('コマンドをコピーしました — ターミナルに貼り付けてください');
     });
+}
+
+// 大型市場提案カードの共通描画（ホームのbigMarketPlayとアーカイブで共用）
+function renderBmpCard(bmp, opts = {}) {
+    const tp = bmp.target_persona || '';
+    const comp = bmp.competition || {};
+    const stage = bmp.stage || '';
+    const stageColor = stage.includes('実行候補') ? '#34c759'
+                     : stage.includes('要検証') ? '#ff9f0a'
+                     : stage.includes('観察') ? '#8e8e93'
+                     : '#ff9f0a';
+    const scoreDot = (n) => {
+        const filled = '●'.repeat(Math.max(0, Math.min(5, n)));
+        const empty = '○'.repeat(5 - Math.max(0, Math.min(5, n)));
+        return filled + empty;
+    };
+    const bmpBadge = (label, n, reason) => n == null ? '' : `
+        <div style="display:inline-block;margin-right:14px;margin-bottom:6px">
+            <span style="font-size:11px;color:var(--muted)">${esc(label)}</span>
+            <span style="font-size:13px;margin-left:6px;letter-spacing:2px">${scoreDot(n)}</span>
+            <span style="font-size:11px;color:var(--muted);margin-left:4px">${n}/5</span>
+            ${reason ? `<div style="font-size:11px;color:var(--muted);margin-top:2px;max-width:280px">${esc(reason)}</div>` : ''}
+        </div>
+    `;
+    const implBtn = opts.implementOnclick
+        ? `<button class="implement-btn" onclick="${opts.implementOnclick}">Claude Codeで実装</button>`
+        : '';
+    return `
+        <div class="proposal-item" style="border-left:3px solid ${stageColor}">
+            <div class="proposal-header">
+                <div class="proposal-name">
+                    ${stage ? `<span class="proposal-category-badge" style="background:${stageColor};color:#000">${esc(stage)}</span>` : ''}
+                    ${tp ? `<span class="proposal-category-badge category-new">${esc(tp)}</span>` : ''}
+                    ${esc(bmp.service || '')}
+                </div>
+            </div>
+            <div style="margin:10px 0 12px 0;padding:8px 10px;background:rgba(255,255,255,0.03);border-radius:6px">
+                ${bmpBadge('ブルーオーシャン度', bmp.blue_ocean_score, bmp.blue_ocean_reason)}
+                ${bmpBadge('実現性', bmp.feasibility_score, bmp.feasibility_reason)}
+                ${bmpBadge('期待月収', bmp.expected_revenue_score, bmp.expected_revenue_reason)}
+            </div>
+            <div class="proposal-desc">${esc(bmp.target_description || '')}</div>
+            <div class="proposal-meta">
+                ${bmp.business_model ? `<span class="proposal-tag">${esc(bmp.business_model)}</span>` : ''}
+                ${bmp.market_size_estimate ? `<span class="proposal-tag">${esc(bmp.market_size_estimate)}</span>` : ''}
+                ${bmp.monetization_path ? `<span class="proposal-tag">${esc(bmp.monetization_path)}</span>` : ''}
+            </div>
+            ${bmp.market_signal ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">需要シグナル</span>${esc(bmp.market_signal)}</div>` : ''}
+            ${(comp.direct || comp.indirect || comp.why_big_player_absent) ? `
+                <div class="proposal-how-to-sell">
+                    <span class="how-to-sell-label">競合状況</span>
+                    ${comp.direct ? `<div>直接競合: ${esc(comp.direct)}</div>` : ''}
+                    ${comp.indirect ? `<div>間接競合: ${esc(comp.indirect)}</div>` : ''}
+                    ${comp.why_big_player_absent ? `<div>大手未参入の理由: ${esc(comp.why_big_player_absent)}</div>` : ''}
+                </div>
+            ` : ''}
+            ${bmp.mvp_scope ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">MVP範囲</span>${esc(bmp.mvp_scope)}</div>` : ''}
+            ${bmp.go_to_market ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">獲得戦略</span>${esc(bmp.go_to_market)}</div>` : ''}
+            ${bmp.first_milestone ? `<div class="proposal-how-to-sell"><span class="how-to-sell-label">最初のマイルストーン</span>${esc(bmp.first_milestone)}</div>` : ''}
+            ${(bmp.risks && bmp.risks.length) ? `
+                <div class="proposal-steps-title">想定リスク</div>
+                <ul class="proposal-steps">${bmp.risks.map(r => `<li>${esc(r)}</li>`).join('')}</ul>
+            ` : ''}
+            ${implBtn}
+        </div>
+    `;
+}
+
+function renderBigMarketArchive() {
+    const el = document.getElementById('bigMarketArchive');
+    if (!el) return;
+    const archive = bigMarketArchiveData || [];
+    if (archive.length === 0) {
+        el.innerHTML = '<div class="empty-state">アーカイブなし</div>';
+        return;
+    }
+    el.innerHTML = archive.map((day, di) => `
+        <div class="archive-day">
+            <div class="archive-day-header" onclick="toggleBmpArchiveDay(${di})">
+                <span class="archive-date">${esc(day.date)}</span>
+                <span class="proposal-count">${esc(day.big_market_play.service || '(無題)')}</span>
+                <span class="archive-toggle" id="bmpArchiveToggle${di}">${di === 0 ? '▲' : '▼'}</span>
+            </div>
+            <div class="archive-proposals" id="bmpArchiveDay${di}" style="display:${di === 0 ? 'block' : 'none'}">
+                ${renderBmpCard(day.big_market_play)}
+            </div>
+        </div>
+    `).join('');
+}
+
+function toggleBmpArchiveDay(di) {
+    const body = document.getElementById(`bmpArchiveDay${di}`);
+    const toggle = document.getElementById(`bmpArchiveToggle${di}`);
+    if (!body) return;
+    const isOpen = body.style.display === 'block';
+    body.style.display = isOpen ? 'none' : 'block';
+    if (toggle) toggle.textContent = isOpen ? '▼' : '▲';
 }
 
 function implementBigMarketPlay() {
