@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-20",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Google I/O 2026の発表を受けて、日本の主要テック系メディアが「AIエージェント」「AI検索」特集を一斉に組む。1〜2週間で「AIエージェント」が一般ビジネスパーソンの認知語彙に入る。",
+          "confidence": "高",
+          "evidence": "Google I/O 2026で100件以上の発表。本日の日本メディア（ITmedia, Impress Watch, GIGAZINE, Wired JP）が既に大量の翻訳・解説記事を出しており、今週後半から来週にかけて分析記事・まとめ記事が続く流れ。",
+          "shisto_implication": "「AIエージェント」の認知が広がるこの1〜2週間が営業の絶好のタイミング。メディアが教育してくれるため、Shistoは『具体的に何ができるか』を見せるだけでいい。"
+        },
+        {
+          "prediction": "AnthropicへのKarpathy参加を受けて、Claude/Claude Codeの次期モデル・機能に関するリーク情報や予測記事が増える。Anthropicの株式価値評価も上方修正される可能性。",
+          "confidence": "中",
+          "evidence": "Karpathyは業界で最も注目されるAI研究者の一人。AnthropicがxAIに月$1.25Bのコンピュートを支払う契約もあり、計算資源＋人材の両面で強化。",
+          "shisto_implication": "Claude Codeの性能向上はShistoの競争力に直結。Anthropicの動向を注視し、新機能が出たらすぐに自社サービスに取り込む体制を維持する。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "2026年6〜8月にかけて、NHNテコラスに続いて中堅SIer・コンサルが「AIエージェント導入支援」サービスを続々とリリースする。市場教育が進む一方、エンタープライズ向けが主で中小企業向けは空白のまま残る。",
+          "confidence": "高",
+          "evidence": "Google I/Oの「agentic era」宣言、Slackの「Agentic Work OS」、NHNテコラスの参入。業界の方向性が明確になったため、追随するプレイヤーが増えるのは確実。しかし中小企業向け（月額数万円以下）は利益が薄いため大手は参入しにくい構造。",
+          "shisto_implication": "大手の市場教育に乗る形で中小企業市場を獲る戦略が有効。大手が「AIエージェントは必要」と啓蒙→中小企業が「でも高すぎる」→Shistoが安価で提供、という流れを作れる。"
+        },
+        {
+          "prediction": "Google検索のAI化に伴い、従来のSEO業界に大きな再編が起きる。MEO（Map Engine Optimization）業者の一部が「AI検索最適化」に名称変更するが、技術的対応は追いつかない。構造化データ・ナレッジグラフ対応が新しいスキルセットとして求められる。",
+          "confidence": "中",
+          "evidence": "Google検索の25年ぶりの大刷新は不可逆。AI Overviewの普及率は米国で既に高く、日本でも拡大傾向。従来のキーワードSEOから構造化データ重視への転換は構造的。",
+          "shisto_implication": "早期にSchema.org構造化データの実装スキルを確立しておけば、SEO業界の再編期に「AI検索対応」の専門プレイヤーとしてポジションを取れる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "2026年後半〜2027年にかけて、AIエージェントが消費者の購買・予約・情報収集を代行する比率が急速に上昇し、企業のWeb戦略は「人間が見るサイト」から「AIエージェントが読むデータ」に根本的にシフトする。Google Universal Cart等の仕組みにより、ECも実店舗もAIエージェント経由の取引が標準化。",
+          "confidence": "中",
+          "evidence": "Google I/O 2026でUniversal Cart（AIが横断購買）、Gemini Spark（24/7稼働エージェント）、AI検索のエージェント化が同時発表。インフラレベルでの準備が整った。ただし消費者の行動変容には時間がかかるため、急激な転換ではなく段階的移行。",
+          "shisto_implication": "中長期的に「AIエージェントに選ばれる企業プレゼンス構築」は全業種の全企業に必要なサービスになる。今のうちに事例と実績を積み、専門性を確立しておくことが将来の大型案件につながる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-19",
     "predictions": {
       "short_term": [
