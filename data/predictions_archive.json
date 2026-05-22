@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-05-21",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Google Managed Agent APIのパブリックプレビューが2週間以内に開始され、開発者コミュニティで「エージェント構築してみた」レポートが急増する",
+          "confidence": "高",
+          "evidence": "Google I/O 2026で発表済み、Publickeyが詳細な技術記事を掲載。Googleの過去パターンではI/O発表→2週間以内にプレビュー公開。",
+          "shisto_implication": "エージェント構築の技術記事が増えることで、「うちの業務もエージェントで自動化できるのでは」という中小企業経営者の認知が広がる。Shistoへの引き合いの素地が形成される。"
+        },
+        {
+          "prediction": "バイブコーディング関連の日本語メディア記事が今後2週間で倍増する（あすけん事例に続く国内企業の導入事例が追加で出る）",
+          "confidence": "中",
+          "evidence": "あすけん運営の公開を皮切りに、Google I/Oのバイブコーディング関連発表も重なった。SHIFT AI TIMESがClaude Code関連記事を2本同日掲載しており、メディア側の注目度が高い。",
+          "shisto_implication": "メディア露出が増えるほど「バイブコーディング」の認知が広がり、田中さんの実績に興味を持つ人が増える。X/LinkedInでの発信効果が倍増するタイミング。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "OpenAIが9月のIPO前にChatGPTのEC統合を楽天・Amazon Japanにも拡大し、日本のEC市場でAIショッピングが標準化する",
+          "confidence": "中",
+          "evidence": "ChatGPTがYahoo!ショッピングと連携開始。OpenAIは9月IPOに向けて日本市場への投資を強化（GPT-5.5-Cyber提供、シンガポール展開等）。IPO前にGMVを最大化するインセンティブがある。",
+          "shisto_implication": "AIショッピング最適化サービスの需要が拡大する。今のうちに診断手法と事例を確立しておけば、市場拡大時に先行者利益を取れる。"
+        },
+        {
+          "prediction": "Anthropicの黒字化を受けてClaude Codeのエンタープライズプラン（チーム向け・管理機能付き）が3ヶ月以内に発表される",
+          "confidence": "中",
+          "evidence": "Anthropicが初の黒字化を達成し、KPMGが27.6万人規模でClaude導入を発表。エンタープライズ需要の急拡大に対応するプラン拡充は自然な流れ。",
+          "shisto_implication": "Claude Codeのエンタープライズプランが出れば、「チームでClaude Codeを使いたいが管理方法がわからない」企業向けの導入支援サービスが成立する可能性。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "2027年前半までにAIエージェントが中小企業の標準的な業務ツールとして普及し、「AIエージェント導入支援」が独立したサービスカテゴリとして確立する",
+          "confidence": "中",
+          "evidence": "Google Managed Agent API・Alibaba Qwen3.7-Max等でエージェント基盤が整備。富士通のトラスコ中山導入（98%削減）のような具体的成果が報道され始め、中小企業の導入意欲が高まっている。",
+          "shisto_implication": "Shistoがこの1年で中小企業向けAIエージェント導入の実績を積めれば、市場が拡大するタイミングで先行者として認知される。逆にこの期間を逃すと、大手SIerやコンサルが市場を取りに来る。"
+        },
+        {
+          "prediction": "バイブコーディングにより非エンジニアの「市民開発者」が急増し、従来のプログラミング教育市場の構造が変化する（スクール型→コミュニティ型・テンプレート型へ）",
+          "confidence": "低",
+          "evidence": "あすけん事例・Google AI Studioのモバイル対応・Claude Codeの普及。ただし非エンジニアが本格的に使いこなすにはまだ学習コストがあり、普及速度は不確実。",
+          "shisto_implication": "早期にバイブコーディングのテンプレート・教材を確立すれば、市場構造の変化に乗れる。ただし普及速度の不確実性があるため、受託サービスを主軸にしつつ教材事業はサブで進めるのが現実的。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-20",
     "predictions": {
       "short_term": [
