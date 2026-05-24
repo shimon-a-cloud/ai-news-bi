@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-23",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Google AI Overviewsの品質問題を受け、日本国内メディアでも「AI検索の限界」「AI任せの危険性」を報じる記事が今後1〜2週間で複数出る",
+          "confidence": "高",
+          "evidence": "The Verge・TechCrunchが同日に複数記事で報道。Googleが「disregard」検索を無効化する対応を取るほどの問題であり、国内メディアへの波及は確実。",
+          "shisto_implication": "「AI導入には専門家のサポートが必要」という論調が広がるため、Shistoの「業務特化AI自動化＋運用サポート込み」の価値が上がる。営業トーク時に引用できる記事が増える。"
+        },
+        {
+          "prediction": "Google I/O 2026で発表されたGemini 3.5・AI Mode・Workspace連携の日本語対応が1〜2週間以内に順次発表される",
+          "confidence": "中",
+          "evidence": "過去のパターンでは、I/Oでの発表から日本語対応まで2〜4週間。既にDialoguesステージでグローバル展開を示唆。",
+          "shisto_implication": "Google Workspace連携の強化はGAS中心のShistoのツールチェーンに直接影響。新機能が出たタイミングで「御社のWorkspaceにAI連携を組み込みます」と提案するチャンス。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIスタートアップのバリュエーション調整（ダウンラウンド・レイオフ）が2026年Q3〜Q4に相次ぐ",
+          "confidence": "中",
+          "evidence": "TechCrunchのARR膨張問題暴露、AI業界全体の投資過熱感。実収益とバリュエーションの乖離は持続不可能。",
+          "shisto_implication": "バブル調整局面では「本当に動くAIサービスを実価格で提供する」堅実なプレイヤーの相対的価値が上がる。大手が縮小する領域でShistoが拾える案件が出てくる可能性。"
+        },
+        {
+          "prediction": "ウェアラブルAI（Meta AIグラス・Google AIグラス）の日本での普及率は低いまま推移するが、「AIが身近になった」認知は確実に広がる",
+          "confidence": "高",
+          "evidence": "Meta AIグラスの日本上陸は報道されたが、価格帯と社会受容性の課題が大きい。ただしメディア露出により「AIデバイス」の認知は拡大する。",
+          "shisto_implication": "直接的な事業機会にはならないが、中小企業経営者の「AIを使うのは当たり前」意識が加速するため、AI自動化営業の心理的ハードルが下がる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "2026年後半〜2027年にかけて、「業種特化AI」市場が本格形成。汎用AIプラットフォーム（ChatGPT等）の上に業種特化レイヤーを提供するビジネスモデルが標準になる",
+          "confidence": "中",
+          "evidence": "「Specialization Beats Scale」の論証、Google/Anthropicによるプラットフォーム化（汎用基盤を提供し、特化はパートナーに委ねる構造）、OpenAI Codexのエンタープライズ展開。",
+          "shisto_implication": "Shistoの「業種特化AI自動化」は市場のメインストリームに乗る方向。早期に複数業種での実績を作っておけば、市場形成時にポジションを確保できる。逆に遅れると大手が参入してレッドオーシャン化するリスク。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-22",
     "predictions": {
       "short_term": [
