@@ -1,117 +1,122 @@
 {
   "type": "weekly",
   "data": {
-    "period": "2026-05-11 〜 2026-05-18",
-    "overview": "今週のAI業界は「エージェント時代の本格到来」と「中小企業市場の争奪戦」が二大テーマだった。OpenAIはGreg Brockmanを製品戦略トップに据えてChatGPTとCodexの統合を推進、Anthropicは「Claude for Small Business」で中小企業市場に正面から参入した。コーディングエージェント領域ではClaude Code・Codex・Copilot・Grok Buildの四つ巴競争が激化し、MicrosoftによるClaude Codeライセンス停止という囲い込みの動きも表面化した。\n\nプラットフォーム競争も新局面に入った。GoogleのGemini Intelligence（Android操作AIエージェント）、AppleのSiri完全再構築（iOS 27）、AmazonのAlexa+と、3大プラットフォーマーが同時にモバイルAIエージェントに参入。AIが「ツール」から「OS層」へ浸透する流れが加速している。\n\nAIの社会実装に伴うリスクも顕在化した。ArXivがAI生成論文の投稿者を1年間BANする方針を発表、YouTubeはディープフェイク検出を全成人ユーザーに拡大、GoogleはAI検索操作をスパム認定した。品質管理・検出の制度化が急速に進んでいる。\n\n金融領域では、OpenAIがChatGPTに銀行口座連携機能（Plaid経由）を追加し、AIが個人の金融データに直接アクセスする時代が到来した。中国では生成AIによるドラマ制作が「1日470本、制作費9割減」と報じられ、コンテンツ産業の構造変化が鮮明になっている。",
+    "period": "2026-05-18 〜 2026-05-25",
+    "overview": "今週のAI業界は、**Google I/O 2026の余波とエージェントAIの全面展開**が最大のテーマだった。Googleは検索窓の25年ぶり刷新、Gemini Omniのマルチモーダル動画生成、Android XRグラスのプロトタイプ披露と、全プロダクトのAIエージェント化を宣言。一方でAI検索の品質問題（「disregard」不具合）も露呈し、AI任せのリスクが広く認知される結果となった。\n\n**エンタープライズClaude導入の連鎖**が加速し、日立（29万人）、KPMG（27.6万人）がAnthropicと全社契約を締結。Anthropicは未公開の最新モデル「Mythos Preview」を活用したサイバーセキュリティ施策「Project Glasswing」の進捗を発表し、ミトス級モデルの公開は安全対策後とする慎重姿勢を示した。Claude Codeを巡る競争ではOpenAIが「追いかける立場」と報じられ、GartnerのエンタープライズAIコーディングエージェント部門でOpenAIがリーダーに選出される一方、Cursor開発元の新モデルが最先端の1/10コストで同等性能を達成するなど、コーディングAIのコスト崩壊が進行している。\n\n**Spotifyが音楽×AIで全方位展開**した週でもあった。UMGとの提携によるAIカバー・リミックスの公式ライセンス化、ElevenLabs連携のオーディオブック作成ツール、Google NotebookLM対抗のパーソナルポッドキャスト生成アプリ「Studio」と、1週間で5本以上のAI関連発表を行った。音楽産業が「AIを敵ではなく収益源にする」方向に舵を切った象徴的な動きだ。\n\n**AI導入の「失敗」と「成功」の二極化**も鮮明になった。スターバックスがAI在庫管理ツールをわずか9カ月で廃止する一方、Virgin AtlanticはCodexでモバイルアプリ刷新に成功しP1障害ゼロを達成。ファインディがKDDI・DMMとAI導入効果の定量測定を開始するなど、「AIを入れたが効果が出ない」問題への対処が業界課題として浮上している。\n\n規制・倫理面では、トランプ大統領がAIセキュリティ大統領令の署名を延期、カリフォルニア州はAIによる雇用喪失に備える行政命令に署名、金融庁と日銀がAI悪用サイバー攻撃への備えを金融機関に要請するなど、各国・各機関が異なるスタンスでAI規制に動いた。国際的な短編小説賞の受賞作がAI生成疑惑を受けるなど、文化・創作領域でのAI倫理問題も深刻化している。",
     "trend_changes": [
       {
-        "topic": "中小企業向けAIサービス",
+        "topic": "AIエージェント基盤のフルスタック化競争",
         "direction": "増加",
-        "detail": "Anthropic「Claude for Small Business」の発表を筆頭に、中小企業をターゲットにしたAI製品・サービスが集中リリース。大企業向け市場の飽和に伴い、AI各社が次の成長フロンティアとして中小企業に注力し始めた。先週比でこのカテゴリの記事数が約2倍に増加。"
+        "detail": "Google I/OでのManaged Agent API発表に続き、AWSがBedrock AgentCoreでBI・MCP連携・ダッシュボード自動化を一挙展開（5/22に6本のブログ記事を同日公開）。CohereもCommand A+をオープンソースで公開。先週まで「エージェントの概念」だったものが「エージェントの実装基盤」に具体化した。"
       },
       {
-        "topic": "AIエージェントの実務投入",
+        "topic": "AIコーディングツールのコスト崩壊",
+        "direction": "新出",
+        "detail": "Cursor開発元の新モデル「Composer 2.5」がClaude Opus 4.7やGPT-5.5並みの性能を約1/10のコストで実現（ITmedia AI+ 5/22）。コーディングAIの価格破壊が始まり、差別化軸が「ツールの性能」から「何を作るかの設計力」に不可逆的にシフトしている。"
+      },
+      {
+        "topic": "AI導入失敗事例の顕在化",
         "direction": "増加",
-        "detail": "トヨタファイナンスの問い合わせ対応AIエージェント導入、NotionのエージェントHub化、Anthropic Agent SDKクレジット新設など、「概念」から「実装」への完全移行を示すニュースが週5件以上。先週の2倍ペース。"
+        "detail": "スターバックスがAI在庫管理ツールを9カ月で廃止（GIGAZINE 5/22）。先週までの「AI導入成功事例」一辺倒から、失敗事例が具体的に報じられるフェーズに入った。ファインディがKDDI・DMMとAI導入効果の定量測定を開始（ITmedia 5/22）しており、ROI測定の未整備が業界課題として認識され始めている。"
       },
       {
-        "topic": "AI検索・SEOルール変更",
+        "topic": "音楽×AI著作権処理の制度化",
         "direction": "新出",
-        "detail": "GoogleがAI検索操作をスパム認定する新ポリシーを発表。従来のSEO手法が無効化される転換点であり、今週初めて大きく報じられた。AI Overview時代のコンテンツ戦略が新たな課題に。"
+        "detail": "SpotifyとUMGがAIカバー・リミックスのライセンス契約を締結（5/22）。音楽産業でAI活用の著作権処理フレームワークが初めて大規模に制度化された。先週まで「AI vs 著作権」は対立構造だったが、「共存モデル」が実例として登場した。"
       },
       {
-        "topic": "モバイルAIエージェント",
-        "direction": "新出",
-        "detail": "Google Gemini Intelligence・Apple Siri再構築・Amazon Alexa+が同時期に発表。PCベースのAIエージェントが成熟段階に入り、戦場が「モバイル×日常生活」に移った。先週まではほぼ話題に上がっていなかった領域。"
-      },
-      {
-        "topic": "AI生成コンテンツの規制・品質管理",
+        "topic": "Claude Code vs OpenAI Codex競争の決着方向",
         "direction": "増加",
-        "detail": "ArXivのAI論文1年間BAN、YouTubeディープフェイク検出の全ユーザー展開、自民党ディープフェイク広告規制案など、プラットフォーム・政府双方でAI生成コンテンツへの線引きが制度化。先週比で規制関連ニュースが約1.5倍。"
+        "detail": "Wired JPが「Claude Codeを追いかける立場となったOpenAI」と報道（5/25）。MIT Technology Review JPも「Claudeに任せてしまおう」と題してClaude Code中心のソフトウェア開発変革を報じた。一方でOpenAIはGartnerリーダー選出やVirgin Atlantic事例で反撃。競争の構図が明確化した週。"
       },
       {
-        "topic": "AIの金融データ直接アクセス",
-        "direction": "新出",
-        "detail": "OpenAIがChatGPTにPlaid経由の銀行口座連携を追加。12,000金融機関に対応し、AIが取引履歴・残高に直接アクセスする機能が実装された。個人金融領域へのAI参入は今週の最も注目すべき新動向。"
+        "topic": "AI検索の品質問題",
+        "direction": "増加",
+        "detail": "Google AI Overviewsで「disregard」検索の不具合が複数メディアで報じられ（The Verge・TechCrunch 5/23）、AI検索を盲信するリスクが社会的に認知された。先週のAI検索推進一辺倒から、品質管理の難しさが前面に出た。"
+      },
+      {
+        "topic": "ウェアラブルAIの日本市場参入",
+        "direction": "増加",
+        "detail": "Meta AIグラスの日本上陸（Impress Watch 5/23）、Google Android XRグラスのプロトタイプ披露（TechCrunch 5/23）、AmazonのBeeウェアラブル（TechCrunch 5/25）と、1週間で3社がAIウェアラブルを発表。先週は概念的だった「ハンズフリーAI」が実機デモのフェーズに。"
       }
     ],
     "top_5_news": [
       {
-        "title": "OpenAI now wants ChatGPT to access your bank accounts",
-        "source": "The Verge AI",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/931122/openai-chatgpt-financial-accounts-plaid-connection",
-        "why": "AIが個人の金融データに直接アクセスする時代の幕開け。Plaid経由で12,000金融機関に対応し、Mint終了後の空白を一気に埋める動き。中小企業経営者の「AIに財務データを見せる」心理的障壁を下げる転換点であり、Shistoの経理・財務系自動化提案の追い風になる。"
-      },
-      {
-        "title": "Google updates its spam rules to include attempts to 'manipulate' AI",
-        "source": "The Verge AI",
-        "url": "https://www.theverge.com/tech/931416/google-ai-search-spam-policy",
-        "why": "従来のSEO手法が公式に無効化された歴史的転換点。AI Overviewへの最適化（AIO）が新たな課題となり、中小企業のWeb集客戦略に直接影響する。Shistoの「AI検索時代のコンテンツ戦略リニューアル」サービスの根拠となるニュース。"
-      },
-      {
-        "title": "OpenAI keeps shuffling its executives in bid to win AI agent battle",
-        "source": "The Verge AI",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle",
-        "why": "Greg Brockmanが全プロダクト統括に就任し、ChatGPTとCodexの統合を推進。AIエージェント市場が各社の最重要戦略になったことを象徴する動き。大手がエージェント基盤を整備するほど、特定業界向けエージェント設計を提供するShistoのようなインテグレーターの需要が増す。"
-      },
-      {
-        "title": "ArXiv will ban researchers who upload papers full of AI slop",
-        "source": "The Verge AI",
-        "url": "https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers",
-        "why": "学術界がAI生成コンテンツに対し1年間BANという厳格な制裁を導入。「AIで量産」ではなく「AIで質を上げる」方向への社会的合意形成が進んでおり、Shistoのサービス設計思想（人が最終判断する前提）の正しさを裏付ける。"
-      },
-      {
-        "title": "1日470本、制作費9割減 ——中国は生成AIで世界のドラマ工場になる",
+        "title": "「Claudeに任せてしまおう」 たった1年で激変したソフトウェア開発",
         "source": "MIT Technology Review JP",
-        "url": "https://www.technologyreview.jp/s/383135/how-chinese-short-dramas-became-ai-content-machines/",
-        "why": "AIによるコンテンツ制作コストの劇的低下を数字で示した象徴的記事。制作費9割減という衝撃は、中小企業経営者に「AIで何ができるか」のスケール感を伝える営業材料になる。動画マーケティング関連提案の文脈でも活用可能。"
+        "url": "https://www.technologyreview.jp/s/383499/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+        "why": "ShistoのコアツールであるClaude Codeが業界標準として認知された証拠。MIT Technology Reviewという権威あるメディアがClaude Code中心の開発変革を報じたことで、Shistoが営業時に「世界的に認められた手法です」と言えるようになった。同日のWired JP記事（OpenAIが追いかける立場）と合わせ、Claude Codeの市場ポジションが確立された週。"
+      },
+      {
+        "title": "スターバックスがAI在庫管理ツールを導入から9カ月で廃止、ミス多発のため",
+        "source": "GIGAZINE",
+        "url": "https://gigazine.net/news/20260522-starbucks-abandons-ai-inventory-tool/",
+        "why": "AI導入の「失敗事例」が大手で顕在化した象徴的ニュース。大規模・汎用型AI導入のリスクが証明されたことで、Shistoの「小さく始めて確実に効果を出す伴走型」アプローチの価値が裏付けられた。営業時に「スタバですら9カ月で廃止した。だからこそ業務に合わせた段階的な導入が重要」と使える。"
+      },
+      {
+        "title": "ミトス級モデルの公開は「強力な安全対策後」 アンソロピックが成果説明",
+        "source": "Impress Watch",
+        "url": "https://www.watch.impress.co.jp/docs/news/2111151.html",
+        "why": "Shistoが依存するAnthropicの技術・事業戦略に直結。未公開の最上位モデル「Mythos Preview」の存在が明らかになり、Claude/Claude Codeの今後の性能向上が示唆された。安全性を最優先する姿勢は、クライアントへの安心材料にもなる。Project Glasswingのセキュリティ研究はAIの信頼性向上に寄与。"
+      },
+      {
+        "title": "「Cursor」開発の新モデル、コスト1/10で最先端モデル並み性能",
+        "source": "ITmedia AI+",
+        "url": "https://www.itmedia.co.jp/aiplus/article/2605/22/2000000017/",
+        "why": "AIコーディングツールのコスト崩壊を象徴するニュース。Shistoの原価削減につながる好材料だが、同時に「誰でもツールを作れる」時代の到来を意味し、差別化軸が「構築能力」から「業務設計力・運用保守」にシフトする必要性を示す。中長期の事業戦略に影響する構造変化。"
+      },
+      {
+        "title": "ChatGPTでパワポ作成・修正 「ChatGPT for PowerPoint」公開",
+        "source": "Impress Watch",
+        "url": "https://www.watch.impress.co.jp/docs/news/2111175.html",
+        "why": "AIによる資料作成の民主化が進む象徴。「営業資料AI自動生成」サービスの提案根拠として直接使えるニュース。汎用ツールの登場により「自分でできるのでは？」という反論が増える一方、業種特化のテンプレート設計という付加価値の必要性も明確になった。"
       }
     ],
     "top_5_proposals": [
       {
         "rank": 1,
-        "service": "江田畜産卸先飲食店向け「LINE注文受付＋在庫確認Bot」構築パッケージ",
+        "service": "バスケ関係者の店舗経営知人向け「AI検索時代の集客基盤整備」パッケージ",
         "category": "横展開",
-        "target": "江田畜産（兄の会社）",
-        "price_range": "初期15〜30万円＋月額1〜3万円",
-        "how_to_sell": "兄に直接LINEで提案。交通費精算Botの稼働実績をデモとして見せ、同じ技術基盤で注文受付を自動化すると説明。まず社内業務として試験導入→成功後に卸先展開の2段階アプローチ。",
-        "weekly_comment": "マクドナルド・ウェンディーズのドライブスルーAI報道が今週出たことで、飲食業界全体に「注文受付のデジタル化」への関心が高まっている。このタイミングで兄に記事を見せながら提案すると説得力が最も高い。交通費Botのコードベース流用で工数も少なく、確実に動くものを短期間で納品できる。"
+        "target": "バスケ関係者で美容・整体・ジム系の会社を経営している知人",
+        "price_range": "初期5〜15万円＋月額1〜2万円",
+        "how_to_sell": "知人の店名でChatGPT・Gemini・Perplexityの3つで検索した結果をスクショに撮ってLINEで送り、「出てこなかったら集客に影響する」と伝えて30分のZoom打合せを打診",
+        "weekly_comment": "今週Google AI検索の「disregard」不具合が2メディアで報じられ、AI検索の品質リスクが社会的に認知された。「AIが正しく店を見つけてくれるかは保証されない→だからこそ構造化データで自社側を整備する必要がある」という論理が、今週のニュースで初めて一般の経営者にも通じるようになった。既存のWeb制作スキルの横展開で技術リスクゼロ、バスケ仲間への直接営業で営業コストもゼロ。最も即座に動ける提案。"
       },
       {
         "rank": 2,
-        "service": "江田畜産向け「受注FAX・出荷伝票→Google Sheets自動転記」パイプライン",
+        "service": "伶さん（RAYUP）向け「商談メモ・会議記録AI自動化」パッケージ",
         "category": "横展開",
-        "target": "江田畜産（兄の会社）",
-        "price_range": "初期5〜8万円＋月額1〜2万円",
-        "how_to_sell": "領収書転記パイプラインの稼働実績をデモとして見せ、「同じ仕組みで出荷伝票も自動化できる」と提案。FAXの手入力時間を数字でヒアリングし、削減効果を試算。",
-        "weekly_comment": "renueの2D→3D AI化など製造業でのAI文書読解が実用フェーズに入ったニュースが今週複数出ており、「紙文書のAI読取」への認知が高まっている。領収書転記の既存コードを70%流用できるため技術リスクがほぼゼロで、最も確実に収益化できる案件。1位の注文Botと合わせて江田畜産向けパッケージとして提案すると効果的。"
+        "target": "伶さん（RAYUP代表・兄）",
+        "price_range": "月額1〜3万円",
+        "how_to_sell": "伶さんに直接LINEで、LinkedIn投稿自動生成の稼働報告を兼ねて「同じ仕組みで会議メモも自動化できます。月1万円から」と打診",
+        "weekly_comment": "ソースネクストのAI議事録がMicrosoft 365 Copilot連携した報道（5/24）で「会議記録AI化」が業界標準として認知された週。しかしこれは大企業向け。Google Workspace中心の中小企業は取り残されており、まさにShistoが埋めるべきギャップ。既存パイプラインの横展開で開発工数8〜12時間と極めて軽い。"
       },
       {
         "rank": 3,
-        "service": "RAYUP取引先向け「Claude for Small Business活用セットアップ＋業務パイプライン接続」サービス",
+        "service": "伶さん（RAYUP）向け「バイブコーディング実演×社内業務ツール即日構築」パッケージ",
         "category": "横展開",
-        "target": "伶さん（RAYUP代表）経由の取引先企業",
-        "price_range": "初期5〜15万円＋月額1〜3万円",
-        "how_to_sell": "伶さんにLINEで「Claude for Small Businessが出たので、取引先でAI興味ある会社を紹介してほしい。最初の1社は事例づくり特別価格で」と依頼。領収書転記・SNS投稿自動生成のデモで信頼構築。",
-        "weekly_comment": "今週Anthropicが「Claude for Small Business」をリリースしたことで、中小企業経営者の「Claudeを使いたい」意欲が急上昇中。しかし登録だけでは業務に接続できないギャップがあり、この「認知はあるが実装できない」層を埋めるサービスは今週が最も旬。リリース直後の今動くことが重要。"
+        "target": "伶さん（RAYUP代表・兄）",
+        "price_range": "初回無料、月額2〜5万円",
+        "how_to_sell": "伶さんにLINEであすけんのバイブコーディング記事を送り「同じ技術でRAYUP社内の面倒な作業を30分で自動化ツール作って見せます」と提案",
+        "weekly_comment": "MIT Technology Reviewが「Claudeに任せてしまおう」と報じた今週、バイブコーディングの社会的認知が決定的になった。「あすけんもMIT Tech Reviewも認めた手法を、御社の業務に適用します」という営業トークが使える。目の前で動くものを作って見せる体験の説得力は、どんなプレゼン資料よりも強い。"
       },
       {
         "rank": 4,
-        "service": "RAYUP取引先向け「AI検索時代のコンテンツ戦略リニューアル」パッケージ",
+        "service": "バスケ関係者の経営知人（美容・整体・ジム系）向け「顧客問い合わせ・予約対応AI自動化」パッケージ",
         "category": "横展開",
-        "target": "伶さん（RAYUP代表）経由のRAYUP取引先企業",
-        "price_range": "初期15〜40万円＋月額2〜5万円",
-        "how_to_sell": "伶さんに「GoogleがAI検索のルールを変えた。取引先でWebからの問い合わせが減っている会社があれば紹介してほしい」とLINE。15分の簡易診断を入口に提案。",
-        "weekly_comment": "GoogleがAI検索操作をスパム認定した今週のニュースが直接的な営業フック。従来のSEO業者のテクニックが明確に無効化されたため、「今のSEO対策では検索に出なくなる」という危機感が中小企業に広がり始めるタイミング。Web制作スキルの横展開で追加学習コストが低く、新しい切り口で差別化できる。"
+        "target": "バスケ関係者で美容・整体・ジム系の会社を経営している知人",
+        "price_range": "初期3万円＋月額1.5〜5万円",
+        "how_to_sell": "バスケ仲間に直接LINEで「営業時間外の予約問い合わせ、取りこぼしてませんか？」から入り、交通費BotのLINE Bot実績を見せて提案",
+        "weekly_comment": "スターバックスのAI在庫管理廃止（今週最大の失敗事例）が示すのは、大規模・汎用型AI導入の危険性。一方で予約・問い合わせ対応は業務パターンが限定的でAI成功率が高い領域。「大手が失敗する今だからこそ、小さく始めて確実に効果を出す」というShistoの伴走型アプローチが最も説得力を持つ週。"
       },
       {
         "rank": 5,
-        "service": "美容・整体・ジム向け「集客Instagram投稿案＋予約導線」自動生成パイプライン",
-        "category": "横展開",
-        "target": "バスケ関係者で美容・整体・ジムを経営している知人",
-        "price_range": "月額1.5〜5万円",
-        "how_to_sell": "バスケ関係者ネットワークで直接LINEでアプローチ。「SNS投稿、最近止まってない？」と軽く切り出し、RAYUP向け投稿案シートのサンプルを見せる。最初の3ヶ月は事例づくり価格で。",
-        "weekly_comment": "AIエージェント活用企業の8割が人員削減という今週の報道で、小規模サービス業でも「自分でやらなくていい業務はAIに任せたい」意識が広がっている。monetization_readiness=5と最高評価で、バスケ関係者という直接的な営業ルートがある点が強み。兄の3社以外への初の外部顧客獲得の突破口として有力。"
+        "service": "中小EC事業者向け「AIショッピング検索対応・商品データ最適化」パッケージ",
+        "category": "新規",
+        "target": "Shopify/BASE利用のEC事業者（月商50〜300万円）、および江田畜産・KFJの自社EC",
+        "price_range": "初回診断5,000円〜月額3万円",
+        "how_to_sell": "まず江田畜産のふるさと納税商品ページでAI検索対応度を診断し事例化。並行してShopify日本コミュニティで解説投稿を開始し、無料診断の申し込みを募る",
+        "weekly_comment": "ChatGPT for PowerPointの登場（今週）が示すように、OpenAIは「AIをあらゆる業務ツールに統合する」戦略を加速している。Yahoo!ショッピングとのChatGPT連携もその一環であり、EC事業者にとって「AIに見つけてもらえるか」は今後ますます重要になる。兄の会社（江田畜産・KFJ）で事例を作れるため、営業材料の準備コストがゼロ。新規市場だが初回5,000円の診断から入れるため、リスクも低い。"
       }
     ]
   }
