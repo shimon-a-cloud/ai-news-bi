@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-05-25",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Claude Mythosの脆弱性発見報告を受け、国内大手SIer（NTTデータ・富士通・NEC等）がAIセキュリティ診断サービスを相次いで発表する",
+          "confidence": "高",
+          "evidence": "金融庁・日銀の要請＋日立のAnthropic提携が公表された直後。大手SIerの金融機関顧客から「対応してほしい」の声が確実に上がる。",
+          "shisto_implication": "大手が高額サービスを出すことで、中小企業は「うちには高すぎる」と感じる。その下の価格帯をShistoが押さえるチャンスが生まれる。"
+        },
+        {
+          "prediction": "Google I/O 2026のGemini 3.5発表を受け、国内企業のGemini活用事例ニュースが今週〜来週に集中する",
+          "confidence": "高",
+          "evidence": "日大のGoogle AI Pro導入が早速報じられた。I/O発表から1週間のタイムラグで導入発表が続くパターンは毎年同じ。",
+          "shisto_implication": "「Geminiでもできる」記事が増えるとClaude Code一本足への質問が来る。差別化ポイント（エージェント型開発の実績・Wiredの報道）を常に用意しておく。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIセキュリティ対応が中小企業向けにも制度化され、IPAや商工会議所経由で「最低限のセキュリティ診断義務化」の議論が始まる",
+          "confidence": "中",
+          "evidence": "金融庁の要請→金融機関→取引先中小企業への波及は過去のマイナンバー対応と同じパターン。ただし義務化までは1年以上かかる可能性。",
+          "shisto_implication": "義務化の議論が始まった段階で「低価格セキュリティ診断サービス」を持っていれば先行者利得がある。big_market_playの検証を今から始める意味がある。"
+        },
+        {
+          "prediction": "エージェント型コーディングAI（Claude Code・Codex・Gemini Code Assist）の競争が価格戦争フェーズに入り、個人開発者が月額$20以下で使えるようになる",
+          "confidence": "中",
+          "evidence": "Wiredが報じたOpenAIのClaude Code追従＋Googleの全振り戦略。3社が競合すれば価格は下がる。",
+          "shisto_implication": "ツールの民主化が進むと「ツールを使える」こと自体は差別化にならなくなる。Shistoの価値は「ツール操作」ではなく「業務課題の特定→設計→運用保守」にシフトする。営業トークを調整すべき。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIエージェントの統制・ガバナンスが新しいサービスカテゴリとして確立し、中小企業向けにも「AIエージェント管理SaaS」が月額1万円台で登場する",
+          "confidence": "中",
+          "evidence": "ServiceNow・IBMが数千規模のエージェント統制製品を発表。今は大企業向けだが、中小企業でも複数のAIツールを使い始めれば統制ニーズが出る。",
+          "shisto_implication": "半年後には「ChatGPT・Claude・Gemini・社内Botを全部管理するダッシュボード」が求められる可能性。Shistoが先にAIニュースBIの仕組みで培った複数ソース統合ノウハウを活かせる領域。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-24",
     "predictions": {
       "short_term": [
