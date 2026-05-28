@@ -1,10 +1,6 @@
 {
-  "updated": "2026-05-27T09:09:11.347898+09:00",
+  "updated": "2026-05-28T09:38:44.752740+09:00",
   "daily_counts": [
-    {
-      "date": "2026-04-27",
-      "count": 180
-    },
     {
       "date": "2026-04-28",
       "count": 67
@@ -115,120 +111,132 @@
     },
     {
       "date": "2026-05-25",
-      "count": 263
+      "count": 268
     },
     {
       "date": "2026-05-26",
-      "count": 641
+      "count": 647
     },
     {
       "date": "2026-05-27",
-      "count": 16
+      "count": 470
+    },
+    {
+      "date": "2026-05-28",
+      "count": 70
     }
   ],
   "category_7d": [
     {
       "category": "製品・サービス",
-      "count": 96
-    },
-    {
-      "category": "規制・法律・倫理",
-      "count": 48
-    },
-    {
-      "category": "AIエージェント・開発",
-      "count": 48
+      "count": 79
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 45
+      "count": 66
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 62
     },
     {
       "category": "投資・市場動向",
-      "count": 43
+      "count": 59
+    },
+    {
+      "category": "AIエージェント・開発",
+      "count": 47
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 23
+      "count": 22
     },
     {
       "category": "新モデル・リリース",
-      "count": 20
+      "count": 14
     }
   ],
   "category_30d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 924
+      "count": 929
     },
     {
       "category": "規制・法律・倫理",
-      "count": 344
+      "count": 366
     },
     {
       "category": "AIエージェント・開発",
-      "count": 315
+      "count": 329
     },
     {
       "category": "製品・サービス",
-      "count": 257
+      "count": 274
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 215
+      "count": 242
     },
     {
       "category": "投資・市場動向",
-      "count": 141
+      "count": 161
     },
     {
       "category": "新モデル・リリース",
-      "count": 44
+      "count": 47
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1182
+      "count": 1174
     },
     {
-      "source": "GIGAZINE",
+      "source": "日本経済新聞",
       "count": 67
     },
     {
+      "source": "GIGAZINE",
+      "count": 64
+    },
+    {
       "source": "TechCrunch AI",
-      "count": 65
+      "count": 58
     },
     {
       "source": "ITmedia AI+",
-      "count": 47
+      "count": 54
     },
     {
       "source": "The Verge AI",
-      "count": 38
+      "count": 32
+    },
+    {
+      "source": "日経xTECH",
+      "count": 24
     },
     {
       "source": "Impress Watch",
-      "count": 31
+      "count": 23
     },
     {
       "source": "AWS AI Blog",
-      "count": 21
+      "count": 22
+    },
+    {
+      "source": "日経クロステック",
+      "count": 14
     },
     {
       "source": "Wired JP",
-      "count": 12
-    },
-    {
-      "source": "Google AI",
-      "count": 11
-    },
-    {
-      "source": "Publickey",
-      "count": 8
+      "count": 10
     },
     {
       "source": "SHIFT AI TIMES",
+      "count": 10
+    },
+    {
+      "source": "AINOW",
       "count": 8
     },
     {
@@ -236,54 +244,46 @@
       "count": 8
     },
     {
-      "source": "AINOW",
-      "count": 7
-    },
-    {
-      "source": "Hugging Face",
-      "count": 4
-    },
-    {
-      "source": "BRIDGE",
-      "count": 4
+      "source": "Publickey",
+      "count": 6
     }
   ],
   "ai_company_7d": [
     {
-      "company": "Gemini",
-      "count": 73
-    },
-    {
       "company": "ChatGPT / GPT",
-      "count": 36
+      "count": 33
     },
     {
       "company": "Claude",
+      "count": 30
+    },
+    {
+      "company": "Gemini",
       "count": 29
     },
     {
       "company": "Amazon Bedrock",
-      "count": 19
+      "count": 22
     },
     {
       "company": "Grok",
       "count": 9
     },
     {
-      "company": "Copilot",
+      "company": "LLaMA",
       "count": 7
     },
     {
-      "company": "LLaMA",
-      "count": 6
+      "company": "Copilot",
+      "count": 5
     },
     {
       "company": "Hugging Face",
-      "count": 4
+      "count": 5
     },
     {
       "company": "DeepSeek",
-      "count": 2
+      "count": 3
     },
     {
       "company": "Qwen",
@@ -300,6 +300,13 @@
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-05-26",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 1,
+      "total": 5
+    },
     {
       "date": "2026-05-25",
       "short_term": 2,
