@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-05-28",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Anthropic Opus 4.8のリリースを受けて、Claude Codeの利用事例記事・解説記事が来週にかけて日本語メディアで急増する",
+          "confidence": "高",
+          "evidence": "本日のITmedia記事に加え、SHIFT AI TIMESがCodexの解説記事を2本出しておりAIコーディングツール解説コンテンツの需要が旺盛。Opus 4.8は日本語対応もあり国内メディアが取り上げやすい",
+          "shisto_implication": "「Claude Codeで構築する」というShistoの価値提案の認知度が上がる。営業時に「最近Claudeの新モデルが出て〜」と話の入りに使える"
+        },
+        {
+          "prediction": "CNN vs Perplexity訴訟を受けて、日本国内でもAI要約・引用に関する法的議論が再燃し、企業のAI利用ガイドライン策定需要が高まる",
+          "confidence": "中",
+          "evidence": "CNN訴訟は「verbatim（逐語的）」コピーという明確な侵害パターン。MOTEX調査で「AI特有のリスクに十分対応できている企業は約2割」と判明しており、訴訟ニュースがきっかけでガイドライン整備に動く企業が出る可能性",
+          "shisto_implication": "big_market_playの「AIリスク管理レポート」サブスクの需要を裏付けるイベント。サンプルレポートに本訴訟の分析を盛り込むと訴求力が高い"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "OpenAI・Anthropicの日本法人設立から3〜6ヶ月以内に、国内SIer大手（NTTデータ・富士通・NEC等）がAI大手との協業・OEM提携を相次いで発表する",
+          "confidence": "高",
+          "evidence": "ITmediaが「黒船襲来」と報じるほどの危機感がSIer業界にある。MUFGはGoogleと即座に提携拡大しており、対抗ではなく協業に舵を切る流れが加速する構造",
+          "shisto_implication": "大手SIerがAI大手と組んでエンタープライズ市場を取りに行く間に、Shistoは「大手が手を出さない月額1〜10万円の中小企業市場」でポジションを固める時間が生まれる"
+        },
+        {
+          "prediction": "AIコーディングエージェント市場で淘汰が始まり、Cognition（Devin）・GitHub Copilot・Claude Code・Cursor の4強に集約されていく",
+          "confidence": "中",
+          "evidence": "Cognitionの250億ドル評価は「勝者総取り」を投資家が見込んでいる証拠。Docker Gordonのような周辺ツールは統合されていく可能性が高い",
+          "shisto_implication": "Claude Codeが4強の一角に残る限り、Shistoの技術基盤は安泰。ただしClaude CodeのAPI課金化が進む可能性があるため、コスト構造の変化に備えておく"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "エージェンティックコマースが2027年前半までにEC市場の5〜10%を占め、AIエージェントが「商品選定→比較→購入→返品対応」まで一貫して行うサービスが標準化する",
+          "confidence": "中",
+          "evidence": "日経クロストレンドが「エージェンティックコマース離陸」と報じ、MUFGがGoogleと購入・決済可能なAIエージェント開発に着手。セールスフォースのヘッドレス化もこの流れを加速する",
+          "shisto_implication": "EC事業者がAIエージェント対応を求め始めた時、Shistoがその導入支援を提供できるポジションにいるかがカギ。中小EC事業者向けの軽量エージェント構築は将来の事業機会"
+        },
+        {
+          "prediction": "AI利用に関する法規制が2027年にかけて日本でも具体化し、一定規模以上の企業にAI利用ポリシーの策定・公開が義務化される方向に進む",
+          "confidence": "低",
+          "evidence": "ガバメントAI「源内」の全省庁展開、OpenAIのFrontier Governance Framework公開、CNN vs Perplexity訴訟の流れ。EU AI Actの影響も日本に波及する",
+          "shisto_implication": "義務化されればAIリスク管理レポートの需要は爆発的に増える。ただし「低」の理由は日本の規制策定速度が遅い傾向にあるため"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-27",
     "predictions": {
       "short_term": [
