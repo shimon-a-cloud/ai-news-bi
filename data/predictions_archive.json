@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-05-29",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Opus 4.8の一般提供が数週間以内に始まり、国内SIer（富士通など）がOpenAI/Anthropic双方との提携を軸に最新モデル対応をアピールする発表が続く",
+          "confidence": "高",
+          "evidence": "Opus 4.8リリース（id 12316/12896）、AWS即日提供（id 12268）、富士通の両社提携（id 12270）",
+          "shisto_implication": "基盤の世代交代は追い風。切替時の品質回帰チェックを怠らなければ、処理速度・精度の向上を既存システムにそのまま乗せられる。"
+        },
+        {
+          "prediction": "Nano Banana 2/Pro GAを受け、国内のSNS運用・EC支援サービスに『商品画像自動生成』機能の追加・訴求が広がる",
+          "confidence": "中",
+          "evidence": "Nano Banana 2/Pro一般提供（id 12890/12909）、動画からの画像生成対応",
+          "shisto_implication": "稼働中のSNSテキスト生成に画像生成を上乗せする横展開を、競合が機能化する前に兄3社で先に実装しておくと優位。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "ノーコードAIエージェント（StackAI/Asana、Jooto MCP等）の普及で、中小企業が自作AIを乱立させ『野良AIの整理・運用設計』を外部に頼む需要が立ち上がる",
+          "confidence": "中",
+          "evidence": "AsanaのStackAI買収（id 12312）、JootoのローカルMCP公開（id 12952）、テンセントのエージェント3層戦略（id 12297）",
+          "shisto_implication": "Shistoの提案軸を『作る』だけでなく『散らかったAI導入を業務フローごと整理する』に拡張すると、業務再設計トレンドと噛み合う。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "大手（リコー・三菱ケミカル×アクセンチュア等）が中小・事務代行AIに本格参入し、『汎用廉価サービス』と『現場特化カスタム』の二極化が進む",
+          "confidence": "中",
+          "evidence": "リコー中小向け廉価AI（id 12935）、三菱ケミカル×アクセンチュアの事務代行AI合弁（id 12934）、AI面接官の業務再設計事例（id 12296）",
+          "shisto_implication": "汎用・廉価帯では戦わず、個別業務の作り込みと業務フロー再設計という汎用サービスが届かない領域に明確にポジショニングする戦略が長期的に効く。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-05-28",
     "predictions": {
       "short_term": [
