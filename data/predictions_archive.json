@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-06-03",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "『AIエージェントのコスト予測不能性』を解消する定額・上限型の運用支援サービスが、来週以降さらに国内メディアで取り上げられる",
+          "confidence": "中",
+          "evidence": "GitHub Copilot従量課金への不満（id:14441）、UberのAI支出上限化（id:13532）が同日に表面化",
+          "shisto_implication": "Shistoの『定額・成果物固定』が時流に合致。提案3のコスト健全化パッケージを今のうちに言語化しておくと、話題化に乗って発信できる。"
+        },
+        {
+          "prediction": "Microsoft Scout / OpenAI Codex役割プラグインに触発され、国内SIer・ベンダーから『非エンジニア向け業務エージェント』の追随発表が相次ぐ",
+          "confidence": "中",
+          "evidence": "Microsoft Scout（id:14446）、Codex全職種開放（id:14458）、テラスカイBLADE運用開始（id:14459）",
+          "shisto_implication": "大手・SIerは大企業向け。Shistoは中小・個人向けの具体実装に集中することで棲み分けられる。汎用化が進むほど『個社最適化』の価値訴求を磨くべき。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "業種特化の『現場助言・ナレッジAI』（ヒマラヤAI副店長型）が中堅小売・サービス業に普及し、小規模事業者向けの軽量版需要が立ち上がる",
+          "confidence": "中",
+          "evidence": "ヒマラヤ全店AI副店長（id:14472）、チェンジHD月5万円サイバー防御助言（id:13514）、内田洋行AI座席検知（id:14488）",
+          "shisto_implication": "提案2（小規模店向け接客ナレッジAI）の市場が中期で広がる見込み。今のうちに1店で事例を作っておけば、需要が顕在化した時に先行できる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "Anthropic/OpenAIが実装支援パートナー制度を拡充し、『AI実装を代行する小規模事業者』が一つの確立した業態になる",
+          "confidence": "中",
+          "evidence": "Anthropic Servicesトラック新設（id:14429）、Anthropic SEC向けS-1ドラフト提出（直近7日）、Codex/Claude Codeの全職種開放トレンド",
+          "shisto_implication": "Shistoの事業モデルそのものが業界に制度化される追い風。公式パートナー登録・実績の蓄積を長期戦略として位置づけ、創業期の今から実績数を積むことが効いてくる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-02",
     "predictions": {
       "short_term": [
