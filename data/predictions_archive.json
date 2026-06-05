@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-06-04",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "生成AI上での『自社情報の見え方』を巡る機能・サービスが国内で続々追加され、CINCに続く中小向けの誤情報チェック/AEO関連の発表が出る。",
+          "confidence": "高",
+          "evidence": "本日Google引用拒否・AI概要除外・英新規制・CINC誤情報チェックが同日に出揃った。",
+          "shisto_implication": "KFJ診断提案とbig_market_playの市場が立ち上がる初期局面。早く小さな事例を作れば先行できる。"
+        },
+        {
+          "prediction": "ローカル/低スペックで動く無料マルチモーダルモデルの採用事例（オンプレ志向の業種）が国内メディアで取り上げられ始める。",
+          "confidence": "中",
+          "evidence": "Gemma 4 12Bが16GBノートPCで動作・無料公開された。",
+          "shisto_implication": "『データを外に出さないAI』提案の素地ができる。ただしShistoの実装はClaude中心のため、まず自分で検証してから提案する。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIエージェントの企業外販が大手中心に進む一方、製品乱立で『どれを選べばいいか分からない』中小が増え、選定・最小実装の伴走需要が顕在化する。",
+          "confidence": "中",
+          "evidence": "本日Meta外販・ServiceNow/Accenture FDE・うるる参入・Genspark Team国内販売が同時に報じられた。",
+          "shisto_implication": "1人運営で小規模事業者に密着できるShistoの『製品選定＋最小実装伴走』が刺さる隙間が広がる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "『AIにどう自社が語られるか』の管理（AEO/GEO・誤情報訂正）が、SEOに続く中小のデジタル施策として定着し始める。",
+          "confidence": "中",
+          "evidence": "Google・英規制・CINCの動きが、検索からAI回答への購買行動シフトを前提にし始めている。",
+          "shisto_implication": "モニタリング＋整備のサブスクは、Shistoの『情報収集→AI処理→出力』パイプライン資産をそのまま活かせる中核事業候補になりうる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-03",
     "predictions": {
       "short_term": [
