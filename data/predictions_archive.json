@@ -1,5 +1,53 @@
 [
   {
+    "date": "2026-06-06",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Apple WWDC 2026で刷新版Siri（Gemini連携）とApple Intelligenceの強化が正式発表され、AIが非IT層の日常デバイスに標準搭載される流れが一段と進む。",
+          "confidence": "高",
+          "evidence": "The Verge・TechCrunchがWWDC 2026での新Siri再披露を複数報じている。",
+          "shisto_implication": "個人が当たり前にAIを使う前提が整い、消費者向け（個人ペルソナ）の軽量AIサービスの市場前提が強まる。big_market_playの追い風。"
+        },
+        {
+          "prediction": "国内メディアで『AIを入れたが無駄遣い・使いこなせない』という大企業の事例（アマゾン等）を受け、中小企業の費用対効果や定着への不安を扱う記事が増える。",
+          "confidence": "中",
+          "evidence": "本日のアマゾン・ウーバーのAI利用上限報道、過去のAI定着・コスト関連報道の継続。",
+          "shisto_implication": "Shistoの『正しい使いどころを固定する軽量・定額自動化』への需要が言語化されやすくなる。営業トークの裏付けに使える。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "ECモール・ふるさと納税ポータルが、AIコンシェルジュや対話型商品検索の機能を拡充し、商品情報の構造化（AIに拾われる形）が出品者の競争要因になる。",
+          "confidence": "中",
+          "evidence": "10代女性の過半がAI買い物相談を経験という消費者行動の変化、各社のAIショッピング機能投入の流れ。",
+          "shisto_implication": "江田畜産・KFJ向けの商品情報整備が単発でなく継続運用案件に育つ可能性。AIO支援を横展開メニュー化する価値がある。"
+        },
+        {
+          "prediction": "計算資源の逼迫（Google-SpaceX契約、データセンター規制）を背景に、大手AIツールの従量課金単価や上位プランの値上げ・制限が進む。",
+          "confidence": "中",
+          "evidence": "Googleの月1470億円契約、NY州のデータセンター新設禁止、アマゾンの利用上限設定。",
+          "shisto_implication": "中小・個人の『AIコストが読めない』不安が強まり、Shistoの必要十分・定額の提案がより刺さる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "中小製造業でも熟練ノウハウのデータ化・AI継承が一般的な選択肢になり、大手のスマートファクトリーとは別軸の“小規模・低コストなナレッジAI”需要が立ち上がる。",
+          "confidence": "中",
+          "evidence": "インテル×日立のAI工場事例（熟練の技を補う）、熟練工高齢化という構造的課題。",
+          "shisto_implication": "中小製造業向けノウハウAIが、地域に根ざした反復受注の柱になりうる。今のうちに商工会議所等のリーチ経路を作る価値がある。"
+        },
+        {
+          "prameter": "",
+          "prediction": "AIの推進（各国の産業政策・国家関与）と抑制（Anthropic等の安全提言）の綱引きが続き、『安全に・適切に使えること』自体が中小企業のAI導入の判断軸として重みを増す。",
+          "confidence": "低",
+          "evidence": "トランプ政権のAI大統領令・株保有検討、AnthropicのAI開発ブレーキ提言の同時進行。",
+          "shisto_implication": "Claudeを中核に据え『安全・適切な使い方を設計する』ことをShistoの信頼の売りにできる余地が広がる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-05",
     "predictions": {
       "short_term": [
