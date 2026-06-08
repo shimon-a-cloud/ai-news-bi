@@ -1,5 +1,34 @@
 [
   {
+    "date": "2026-06-07",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "プロンプトインジェクション対策・情報漏洩防御機能を、Google・Anthropic等の他社も相次いで標準搭載・強調するようになる",
+          "confidence": "高",
+          "evidence": "OpenAIのロックダウンモード発表と国内媒体の即日後追い。AI安全機能が競争軸になりつつある。",
+          "shisto_implication": "『安全に使えるAI自動化』が提案の定番フックになる。今週のうちに自社の対策を営業資料化しておくと先行できる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AI生成物の検品・レビュー（コード・文章・画像の真贋/品質チェック）が、独立したニーズ・小サービスとして広がる",
+          "confidence": "中",
+          "evidence": "Open Code Review・fore・『AIコンテンツ制作者が見分けづらい』報道など、検品・制御層への注目が同時多発。",
+          "shisto_implication": "big_market_playの『公開前チェックSaaS』はこの流れに乗る。MVPを早めに小さく出して反応を見る価値がある。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AI基盤層は国家・大手の関与が強まり寡占化が進む一方、現場業務の自動化・安全運用支援という応用層は中小・個人事業者の事業機会として残る",
+          "confidence": "中",
+          "evidence": "米政権のOpenAI出資観測、日経社説のAI統治論。基盤への国家関与と統治議論の同時進行。",
+          "shisto_implication": "Shistoは基盤で戦わず、安全・適法に使える応用層の自動化に集中する方針が中長期でも正しいと裏付けられる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-06",
     "predictions": {
       "short_term": [
