@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 function setupNav() {
     document.querySelectorAll('.nav-btn').forEach(btn => {
         btn.addEventListener('click', () => {
+            if (!btn.dataset.tab) return;  // 外部リンク（AI動画など）はそのまま遷移させる
             document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
             document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
             btn.classList.add('active');
