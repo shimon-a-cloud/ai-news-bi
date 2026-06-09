@@ -10,7 +10,6 @@ let predictionsArchiveData = null;
 let opportunitiesData = null;
 let weeklyCaseData = null;
 let bigMarketArchiveData = null;
-let videoRankingData = null;
 let dailyChart = null;
 let categoryChart = null;
 let aiCompanyChart = null;
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     initProposalSearch();
     renderLinkedIn();
     renderReport();
-    renderVideoRanking();
     document.getElementById('headerDate').textContent = dailyData?.date || '';
 });
 
@@ -68,7 +66,6 @@ async function loadAllData() {
         loadJSON('weekly_case.json'),
         loadJSON('big_market_archive.json'),
     ]);
-    videoRankingData = await loadJSON('video_ranking.json');
 }
 
 // ── Render: Home ──
@@ -1234,85 +1231,6 @@ function esc(str) {
 }
 
 
-
-// ── Render: AI動画ランキング ──
-function renderVideoRanking() {
-    const ctrl = document.getElementById('videoControls');
-    if (!ctrl) return;
-    const data = videoRankingData;
-    if (!data || !Array.isArray(data.dates) || data.dates.length === 0) {
-        ctrl.innerHTML = '<div class="empty-state">まだ動画ランキングがありません（翌朝の自動更新で生成されます）</div>';
-        const body = document.getElementById('videoRankingDay');
-        if (body) body.innerHTML = '';
-        return;
-    }
-    const opts = data.dates.map(d => `<option value="${esc(d)}">${esc(d)}</option>`).join('');
-    ctrl.innerHTML = `
-        <div class="video-controls">
-            <span style="font-size:12px;color:var(--text-muted)">日付</span>
-            <select id="videoDateSelect" class="search-select" onchange="renderVideoRankingDay(this.value)">${opts}</select>
-            <span style="font-size:11px;color:var(--text-muted)">勢い＝再生数÷公開からの日数</span>
-        </div>`;
-    renderVideoRankingDay(data.latest_date || data.dates[0]);
-}
-
-function renderVideoRankingDay(date) {
-    const el = document.getElementById('videoRankingDay');
-    const data = videoRankingData;
-    if (!el || !data) return;
-    const day = (data.rankings || {})[date] || {};
-    const cats = data.categories || [];
-    const html = cats.map(c => {
-        const cd = day[c.key] || { jp: [], world: [] };
-        return `<div class="section-card">
-            <h2 class="section-title">${esc(c.label)}</h2>
-            ${renderVideoRegion('🇯🇵 日本', cd.jp || [])}
-            ${renderVideoRegion('🌍 世界', cd.world || [])}
-        </div>`;
-    }).join('');
-    el.innerHTML = html || '<div class="section-card"><div class="empty-state">この日のデータはありません</div></div>';
-}
-
-function renderVideoRegion(label, list) {
-    if (!list.length) {
-        return `<div class="video-region"><div class="video-region-label">${label}</div><div class="empty-state">該当なし</div></div>`;
-    }
-    return `<div class="video-region">
-        <div class="video-region-label">${label}</div>
-        ${list.map(v => `
-            <div class="video-item">
-                <span class="video-rank">${v.rank}</span>
-                <div class="video-body">
-                    <div class="video-title"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a></div>
-                    <div class="video-meta">
-                        ${v.channel ? `<span>${esc(v.channel)}</span>` : ''}
-                        <span>${formatViews(v.views)}回</span>
-                        <span>勢い ${formatViews(Math.round(v.velocity || 0))}/日</span>
-                        <span>${formatVideoAge(v.published_at)}</span>
-                    </div>
-                    <button class="video-copy-btn" onclick="copyPlainText(${jsArg(v.url)})">URLをコピー（Gem用）</button>
-                </div>
-            </div>
-        `).join('')}
-    </div>`;
-}
-
-function formatViews(n) {
-    n = Number(n) || 0;
-    if (n >= 100000000) return (n / 100000000).toFixed(1).replace(/\.0$/, '') + '億';
-    if (n >= 10000) return (n / 10000).toFixed(1).replace(/\.0$/, '') + '万';
-    return n.toLocaleString('ja-JP');
-}
-
-function formatVideoAge(iso) {
-    if (!iso) return '';
-    const then = new Date(iso);
-    if (isNaN(then.getTime())) return '';
-    const days = Math.floor((Date.now() - then.getTime()) / 86400000);
-    if (days <= 0) return '今日';
-    if (days === 1) return '1日前';
-    return days + '日前';
-}
 
 // ── Service Worker ──
 if ('serviceWorker' in navigator) {

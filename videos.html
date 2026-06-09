@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#070910">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>AI動画ランキング</title>
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">AI動画ランキング</h1>
+        <a class="header-date" href="index.html" style="text-decoration:none;color:var(--accent)">← ダッシュボード</a>
+    </header>
+
+    <main class="main" style="padding-bottom:32px">
+        <div class="section-card">
+            <h2 class="section-title">AI動画ランキング<span style="font-size:11px;color:var(--text-muted);margin-left:8px;font-weight:normal">勢い順・日本/世界・毎日更新</span></h2>
+            <div id="videoControls"></div>
+        </div>
+        <div id="videoRankingDay"></div>
+    </main>
+
+    <script src="videos.js?v=1"></script>
+</body>
+</html>
