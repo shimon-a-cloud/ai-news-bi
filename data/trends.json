@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-09T09:12:46.569606+09:00",
+  "updated": "2026-06-09T12:53:33.103883+09:00",
   "daily_counts": [
     {
       "date": "2026-05-10",
@@ -300,6 +300,13 @@
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-06-08",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 1,
+      "total": 5
+    },
     {
       "date": "2026-06-07",
       "short_term": 1,
