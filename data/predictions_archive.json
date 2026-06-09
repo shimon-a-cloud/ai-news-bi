@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-06-08",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Apple WWDCを起点に、Siri刷新・端末AIの話題が国内メディアで集中的に取り上げられ、非技術者層の『AIを日常で使う』意識がさらに高まる",
+          "confidence": "高",
+          "evidence": "Apple第3世代Foundation Models発表（id15769）、Siri AI刷新（id15770）、WWDC関連の海外報道が本日多数",
+          "shisto_implication": "中小・個人店の心理的ハードルが下がるタイミング。『AIで○○の業務を楽にする』提案を出す好機なので、デモを揃えて待ち構える。"
+        },
+        {
+          "prediction": "AI利用コストの可視化・予算管理を打ち出す製品/記事がさらに増え、『入れたが費用対効果が見えない』中小の悩みが顕在化する",
+          "confidence": "中",
+          "evidence": "Cloudflare予算管理機能（id15404）、川崎裕一トークン資産論（id15431）、Tokenpocalypse論（id15374）が同日に集中",
+          "shisto_implication": "コスト診断（受託）とSaaS化の両面で需要根拠が強まる。診断メニューを言語化して提案に乗せる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "中小・自治体・小規模現場での『定型業務をAIで消す』導入事例が国内で続々と公開され、横展開の営業材料が増える",
+          "confidence": "高",
+          "evidence": "ソフトバンク1人100エージェント（id15360）、幼稚園事務半減（id15348）、姫路救急AIチャット（id15397）が同日に並ぶ",
+          "shisto_implication": "事例を引用して『あなたの現場でも同じことができる』と提案できる。事例ストックを領域別に整理しておくと商談が速くなる。"
+        },
+        {
+          "prediction": "エージェンティックコマースの議論が進み、小売・個人店で『AIに正しく見つけられ・推薦される情報整備』のニーズが具体化する",
+          "confidence": "中",
+          "evidence": "エージェンティックコマースの論点整理（id15359）、Instant Checkout撤退（id15358）、販売予測AI事例（東芝id15426・富士フイルム系id15427）",
+          "shisto_implication": "投稿案生成パイプラインを商品データ・口コミ整備に転用する横展開の好機。江田畜産・KFJで先に型を作って外販する。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "OpenAI・Anthropic等の上場でAIへの資金と社会的正当性が増し、『AIを使わない選択肢はない』という空気が中小にまで広がる",
+          "confidence": "中",
+          "evidence": "OpenAI S-1機密提出（id15766）、Anthropic先行IPO、史上最大級IPO観測（id15342）",
+          "shisto_implication": "市場全体の追い風。ただし大手・資金力ある競合の参入も増えるため、Shistoは『小さく安全に・身近な相手に』という地域密着と信頼ベースの優位を磨く方向で長期戦略を組む。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-07",
     "predictions": {
       "short_term": [
