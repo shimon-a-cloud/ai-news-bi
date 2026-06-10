@@ -1,10 +1,6 @@
 {
-  "updated": "2026-06-09T13:31:30.188334+09:00",
+  "updated": "2026-06-10T22:09:23.124096+09:00",
   "daily_counts": [
-    {
-      "date": "2026-05-10",
-      "count": 12
-    },
     {
       "date": "2026-05-11",
       "count": 410
@@ -119,159 +115,163 @@
     },
     {
       "date": "2026-06-08",
-      "count": 338
+      "count": 340
     },
     {
       "date": "2026-06-09",
-      "count": 81
+      "count": 136
+    },
+    {
+      "date": "2026-06-10",
+      "count": 459
     }
   ],
   "category_7d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 174
+      "count": 162
     },
     {
       "category": "投資・市場動向",
-      "count": 144
+      "count": 142
     },
     {
       "category": "製品・サービス",
-      "count": 109
+      "count": 120
     },
     {
       "category": "規制・法律・倫理",
-      "count": 88
+      "count": 86
     },
     {
       "category": "AIエージェント・開発",
-      "count": 78
+      "count": 77
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 37
+      "count": 38
     },
     {
       "category": "新モデル・リリース",
-      "count": 35
+      "count": 31
     }
   ],
   "category_30d": [
     {
       "category": "研究・ブレークスルー",
-      "count": 672
+      "count": 678
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 475
+      "count": 503
     },
     {
       "category": "製品・サービス",
-      "count": 406
+      "count": 435
     },
     {
       "category": "規制・法律・倫理",
-      "count": 401
-    },
-    {
-      "category": "AIエージェント・開発",
-      "count": 352
+      "count": 413
     },
     {
       "category": "投資・市場動向",
-      "count": 345
+      "count": 376
+    },
+    {
+      "category": "AIエージェント・開発",
+      "count": 369
     },
     {
       "category": "新モデル・リリース",
-      "count": 96
+      "count": 103
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1572
+      "count": 1153
     },
     {
       "source": "日本経済新聞",
-      "count": 257
+      "count": 263
     },
     {
       "source": "GIGAZINE",
-      "count": 87
-    },
-    {
-      "source": "TechCrunch AI",
-      "count": 65
+      "count": 80
     },
     {
       "source": "ITmedia AI+",
-      "count": 65
+      "count": 71
+    },
+    {
+      "source": "TechCrunch AI",
+      "count": 70
     },
     {
       "source": "日経xTECH",
-      "count": 48
+      "count": 60
     },
     {
       "source": "The Verge AI",
-      "count": 38
-    },
-    {
-      "source": "Impress Watch",
-      "count": 30
+      "count": 43
     },
     {
       "source": "日経クロステック",
-      "count": 23
+      "count": 28
     },
     {
-      "source": "AWS AI Blog",
-      "count": 22
-    },
-    {
-      "source": "OpenAI",
-      "count": 15
-    },
-    {
-      "source": "日経ビジネス電子版",
-      "count": 13
+      "source": "Impress Watch",
+      "count": 28
     },
     {
       "source": "Wired JP",
-      "count": 13
+      "count": 18
     },
     {
-      "source": "BRIDGE",
-      "count": 13
+      "source": "AWS AI Blog",
+      "count": 15
     },
     {
       "source": "Hugging Face",
+      "count": 14
+    },
+    {
+      "source": "Simon Willison",
+      "count": 13
+    },
+    {
+      "source": "OpenAI",
+      "count": 13
+    },
+    {
+      "source": "日経ビジネス電子版",
       "count": 12
     }
   ],
   "ai_company_7d": [
     {
       "company": "ChatGPT / GPT",
-      "count": 61
+      "count": 54
     },
     {
       "company": "Claude",
-      "count": 58
+      "count": 45
     },
     {
       "company": "Copilot",
-      "count": 48
+      "count": 45
     },
     {
       "company": "Amazon Bedrock",
-      "count": 28
+      "count": 24
     },
     {
       "company": "Gemini",
-      "count": 19
+      "count": 22
     },
     {
       "company": "LLaMA",
-      "count": 17
+      "count": 14
     },
     {
       "company": "Hugging Face",
@@ -279,18 +279,18 @@
     },
     {
       "company": "Grok",
-      "count": 3
+      "count": 2
     },
     {
       "company": "DeepSeek",
       "count": 2
     },
     {
-      "company": "Qwen",
+      "company": "Cursor",
       "count": 2
     },
     {
-      "company": "Cursor",
+      "company": "Qwen",
       "count": 1
     },
     {

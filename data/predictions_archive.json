@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-06-09",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Apple Intelligence刷新（Gemini基盤）とLovableのようなvibeコーディングSaaSの話題が続き、『自分でAI自動化を作る』への一般の関心が一段と高まる。同時に『作ったが業務に乗らない』という相談・記事も増える。",
+          "confidence": "高",
+          "evidence": "Apple WWDC26の新ショートカット報道、Lovableの週100万プロジェクト到達、Codex事例の公式公開。",
+          "shisto_implication": "『作れる時代でも、継続運用はプロに頼む』という立ち位置を明確に打ち出すと差別化できる。提案1・2の横展開が追い風を受ける。"
+        },
+        {
+          "prediction": "国内で営業事務・問い合わせ対応・面接などの業務特化AIサービスのリリースがさらに続く。",
+          "confidence": "中",
+          "evidence": "本日だけでアンプトーク（営業）・パソナ（面接）・GMOあおぞら（電話）・セゾン（運用管理基盤）が登場。",
+          "shisto_implication": "大手の業務特化サービスが割高な隙間を、Shistoが小規模事業者向けの軽量版で埋める提案が刺さりやすくなる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "『AI導入の費用対効果』『成果が見えないAI』を問う論調が強まり、大規模導入より“小さく成果を見せる”手法が評価される。",
+          "confidence": "中",
+          "evidence": "『AI浪費 社員1人で月1000万円』『やってる感の落とし穴』の報道。導入熱が一巡し費用対効果を問う段階に入りつつある。",
+          "shisto_implication": "『1業務だけ・削減時間を数字で示す』提案3の型が中期的に追い風。成果の可視化を標準メニューにする価値がある。"
+        },
+        {
+          "prediction": "画像・動画を扱う多モーダルAIの運用コストがさらに下がり、個人向けの動画解析・画像処理サービスが現実的な価格で成立し始める。",
+          "confidence": "中",
+          "evidence": "Gemma 4 12Bのような軽量多モーダルモデルの登場。",
+          "shisto_implication": "big_market_playのフォームコーチや、写真・動画を扱う新規サービスの検証を今のうちに始めておく価値がある。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "OpenAI・Anthropicの上場を契機にAI業界の競争と価格低下が進み、中小・個人がAI自動化を安価に使える環境が一段と整う。代行・伴走サービスの需要は道具の普及と並行して残る。",
+          "confidence": "中",
+          "evidence": "OpenAIのIPO書類提出（Anthropicに続く）、Apple/GoogleのAI料金競争、Gemma等の低コスト化。",
+          "shisto_implication": "ツールが安くなっても『自社業務に落とし込み・継続運用する』需要は消えない。Shistoはツール販売ではなく“業務への定着”を価値の中心に据え続けるべき。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-08",
     "predictions": {
       "short_term": [
