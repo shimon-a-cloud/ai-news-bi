@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-06-11",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Claude Fable 5のガードレール問題についてAnthropicが具体的な修正（制限の透明化・設定オプション追加）を発表する",
+          "confidence": "高",
+          "evidence": "謝罪が既に出ており（The Verge報道）、Microsoftの社内制限・セキュリティ研究者の不満など企業顧客からの圧力が複数同時に報じられている。エンタープライズ売上に直結するため対応は速いはず。",
+          "shisto_implication": "顧客向けに『どのAIをどう設定すれば安全か』を平易に説明できる準備をしておくと、修正発表のタイミングが営業の話題として使える。"
+        },
+        {
+          "prediction": "OpenAIのAI導入事業参入を受け、国内SIer・コンサルが対抗的な中堅企業向けAI導入パッケージを相次ぎ発表する",
+          "confidence": "中",
+          "evidence": "OpenAI導入事業参入・Anthropic日本売り込み・NEC×Anthropic連携と、導入支援の競争が今日だけで複数報じられた。国内勢は中堅企業向けで差別化するしかない。",
+          "shisto_implication": "競争は大企業〜中堅に集中し、従業員数十名以下の空白はむしろ広がる。Shistoの価格帯・対象は変えずに維持するのが正解。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "エージェントコマース（AIによる購入代行）の国内対応が始まり、EC事業者向けの『AI対応』サービス市場が立ち上がる",
+          "confidence": "中",
+          "evidence": "OpenAI×Visaの決済基盤提携、DoorDashのAI注文開始。決済インフラが整った後はEC側の対応需要が時間差で発生するのがSEO市場の歴史と相似。",
+          "shisto_implication": "大型市場提案（EC診断SaaS）の仕込み時期。市場が騒がしくなる前にMVPと実例（江田畜産・KFJ）を持っておくと先行者になれる。"
+        },
+        {
+          "prediction": "『生成AI効果実感9%』への危機感から、中小企業向けの実務密着型AI支援（研修ではなく業務への作り込み）への公的補助・支援策が拡充される",
+          "confidence": "中",
+          "evidence": "日本9% vs 米英3割超のギャップが大手紙で報じられ、北海道27%など地方の遅れも定量化された。政策対応が入りやすい構図。",
+          "shisto_implication": "IT導入補助金等の対象になればShistoの提案の価格障壁が下がる。補助金スキームの最新情報は四半期ごとに確認する価値がある。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "コーディングAIエージェントはOSS（MiMo Code等）の追い上げでコモディティ化し、差別化軸は『モデル』から『業務への組み込み力・運用設計』に完全に移る",
+          "confidence": "高",
+          "evidence": "XiaomiのMiMo Code OSS公開とClaude Codeへのブラインドテスト勝利主張、Niteshiftの『Big AIロックイン回避』を掲げた起業、OpenAIのOna買収。ツール自体の優位は短命化している。",
+          "shisto_implication": "Shistoの価値の置き場所は『どのツールを使えるか』ではなく『業務をパイプライン化して成果を数字で出した実績の蓄積』。事例の数と数字（削減時間・受注率）を資産として貯める方針を継続すべき。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-10",
     "predictions": {
       "short_term": [
