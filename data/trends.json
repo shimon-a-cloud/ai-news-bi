@@ -1,14 +1,6 @@
 {
-  "updated": "2026-06-13T10:51:46.074879+09:00",
+  "updated": "2026-06-15T15:51:25.904414+09:00",
   "daily_counts": [
-    {
-      "date": "2026-05-14",
-      "count": 374
-    },
-    {
-      "date": "2026-05-15",
-      "count": 418
-    },
     {
       "date": "2026-05-16",
       "count": 18
@@ -119,25 +111,33 @@
     },
     {
       "date": "2026-06-12",
-      "count": 351
+      "count": 353
     },
     {
       "date": "2026-06-13",
-      "count": 31
+      "count": 57
+    },
+    {
+      "date": "2026-06-14",
+      "count": 26
+    },
+    {
+      "date": "2026-06-15",
+      "count": 261
     }
   ],
   "category_7d": [
     {
       "category": "投資・市場動向",
-      "count": 167
+      "count": 156
     },
     {
       "category": "AI×ビジネス活用",
-      "count": 160
+      "count": 154
     },
     {
       "category": "製品・サービス",
-      "count": 111
+      "count": 107
     },
     {
       "category": "規制・法律・倫理",
@@ -145,71 +145,71 @@
     },
     {
       "category": "AIエージェント・開発",
-      "count": 67
+      "count": 68
     },
     {
       "category": "新モデル・リリース",
-      "count": 37
+      "count": 36
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 36
+      "count": 34
     }
   ],
   "category_30d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 525
+      "count": 513
     },
     {
       "category": "投資・市場動向",
-      "count": 452
+      "count": 433
     },
     {
       "category": "製品・サービス",
-      "count": 448
+      "count": 415
     },
     {
       "category": "規制・法律・倫理",
-      "count": 346
+      "count": 327
     },
     {
       "category": "AIエージェント・開発",
-      "count": 256
+      "count": 245
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 139
+      "count": 133
     },
     {
       "category": "新モデル・リリース",
-      "count": 124
+      "count": 118
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1047
+      "count": 1234
     },
     {
       "source": "日本経済新聞",
-      "count": 220
-    },
-    {
-      "source": "TechCrunch AI",
-      "count": 65
+      "count": 241
     },
     {
       "source": "日経xTECH",
-      "count": 65
+      "count": 76
     },
     {
       "source": "GIGAZINE",
-      "count": 63
+      "count": 73
+    },
+    {
+      "source": "TechCrunch AI",
+      "count": 66
     },
     {
       "source": "ITmedia AI+",
-      "count": 55
+      "count": 62
     },
     {
       "source": "The Verge AI",
@@ -217,23 +217,27 @@
     },
     {
       "source": "日経クロステック",
-      "count": 30
+      "count": 36
     },
     {
       "source": "Simon Willison",
-      "count": 20
-    },
-    {
-      "source": "Wired JP",
-      "count": 18
+      "count": 22
     },
     {
       "source": "日経ビジネス電子版",
-      "count": 17
+      "count": 21
+    },
+    {
+      "source": "Wired JP",
+      "count": 21
     },
     {
       "source": "Impress Watch",
-      "count": 17
+      "count": 20
+    },
+    {
+      "source": "日経クロストレンド",
+      "count": 16
     },
     {
       "source": "AWS AI Blog",
@@ -241,29 +245,25 @@
     },
     {
       "source": "OpenAI",
-      "count": 14
-    },
-    {
-      "source": "BRIDGE",
-      "count": 13
+      "count": 15
     }
   ],
   "ai_company_7d": [
     {
       "company": "Claude",
-      "count": 77
+      "count": 81
     },
     {
       "company": "ChatGPT / GPT",
-      "count": 62
+      "count": 59
     },
     {
       "company": "Amazon Bedrock",
-      "count": 25
+      "count": 26
     },
     {
       "company": "Gemini",
-      "count": 24
+      "count": 23
     },
     {
       "company": "Copilot",
@@ -275,7 +275,7 @@
     },
     {
       "company": "Hugging Face",
-      "count": 9
+      "count": 7
     },
     {
       "company": "Grok",
@@ -296,6 +296,13 @@
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-06-12",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 2,
+      "total": 6
+    },
     {
       "date": "2026-06-11",
       "short_term": 2,
