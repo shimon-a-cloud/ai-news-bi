@@ -1,5 +1,40 @@
 [
   {
+    "date": "2026-06-17",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Microsoft Coworkの従量課金・低価格化に追随する形で、国内SaaSも『エージェント機能の従量課金』を相次いで打ち出す。",
+          "confidence": "中",
+          "evidence": "Microsoft Coworkの従量課金GA、Copilot CoworkのClaude Cowork比30〜40%安価、DeepSeekベースモデルの採用検討報道。",
+          "shisto_implication": "中小は従量課金でも『どう設定し業務に載せるか』が分からず止まる。Shistoは導入代行・伴走で入り込む余地が残る。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIコーディング基盤の寡占化（SpaceX/Cursor、OpenAI/Codex）が進む一方、機密・コストを理由にオープン/ローカルモデルを併用する二極化が定着する。",
+          "confidence": "中",
+          "evidence": "SpaceXのCursor買収、GLM-5.2の登場、ローカルモデルでClaude/GPTを置き換える事例の増加。",
+          "shisto_implication": "機密を外に出せない中小向けに『ローカル/オープンモデル＋Claude商用』のハイブリッド構成を提案でき、大手依存リスクへの答えとして差別化になる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "『AIを前面に出さない』マーケティングが主流化し、AIは成果（手間削減・売上増）として裏方に組み込まれる売り方が標準になる。",
+          "confidence": "中",
+          "evidence": "米消費者の60%がブランドのAI訴求を嫌う調査、ドイツでのGoogle AI概要への責任認定。",
+          "shisto_implication": "Shistoの提案・営業文言を『AI導入』ではなく『業務が楽になる・売上が増える』という成果ベースに寄せたほうが刺さる。"
+        },
+        {
+          "prediction": "地方・小規模の『マイクロSIer』が増え、AI受託の価格競争が始まる前の先行者利益の窓が残っている。",
+          "confidence": "低",
+          "evidence": "秋田Takamituの生成AIマイクロSIer初案件受注、日立500人AIリーダーのような現場主導のAI内製の広がり。",
+          "shisto_implication": "リーチできる相手（兄3社・バスケnetwork）を持つうちに事例を早く積み、価格が崩れる前に立ち位置を固めるべき。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-16",
     "predictions": {
       "short_term": [
