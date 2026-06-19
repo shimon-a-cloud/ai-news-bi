@@ -1,10 +1,6 @@
 {
-  "updated": "2026-06-18T09:25:59.856848+09:00",
+  "updated": "2026-06-19T09:39:28.246322+09:00",
   "daily_counts": [
-    {
-      "date": "2026-05-19",
-      "count": 755
-    },
     {
       "date": "2026-05-20",
       "count": 452
@@ -115,151 +111,155 @@
     },
     {
       "date": "2026-06-16",
-      "count": 636
+      "count": 638
     },
     {
       "date": "2026-06-17",
-      "count": 372
+      "count": 373
     },
     {
       "date": "2026-06-18",
-      "count": 55
+      "count": 322
+    },
+    {
+      "date": "2026-06-19",
+      "count": 80
     }
   ],
   "category_7d": [
     {
       "category": "投資・市場動向",
-      "count": 153
-    },
-    {
-      "category": "AI×ビジネス活用",
       "count": 144
     },
     {
-      "category": "規制・法律・倫理",
-      "count": 112
+      "category": "AI×ビジネス活用",
+      "count": 134
     },
     {
       "category": "製品・サービス",
-      "count": 100
+      "count": 113
+    },
+    {
+      "category": "規制・法律・倫理",
+      "count": 99
     },
     {
       "category": "AIエージェント・開発",
-      "count": 57
+      "count": 51
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 38
+      "count": 46
     },
     {
       "category": "新モデル・リリース",
-      "count": 19
+      "count": 17
     }
   ],
   "category_30d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 593
+      "count": 602
     },
     {
       "category": "投資・市場動向",
-      "count": 510
+      "count": 529
     },
     {
       "category": "製品・サービス",
-      "count": 456
+      "count": 475
     },
     {
       "category": "規制・法律・倫理",
-      "count": 370
+      "count": 375
     },
     {
       "category": "AIエージェント・開発",
-      "count": 271
+      "count": 275
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 157
+      "count": 167
     },
     {
       "category": "新モデル・リリース",
-      "count": 127
+      "count": 129
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1440
+      "count": 1399
     },
     {
       "source": "日本経済新聞",
-      "count": 225
+      "count": 223
     },
     {
       "source": "GIGAZINE",
-      "count": 73
+      "count": 72
     },
     {
       "source": "TechCrunch AI",
-      "count": 68
+      "count": 71
     },
     {
       "source": "日経xTECH",
-      "count": 61
+      "count": 63
     },
     {
       "source": "ITmedia AI+",
-      "count": 54
+      "count": 53
     },
     {
       "source": "The Verge AI",
-      "count": 36
-    },
-    {
-      "source": "日経クロステック",
-      "count": 27
-    },
-    {
-      "source": "Simon Willison",
-      "count": 26
+      "count": 33
     },
     {
       "source": "Impress Watch",
-      "count": 25
+      "count": 30
     },
     {
-      "source": "日経ビジネス電子版",
-      "count": 22
+      "source": "日経クロステック",
+      "count": 26
+    },
+    {
+      "source": "Simon Willison",
+      "count": 25
     },
     {
       "source": "日経クロストレンド",
       "count": 21
     },
     {
+      "source": "日経ビジネス電子版",
+      "count": 20
+    },
+    {
       "source": "AWS AI Blog",
-      "count": 17
+      "count": 16
     },
     {
       "source": "Wired JP",
-      "count": 14
+      "count": 15
     },
     {
-      "source": "OpenAI",
-      "count": 11
+      "source": "BRIDGE",
+      "count": 12
     }
   ],
   "ai_company_7d": [
     {
       "company": "Claude",
-      "count": 80
+      "count": 71
     },
     {
       "company": "ChatGPT / GPT",
-      "count": 58
+      "count": 57
     },
     {
       "company": "Amazon Bedrock",
-      "count": 33
+      "count": 32
     },
     {
       "company": "Gemini",
@@ -267,15 +267,19 @@
     },
     {
       "company": "Copilot",
-      "count": 18
+      "count": 16
     },
     {
       "company": "LLaMA",
-      "count": 10
+      "count": 13
     },
     {
       "company": "Cursor",
       "count": 8
+    },
+    {
+      "company": "Hugging Face",
+      "count": 6
     },
     {
       "company": "Grok",
@@ -286,12 +290,8 @@
       "count": 4
     },
     {
-      "company": "Hugging Face",
-      "count": 4
-    },
-    {
       "company": "DeepSeek",
-      "count": 1
+      "count": 2
     },
     {
       "company": "Dify",
@@ -300,6 +300,13 @@
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-06-17",
+      "short_term": 1,
+      "mid_term": 1,
+      "long_term": 2,
+      "total": 4
+    },
     {
       "date": "2026-06-16",
       "short_term": 1,
