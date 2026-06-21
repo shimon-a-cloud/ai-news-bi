@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-20T17:21:13.417266+09:00",
+  "updated": "2026-06-21T10:29:07.504833+09:00",
   "categories": [
     {
       "key": "ai_general",
@@ -18,8 +18,9 @@
       "label": "Gemini"
     }
   ],
-  "latest_date": "2026-06-20",
+  "latest_date": "2026-06-21",
   "dates": [
+    "2026-06-21",
     "2026-06-20",
     "2026-06-19",
     "2026-06-18",
@@ -32,6 +33,689 @@
     "2026-06-09"
   ],
   "rankings": {
+    "2026-06-21": {
+      "ai_general": {
+        "jp": [
+          {
+            "rank": 1,
+            "title": "【チャットGPT】犯行中AIに“示談金”相談...女子高校生ら5人逮捕　「生成AI」どう向き合うべき？街の人の「使い方」も様々『news LOG』",
+            "url": "https://www.youtube.com/watch?v=amqZAHn3z7g",
+            "channel": "日テレNEWS",
+            "views": 192052,
+            "published_at": "2026-06-14T08:32:42Z",
+            "velocity": 28639.9
+          },
+          {
+            "rank": 2,
+            "title": "【中島聡】AIは〇〇が大チャンス / ヤバすぎるAIの使い方 / AI企業に勝つ方法 / AI教育の極意",
+            "url": "https://www.youtube.com/watch?v=O3SsjzNUSpA",
+            "channel": "ビジネス＋ITチャンネル",
+            "views": 36978,
+            "published_at": "2026-06-19T09:00:27Z",
+            "velocity": 21926.3
+          },
+          {
+            "rank": 3,
+            "title": "【トップ研究者が予測する「AI大格差」】G7でAIを議論／先進国で60％の雇用に影響／ゴールドマンの試算／過去の技術革新と雇用／AGI後の3つのシナリオ／NYダウが100万ドルを超える？",
+            "url": "https://www.youtube.com/watch?v=NoLEkVu2rqE",
+            "channel": "PIVOT 公式チャンネル",
+            "views": 86918,
+            "published_at": "2026-06-15T22:00:08Z",
+            "velocity": 16893.6
+          },
+          {
+            "rank": 4,
+            "title": "【あなたの努力は“24時間働くAI”に代替される】深津貴之「AIと戦うな“上司”になれ」／無限に働く部下をどう使いこなす／Geminiの“父”も指摘「AI時代は“学び方”を学べ」【1on1 Tech】",
+            "url": "https://www.youtube.com/watch?v=SBXNuqWLI9E",
+            "channel": "TBS CROSS DIG with Bloomberg",
+            "views": 33659,
+            "published_at": "2026-06-18T22:00:27Z",
+            "velocity": 15693.3
+          },
+          {
+            "rank": 5,
+            "title": "生成AIで社会に貢献！現役SE社員に聞く、日立システムズの魅力",
+            "url": "https://www.youtube.com/watch?v=vgYaZAwvVYI",
+            "channel": "NewsTV",
+            "views": 91545,
+            "published_at": "2026-06-15T01:05:59Z",
+            "velocity": 15217.0
+          },
+          {
+            "rank": 6,
+            "title": "【速報解説「Claude Fable5」停止  今後の5つの影響】国籍で規制／Anthropicの反論／危険な前例／ソブリンAIの加速／AIブロック経済へ／国家による監視リスク／中国勢が得をする皮肉",
+            "url": "https://www.youtube.com/watch?v=qymxLAL7PAk",
+            "channel": "PIVOT 公式チャンネル",
+            "views": 86835,
+            "published_at": "2026-06-14T22:00:27Z",
+            "velocity": 14131.5
+          },
+          {
+            "rank": 7,
+            "title": "ガチで怒ってます。AIがマズい方向に進んでる。",
+            "url": "https://www.youtube.com/watch?v=pexvXmUqbvg",
+            "channel": "AI仙人 【AI歴10年・ガチADHD男】",
+            "views": 75449,
+            "published_at": "2026-06-15T11:35:23Z",
+            "velocity": 13524.0
+          },
+          {
+            "rank": 8,
+            "title": "【超便利‼️】Google最強AI「NotebookLM」大型アプデ！チャットから様々なアウトプットデータを生成可能に！",
+            "url": "https://www.youtube.com/watch?v=A5MoHKnP-P8",
+            "channel": "mikimiki web スクール",
+            "views": 58551,
+            "published_at": "2026-06-16T10:23:55Z",
+            "velocity": 12650.1
+          },
+          {
+            "rank": 9,
+            "title": "【大型アプデ‼️】「NotebookLM」→「Google Drive」に統合!?最近AI機能が凄い！徹底解説（プロジェクト機能）",
+            "url": "https://www.youtube.com/watch?v=ER9cfps471Q",
+            "channel": "mikimiki web スクール",
+            "views": 23652,
+            "published_at": "2026-06-18T10:57:29Z",
+            "velocity": 9078.8
+          },
+          {
+            "rank": 10,
+            "title": "【米中AI戦争】習近平がNVIDIAを拒否した理由。トランプが恐れる中国の\"切り札\"【米中首脳会談】",
+            "url": "https://www.youtube.com/watch?v=dEkhynHLLbE",
+            "channel": "元予備校講師の宇山チャンネル",
+            "views": 31459,
+            "published_at": "2026-06-17T10:00:35Z",
+            "velocity": 8631.4
+          }
+        ],
+        "world": [
+          {
+            "rank": 1,
+            "title": "New #1 open-source AI model is here!",
+            "url": "https://www.youtube.com/watch?v=6d__WOpZswY",
+            "channel": "AI Search",
+            "views": 369909,
+            "published_at": "2026-06-17T03:26:33Z",
+            "velocity": 94404.2
+          },
+          {
+            "rank": 2,
+            "title": "Indie Dev Reconsiders Fortnite Deal Over AI - Inside Games Roundup",
+            "url": "https://www.youtube.com/watch?v=qmCzpgV_2mM",
+            "channel": "Inside Games",
+            "views": 25592,
+            "published_at": "2026-06-20T00:49:35Z",
+            "velocity": 24910.5
+          },
+          {
+            "rank": 3,
+            "title": "Popular Artist LAUGHS About Scamming Clients With AI",
+            "url": "https://www.youtube.com/watch?v=ryuegbg0Dj8",
+            "channel": "kat 'n chat",
+            "views": 28339,
+            "published_at": "2026-06-18T17:00:37Z",
+            "velocity": 12043.6
+          },
+          {
+            "rank": 4,
+            "title": "The Complete AI Security Course In 8 Hours-AI Guardrails, LLM Evals & Memory And AgentOps",
+            "url": "https://www.youtube.com/watch?v=rQE3w8Qjx98",
+            "channel": "Krish Naik",
+            "views": 32199,
+            "published_at": "2026-06-18T06:39:54Z",
+            "velocity": 11565.4
+          },
+          {
+            "rank": 5,
+            "title": "Top 6 Free AI Courses Every Student Must Learn in 2026 | AI Career Roadmap",
+            "url": "https://www.youtube.com/watch?v=8HsCT5oQQMI",
+            "channel": "Gate Smashers",
+            "views": 29026,
+            "published_at": "2026-06-17T12:47:13Z",
+            "velocity": 8225.0
+          },
+          {
+            "rank": 6,
+            "title": "ChatGPT Finally Works While You Sleep & More AI News You Can Use",
+            "url": "https://www.youtube.com/watch?v=ow51ck2Rl44",
+            "channel": "The AI Advantage",
+            "views": 9530,
+            "published_at": "2026-06-19T17:59:17Z",
+            "velocity": 7262.1
+          },
+          {
+            "rank": 7,
+            "title": "Skills you need to get 45 LPA as an AI Engineer in 2026 (Beginner to Advance Level)",
+            "url": "https://www.youtube.com/watch?v=fIwozW8UxlY",
+            "channel": "Code and Debug",
+            "views": 36928,
+            "published_at": "2026-06-15T14:00:25Z",
+            "velocity": 6740.9
+          },
+          {
+            "rank": 8,
+            "title": "Master LLM Evaluations: The Step-by-Step Playlist for 2026 | New Playlist | CampusX",
+            "url": "https://www.youtube.com/watch?v=6W92_t9FveA",
+            "channel": "CampusX",
+            "views": 29249,
+            "published_at": "2026-06-16T12:30:06Z",
+            "velocity": 6441.2
+          },
+          {
+            "rank": 9,
+            "title": "“小学校で生成AI原則禁止”ノルウェー首相「重要なのは読み書き・算数」(2026年6月20日)",
+            "url": "https://www.youtube.com/watch?v=LsomotmNlJc",
+            "channel": "ANNnewsCH",
+            "views": 4884,
+            "published_at": "2026-06-20T03:37:00Z",
+            "velocity": 5360.6
+          },
+          {
+            "rank": 10,
+            "title": "Where AI Is Heading In 2026- Generative AI, Agentic AI, LLM Gateways,Guardrails,Evals, LLM Caching",
+            "url": "https://www.youtube.com/watch?v=sxArcCI9YsM",
+            "channel": "Krish Naik",
+            "views": 28465,
+            "published_at": "2026-06-15T05:55:01Z",
+            "velocity": 4894.9
+          }
+        ]
+      },
+      "chatgpt": {
+        "jp": [
+          {
+            "rank": 1,
+            "title": "【チャットGPT】犯行中AIに“示談金”相談...女子高校生ら5人逮捕　「生成AI」どう向き合うべき？街の人の「使い方」も様々『news LOG』",
+            "url": "https://www.youtube.com/watch?v=amqZAHn3z7g",
+            "channel": "日テレNEWS",
+            "views": 192052,
+            "published_at": "2026-06-14T08:32:42Z",
+            "velocity": 28639.8
+          },
+          {
+            "rank": 2,
+            "title": "ChatGPTの履歴を残さない！一時チャットの使い方と注意点",
+            "url": "https://www.youtube.com/watch?v=6aPwaqLMuuc",
+            "channel": "スマキン【Smakin】",
+            "views": 2528,
+            "published_at": "2026-06-20T11:36:50Z",
+            "velocity": 4374.5
+          },
+          {
+            "rank": 3,
+            "title": "【ChatGPT感覚で開発】OpenAIのAIエージェント「Codex」を最速で使いこなす実践術！ アプリ・Webサイト・動画・資料まで一気に作る方法！",
+            "url": "https://www.youtube.com/watch?v=j3JtSO4yl94",
+            "channel": "AI大学【AI&ChatGPT最新情報】",
+            "views": 1836,
+            "published_at": "2026-06-20T09:07:05Z",
+            "velocity": 2692.5
+          },
+          {
+            "rank": 4,
+            "title": "9割が損してる！ChatGPT・Gemini・Claudeを10倍使いこなす秘密のコマンド21選",
+            "url": "https://www.youtube.com/watch?v=I79ZNfhkZDE",
+            "channel": "ウェブマニア",
+            "views": 15962,
+            "published_at": "2026-06-14T08:30:09Z",
+            "velocity": 2379.7
+          },
+          {
+            "rank": 5,
+            "title": "【ChatGPT】資料作成をAIでやる方法、全手順見せます",
+            "url": "https://www.youtube.com/watch?v=80Vk9QVE7JE",
+            "channel": "ユースフル / 実務変革のプロ",
+            "views": 14884,
+            "published_at": "2026-06-14T10:00:34Z",
+            "velocity": 2240.0
+          },
+          {
+            "rank": 6,
+            "title": "ChatGPT×Filmoraのショート動画の作り方・使い方・稼ぎ方を副業初心者向けに徹底解説",
+            "url": "https://www.youtube.com/watch?v=XMh5-0gc3kk",
+            "channel": "会社に依存しないお金の増やし方-光成",
+            "views": 4545,
+            "published_at": "2026-06-15T12:32:19Z",
+            "velocity": 820.5
+          },
+          {
+            "rank": 7,
+            "title": "【超入門】ChatGPT「Codex」の使い方と活用方法３選！初心者向けに分かりやすく解説！",
+            "url": "https://www.youtube.com/watch?v=iIpvlLOUcSQ",
+            "channel": "ナオヤ@AIヲタク",
+            "views": 2433,
+            "published_at": "2026-06-16T11:00:25Z",
+            "velocity": 528.5
+          },
+          {
+            "rank": 8,
+            "title": "【2026年最新】ChatGPTで自動化！画像大量とスライド資料と台本を一回の指示で作る方法！AIスライド作成が革命的に変わる！チャットGPT 資料作成ならこのAIで決まり！高クオリティなAIスライド",
+            "url": "https://www.youtube.com/watch?v=qh04Mxm5mBE",
+            "channel": "橋本佳代 生成AIクリエイター",
+            "views": 2620,
+            "published_at": "2026-06-15T21:15:28Z",
+            "velocity": 506.2
+          },
+          {
+            "rank": 9,
+            "title": "【ChatGPT使ってる人へ】Claudeに乗り換える全手順｜記憶は2分で引き継げる",
+            "url": "https://www.youtube.com/watch?v=l-2KscqOQhk",
+            "channel": "【りょう】のClaude仕事術ラボ",
+            "views": 1655,
+            "published_at": "2026-06-17T12:09:45Z",
+            "velocity": 465.5
+          },
+          {
+            "rank": 10,
+            "title": "【初心者向け】2026年最強AI「Claude」の使い方を分かりやすく解説します！",
+            "url": "https://www.youtube.com/watch?v=ULykvQwUVRQ",
+            "channel": "あいまる / iPhone×AIで毎日を効率化",
+            "views": 2473,
+            "published_at": "2026-06-14T09:00:10Z",
+            "velocity": 369.8
+          }
+        ],
+        "world": [
+          {
+            "rank": 1,
+            "title": "Ed Zitron explains OpenAI’s leaked financials",
+            "url": "https://www.youtube.com/watch?v=UnLRb-sU-Is",
+            "channel": "The Tech Report",
+            "views": 211504,
+            "published_at": "2026-06-19T18:20:58Z",
+            "velocity": 163039.8
+          },
+          {
+            "rank": 2,
+            "title": "🚨 G7 SUMMIT Sensational Updates Explained | Modi-Trump | LEAKED Secrets | OpenAI WARNING | VR Raja",
+            "url": "https://www.youtube.com/watch?v=zTtEBkkHelo",
+            "channel": "V R RAJA",
+            "views": 247231,
+            "published_at": "2026-06-18T13:24:05Z",
+            "velocity": 98757.2
+          },
+          {
+            "rank": 3,
+            "title": "ChatGPT vs Gemini Make Shaders From Scratch",
+            "url": "https://www.youtube.com/watch?v=lAmYl9lWPWs",
+            "channel": "The Commands Man",
+            "views": 464287,
+            "published_at": "2026-06-15T15:48:24Z",
+            "velocity": 85928.1
+          },
+          {
+            "rank": 4,
+            "title": "Auron se pelea con el Chatgpt 🤣 #auron #parati #fyp #meme #humor #chatgpt",
+            "url": "https://www.youtube.com/watch?v=7JdUjaT7h_Y",
+            "channel": "DAVID MGO",
+            "views": 335432,
+            "published_at": "2026-06-15T17:33:20Z",
+            "velocity": 62928.9
+          },
+          {
+            "rank": 5,
+            "title": "Spoken English in 30 Days with ChatGPT | Beginner-Friendly Challenge with Live Demo!! ",
+            "url": "https://www.youtube.com/watch?v=3mxbPrtzbog",
+            "channel": " ENGLISH WITH SHANTHA",
+            "views": 192327,
+            "published_at": "2026-06-15T06:30:00Z",
+            "velocity": 33211.5
+          },
+          {
+            "rank": 6,
+            "title": "OpenAI's 2025 financials LEAKED",
+            "url": "https://www.youtube.com/watch?v=dicToifZBxw",
+            "channel": "Mo Bitar",
+            "views": 136986,
+            "published_at": "2026-06-16T14:07:22Z",
+            "velocity": 30622.6
+          },
+          {
+            "rank": 7,
+            "title": "Fable 5 COMING BACK! Deepseek v4.1, GPT-5.6 Leaks, Fusion API, & Kimi K2.7 Code High Speed! AI NEWS!",
+            "url": "https://www.youtube.com/watch?v=T-EScj1GEKY",
+            "channel": "WorldofAI",
+            "views": 70206,
+            "published_at": "2026-06-16T06:30:08Z",
+            "velocity": 14654.1
+          },
+          {
+            "rank": 8,
+            "title": "OpenAI doesn’t know where the money is in AI | Eli the Computer Guy",
+            "url": "https://www.youtube.com/watch?v=OREiV3ijsR4",
+            "channel": "The Tech Report",
+            "views": 66261,
+            "published_at": "2026-06-15T17:00:06Z",
+            "velocity": 12377.3
+          }
+        ]
+      },
+      "claude": {
+        "jp": [
+          {
+            "rank": 1,
+            "title": "【神回！】『Claude Code』完全入門マニュアル！【初心者でも絶対に理解できる！ 】",
+            "url": "https://www.youtube.com/watch?v=DkClEbyXyq4",
+            "channel": "パソコン博士TAIKI",
+            "views": 479725,
+            "published_at": "2026-06-12T10:00:03Z",
+            "velocity": 55490.7
+          },
+          {
+            "rank": 2,
+            "title": "【新型Claude「Fable 5」はポケモン攻略】「Googleの聖域が危ない」今井翔太／ミュトスの能力を過剰制限“融通が利かない”／アンソロピックが計算資源不足→「課金地獄」に【AI QUEST】",
+            "url": "https://www.youtube.com/watch?v=Fv8OC7skxT0",
+            "channel": "TBS CROSS DIG with Bloomberg",
+            "views": 259668,
+            "published_at": "2026-06-10T09:30:09Z",
+            "velocity": 24345.6
+          },
+          {
+            "rank": 3,
+            "title": "【ついに“制御不能AI”が登場】世界が震えたClaude Mythos(クロードミュトス)とは何か？（能力が高すぎて公開延期に！）",
+            "url": "https://www.youtube.com/watch?v=L0m6NJ2TAuQ",
+            "channel": "パソコン博士TAIKI",
+            "views": 606442,
+            "published_at": "2026-05-22T10:00:01Z",
+            "velocity": 20456.7
+          },
+          {
+            "rank": 4,
+            "title": "【速報解説】AnthropicのMythos級モデル「Claude Fable 5」をゆる解説 / Mythos 5と何が違う？ / 注目の価格設定 / 性能が弱体化されているのはなぜ？",
+            "url": "https://www.youtube.com/watch?v=SNY8gcPPws4",
+            "channel": "安野貴博の自由研究",
+            "views": 158907,
+            "published_at": "2026-06-11T07:22:21Z",
+            "velocity": 16290.4
+          },
+          {
+            "rank": 5,
+            "title": "【シンギュラリティまで“秒読み”】Claudeが自己進化のループに突入へ「ボトルネックは人間の存在」今井翔太／Opus性能低下の真相「アンソロピックはミュトス級AIの調整に苦戦中」【AI QUEST】",
+            "url": "https://www.youtube.com/watch?v=PAF3tas43Rs",
+            "channel": "TBS CROSS DIG with Bloomberg",
+            "views": 246503,
+            "published_at": "2026-06-05T22:00:01Z",
+            "velocity": 16276.0
+          },
+          {
+            "rank": 6,
+            "title": "【知識不要】Claude Codeはすべての人が使うべきAIです",
+            "url": "https://www.youtube.com/watch?v=ahzwOeo01hE",
+            "channel": "本気AI(MAJI AI)",
+            "views": 177166,
+            "published_at": "2026-06-04T10:00:18Z",
+            "velocity": 10643.8
+          }
+        ],
+        "world": [
+          {
+            "rank": 1,
+            "title": "Inside Anthropic, the $965 Billion AI Juggernaut | The Circuit",
+            "url": "https://www.youtube.com/watch?v=v1wZwxY3CMg",
+            "channel": "Bloomberg Originals",
+            "views": 1853539,
+            "published_at": "2026-06-10T12:00:20Z",
+            "velocity": 175497.5
+          },
+          {
+            "rank": 2,
+            "title": "Anthropic begged the world to stop AI… then shipped this",
+            "url": "https://www.youtube.com/watch?v=1PBRhm5ZnjU",
+            "channel": "Fireship",
+            "views": 806324,
+            "published_at": "2026-06-11T17:17:48Z",
+            "velocity": 86319.5
+          },
+          {
+            "rank": 3,
+            "title": "Anthropic is starting to panic…",
+            "url": "https://www.youtube.com/watch?v=0pgCBV8CTZY",
+            "channel": "Fireship",
+            "views": 974126,
+            "published_at": "2026-06-09T17:32:30Z",
+            "velocity": 85970.4
+          },
+          {
+            "rank": 4,
+            "title": "Introducing Claude Fable 5",
+            "url": "https://www.youtube.com/watch?v=Y9Wz2PV404E",
+            "channel": "Anthropic",
+            "views": 705504,
+            "published_at": "2026-06-09T17:00:05Z",
+            "velocity": 62140.0
+          },
+          {
+            "rank": 5,
+            "title": "Claude Fable 5 UI/UX One-Shots - 5 Tests",
+            "url": "https://www.youtube.com/watch?v=tSg3FAdWvzI",
+            "channel": "DesignCourse",
+            "views": 622002,
+            "published_at": "2026-06-10T14:51:01Z",
+            "velocity": 59561.1
+          },
+          {
+            "rank": 6,
+            "title": "Claude Code + YouTube = $62,000/Month",
+            "url": "https://www.youtube.com/watch?v=WODnqHPLR38",
+            "channel": "Danny Why",
+            "views": 1045747,
+            "published_at": "2026-05-30T12:25:00Z",
+            "velocity": 48538.9
+          },
+          {
+            "rank": 7,
+            "title": "1000+ hours of Learning Claude in 15 Minutes (Beginner to Pro)",
+            "url": "https://www.youtube.com/watch?v=sL5hPovH1vU",
+            "channel": "Dan Martell",
+            "views": 212730,
+            "published_at": "2026-06-15T13:00:05Z",
+            "velocity": 38537.1
+          },
+          {
+            "rank": 8,
+            "title": "🚨🇺🇸 Anthropic vs US DEFENSE | Rise of Claude AI & Warning About Super AI | VR Raja Explains",
+            "url": "https://www.youtube.com/watch?v=5y46PThCBjw",
+            "channel": "V R Facts In Telugu",
+            "views": 152501,
+            "published_at": "2026-06-16T15:58:38Z",
+            "velocity": 34689.8
+          },
+          {
+            "rank": 9,
+            "title": "Claude Code (Free Plan) + YouTube = $77,000/Month",
+            "url": "https://www.youtube.com/watch?v=WVT2FCjhDDY",
+            "channel": "zapiwala ai",
+            "views": 307741,
+            "published_at": "2026-06-11T05:48:18Z",
+            "velocity": 31338.3
+          },
+          {
+            "rank": 10,
+            "title": "Why Anthropic's Claude Fable 5 & Mythos 5 Are Now Illegal (+15 AI Updates)",
+            "url": "https://www.youtube.com/watch?v=ACjwmGeDHFc",
+            "channel": "Vaibhav Sisinty",
+            "views": 201804,
+            "published_at": "2026-06-14T05:21:46Z",
+            "velocity": 29510.4
+          }
+        ]
+      },
+      "gemini": {
+        "jp": [
+          {
+            "rank": 1,
+            "title": "【超進化】Geminiが神アップデートで全領域を制圧しました【Google I/O】",
+            "url": "https://www.youtube.com/watch?v=nFuiC7qg5jc",
+            "channel": "ここなのAI大学",
+            "views": 42368,
+            "published_at": "2026-06-18T09:00:32Z",
+            "velocity": 15770.7
+          },
+          {
+            "rank": 2,
+            "title": "【超便利‼️】Google最強AI「NotebookLM」大型アプデ！チャットから様々なアウトプットデータを生成可能に！",
+            "url": "https://www.youtube.com/watch?v=A5MoHKnP-P8",
+            "channel": "mikimiki web スクール",
+            "views": 58501,
+            "published_at": "2026-06-16T10:23:55Z",
+            "velocity": 12639.0
+          },
+          {
+            "rank": 3,
+            "title": "【大型アプデ‼️】「NotebookLM」→「Google Drive」に統合!?最近AI機能が凄い！徹底解説（プロジェクト機能）",
+            "url": "https://www.youtube.com/watch?v=ER9cfps471Q",
+            "channel": "mikimiki web スクール",
+            "views": 23652,
+            "published_at": "2026-06-18T10:57:29Z",
+            "velocity": 9078.5
+          },
+          {
+            "rank": 4,
+            "title": "【 King ＆ Prince 出演 CM 撮影の舞台裏】お二人に Gemini でやりたいこと聞いてみた",
+            "url": "https://www.youtube.com/watch?v=AvfWqAY4eLQ",
+            "channel": "Google Japan",
+            "views": 21535,
+            "published_at": "2026-06-18T08:00:22Z",
+            "velocity": 7893.2
+          },
+          {
+            "rank": 5,
+            "title": "【これ1本で全て分かる】AI搭載で進化したGoogleマップ、10年ぶり大型アップデート全機能解説",
+            "url": "https://www.youtube.com/watch?v=5Qcc4fxKqRo",
+            "channel": "あいまる / iPhone×AIで毎日を効率化",
+            "views": 31286,
+            "published_at": "2026-06-16T09:00:28Z",
+            "velocity": 6675.7
+          },
+          {
+            "rank": 6,
+            "title": "【朗報】ブラウザ作業がAIで激変。Gemini in Chromeで生産性が爆上がりする3つの理由。",
+            "url": "https://www.youtube.com/watch?v=Srpmw6QnZuU",
+            "channel": "cooker8 by 明治クッカー",
+            "views": 16249,
+            "published_at": "2026-06-17T11:00:19Z",
+            "velocity": 4509.5
+          },
+          {
+            "rank": 7,
+            "title": "【最新版】Gemini 使い方完全解説！基本から応用までこれ１本で網羅",
+            "url": "https://www.youtube.com/watch?v=VmTGSZa8BSM",
+            "channel": "スマホの知恵袋",
+            "views": 9012,
+            "published_at": "2026-06-18T10:15:00Z",
+            "velocity": 3420.4
+          },
+          {
+            "rank": 8,
+            "title": "【文書革命始まる】勝手に過去ファイルを読んで書き換えるGoogleドキュメントがすごい！【Gemini/Google Workspace】",
+            "url": "https://www.youtube.com/watch?v=hZXPkmrfCXo",
+            "channel": "NI-WORK",
+            "views": 14244,
+            "published_at": "2026-06-16T20:30:01Z",
+            "velocity": 3385.2
+          },
+          {
+            "rank": 9,
+            "title": "【Veo進化】日本語テロップに対応！Google最新動画生成AI『Gemini Omni』",
+            "url": "https://www.youtube.com/watch?v=Mp5k1oPWcgc",
+            "channel": "AIデリバリー",
+            "views": 11869,
+            "published_at": "2026-06-17T09:00:18Z",
+            "velocity": 3219.4
+          }
+        ],
+        "world": [
+          {
+            "rank": 1,
+            "title": "AI agent buys itself a robot and car, does exactly what experts warned",
+            "url": "https://www.youtube.com/watch?v=IPaMKTb5csQ",
+            "channel": "InsideAI",
+            "views": 929259,
+            "published_at": "2026-06-14T16:59:45Z",
+            "velocity": 146254.3
+          },
+          {
+            "rank": 2,
+            "title": "ChatGPT vs Gemini Make Shaders From Scratch",
+            "url": "https://www.youtube.com/watch?v=lAmYl9lWPWs",
+            "channel": "The Commands Man",
+            "views": 464287,
+            "published_at": "2026-06-15T15:48:24Z",
+            "velocity": 85927.1
+          },
+          {
+            "rank": 3,
+            "title": "Google's SECRET 8 AI Tools Just REPLACED Every Paid AI Tool (100% FREE Stack)",
+            "url": "https://www.youtube.com/watch?v=RIPxwxqZhVI",
+            "channel": "Vaibhav Sisinty",
+            "views": 69254,
+            "published_at": "2026-06-19T12:00:07Z",
+            "velocity": 44342.5
+          },
+          {
+            "rank": 4,
+            "title": "Apple's iOS 27 AI is KING - Ultimate AI Battle!",
+            "url": "https://www.youtube.com/watch?v=d5wocIfmNbM",
+            "channel": "Max Tech",
+            "views": 53499,
+            "published_at": "2026-06-18T15:00:35Z",
+            "velocity": 21957.5
+          },
+          {
+            "rank": 5,
+            "title": "RIP Claude Fable, open-source AI unleashed, full body avatars, new Google models, new TTS: AI NEWS",
+            "url": "https://www.youtube.com/watch?v=SxiRANj0xLs",
+            "channel": "AI Search",
+            "views": 123393,
+            "published_at": "2026-06-14T03:29:37Z",
+            "velocity": 17840.9
+          },
+          {
+            "rank": 6,
+            "title": "¡Las NUEVAS Actualizaciones de Google Gemini son UNA LOCURA!",
+            "url": "https://www.youtube.com/watch?v=jqvq1cyhWRU",
+            "channel": "IA Innova",
+            "views": 18729,
+            "published_at": "2026-06-19T19:30:34Z",
+            "velocity": 14995.4
+          },
+          {
+            "rank": 7,
+            "title": "【超便利‼️】Google最強AI「NotebookLM」大型アプデ！チャットから様々なアウトプットデータを生成可能に！",
+            "url": "https://www.youtube.com/watch?v=A5MoHKnP-P8",
+            "channel": "mikimiki web スクール",
+            "views": 58551,
+            "published_at": "2026-06-16T10:23:55Z",
+            "velocity": 12649.8
+          },
+          {
+            "rank": 8,
+            "title": "Google’s AI Bet",
+            "url": "https://www.youtube.com/watch?v=zdp7IAwV064",
+            "channel": "Bloomberg Television",
+            "views": 61885,
+            "published_at": "2026-06-14T12:00:08Z",
+            "velocity": 9431.1
+          },
+          {
+            "rank": 9,
+            "title": "The New Android 17 Update: Jun 26 Pixel Feature Drop!",
+            "url": "https://www.youtube.com/watch?v=wNiPn9Ki5Xc",
+            "channel": "In Depth Tech Reviews",
+            "views": 37340,
+            "published_at": "2026-06-17T00:04:42Z",
+            "velocity": 9200.2
+          },
+          {
+            "rank": 10,
+            "title": "New Google Gemini Updates are INSANE!",
+            "url": "https://www.youtube.com/watch?v=295OzbPzvCo",
+            "channel": "Julian Goldie SEO",
+            "views": 27577,
+            "published_at": "2026-06-16T21:00:34Z",
+            "velocity": 6587.1
+          }
+        ]
+      }
+    },
     "2026-06-20": {
       "ai_general": {
         "jp": [

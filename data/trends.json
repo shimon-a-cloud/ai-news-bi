@@ -1,10 +1,6 @@
 {
-  "updated": "2026-06-20T17:21:13.369228+09:00",
+  "updated": "2026-06-21T10:29:07.444562+09:00",
   "daily_counts": [
-    {
-      "date": "2026-05-21",
-      "count": 65
-    },
     {
       "date": "2026-05-22",
       "count": 60
@@ -115,41 +111,45 @@
     },
     {
       "date": "2026-06-18",
-      "count": 323
+      "count": 324
     },
     {
       "date": "2026-06-19",
-      "count": 136
+      "count": 138
     },
     {
       "date": "2026-06-20",
-      "count": 262
+      "count": 267
+    },
+    {
+      "date": "2026-06-21",
+      "count": 12
     }
   ],
   "category_7d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 148
+      "count": 158
     },
     {
       "category": "投資・市場動向",
-      "count": 145
+      "count": 152
     },
     {
       "category": "製品・サービス",
-      "count": 120
+      "count": 124
     },
     {
       "category": "規制・法律・倫理",
-      "count": 97
+      "count": 104
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 58
+      "count": 59
     },
     {
       "category": "AIエージェント・開発",
-      "count": 55
+      "count": 56
     },
     {
       "category": "新モデル・リリース",
@@ -159,31 +159,31 @@
   "category_30d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 627
+      "count": 631
     },
     {
       "category": "投資・市場動向",
-      "count": 555
+      "count": 545
     },
     {
       "category": "製品・サービス",
-      "count": 463
+      "count": 452
     },
     {
       "category": "規制・法律・倫理",
-      "count": 380
+      "count": 382
     },
     {
       "category": "AIエージェント・開発",
-      "count": 271
+      "count": 259
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 174
+      "count": 170
     },
     {
       "category": "新モデル・リリース",
-      "count": 121
+      "count": 117
     }
   ],
   "source_stats_7d": [
@@ -193,39 +193,39 @@
     },
     {
       "source": "日本経済新聞",
-      "count": 231
+      "count": 220
     },
     {
       "source": "GIGAZINE",
-      "count": 73
+      "count": 71
     },
     {
       "source": "TechCrunch AI",
-      "count": 72
+      "count": 67
     },
     {
       "source": "ITmedia AI+",
-      "count": 55
+      "count": 51
     },
     {
       "source": "日経xTECH",
-      "count": 52
+      "count": 51
     },
     {
       "source": "Impress Watch",
-      "count": 31
+      "count": 30
     },
     {
       "source": "The Verge AI",
-      "count": 31
-    },
-    {
-      "source": "Simon Willison",
-      "count": 24
+      "count": 26
     },
     {
       "source": "日経クロステック",
       "count": 23
+    },
+    {
+      "source": "Simon Willison",
+      "count": 21
     },
     {
       "source": "日経クロストレンド",
@@ -233,15 +233,15 @@
     },
     {
       "source": "Wired JP",
-      "count": 16
-    },
-    {
-      "source": "日経ビジネス電子版",
       "count": 15
     },
     {
+      "source": "日経ビジネス電子版",
+      "count": 13
+    },
+    {
       "source": "AWS AI Blog",
-      "count": 14
+      "count": 13
     },
     {
       "source": "BRIDGE",
@@ -251,19 +251,19 @@
   "ai_company_7d": [
     {
       "company": "Claude",
-      "count": 66
+      "count": 70
     },
     {
       "company": "ChatGPT / GPT",
-      "count": 64
+      "count": 65
     },
     {
       "company": "Amazon Bedrock",
-      "count": 36
+      "count": 38
     },
     {
       "company": "Gemini",
-      "count": 27
+      "count": 28
     },
     {
       "company": "Copilot",
@@ -304,6 +304,13 @@
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-06-19",
+      "short_term": 1,
+      "mid_term": 1,
+      "long_term": 1,
+      "total": 3
+    },
     {
       "date": "2026-06-18",
       "short_term": 2,
