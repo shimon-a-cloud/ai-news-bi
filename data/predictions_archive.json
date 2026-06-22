@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-06-21",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "iOS 27のAI機能の続報・詳細が相次ぎ、オンデバイスAI（手元で完結するAI）への注目が一段と高まる",
+          "confidence": "中",
+          "evidence": "TechCrunch『Beyond Siri: iOS 27のAI機能』",
+          "shisto_implication": "消費者のAI期待が上がり、店舗・サービス業向けのAI接客・問い合わせ一次対応の提案がしやすくなる。"
+        },
+        {
+          "prediction": "AI人材の移籍・獲得競争の続報が続き、トップ層の大手集中がさらに進む",
+          "confidence": "中",
+          "evidence": "ジャンパー氏のDeepMind→Anthropic移籍報道",
+          "shisto_implication": "自前でAI人材を抱えられない中小は外部の実装力に頼る構図が強まり、Shistoの実装代行需要の追い風。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AI学習データの著作権・透明性を巡る訴訟やデータセット開示の動きが拡大する",
+          "confidence": "中",
+          "evidence": "The Atlanticの学習楽曲検索DB公開、数千万曲のデータセット配布の指摘",
+          "shisto_implication": "本システムの社内BI限定・外部配信は要法務確認の方針を維持。ニュース要約の外部配信には引き続き慎重に。"
+        },
+        {
+          "prediction": "国内でAIスキルの賃金格差が顕在化し、中小企業の『AI内製化 or 外部委託』の意思決定が増える",
+          "confidence": "中",
+          "evidence": "AIスキルに3割の賃金プレミアム記事、コンサル外注費が吸われ続ける構造の記事",
+          "shisto_implication": "『コンサルは高い・自前は無理』の谷を埋める実装代行・月額AI顧問の需要が立ち上がる。今のうちに事例を1社作るべき。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "国内のAIインフラ（データセンター）投資が本格化し、電力・グリッド制約が新たな論点になる",
+          "confidence": "中",
+          "evidence": "NTTデータの5年で数千億円のAI向けデータ拠点投資",
+          "shisto_implication": "直接の受注機会は薄いが、AI前提のビジネス環境が標準化し、中小企業のAI活用が『当たり前』になる土台が固まる。"
+        },
+        {
+          "prediction": "オンデバイス／ローカルLLMの実用度が上がり、機密データを外に出さないAI活用が中小にも降りてくる",
+          "confidence": "低",
+          "evidence": "llama.cpp/GGUF解説記事、iOS 27のオンデバイスAI",
+          "shisto_implication": "ローカルRAG・社内AIの提案機会が広がる。今のうちにllama.cpp系を検証しておけば、機密を扱う士業・製造への提案で優位に立てる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-20",
     "predictions": {
       "short_term": [
