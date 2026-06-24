@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-06-23",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "エージェント型EC・決済（Visa/AWS/メルカリ）の流れに国内の追随発表（モール・決済・物流のAI連携）が続く",
+          "confidence": "中",
+          "evidence": "19294（Visa）・19251（AWS AgentCore Payments）・19456（メルカリ×ChatGPT）が同日に集中",
+          "shisto_implication": "出品・商品データ整備サービスの需要が高まる。提案3とbig_market_playの追い風で、今週のデモ投稿の反応が読みやすくなる。"
+        },
+        {
+          "prediction": "中小企業向け『月額制AI活用支援』の類似サービスが国内で増える",
+          "confidence": "高",
+          "evidence": "19256（月額制支援の新サービス）・19302（成果計測）・19255（Copilotの費用対効果）",
+          "shisto_implication": "Shistoの主戦場に競合増加。価格と『稼働中システムの実物デモ』での差別化を急ぐ必要。汎用支援でなく“毎月動くものを1本納品”で勝つ。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "AIエージェント導入は『単独でなくRPA/既存業務との併用・設計』が定石化し、設計・運用の伴走支援に需要が出る",
+          "confidence": "中",
+          "evidence": "19440（エージェント×RPA併用）・19472（設計が命）・19308（loopy化）・19433（軽量エージェント実例）",
+          "shisto_implication": "『1業務ずつ小さく自動化して伴走』というShistoの型が市場常識と合致。設計力を前面に出した提案が通りやすくなる。"
+        },
+        {
+          "prediction": "プロンプトインジェクション/シャドーAI起因のインシデントや指針が増え、中小でも『安全に使う』需要が立つ",
+          "confidence": "中",
+          "evidence": "19494（プロンプトインジェクション）・19436（38%が禁止後も継続）・19447（ファイブ・アイズ警告）",
+          "shisto_implication": "中小向け『AI利用ルール整備＋研修資料』の再提案余地（過去06-18の型）。ai-news-bi自身の安全点検も営業材料になる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "国産モデル（サカナAI『フグ』等）とOSSモデル（GLM-5.2等）で選択肢が増え、用途別のモデル使い分けが当たり前になる",
+          "confidence": "中",
+          "evidence": "19291（サカナAI『フグ』複数AI協調）・19445（GLM-5.2のOpenRouter利用急増）",
+          "shisto_implication": "原則無料/低コスト構成の幅が広がり、Shistoの提案の価格競争力が増す。モデル選定の助言自体も価値になる。"
+        },
+        {
+          "prediction": "AI起因の人員整理と『AIソロプレナー』志向が並行し、1人〜零細のAI内製・代行需要が拡大する",
+          "confidence": "中",
+          "evidence": "19489（AIを理由にした大型レイオフ一覧）・19475（AIソロプレナー）・19296（DeNA南場AI全振り）",
+          "shisto_implication": "個人事業主向けプロダクト（big_market_play）の市場が育つ。Shisto自身が“AIソロプレナー”の体現者として発信できる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-22",
     "predictions": {
       "short_term": [
