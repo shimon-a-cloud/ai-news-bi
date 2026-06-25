@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-06-24",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "AIの従量課金・コスト管理を売りにするツール/プラン（予算アラート・定額メニュー）の発表が国内でも増える",
+          "confidence": "高",
+          "evidence": "急増するAI利用コスト米企業が悲鳴（19407）、改定続く生成AI料金（19384）、社員が小タスクで予算を使い切る（TechCrunch 7日内）",
+          "shisto_implication": "“料金が読める定額・軽量パッケージ”の訴求がそのまま刺さる窓。提案の価格軸を前面に出す。"
+        },
+        {
+          "prediction": "Claude Tagに追随し、チャット常駐型エージェント（Slack/Teams/LINE）の国内事例・競合が出てくる",
+          "confidence": "中",
+          "evidence": "Claude Tag（19421/19567）、メルカリのMCP基盤でChatGPT参入（19570）",
+          "shisto_implication": "常駐AI提案（提案C）の追い風。早く小さな事例を1件作り“常駐AIのLINE版・小規模向け”の立ち位置を取る。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "OCR・文書AI（Mistral OCR4・Baidu・PP-OCR）の高精度/多言語化で、書類データ化の単価は下がりつつ案件数が増える",
+          "confidence": "中",
+          "evidence": "Mistral OCR 4（19573）、Baidu Unlimited OCR（19578）",
+          "shisto_implication": "領収書転記の横展開を“高単価”でなく“量と継続運用”で取りに行く。KFJ多言語など難度の高い案件に寄せて差別化。"
+        },
+        {
+          "prediction": "コーディングAI（Devin/Cursor/Claude Code）の競争激化で、1人開発の生産性が業界標準として底上げされる",
+          "confidence": "高",
+          "evidence": "Cognition 10億ドル調達（19596）、Devin日本展開・ユーザー1582％増（19568）、Claude Codeと競争激化（19598）",
+          "shisto_implication": "“1人で作れる”優位の賞味期限が縮む。技術力単体でなく、営業経路・顧客接点・運用の伴走で差別化する必要。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "AIが“チームに常駐する一員”として定着し、中小でもチャット常駐AIが当たり前になる",
+          "confidence": "中",
+          "evidence": "Claude Tag（19421）でAnthropic製品チームのコード65％が同機能で作成、AWS AgentCoreの業務連携（19375）",
+          "shisto_implication": "導入設定・運用代行という“人手の伴走”がShistoの継続収益の柱になりうる。"
+        },
+        {
+          "prediction": "AIコスト/ガバナンス（従量課金・シャドーAI・セキュリティ）が中小の意思決定の中心論点になる",
+          "confidence": "中",
+          "evidence": "シャドーAI増殖（19400）、AI利用コスト悲鳴（19407）、ファイブ・アイズのAI攻撃警告（19405/19409）",
+          "shisto_implication": "“安全に・予算内で使えるようにする”支援（ルール整備＋定額運用）の市場が立ち上がる。シャドーAI棚卸し系の提案と組み合わせられる。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-23",
     "predictions": {
       "short_term": [
