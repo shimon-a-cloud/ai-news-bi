@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-06-28",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "GPT-5.6を巡る規制・ロールアウト制限と、OpenAIの上場時期に関する続報が続く",
+          "confidence": "高",
+          "evidence": "本日の『オープンAI上場延期』報道（id 20344）と、直近のGPT-5.6のロールアウト制限・政府要請の動き",
+          "shisto_implication": "海外大手の供給・規制が不安定なほど、特定ツールに依存しない『業務課題起点』の提案が安全。Shistoは特定モデル名を売りにしない設計を維持する。"
+        },
+        {
+          "prediction": "ソフトバンク主導の国産AI連合の参加企業・具体ユースケースの発表が増える",
+          "confidence": "中",
+          "evidence": "本日の40社超出資報道（id 20271, id 20266）",
+          "shisto_implication": "大手連合は大企業・基盤向け。中小・現場の個別業務はむしろ空くため、Shistoの棲み分け方針を強化する。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "推論コスト低下を背景に、中小でも日常業務でAIを常時使う事例が国内で増え始める",
+          "confidence": "中",
+          "evidence": "AI半導体・推論シフトの市場見通し（id 20341）",
+          "shisto_implication": "『業務に常駐する自動化』の需要が立ち上がる。提案2の切り分け＋PoC型が刺さりやすくなる。"
+        },
+        {
+          "prediction": "AIエージェントの『業務委任』事例が国内中小でも出始め、委任範囲の設計が共通の悩みになる",
+          "confidence": "中",
+          "evidence": "本日の導入判断基準記事（id 20342）、無料ローカル自動化ツールの登場（id 20261）",
+          "shisto_implication": "『何を任せるか診断＋PoC』サービスの市場が形成される。先行して事例を作る価値が高い。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "顧客理解（VoC）のAI自動化が中小にも普及し、低価格のAIインタビュー/分析サービスが一般化する",
+          "confidence": "中",
+          "evidence": "サイバーのAI消費者インタビュー実用化（id 20267）、ZOZOのパーソナライズ（id 20269）",
+          "shisto_implication": "big_market_playのVoC SaaSの市場が育つ。早期に事例化すれば先行者になれる。"
+        },
+        {
+          "prediction": "AI検索（AEO/LLMO）が中小のWeb集客の前提となり、見え方の測定・改善ニーズが定着する",
+          "confidence": "低",
+          "evidence": "無料AEO測定ツールElmoの登場（id 20263）",
+          "shisto_implication": "診断起点の提案の入口として有効。ただし無料ツール普及で単純な測定は価値が下がるため、改善実装まで踏み込む設計が必要。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-06-27",
     "predictions": {
       "short_term": [
