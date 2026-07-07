@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-07-07",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "国内で『AI利用コストの見える化・ガバナンス』関連の企業発表/サービスがさらに増える",
+          "confidence": "高",
+          "evidence": "コスト爆増・トークン資本・全社AI後の課題・熱狂3カ月で幕（id 22654/22597/22653/22620〜22625）が同日に集中。",
+          "shisto_implication": "コスト可視化のbig_market_playを今仕込む価値が高い。"
+        },
+        {
+          "prediction": "中国系オープンモデル（Hy3/Qwen系）採用と『料金20分の1』訴求の記事が続く",
+          "confidence": "中",
+          "evidence": "テンセントHy3公開（id 22612）、中国AIへ乗り換え急増・料金20分の1（id 22463）。",
+          "shisto_implication": "顧客に『どのモデルが安く十分か』を助言できると差別化になる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "主要SaaS/業務ソフトがエージェント機能を標準搭載し、MCP経由の連携が一般化する",
+          "confidence": "中",
+          "evidence": "Gemini managed agents（id 22580）、MCP EMA安定版（id 22454）、セールスフォースのAI執事（id 22634）。",
+          "shisto_implication": "MCPで既存ツール連携を提案できると受注の幅が広がる。"
+        },
+        {
+          "prediction": "非エンジニア内製の成功事例がさらに可視化され、『自分で作れる』前提が広がる",
+          "confidence": "中",
+          "evidence": "町工場の婿専務がClaudeで1億円システム自作（id 22668）、Fable5の活用術。",
+          "shisto_implication": "Shistoは『作る』から『型化・伴走・運用代行』へ軸足を移す準備が要る。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "単純な受託開発は内製化で縮小し、価値は運用・コスト管理・ガバナンス伴走へ移る",
+          "confidence": "中",
+          "evidence": "内製化事例（id 22668）と、運用・コスト・リスクを主題化した記事群（id 22620〜22625/22654）。",
+          "shisto_implication": "月額の運用・コスト管理型サービスを主力に育てるのが生存戦略。"
+        },
+        {
+          "prediction": "大手が届かない小規模事業者向けの軽量AI導入が、独立した層として立ち上がる",
+          "confidence": "低",
+          "evidence": "オムロン・味の素など大手事例（id 22670/22458）の裏で、小規模事業者が取り残される構図。",
+          "shisto_implication": "Shistoの主戦場は『大手SaaSが過剰な小規模事業者の1業務AI化』。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-07-06",
     "predictions": {
       "short_term": [
@@ -3647,53 +3694,6 @@
           "confidence": "中",
           "evidence": "Florida AG調査（ID1144・1150）・Anthropic Mythos公開制限（ID1127）・DeepSeekチップ密輸疑惑（ID1124）と規制関連記事が今日だけで5件。AI規制の議論は加速必至。",
           "shisto_implication": "「AIの出力に責任を持つ」ことを差別化ポイントにする戦略が有効になる。品質保証・動作確認を標準で含めたサービス設計を今から習慣化する。"
-        }
-      ]
-    }
-  },
-  {
-    "date": "2026-04-08",
-    "predictions": {
-      "short_term": [
-        {
-          "prediction": "Project Glasswing・Claude Mythosに関する詳細な技術解説記事が日本語メディアで5件以上出る（4/9〜4/20）",
-          "confidence": "高",
-          "evidence": "本日の記事だけで10件以上のProject Glasswing関連報道があり、Anthropic・CNBC・VentureBeat・Reuters・The Verge・ITmedia等が一斉報道。日本語メディアの詳細解説は1〜3日遅れで出るパターン。過去のGemma 4パターン（的中）と同様の展開が見込まれる。",
-          "shisto_implication": "AIセキュリティの知識を深める記事が増えるので、学習の好機。セキュリティ関連提案の根拠資料にもなる。"
-        },
-        {
-          "prediction": "マネーフォワードAI Coworkの詳細仕様・デモが公開され、バックオフィスAIエージェントの比較記事が出る（4/9〜4/20）",
-          "confidence": "中",
-          "evidence": "記事ID903で7月提供開始を発表。マネーフォワードは発表→デモ公開→プレビュー申込の順で進行する傾向がある。Yahoo!ファイナンスやImpress Watchでも既に報道されており関心度は高い。",
-          "shisto_implication": "AI Coworkの価格・対象企業規模が判明すれば、Shistoの領収書転記サービスの差別化戦略を明確にできる。発表後すぐに分析すべき。"
-        }
-      ],
-      "mid_term": [
-        {
-          "prediction": "AIエージェントの「品質保証・監査」が新しいサービスカテゴリとして認知される",
-          "confidence": "中",
-          "evidence": "Project Glasswingによるセキュリティ検査の高度化、マネーフォワードのマルチエージェント構成、GitHub Copilot CLIのマルチモデル検証（Rubber Duck）が同時に進行。「AIの出力を別のAIが検証する」構造が標準化しつつある。3回連続で維持している予測。",
-          "shisto_implication": "「構築＋品質保証」のセット提案が差別化になる。特にWeb制作のセキュリティ検査は早期にサービス化できる。"
-        },
-        {
-          "prediction": "「補助金＋AI導入」をパッケージ化したサービスが日本のAI自動化市場で主流の営業手法になる",
-          "confidence": "中",
-          "evidence": "補助金申請開始＋マネーフォワードAI Cowork発表＋生成AI利用率51%到達。大手の参入で「AIは使える」という認知が中小企業に広まり、コストがネックの層が補助金に殺到する構図。",
-          "shisto_implication": "補助金対応を営業フローに標準組込すべき。早期に実績を積んだプレイヤーが市場を取る。"
-        }
-      ],
-      "long_term": [
-        {
-          "prediction": "AI自動化サービスのビジネスモデルが「構築一括」から「月額運用型」に完全移行する",
-          "confidence": "高",
-          "evidence": "9回連続で進行中を確認。マネーフォワードAI Coworkも月額サービスとして提供。大手の参入により「月額で使う」が標準に。推論コスト低下が構築→運用シフトを加速。過去の的中パターンから確信度を維持。",
-          "shisto_implication": "全ての新規案件で月額保守契約を前提としたプライシングを設計すべき。構築費用は「入口価格」として低めに設定し、月額の継続課金で利益を確保する構造を確立する。"
-        },
-        {
-          "prediction": "「AI出力の法的責任」に関する判例・ガイドラインが日米で整備され、品質保証付きAIサービスへの需要が急増する",
-          "confidence": "中",
-          "evidence": "Suno vs 大手レーベルの著作権紛争（記事ID932）、米国連邦vs州のAI規制議論（記事ID913）、AnthropicのMythos公開制限（安全性理由）。AI企業自身が「危険すぎて公開できない」と認めるモデルが出てきており、法規制の議論は加速必至。",
-          "shisto_implication": "「AIの出力に責任を持つ」ことを差別化ポイントにする戦略が有効になる。品質保証SLA付きのAI自動化サービスは高付加価値なポジション。"
         }
       ]
     }
