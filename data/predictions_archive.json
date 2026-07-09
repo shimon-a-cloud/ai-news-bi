@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-07-09",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "GPT-5.6・Grok 4.5に続き、他社も『Opus級を安く』を打ち出す価格競争が続き、AI機能の原価がさらに下がる",
+          "confidence": "高",
+          "evidence": "Grok 4.5がOpus級を安価で提供(id 23699)、Microsoftが低コストモデルを選択可に(id 23610)、『AI競争は性能からコスト重視へ』(id 23628)。",
+          "shisto_implication": "AI機能付きサービスの原価が下がる。Shistoの提案価格には下押し圧力もあるが、原価低下で利益率は守れる。価格ではなく“組んで運用する人”で売る戦略が正解。"
+        },
+        {
+          "prediction": "国内でAIエージェント/コーディングAI(Devin・Cursor・Claude Code)の企業導入・比較記事がさらに増える",
+          "confidence": "中",
+          "evidence": "『Devinが企業向け強化、Cursor/Claude Codeに対抗』(id 23611)、Meta Muse Sparkのコーディング参入(id 23743)。",
+          "shisto_implication": "Claude Codeで実装している当事者として、比較記事は受託の営業材料に使える。挙動変更(id 23599)は自社パイプラインへの影響を継続監視。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "Microsoft 365 Copilot Business等でSMBがAIライセンスを持つが“使いこなせない”層が顕在化し、定着支援・実装代行の需要が増える",
+          "confidence": "中",
+          "evidence": "『中小企業向けMicrosoft 365 Copilot Business追加』(id 23617)、『AI活用のボトルネックは経営層、85.7%が方針・体制なし』(id 23685)。",
+          "shisto_implication": "Shistoの『月1自動化サブスク』の直接の追い風。“ライセンスはあるが使えていない”会社を最初の1件に狙う。"
+        },
+        {
+          "prediction": "公取委・著作権の議論が具体化し、AI要約の外部配信リスクがより明確になる",
+          "confidence": "中",
+          "evidence": "『AIの記事利用、報道機関に見解確認へ 公取委』(id 23632)。",
+          "shisto_implication": "ai-news-biの外部配信は引き続き社内限定が安全。受託でも“出典明記・主従関係・要約範囲”の運用を顧客に説明できると信頼になる。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "『AIに任せる／人がやる』の線引きと、AIエージェントの人件費計上・ガバナンスが中小にも標準化していく",
+          "confidence": "中",
+          "evidence": "『社員と化すAIエージェント、費用は人件費』(id 23635)、『CEOの利用額も全社員に丸見え、AI予算を第二の人件費に』(id 23600)、『AIが事務仕事の55%を代替』(id 23709)。",
+          "shisto_implication": "中小のAI自動化の“設計・運用・ガバナンス”を月額で担う一人事業者の需要が定着する。Shistoのリテイナー型(月額サブスク)戦略が中長期で伸びる方向。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-07-08",
     "predictions": {
       "short_term": [
@@ -3694,53 +3735,6 @@
           "confidence": "中",
           "evidence": "ChatGPT訴訟（ID1196）・Wired JPのAnthropicの控訴裁件（ID1179）・Claude Mythosの安全性懸念（ID1183）が今日だけで3件。訴訟事例の蓄積が判例形成につながる。過去の予測レビューの教訓を踏まえ「品質保証」より「人間の最終確認プロセスの明示化」を差別化軸に修正",
           "shisto_implication": "提案書に「AIの出力は必ず担当者が確認してから使用する設計になっています」を標準文言として入れる。これが法的責任の明確化と信頼性向上の両方に効く"
-        }
-      ]
-    }
-  },
-  {
-    "date": "2026-04-10",
-    "predictions": {
-      "short_term": [
-        {
-          "prediction": "DeepSeek V4が4月中旬（4/14〜4/21）に公開され、Huaweiチップによる性能が世界的に検証される",
-          "confidence": "中",
-          "evidence": "複数記事で「数週間以内」「今月中」との報道が継続（DeepSeek関連記事多数）。遅延しているが期待値は依然高く、Huawei Ascend 950との組み合わせでの性能検証が注目される。",
-          "shisto_implication": "DeepSeek V4が高性能かつオープンソースであれば、推論コスト削減の選択肢が広がる可能性がある。ただしローカル実行の要件（VRAM等）は要検証のため、公開後すぐに仕様確認する。"
-        },
-        {
-          "prediction": "Claude Mythos関連の日本語解説記事が来週中（4/13〜4/17）に複数出る",
-          "confidence": "中",
-          "evidence": "英語記事（ID1127・1146・1129）が4/10に3件確認されており、日本語メディアへの波及は3〜5日のタイムラグがある。ITmedia・GIGAZINE・Wired JPが候補ソース。",
-          "shisto_implication": "AI安全性の議論が日本語で広まれば、Shistoが「安全性を考慮したAI自動化」を差別化ポイントとして打ち出す際の参考資料が増える。"
-        }
-      ],
-      "mid_term": [
-        {
-          "prediction": "ChatGPT $100 Proの定着により、日本市場でもAIサービスの「月額3〜5万円（法人向け）」が標準価格帯として認知される",
-          "confidence": "中",
-          "evidence": "OpenAI $100 Pro（ID1143・1149）が個人向け相場として定着しつつある。法人向けカスタムサービスは個人向けの2〜5倍が一般的な価格感のため、月額3〜5万円への心理的ハードルが下がる。",
-          "shisto_implication": "Shistoのサービス価格（月額1.5〜3万円）は「安くて使いやすい」と説明できる競争ポジションが生まれる。価格交渉での「競合比較」の根拠が強くなる。"
-        },
-        {
-          "prediction": "Agentic ERP市場の拡大に伴い、中小企業向けの軽量版バックオフィス自動化ツールを提供するSaaSが複数登場し、Shistoの差別化が困難になる",
-          "confidence": "中",
-          "evidence": "リチェルカ17億円調達（ID1120）でAgentic ERPニーズが公式認証。大企業向けソリューションの普及は中小向け廉価版市場を生む（IT導入補助金と同パターン）。",
-          "shisto_implication": "SaaSが出る前に1〜2件の実績を作ることが重要。「江田畜産での稼働実績」という具体的な事例が、後発SaaSとの差別化になる。今月中に動く。"
-        }
-      ],
-      "long_term": [
-        {
-          "prediction": "AI自動化サービスのビジネスモデルが「構築一括」から「月額運用型」に完全移行する",
-          "confidence": "高",
-          "evidence": "10回連続で進行中を確認。ChatGPT $100 Pro・Anthropic Managed Agentsエンタープライズ化・リチェルカの月額モデルがいずれも「運用型課金」。大手の参入により「AIは月額で使うもの」が標準化。過去の的中パターンを維持。",
-          "shisto_implication": "全ての新規案件で月額保守契約を前提としたプライシングを設計する。構築費用は「入口価格」として低めに設定し、月額の継続課金で利益を確保する構造を今から確立する。"
-        },
-        {
-          "prediction": "「AI出力の法的責任」に関する判例・ガイドラインが日米で整備され、品質保証付きAIサービスへの需要が急増する",
-          "confidence": "中",
-          "evidence": "Florida AG調査（ID1144・1150）・Anthropic Mythos公開制限（ID1127）・DeepSeekチップ密輸疑惑（ID1124）と規制関連記事が今日だけで5件。AI規制の議論は加速必至。",
-          "shisto_implication": "「AIの出力に責任を持つ」ことを差別化ポイントにする戦略が有効になる。品質保証・動作確認を標準で含めたサービス設計を今から習慣化する。"
         }
       ]
     }
