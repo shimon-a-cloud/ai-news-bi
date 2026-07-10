@@ -1,10 +1,6 @@
 {
-  "updated": "2026-07-10T03:23:02.959050+09:00",
+  "updated": "2026-07-11T03:21:13.508926+09:00",
   "daily_counts": [
-    {
-      "date": "2026-06-10",
-      "count": 471
-    },
     {
       "date": "2026-06-11",
       "count": 384
@@ -119,55 +115,59 @@
     },
     {
       "date": "2026-07-09",
-      "count": 303
+      "count": 308
     },
     {
       "date": "2026-07-10",
-      "count": 22
+      "count": 332
+    },
+    {
+      "date": "2026-07-11",
+      "count": 10
     }
   ],
   "category_7d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 213
+      "count": 218
     },
     {
       "category": "投資・市場動向",
-      "count": 141
+      "count": 142
     },
     {
       "category": "製品・サービス",
-      "count": 109
+      "count": 126
     },
     {
       "category": "規制・法律・倫理",
-      "count": 77
+      "count": 83
     },
     {
       "category": "AIエージェント・開発",
-      "count": 67
+      "count": 63
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 49
+      "count": 60
     },
     {
       "category": "新モデル・リリース",
-      "count": 33
+      "count": 43
     }
   ],
   "category_30d": [
     {
       "category": "AI×ビジネス活用",
-      "count": 746
+      "count": 751
     },
     {
       "category": "投資・市場動向",
-      "count": 642
+      "count": 634
     },
     {
       "category": "製品・サービス",
-      "count": 467
+      "count": 479
     },
     {
       "category": "規制・法律・倫理",
@@ -175,25 +175,25 @@
     },
     {
       "category": "AIエージェント・開発",
-      "count": 289
+      "count": 288
     },
     {
       "category": "研究・ブレークスルー",
-      "count": 213
+      "count": 220
     },
     {
       "category": "新モデル・リリース",
-      "count": 144
+      "count": 140
     }
   ],
   "source_stats_7d": [
     {
       "source": "arXiv cs.AI",
-      "count": 1196
+      "count": 1109
     },
     {
       "source": "日本経済新聞",
-      "count": 257
+      "count": 255
     },
     {
       "source": "GIGAZINE",
@@ -201,51 +201,51 @@
     },
     {
       "source": "ITmedia AI+",
-      "count": 66
+      "count": 72
     },
     {
       "source": "日経xTECH",
-      "count": 53
+      "count": 59
     },
     {
       "source": "TechCrunch AI",
-      "count": 50
-    },
-    {
-      "source": "日経ビジネス電子版",
-      "count": 25
+      "count": 58
     },
     {
       "source": "Simon Willison",
-      "count": 24
-    },
-    {
-      "source": "Impress Watch",
-      "count": 19
+      "count": 23
     },
     {
       "source": "AWS AI Blog",
-      "count": 19
+      "count": 23
     },
     {
       "source": "日経クロステック",
-      "count": 18
+      "count": 23
     },
     {
       "source": "The Verge AI",
-      "count": 17
+      "count": 21
+    },
+    {
+      "source": "Impress Watch",
+      "count": 21
+    },
+    {
+      "source": "日経ビジネス電子版",
+      "count": 20
     },
     {
       "source": "日経クロストレンド",
-      "count": 16
+      "count": 14
     },
     {
       "source": "Apple ML",
-      "count": 12
+      "count": 14
     },
     {
       "source": "Wired JP",
-      "count": 11
+      "count": 12
     }
   ],
   "ai_company_7d": [
@@ -255,51 +255,58 @@
     },
     {
       "company": "ChatGPT / GPT",
-      "count": 46
+      "count": 68
     },
     {
       "company": "Amazon Bedrock",
-      "count": 29
+      "count": 27
     },
     {
       "company": "LLaMA",
-      "count": 22
+      "count": 25
     },
     {
       "company": "Copilot",
-      "count": 13
+      "count": 15
     },
     {
       "company": "Grok",
-      "count": 8
+      "count": 11
     },
     {
       "company": "Hugging Face",
-      "count": 8
+      "count": 10
     },
     {
       "company": "Gemini",
-      "count": 7
+      "count": 9
     },
     {
       "company": "Cursor",
       "count": 5
     },
     {
-      "company": "Mistral",
-      "count": 3
+      "company": "DeepSeek",
+      "count": 4
     },
     {
       "company": "Qwen",
-      "count": 3
+      "count": 4
     },
     {
-      "company": "DeepSeek",
-      "count": 2
+      "company": "Mistral",
+      "count": 3
     }
   ],
   "prediction_accuracy": null,
   "prediction_daily_counts": [
+    {
+      "date": "2026-07-09",
+      "short_term": 2,
+      "mid_term": 2,
+      "long_term": 1,
+      "total": 5
+    },
     {
       "date": "2026-07-08",
       "short_term": 2,
@@ -876,13 +883,6 @@
     },
     {
       "date": "2026-04-11",
-      "short_term": 2,
-      "mid_term": 2,
-      "long_term": 2,
-      "total": 6
-    },
-    {
-      "date": "2026-04-10",
       "short_term": 2,
       "mid_term": 2,
       "long_term": 2,
