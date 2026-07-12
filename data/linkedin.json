@@ -1,39 +1,39 @@
 {
-  "generated_date": "2026-07-06",
+  "generated_date": "2026-07-13",
   "posts": [
     {
-      "title": "メールに業務時間の3割超 AIよりシンプル思考で時短",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE43QXhqZ283YmxIOTdRYjBPeDVkelJkOUVERTBmNUJnX0hyYkkwRDZOTlhrMnptczlCQzRNckM2ajZUMlhOLWlNZUhyWVFwS24yTGVGbDMwOURhUUdoZTVhZ1NvdzdjaXpIZUstZA?oc=5",
-      "category": "AI×ビジネス活用（業務効率化）",
-      "body": "AIで一番効くのは、実は一番地味なところかもしれない。\n\n先日の日本経済新聞に、メール対応が業務時間の3割超を占めるという記事がありました。\n\n派手なAIエージェントの話題が続きますが、私たちの時間を本当に奪っているのは、メールや問い合わせ、書類作成といった単純な反復作業なのだと改めて感じます。\n\n実際、私が兄の会社でAI自動化を手がけるときも、最初に取り組むのはメールの一次返信を下書きする、といった小さな部分です。\n\n送信は必ず人が確認する前提で、AIには下書きまでを任せる。それだけで返信の抜け漏れが減り、対応がぐっと速くなります。\n\n華やかな全自動より、確実に動く小さな一歩から。\n\nまだ模索の途中ですが、地味な定型業務こそAIの効果が見えやすい入り口だと、手を動かしながら学んでいます。",
+      "title": "AI「Claude」を使って開発ツールの「Bun」の53万行のZigコード全てをRustへ書き換え、Zig作者もブログで反応",
+      "source_url": "https://gigazine.net/news/20260712-bun-zig-rust/",
+      "category": "AIエージェント・開発",
+      "body": "53万行のコードを、AIが別の言語へ丸ごと書き換えた。\nそんなニュースに、正直しびれました。\n\n開発ツール「Bun」のチームが、AI「Claude」を使って約53万行のZigというコードを、Rustという別の言語へ全て移植したそうです。\nZigの作者本人もブログで反応するほどの出来事でした。\n\n数年前なら、これは大人数のチームが何ヶ月もかける仕事でした。\nそれがいま、AIエージェントを使えば少人数、極端に言えば1人でも現実的に回せる領域に入ってきた。\n\n私自身、Claude Codeを使って1人でサービスを作っているので、この「射程が伸びた」感覚は肌でわかります。\nゼロから新しく作るだけでなく、古いシステムの作り直しにまで手が届くようになってきた。\n\nできることが広がるほど、「何を作らないか」を選ぶ判断が大事になると感じています。\nまだ模索中ですが、手を動かしながら見極めていきたいテーマです。",
       "hashtags": [
-        "#AI自動化",
-        "#業務効率化",
-        "#中小企業DX"
+        "#AIエージェント",
+        "#ClaudeCode",
+        "#システム開発"
       ],
       "post_day": "monday"
     },
     {
-      "title": "Alibaba reportedly bans employees from using Claude Code",
-      "source_url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/",
-      "category": "規制・法律・倫理（データガバナンス）",
-      "body": "世界有数のIT企業が、話題のAIツールに「待った」をかけました。\n\nTechCrunchによると、アリババが自社の従業員に対し、AnthropicのClaude Codeの利用を禁止したと報じられています。理由は、セキュリティ上のリスクです。\n\nAIの便利さばかりが語られがちですが、コードや顧客情報を外部のAIに渡すことに、大企業ほど慎重になり始めた表れだと感じています。\n\nこれは決して他人事ではありません。中小企業のAI導入をお手伝いするとき、ほぼ必ず「うちの情報は大丈夫か」と聞かれます。\n\nだからこそ、学習に使われない商用APIを選び、AIが触れられる範囲を必要最小限に絞る。便利さと安全は、セットで設計するものだと考えるようになりました。\n\n「とりあえずAIに貼る」のではなく、安全な使い方まで含めて届ける。\n\nまだ答えの出ない部分も多いですが、向き合い続けたいテーマです。",
+      "title": "社員のAI活用、報酬に反映 ホンダは選抜1000人に月最大15万円増",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MbmljbjJVbk1aX0pNRjdlVGpHVlgteXNya0RjRmNBR01UcFZHWTJWaHJBQXlIcnliRDV1SVVfcDNrelctYURDdXJzVEpqcXJrOXVydU0xdlhjQXB5RUNtTjlwZUJtTmo3MEFMQg?oc=5",
+      "category": "AI×ビジネス活用",
+      "body": "AIを使えるかどうかが、そのまま給料に反映される。\nそんな時代に入ってきたと感じています。\n\nホンダが、選抜した社員およそ1000人を対象に、AI活用度に応じて月最大15万円を上乗せする制度を始めたと報じられました。\n大手各社で、AIスキルを人事評価の対象にする動きが広がっています。\n\nこれは「ツールを導入した」その次の段階の話だと感じています。\n入れただけでは差は生まれず、社員一人ひとりが自分の業務に落とし込めて、初めて成果になる。\n\n私も兄が営む会社数社のAI効率化を手伝っていますが、いちばん時間がかかるのは導入作業ではなく、「自分の仕事でどう使うか」を翻訳する部分です。\nここが埋まらないと、AIはただのコストで終わってしまう。\n\n大企業は報酬で定着を後押しできますが、小さな会社はどう進めるか。\nまだ答えは出ていませんが、手を動かしながら向き合い続けたいテーマです。",
       "hashtags": [
         "#AI活用",
-        "#情報セキュリティ",
-        "#AI導入支援"
+        "#人材育成",
+        "#中小企業DX"
       ],
       "post_day": "wednesday"
     },
     {
-      "title": "AI使う採用選考「志望度下がる」中途で6割 熱意伝わるか不安視",
-      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1zRzlfTTctQWl6ZnZoZVFjakR3QTZoRmlVM2pLMDZyd1Y5QlNLSFA2WW9HR2haVnk3dUFYOERtQ0ktNk1va0JLZTlGZ1l5a3V3UFoyb0tiTVdDb0RxbWZ6ZE9vakp4ZUw4RXY1dA?oc=5",
-      "category": "AI×ビジネス活用（人とAIの接点）",
-      "body": "AIを採用に使ったら、かえって応募者の心が離れてしまう——。\n\n日本経済新聞の記事に、AIを使った採用選考について、中途採用者の約6割が「志望度が下がる」と答えた、とありました。\n\nAI自動化を進める立場として、とても示唆的だと感じています。\n\n定型的な事務やメール処理では、AI化はどんどん合理的になります。一方で、採用のように相手の感情や熱意が絡む場面では、機械的に扱われることを人は嫌う。\n\nだから私は、AIに「選考させる」提案はしません。代わりに、応募者へ速く丁寧に返信するための下書きをAIに任せます。判断と温度は人が持ち、下ごしらえだけをAIが担う、という切り分けです。\n\nAIで何を置き換え、何を人に残すのか。\n\nこの線引きこそが一番難しく、一番大事なところだと、現場で手を動かしながら考え続けています。",
+      "title": "企業・団体が持つ個人情報提供 AI開発向け、同意不要に 改正法成立 課徴金導入で事後規制を強化",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1nSEZSQ21fWFl4NFFfcm1nOXROYVkyWkpjWEJ6VnpXejlWdzhZd3hDcjN1YmVRMUhmdG10T29vZmxhekE5bTNWMzdOOWo1SENWd3BkMVdvaUdaMHJ6Z2djQjZUWTRxckcyLVB4Ng?oc=5",
+      "category": "規制・法律・倫理",
+      "body": "企業が持つ顧客データを、本人の同意なしにAI開発へ回せる。\nそんな法改正が、静かに成立していました。\n\n改正個人情報保護法により、企業や団体が保有する個人情報を、AI開発向けであれば本人の同意なく提供できるようになりました。\nあわせて、違反時の課徴金制度も導入されるそうです。\n国は、推進と規制の強化を同時に進めています。\n\n一方で日経の調査では、ビジネスでのAI利用は約7割が未経験。\nその理由の多くが「情報漏洩や正確性への不安」でした。\n\n現場は「使いたいけれど、自社のデータを外に出すのが怖い」で止まっている。\n私がAI自動化を組むときも、いちばん神経を使うのがこの一線です。\n顧客情報を無料のAIには入れない、社内で完結させる、最後は必ず人が確認する。\n\n地味ですが、この設計こそが安心して使える土台だと考えています。\n便利さと安全は、どちらかを選ぶものではなく両立させるもの。\n小さな会社だからこそ、この線引きに丁寧に向き合いたいと思います。",
       "hashtags": [
+        "#個人情報保護",
         "#AI活用",
-        "#採用",
-        "#人とAI"
+        "#情報セキュリティ"
       ],
       "post_day": "friday"
     }
