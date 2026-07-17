@@ -1,5 +1,46 @@
 [
   {
+    "date": "2026-07-17",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "オープン・ローカルモデル（Kimi K3級／LM Studio Bionic／Bonsai 27B）を根拠に、『クラウドAPI課金を抑えたい中小・個人向け』の安価なAI導入提案が国内で増える。",
+          "confidence": "中",
+          "evidence": "Kimi K3がSonnet価格帯・オープンで登場、スマホで動くBonsai 27B、ローカルエージェントLM Studio Bionicの同日リリース。",
+          "shisto_implication": "Shistoは原価を下げられるが、価格だけの勝負に巻き込まれないよう、差別化は『定着支援・確認の関門』に置く。"
+        },
+        {
+          "prediction": "AIエージェントの事故報道（ファイル削除・認証共有）が続き、『権限設計・確認フロー』を売りにする提案の説得力が増す。",
+          "confidence": "高",
+          "evidence": "GPT-5.6がサンドボックスなしでファイル削除、企業の54%がエージェントのインシデント経験・認証共有。",
+          "shisto_implication": "『AIに任せてよい作業／人が確認する作業』の線引きメニューを前面に出すと、創業直後でも信頼で選ばれる余地が広がる。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "『AIに導入したが半数が戦力外』問題が広く認識され、費用が『導入代行』より『定着・運用代行・費用対効果の見える化』へ向かう。",
+          "confidence": "高",
+          "evidence": "ITmedia『約半数が戦力外』、生成AI導入で中小が失敗しない5ステップ、M365 Copilot一人負け報道。",
+          "shisto_implication": "Shistoの提案軸を『作る』から『定着させる・棚卸しする』へ寄せると、既存資産の横展開で単価を維持しやすい。"
+        },
+        {
+          "prediction": "LLMO／AIO（AIに選ばれるブランドづくり）が国内で商品カテゴリとして定着し始め、個人店・中小向けの低価格版に需要が生まれる。",
+          "confidence": "中",
+          "evidence": "ネオマーケ『戦略PR for AI』の事業化、Google AI Modeのアプリ連携強化。",
+          "shisto_implication": "big_market_playの核。まず1業種でテンプレ化し、効果測定の再現性を早めに検証しておく。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "現場の内製化（自然言語でのアプリ生成・コーディングエージェント不要化）が広がり、単純自動化の受託単価は下落する。",
+          "confidence": "低",
+          "evidence": "日経xTECH『コーディングエージェントは不要、現場がAI活用でアプリ開発者に』、バイドゥMeDoの企業向け進化。",
+          "shisto_implication": "『作れる』だけでは価格競争に巻き込まれる。業務理解に基づく設計・定着・確認の関門という、内製では埋めにくい価値へ軸足を移す必要がある。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-07-16",
     "predictions": {
       "short_term": [
@@ -3658,65 +3699,6 @@
           "confidence": "高",
           "evidence": "Tesla robotaxi複数都市展開・Dairy Queen chatbot導入という物理AI浸透の実例が同週に複数出た。日本のF&B大手（マクドナルド・ドミノピザ等）が追随するのは時間の問題。",
           "shisto_implication": "個人飲食店・サロン向けLINE FAQ Botは、この波が来る前の「早期採用層向けサービス」として位置づけられる。1年後には競合が増えてコモディティ化するため、今の1〜2年で実績・推薦文を積むことが長期的な差別化に直結する。"
-        }
-      ]
-    }
-  },
-  {
-    "date": "2026-04-18",
-    "predictions": {
-      "short_term": [
-        {
-          "prediction": "DeepSeek V4が4月末に発表され、Claude Opus 4.7・Gemini 2.5との性能比較が各所で行われ「中国AIが再び追いついた」という報道が増える",
-          "confidence": "高",
-          "evidence": "DeepSeekが採用を急増させInner Mongoliaデータセンターの準備を進めており、4月末ローンチが複数ソースで報告されている（直近7日の記事より）",
-          "shisto_implication": "DeepSeek V4がAPIとして公開される場合、Claude APIのコスト比較が激化する可能性がある。ただし日本語精度・利用規約・データ所在地の観点でClaudeが依然優位なため、現時点でAPI移行の必要はない"
-        },
-        {
-          "prediction": "Anthropic Claude Designが一般公開に向けてWaitlistの招待を広げ始め、有料プランの価格帯が明らかになる",
-          "confidence": "中",
-          "evidence": "プレビュー公開のタイミングとAnthropicの過去リリースパターンから、2〜4週間で段階的な招待拡大が見込まれる",
-          "shisto_implication": "API提供が確認できた時点で、既存SNS投稿生成サービスへのビジュアル生成追加をクライアントに提案できるか評価する"
-        },
-        {
-          "prediction": "OpenAIがCPO退任後の組織再編を発表し、エンタープライズ向け製品戦略の変更が明らかになる",
-          "confidence": "中",
-          "evidence": "Kevin WeilとBill Peeblesの退任が同時期に起きており、OpenAIが「副業整理」と位置づけていることから組織的な再編が続く可能性が高い",
-          "shisto_implication": "OpenAI APIの利用方針変更があれば注視が必要。ただしShistoは現在Claude API中心のため直接的影響は少ない"
-        }
-      ],
-      "mid_term": [
-        {
-          "prediction": "AIコーディングツールの利用が中小企業にも広がり始め、「AIで社内ツールを作る」という概念が非エンジニア経営者にも届くようになる",
-          "confidence": "中",
-          "evidence": "Cursorの500億ドル評価と企業向け急成長、Claude Codeの普及が示す通りAIコーディング市場は拡大中。エンタープライズから中小企業への波及には3〜6ヶ月かかると予想",
-          "shisto_implication": "「AIで社内ツールを作る」概念が広まる前にShistoが実績を積んでおくことが重要。兄の会社での受注管理ツール構築を今週着手することが先行投資になる"
-        },
-        {
-          "prediction": "建設業・不動産業界でのAI活用事例が国内メディアで増加し、「建設DX」というキーワードでの問い合わせニーズが高まる",
-          "confidence": "中",
-          "evidence": "建設業は2024年問題（時間外労働規制）の影響で業務効率化への需要が高い。AIニュース量の増加が中小建設業者の意識変化を促す",
-          "shisto_implication": "建設業向けBIモニタリングサービスの提案タイミングとして今が適切。2〜3ヶ月以内に最初の1社を取れると、その後の横展開がしやすくなる"
-        },
-        {
-          "prediction": "Anthropic Claude Designが正式版をリリースし、コーディング+デザイン統合ワークフローの事例がSNSで増加する",
-          "confidence": "低",
-          "evidence": "現在プレビュー段階。Anthropicの過去リリースサイクルから正式版は2〜4ヶ月後と推測するが、プレビューのまま延長される可能性もある",
-          "shisto_implication": "要検証：Claude DesignのAPIが公開されれば、Webサイト制作サービスへのビジュアル生成統合が可能になる。リリース次第で提案内容を更新する"
-        }
-      ],
-      "long_term": [
-        {
-          "prediction": "AIエージェントが「特定業務を自律的にこなす」から「複数業務を横断的に管理する」フェーズに移行し、1人運営の小規模企業でもエンタープライズ相当の業務自動化が実現できるようになる",
-          "confidence": "高",
-          "evidence": "MetaのUnified AI Agents、OpenAIのAgents SDK進化、Anthropicのエージェント研究（Managed Agentsスケーリング論文）が全て同方向を向いている",
-          "shisto_implication": "Shistoが今構築しているパイプライン群は将来のエージェント統合のベースになる。今から「単発パイプライン→統合エージェント」への設計思想でシステムを作っておくことが中長期の競争力になる"
-        },
-        {
-          "prediction": "日本でAI利用に関する事業者向けガイドラインが経産省・デジタル庁から具体的な指針として公表され、中小企業でも「AI利用規程」の整備が求められるようになる",
-          "confidence": "中",
-          "evidence": "EU AI Act施行・トランプ政権のAIセキュリティ強化方針（Anthropic Mythosの政府向け展開）など国際的なAI規制の流れを受け、日本でも2026年内に具体的な指針が出ると予想",
-          "shisto_implication": "「社内AI利用ルール整備支援サービス」の需要が顕在化する可能性がある（2026-04-14に提案済み）。規制の具体化が確認できたタイミングで再提案を検討する"
         }
       ]
     }
