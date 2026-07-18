@@ -1,5 +1,52 @@
 [
   {
+    "date": "2026-07-18",
+    "predictions": {
+      "short_term": [
+        {
+          "prediction": "Claude Fable 5 のサブスク統合と Pro の従量制移行を受けて、国内のAI開発者・受託事業者の間で『どのプランで業務を回すか』の情報共有が急増し、実測ベースの消費量レポートが個人ブログ・技術メディアに複数出る。",
+          "confidence": "高",
+          "evidence": "本日、ITmedia・Impress Watch・Simon Willison の3媒体が同日にこの変更を扱っており、開発者側の関心が既に高い。料金体系の変更は実測しないと影響が読めないため、実測記事が出るのは定型の反応。",
+          "shisto_implication": "他者の実測が出てくるのを待たず、自社の月額運用案件で先に実測しておくべきです。原価が読めていれば、次の提案で価格を守れます。逆に読めないまま案件を積むと、後から値上げ交渉という最も苦しい局面に入ります。"
+        },
+        {
+          "prediction": "AIクローラのブロックが Patreon 以外のコンテンツプラットフォームにも広がり、robots.txt での拒否表明から技術的遮断への移行事例がもう1〜2件出る。",
+          "confidence": "中",
+          "evidence": "Patreon が『お願いをやめる』と明示的に転換したこと、TikTok が肖像のAI利用検知ツールを試験していること。ただし他社が同月内に追随するかは不確かで、この予測は方向性としては確度が高いが時期については不確かです。",
+          "shisto_implication": "AIニュースBI の収集対象が減る可能性があります。収集ソースが遮断されたときに静かにゼロ件になって気づかない、という失敗の型が最も危険なので、ソース別の取得件数が急減したときに検知できるかを確認しておくべきです。"
+        }
+      ],
+      "mid_term": [
+        {
+          "prediction": "『定性データのAI分析』が、調査会社の専売から中小企業向けの月額サービスへ降りてくる。国内で中小向けにレビュー・日報分析を月額数万円で提供する事業者が複数現れる。",
+          "confidence": "中",
+          "evidence": "本日の日経報道で工数10分の1・完成度7〜8割という具体的な数字が示されたこと。この数字が広まると、調査費用を払えなかった層に対する提案が一斉に始まるのが定型の流れです。ただし『複数現れる』の規模と時期は不確かです。",
+          "shisto_implication": "今日提案した食品メーカー向けの案は、3ヶ月以内に着手しないと後発になります。ただし先行者利益より、江田畜産経由で業界の実情を掴んでから出る方が成約率は高いはずで、拙速に走るべきではありません。速度ではなく『元文に戻れる納品形式』と『営業日報との突き合わせ』という設計で差をつけるべきです。"
+        },
+        {
+          "prediction": "AIエージェント製品の主戦場が『何ができるか』から『どの権限をどう渡すか』へ移り、MCPの認証・権限分離の設計が製品比較の争点になる。",
+          "confidence": "中",
+          "evidence": "本日の Smartsheet の事例が権限分離と認証の設計を主題にしていること、直近7日で VentureBeat が企業のAIエージェント事故（54%が既に経験・多くが認証情報を共有させている）を報じていること。",
+          "shisto_implication": "中小企業に自動化を提案する際、『何ができるか』より『どこまでの権限で動くか』を先に説明する形にすると、大手製品との比較で有利になります。1人で顧客ごとに権限設計を変えられるのは Shisto の規模ならではの利点です。"
+        }
+      ],
+      "long_term": [
+        {
+          "prediction": "モデル性能の差が縮まり続けた結果、AI導入の差別化要因が『どのモデルを使うか』から『どれだけその会社の業務を知っているか』へ完全に移る。技術力よりも業務理解が受注を決めるようになる。",
+          "confidence": "中",
+          "evidence": "本日、中国製モデル Kimi が Anthropic の最新型と僅差と評価されたこと。同日の『SaaSの死』連載で、単機能サービスは代替され専門性と業務プロセスへの食い込みが残ると整理されたこと。ただし基盤モデル側に非連続な飛躍が起きればこの見立ては崩れるため、断定はできません。",
+          "shisto_implication": "田中さんが兄3社の実データを触って業務の順序を把握していることは、模倣に時間がかかる資産です。一方で『Claude Code が使える』という説明は年を追うごとに価値が下がります。提案書と営業の言葉づかいを、ツール名から業務名へ意図的に移していくべきです。"
+        },
+        {
+          "prediction": "未成年・教育領域でのAI利用に対する制度的な枠組みが日本でも具体化し、事業者側に利用目的の明示や保護者同意の取得が実質的な標準として求められるようになる。",
+          "confidence": "低",
+          "evidence": "本日、中国が未成年の『AI恋人』利用に国家介入したこと、グーグル等が宿題AI丸投げ対策として方式を変えたこと、受験対策でのAI活用が広がっていること。ただし日本国内での制度化の時期・形は全く不確かで、この予測は方向性の推測に過ぎません。",
+          "shisto_implication": "今日の big_market_play（子ども向け学習AI）は、この不確かさをリスクとして抱えます。MVPに進む場合でも、子どもの氏名・学校名を取らない設計を最初から入れておけば、制度が具体化したときの手戻りを小さくできます。逆に言えば、この領域は制度リスクの分だけ他の提案より慎重に進めるべきです。"
+        }
+      ]
+    }
+  },
+  {
     "date": "2026-07-17",
     "predictions": {
       "short_term": [
@@ -3640,65 +3687,6 @@
           "confidence": "中",
           "evidence": "OpenAIの幹部離脱・組織再編（2026-04-18〜19）とAnthropicのClaude Opus 4.7・Claude Design・サイバーセキュリティモデルの相次ぐリリース（2026-04-16〜18）のコントラスト。",
           "shisto_implication": "Claude Code・Claude APIを中心とした現在のShistoのツール選択戦略は中長期的に有効。OpenAIが組織的混乱を克服した場合は再評価が必要だが、当面はClaude中心で進める判断を維持。"
-        }
-      ]
-    }
-  },
-  {
-    "date": "2026-04-19",
-    "predictions": {
-      "short_term": [
-        {
-          "prediction": "DeepSeekの4月リリース（7日間タイトル一覧で複数報じられた）が来週実行され、Claude Opus 4.7・GPT-4シリーズとのベンチマーク比較記事が大量に出る",
-          "confidence": "高",
-          "evidence": "直近7日間の一覧にDeepSeek関連記事が4本（「DeepSeek's Gamble on Chips」「high-stakes April launch」「New DeepSeek model」等）集中しており、4月リリースが迫っていることを示している",
-          "shisto_implication": "Claude vs DeepSeek比較が話題になる際、「ShistoがなぜAnthropicを選んでいるか」の説明を準備しておく必要がある。クライアントへの説明では「DeepSeekは無料だが日本語精度・プライバシー・サポートの観点でAnthropicを選んでいる」という軸で話せるようにしておく。"
-        },
-        {
-          "prediction": "Anthropic-Trump政権の関係改善（7日間タイトルに「thawing」の記事あり）を受け、AnthropicのUS政府向けサービス・セキュリティモデルの発表がある",
-          "confidence": "中",
-          "evidence": "「Anthropic's relationship with the Trump administration seems to be thawing」「Anthropic's new cybersecurity model could get it back in the government's good graces」という記事が2本出ており、政府向け展開の布石が読み取れる",
-          "shisto_implication": "AnthropicのAPI利用規約・利用可能地域の変化が起きる可能性がある。現在のパイプラインに影響がないか定期確認を怠らない。"
-        }
-      ],
-      "mid_term": [
-        {
-          "prediction": "RAM不足の長期化を受け、Anthropic・OpenAI等の主要LLM APIが推論コストを5〜20%値上げする",
-          "confidence": "中",
-          "evidence": "The Verge「The RAM shortage could last years」が示すインフラコスト上昇。Cerebras IPOはAIインフラが希少資源化している証左。",
-          "shisto_implication": "Shistoのサービス単価に影響するため、Claude API実費をクライアントに実費精算する契約条項を今のうちに整備しておく。API値上げをきっかけに「安い軽量自動化」の訴求をリフレッシュできる機会にもなる。"
-        },
-        {
-          "prediction": "AIコーディングツール（Cursor・GitHub Copilot等）の法人導入が中小IT企業にも広がり、「どう業務に組み込むか」というハンズオン研修需要が日本でも顕在化する",
-          "confidence": "中",
-          "evidence": "Cursor $50B評価交渉のニュースが日本でも報じられると、地方の中小Web制作会社・IT企業が「自社でも使わないといけない」と感じ始める。",
-          "shisto_implication": "Claude Code研修サービスを今月中にLinkedInで打ち出しておくと、この需要拡大期に最初の1〜3件を取れる可能性が高い。タイミングが肝なので今週のLinkedIn投稿を最優先にする。"
-        },
-        {
-          "prediction": "物理世界AI（F&Bチャットbot・ロボタクシー）が日本の中小事業者向けに翻訳・展開され始め、LINE上のAI自動応答サービスを提供するスタートアップが複数登場する",
-          "confidence": "中",
-          "evidence": "Dairy Queen AI chatbot導入のニュースが国内でも報道され始めると、日本の飲食・小売業者へのLINE Bot提案が競合参入前に動くチャンスが1〜3ヶ月しかない可能性がある",
-          "shisto_implication": "LINE FAQ Bot提案は競合が増える前に最初の1件を取ることが重要。来週中にデモを動かし、今月中に1クライアントへの提案を完了させる。"
-        }
-      ],
-      "long_term": [
-        {
-          "prediction": "AIインフラコスト上昇（RAM・チップ不足）によりSaaS型AIツールの値上げが続き、SMEが「自社で所有する軽量カスタムAI」へシフトし始める",
-          "confidence": "中",
-          "evidence": "RAM shortage記事・Cerebras IPOが示すインフラ希少化。SaaSベンダーがコストを転嫁しない限り事業継続が困難になる構造的な圧力。",
-          "shisto_implication": "Shistoの「GAS+Claude API＋Google Sheets」という構成は、高額SaaSを使わないアーキテクチャとして半年〜1年後に差別化ポイントが強くなる。今から「SaaS不要の自動化」という打ち出し方を一貫させておく。"
-        },
-        {
-          "prediction": "AIエージェントの実運用が中小企業にも広がり、「複数のエージェントを組み合わせて業務を丸ごと自動化する」という設計の需要が出てくる",
-          "confidence": "中",
-          "evidence": "OpenAI Agents SDK進化・Meta Unified AI Agents・Anthropic Managed Agents Scalingが同週に出ており、エージェントが実運用フェーズに入っていることが一次ソースで確認できる",
-          "shisto_implication": "現在のパイプライン型（RSS→Claude→Sheets）をエージェント型（条件分岐・複数ツール連携）に拡張できるよう、今からMCP・GASトリガー設計の習熟を進めておく。半年後には「マルチエージェント自動化パッケージ」として単価を上げた提案ができる。"
-        },
-        {
-          "prediction": "物理世界AI（ロボタクシー・ドライブスルーBot等）の日本への浸透に伴い、飲食・小売・交通分野のAI化が義務的な競争ライン（「やっていないと遅れている」）になる",
-          "confidence": "高",
-          "evidence": "Tesla robotaxi複数都市展開・Dairy Queen chatbot導入という物理AI浸透の実例が同週に複数出た。日本のF&B大手（マクドナルド・ドミノピザ等）が追随するのは時間の問題。",
-          "shisto_implication": "個人飲食店・サロン向けLINE FAQ Botは、この波が来る前の「早期採用層向けサービス」として位置づけられる。1年後には競合が増えてコモディティ化するため、今の1〜2年で実績・推薦文を積むことが長期的な差別化に直結する。"
         }
       ]
     }
