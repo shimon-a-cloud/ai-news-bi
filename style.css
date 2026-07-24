@@ -104,6 +104,19 @@ body {
     position: relative;
 }
 
+/* まとめの材料が欠けた週に出す注意書き（欠けを黙って隠さないため） */
+.coverage-notice {
+    background: var(--surface);
+    border: 1px solid var(--yellow);
+    border-left: 3px solid var(--yellow);
+    border-radius: 0 5px 5px 0;
+    color: var(--yellow);
+    padding: 12px 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
 .section-title {
     font-family: var(--font-ui);
     font-size: 12px;

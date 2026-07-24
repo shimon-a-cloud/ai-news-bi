@@ -29,8 +29,39 @@ document.addEventListener('DOMContentLoaded', async () => {
     initProposalSearch();
     renderLinkedIn();
     renderReport();
-    document.getElementById('headerDate').textContent = dailyData?.date || '';
+    renderPeriodLabels();
 });
+
+// 週次まとめ（period_start / period_end 付き）なら「今週」、無ければ従来どおり単日として出す。
+// 🚨 表示は必ずデータ側の有無で決める。見出しだけ「今週」に変えると、週次の初回が出るまでの
+//    あいだ、前日ぶんの中身が「今週のまとめ」として並ぶ（中身と見出しが食い違う）。
+function renderPeriodLabels() {
+    const start = dailyData?.period_start, end = dailyData?.period_end;
+    const weekly = Boolean(start && end);
+    const short = s => String(s).slice(5).replace('-', '/');
+
+    document.getElementById('headerDate').textContent =
+        weekly ? `${short(start)}〜${short(end)}` : (dailyData?.date || '');
+
+    const title = document.getElementById('overviewTitle');
+    if (title) title.textContent = weekly ? '今週の業界動向' : '今日の業界動向';
+
+    const newsTitle = document.getElementById('topNewsTitle');
+    if (newsTitle) newsTitle.textContent = weekly ? '今週の厳選ニュース' : '厳選ニュース';
+
+    // 収集はできたのに分類が1件も無かった日は、まとめの材料が欠けている。黙って出さない。
+    const notice = document.getElementById('coverageNotice');
+    const missing = dailyData?.coverage?.missing_days || [];
+    if (notice && weekly && missing.length) {
+        notice.textContent =
+            `⚠️ この期間のうち ${missing.map(short).join('・')} は記事の分類ができておらず、`
+            + `まとめの材料から抜けています（${dailyData.coverage.classified}/`
+            + `${dailyData.coverage.articles}件で作成）`;
+        notice.hidden = false;
+    } else if (notice) {
+        notice.hidden = true;
+    }
+}
 
 // ── Navigation ──
 function setupNav() {
